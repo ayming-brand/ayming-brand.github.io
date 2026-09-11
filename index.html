@@ -327,6 +327,63 @@
     .curation-actions-row button:hover { background: var(--overlay-blue); color: var(--blue); }
     .curation-hint { font-size: 10.5px; color: var(--text-gray); margin-top: 8px; line-height: 1.4; }
 
+    /* Composants et Slides : aperçu en direct dans une iframe srcdoc (vrai CSS
+       moteur, sans polluer le CSS du portail), voir preview_iframe_srcdoc.
+       La scène reste à sa taille réelle (1280 de large) et se réduit par un
+       transform:scale calculé en JS (fitPreviewStages) dans une enveloppe
+       dimensionnée en aspect-ratio, jamais de défilement horizontal. */
+    .preview-stage-wrap {
+      position: relative; width: 100%; overflow: hidden; margin-top: 16px;
+      background: #fff; border: 1px solid var(--bg-subtle); border-radius: 12px;
+    }
+    .preview-frame { position: absolute; top: 0; left: 0; border: 0; transform-origin: top left; }
+
+    .composant-list { display: flex; flex-direction: column; gap: 30px; margin-top: 18px; }
+    .composant-card {
+      max-width: 820px; padding: 22px 24px; border: 1px solid var(--bg-subtle); border-radius: 16px;
+      background: #fff; box-shadow: var(--shadow-sm);
+    }
+    .composant-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .composant-head h3 { font-size: 17px; font-weight: 800; color: var(--navy); }
+    .composant-badge { position: static; background: rgba(0,69,109,0.82); }
+    .composant-represente { font-size: 13.5px; color: var(--text-gray); margin-top: 8px; line-height: 1.55; }
+    .composant-classes { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .class-chip { background: var(--bg-light); border: 1px solid var(--bg-subtle); border-radius: 6px; padding: 2px 8px; font-size: 11px; color: var(--text-gray); }
+
+    .archetype-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 26px; margin-top: 18px; }
+    .archetype-card {
+      padding: 18px 20px 20px; border: 1px solid var(--bg-subtle); border-radius: 16px;
+      background: #fff; box-shadow: var(--shadow-sm);
+    }
+    .archetype-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .archetype-head h3 { font-size: 16px; font-weight: 800; color: var(--navy); }
+    .archetype-represente { font-size: 13px; color: var(--text-gray); margin-top: 6px; line-height: 1.5; }
+
+    /* Bloc de code copiable : clic n'importe où dans le bloc (voir le
+       gestionnaire document.click générique sur [data-copy-value], déjà
+       utilisé par les pastilles de couleur), le bouton n'est qu'une
+       affordance visuelle supplémentaire. */
+    .code-block, .archetype-file {
+      position: relative; margin-top: 14px; padding: 14px 16px; background: var(--bg-light);
+      border: 1px solid var(--bg-subtle); border-radius: 10px; cursor: pointer;
+    }
+    .code-block pre { overflow-x: auto; }
+    .code-block code { color: var(--text-dark); white-space: pre; }
+    .archetype-file { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .archetype-file code { font-size: 11px; word-break: break-all; }
+    .btn-copy {
+      font-size: 11px; font-weight: 700; color: var(--blue); padding: 5px 12px; border-radius: 7px;
+      background: #fff; border: 1px solid var(--bg-subtle); flex-shrink: 0;
+    }
+    .code-block .btn-copy { margin-top: 10px; }
+    .btn-copy:hover { background: var(--overlay-blue); }
+
+    .ecartes-details { margin-top: 34px; padding-top: 22px; border-top: 1px solid var(--bg-subtle); }
+    .ecartes-details summary { cursor: pointer; font-size: 12.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-gray); }
+    .ecartes-list { margin: 14px 0 0 18px; display: flex; flex-direction: column; gap: 10px; }
+    .ecartes-list li { font-size: 12.5px; color: var(--text-gray); line-height: 1.5; }
+    .ecartes-list b { color: var(--navy); margin-right: 4px; }
+
     @media (max-width: 900px) {
       .sidebar { transform: translateX(-100%); transition: transform 0.2s ease; }
       .sidebar.open { transform: translateX(0); }
@@ -340,6 +397,8 @@
       .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
       /* #panel-logos garde ses cartes à 260px fixes (règle de base) : une carte
          par ligne sur mobile plutôt qu'une largeur qui casserait l'uniformité. */
+      .archetype-grid { grid-template-columns: 1fr; }
+      .composant-card { max-width: 100%; }
     }
 </style>
 </head>
@@ -360,8 +419,8 @@
     <div class="nav-sub"><button class="nav-subitem" data-panel="logos" data-anchor="logo-principal">Logo principal</button><button class="nav-subitem" data-panel="logos" data-anchor="certifications">Certifications</button><button class="nav-subitem" data-panel="logos" data-anchor="clients">Clients</button><button class="nav-subitem" data-panel="logos" data-anchor="partenaires">Partenaires</button></div>
     <button class="nav-item" data-panel="images">Images<span class="nav-count">197</span></button>
     <div class="nav-sub"><button class="nav-subitem" data-panel="images" data-anchor="offres">Offres</button><button class="nav-subitem" data-panel="images" data-anchor="stock">Stock</button><button class="nav-subitem" data-panel="images" data-anchor="cartes">Cartes</button><button class="nav-subitem" data-panel="images" data-anchor="equipe">Équipe</button><button class="nav-subitem" data-panel="images" data-anchor="icones">Icônes</button></div>
-    <button class="nav-item" data-panel="composants">Composants</button>
-    <button class="nav-item" data-panel="slides">Slides</button>
+    <button class="nav-item" data-panel="composants">Composants<span class="nav-count">4</span></button>
+    <button class="nav-item" data-panel="slides">Slides<span class="nav-count">11</span></button>
   </nav>
   <main class="content"><div class="content-inner">
     <section class="tab-panel active" id="panel-couleurs" data-panel="couleurs">
@@ -6780,13 +6839,1600 @@
     </section>
     <section class="tab-panel" id="panel-composants" data-panel="composants">
       <h1>Composants</h1>
-      <p class="panel-intro">Éléments d'interface réutilisables entre decks (boutons, cartes, listes titrées).</p>
-      <div class="empty-state"><b>Rien pour l'instant</b><p>Ce registre se remplit à l'incrément C du chantier portail de marque.</p></div>
+      <p class="panel-lead">Composants promus depuis les styles locaux des decks, règle de promotion : présent dans 3 decks ou plus avec la même signification. Définis une seule fois dans <a href="https://ayming-france.github.io/assets/engine/components.css" target="_blank" rel="noopener">engine/components.css</a>.</p>
+      <div class="panel-search"><input class="search-input" type="search" placeholder="Rechercher un composant..." autocomplete="off"></div>
+      <div class="composant-list" data-filter-container>        <article class="composant-card filter-item" data-search="bandeau prochaine etape callout en degrade qui ferme un deck sur l'etape suivante concrete, le plus souvent un echange de 30 minutes. next-step next-step">
+          <div class="composant-head">
+            <h3>Bandeau prochaine étape</h3>
+            <span class="usage-badge composant-badge">17 decks</span>
+          </div>
+          <p class="composant-represente">Callout en dégradé qui ferme un deck sur l&#x27;étape suivante concrète, le plus souvent un échange de 30 minutes.</p>
+          <div class="composant-classes"><code class="class-chip">.next-step</code></div>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 200;"><iframe class="preview-frame" width="1280" height="200" loading="lazy" title="Aperçu : Bandeau prochaine étape" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; } .preview-stage.slide.active { position: static !important; width: 100% !important; height: 100% !important; padding: 26px !important; display: flex !important; align-items: center !important; justify-content: center !important; opacity: 1 !important; }&lt;/style&gt;
+
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:200px;&quot;&gt;&lt;div class=&quot;preview-stage slide active&quot;&gt;&lt;p class=&quot;next-step&quot;&gt;Prochaine étape : un échange de 30 minutes pour cadrer le diagnostic.&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="code-block" data-copy-value="&lt;p class=&quot;next-step&quot;&gt;Prochaine étape : un échange de 30 minutes pour cadrer le diagnostic.&lt;/p&gt;">
+            <span class="copy-feedback" hidden>Copié</span>
+            <pre><code>&lt;p class=&quot;next-step&quot;&gt;Prochaine étape : un échange de 30 minutes pour cadrer le diagnostic.&lt;/p&gt;</code></pre>
+            <button type="button" class="btn-copy">Copier</button>
+          </div>
+        </article>
+        <article class="composant-card filter-item" data-search="tuile de vente croisee carte cliquable qui renvoie vers une offre liee, enveloppe le column-card du moteur, ajoute une superposition au survol avec appel a l'action et un badge « en option ». variante non cliquable via le modificateur static. option-card option-card card-overlay option-badge">
+          <div class="composant-head">
+            <h3>Tuile de vente croisée</h3>
+            <span class="usage-badge composant-badge">13 decks</span>
+          </div>
+          <p class="composant-represente">Carte cliquable qui renvoie vers une offre liée, enveloppe le column-card du moteur, ajoute une superposition au survol avec appel à l&#x27;action et un badge « En option ». Variante non cliquable via le modificateur static.</p>
+          <div class="composant-classes"><code class="class-chip">.option-card</code><code class="class-chip">.card-overlay</code><code class="class-chip">.option-badge</code></div>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 340;"><iframe class="preview-frame" width="1280" height="340" loading="lazy" title="Aperçu : Tuile de vente croisée" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; } .preview-stage.slide.active { position: static !important; width: 100% !important; height: 100% !important; padding: 26px !important; display: flex !important; align-items: center !important; justify-content: center !important; opacity: 1 !important; }&lt;/style&gt;
+
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:340px;&quot;&gt;&lt;div class=&quot;preview-stage slide active&quot;&gt;&lt;div style=&quot;width:320px;margin:0 auto;&quot;&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;option-card&quot;&gt;
+  &lt;div class=&quot;column-card&quot;&gt;
+    &lt;div class=&quot;card-image&quot;&gt;
+      &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/hub-cards/At-tiers-5.jpg&quot; alt=&quot;Nom de l&#x27;offre&quot;&gt;
+      &lt;div class=&quot;card-overlay&quot;&gt;&lt;span&gt;Découvrir cette offre&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;option-badge&quot;&gt;En option&lt;/span&gt;
+    &lt;h3&gt;Nom de l&#x27;offre liée&lt;/h3&gt;
+    &lt;p&gt;Une phrase qui dit ce que l&#x27;offre apporte.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="code-block" data-copy-value="&lt;a href=&quot;https://ayming-france.github.io/&lt;offre&gt;/&quot; target=&quot;_blank&quot; class=&quot;option-card&quot;&gt;
+  &lt;div class=&quot;column-card&quot;&gt;
+    &lt;div class=&quot;card-image&quot;&gt;
+      &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/...&quot; alt=&quot;Nom de l&#x27;offre&quot;&gt;
+      &lt;div class=&quot;card-overlay&quot;&gt;&lt;span&gt;Découvrir cette offre&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;option-badge&quot;&gt;En option&lt;/span&gt;
+    &lt;h3&gt;Nom de l&#x27;offre liée&lt;/h3&gt;
+    &lt;p&gt;Une phrase qui dit ce que l&#x27;offre apporte.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/a&gt;">
+            <span class="copy-feedback" hidden>Copié</span>
+            <pre><code>&lt;a href=&quot;https://ayming-france.github.io/&lt;offre&gt;/&quot; target=&quot;_blank&quot; class=&quot;option-card&quot;&gt;
+  &lt;div class=&quot;column-card&quot;&gt;
+    &lt;div class=&quot;card-image&quot;&gt;
+      &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/...&quot; alt=&quot;Nom de l&#x27;offre&quot;&gt;
+      &lt;div class=&quot;card-overlay&quot;&gt;&lt;span&gt;Découvrir cette offre&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;option-badge&quot;&gt;En option&lt;/span&gt;
+    &lt;h3&gt;Nom de l&#x27;offre liée&lt;/h3&gt;
+    &lt;p&gt;Une phrase qui dit ce que l&#x27;offre apporte.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/a&gt;</code></pre>
+            <button type="button" class="btn-copy">Copier</button>
+          </div>
+        </article>
+        <article class="composant-card filter-item" data-search="chaine de valeur diagramme horizontal de chaine de valeur a maillons numerotes, un maillon actif mis en avant, les autres estompes. fonctionne avec 3, 4 ou 5 maillons. le prefixe atmp- est historique, le composant sert aussi hors at/mp. atmp-chain atmp-chain atmp-link atmp-link-dim atmp-link-active atmp-number atmp-title atmp-bullets atmp-offer atmp-arrow atmp-footer">
+          <div class="composant-head">
+            <h3>Chaîne de valeur</h3>
+            <span class="usage-badge composant-badge">4 decks</span>
+          </div>
+          <p class="composant-represente">Diagramme horizontal de chaîne de valeur à maillons numérotés, un maillon actif mis en avant, les autres estompés. Fonctionne avec 3, 4 ou 5 maillons. Le préfixe atmp- est historique, le composant sert aussi hors AT/MP.</p>
+          <div class="composant-classes"><code class="class-chip">.atmp-chain</code><code class="class-chip">.atmp-link</code><code class="class-chip">.atmp-link-dim</code><code class="class-chip">.atmp-link-active</code><code class="class-chip">.atmp-number</code><code class="class-chip">.atmp-title</code><code class="class-chip">.atmp-bullets</code><code class="class-chip">.atmp-offer</code><code class="class-chip">.atmp-arrow</code><code class="class-chip">.atmp-footer</code></div>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 200;"><iframe class="preview-frame" width="1280" height="200" loading="lazy" title="Aperçu : Chaîne de valeur" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; } .preview-stage.slide.active { position: static !important; width: 100% !important; height: 100% !important; padding: 26px !important; display: flex !important; align-items: center !important; justify-content: center !important; opacity: 1 !important; }&lt;/style&gt;
+
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:200px;&quot;&gt;&lt;div class=&quot;preview-stage slide active&quot;&gt;&lt;div class=&quot;atmp-chain&quot;&gt;
+  &lt;div class=&quot;atmp-link atmp-link-dim&quot;&gt;
+    &lt;div class=&quot;atmp-number&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;atmp-title&quot;&gt;Première étape&lt;/div&gt;
+    &lt;ul class=&quot;atmp-bullets&quot;&gt;&lt;li&gt;Point clé&lt;/li&gt;&lt;li&gt;Point clé&lt;/li&gt;&lt;/ul&gt;
+    &lt;div class=&quot;atmp-offer&quot;&gt;Offre associée&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;atmp-arrow&quot;&gt;&amp;#8250;&lt;/div&gt;
+  &lt;div class=&quot;atmp-link atmp-link-active&quot;&gt;
+    &lt;div class=&quot;atmp-number&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;atmp-title&quot;&gt;Étape mise en avant&lt;/div&gt;
+    &lt;ul class=&quot;atmp-bullets&quot;&gt;&lt;li&gt;Point clé&lt;/li&gt;&lt;li&gt;Point clé&lt;/li&gt;&lt;/ul&gt;
+    &lt;div class=&quot;atmp-offer&quot;&gt;Cette offre&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="code-block" data-copy-value="&lt;div class=&quot;atmp-chain&quot;&gt;
+  &lt;div class=&quot;atmp-link atmp-link-dim&quot;&gt;
+    &lt;div class=&quot;atmp-number&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;atmp-title&quot;&gt;Première étape&lt;/div&gt;
+    &lt;ul class=&quot;atmp-bullets&quot;&gt;&lt;li&gt;Point clé&lt;/li&gt;&lt;li&gt;Point clé&lt;/li&gt;&lt;/ul&gt;
+    &lt;div class=&quot;atmp-offer&quot;&gt;Offre associée&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;atmp-arrow&quot;&gt;&amp;#8250;&lt;/div&gt;
+  &lt;div class=&quot;atmp-link atmp-link-active&quot;&gt;
+    &lt;div class=&quot;atmp-number&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;atmp-title&quot;&gt;Étape mise en avant&lt;/div&gt;
+    &lt;ul class=&quot;atmp-bullets&quot;&gt;&lt;li&gt;Point clé&lt;/li&gt;&lt;li&gt;Point clé&lt;/li&gt;&lt;/ul&gt;
+    &lt;div class=&quot;atmp-offer&quot;&gt;Cette offre&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">
+            <span class="copy-feedback" hidden>Copié</span>
+            <pre><code>&lt;div class=&quot;atmp-chain&quot;&gt;
+  &lt;div class=&quot;atmp-link atmp-link-dim&quot;&gt;
+    &lt;div class=&quot;atmp-number&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;atmp-title&quot;&gt;Première étape&lt;/div&gt;
+    &lt;ul class=&quot;atmp-bullets&quot;&gt;&lt;li&gt;Point clé&lt;/li&gt;&lt;li&gt;Point clé&lt;/li&gt;&lt;/ul&gt;
+    &lt;div class=&quot;atmp-offer&quot;&gt;Offre associée&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;atmp-arrow&quot;&gt;&amp;#8250;&lt;/div&gt;
+  &lt;div class=&quot;atmp-link atmp-link-active&quot;&gt;
+    &lt;div class=&quot;atmp-number&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;atmp-title&quot;&gt;Étape mise en avant&lt;/div&gt;
+    &lt;ul class=&quot;atmp-bullets&quot;&gt;&lt;li&gt;Point clé&lt;/li&gt;&lt;li&gt;Point clé&lt;/li&gt;&lt;/ul&gt;
+    &lt;div class=&quot;atmp-offer&quot;&gt;Cette offre&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <button type="button" class="btn-copy">Copier</button>
+          </div>
+        </article>
+        <article class="composant-card filter-item" data-search="liste value-detail titree variante de la value-detail-list du moteur, chaque item devient un bloc avec un titre h4 et un sous-texte, sans puce a coche. promotion dirigee par le plan (un seul deck source), avec le correctif des delais d'animation pour les listes de 5 et 6 items. vd-titled vd-titled">
+          <div class="composant-head">
+            <h3>Liste value-detail titrée</h3>
+            <span class="usage-badge composant-badge">1 deck</span>
+          </div>
+          <p class="composant-represente">Variante de la value-detail-list du moteur, chaque item devient un bloc avec un titre h4 et un sous-texte, sans puce à coche. Promotion dirigée par le plan (un seul deck source), avec le correctif des délais d&#x27;animation pour les listes de 5 et 6 items.</p>
+          <div class="composant-classes"><code class="class-chip">.vd-titled</code></div>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 200;"><iframe class="preview-frame" width="1280" height="200" loading="lazy" title="Aperçu : Liste value-detail titrée" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; } .preview-stage.slide.active { position: static !important; width: 100% !important; height: 100% !important; padding: 26px !important; display: flex !important; align-items: center !important; justify-content: center !important; opacity: 1 !important; }&lt;/style&gt;
+
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:200px;&quot;&gt;&lt;div class=&quot;preview-stage slide active&quot;&gt;&lt;ul class=&quot;value-detail-list vd-titled&quot;&gt;
+  &lt;li&gt;&lt;h4&gt;1. Titre du point&lt;/h4&gt;&lt;p&gt;Une phrase qui développe le point.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;h4&gt;2. Titre du point&lt;/h4&gt;&lt;p&gt;Une phrase qui développe le point.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="code-block" data-copy-value="&lt;ul class=&quot;value-detail-list vd-titled&quot;&gt;
+  &lt;li&gt;&lt;h4&gt;1. Titre du point&lt;/h4&gt;&lt;p&gt;Une phrase qui développe le point.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;h4&gt;2. Titre du point&lt;/h4&gt;&lt;p&gt;Une phrase qui développe le point.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;">
+            <span class="copy-feedback" hidden>Copié</span>
+            <pre><code>&lt;ul class=&quot;value-detail-list vd-titled&quot;&gt;
+  &lt;li&gt;&lt;h4&gt;1. Titre du point&lt;/h4&gt;&lt;p&gt;Une phrase qui développe le point.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;h4&gt;2. Titre du point&lt;/h4&gt;&lt;p&gt;Une phrase qui développe le point.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <button type="button" class="btn-copy">Copier</button>
+          </div>
+        </article>
+</div>
+      <details class="ecartes-details"><summary>Ce qui n'a pas été promu</summary><ul class="ecartes-list"><li><b>testimonial-dim</b> Le filtre d&#x27;assombrissement de la photo témoignage est déjà la règle de base de slides.css. Les surcharges locales des 15 decks sont redondantes, à supprimer au prochain passage sur chaque deck, rien à promouvoir.</li><li><b>chain-journey</b> Diagramme de parcours des decks famille (atmp, ijss), 2 decks. Signification distincte de la chaîne de valeur atmp-chain (il cartographie les offres d&#x27;une famille, pas le positionnement d&#x27;une offre dans une chaîne), pas de fusion, sous le seuil.</li><li><b>vm-steps</b> Stepper d&#x27;onboarding de visites-medicales et de sa famille, 2 decks. Quasi-doublon du process-timeline du moteur, converger vers le moteur au prochain edit de ces decks plutôt que promouvoir le doublon.</li><li><b>vm-logos</b> Grille de logos d&#x27;intégrations SIRH, 2 decks, sous le seuil.</li><li><b>pricing</b> 3 decks ont une slide tarification mais trois modèles différents (plan mensuel essentiel, grille de points abo-dat, success-fee es-cotizaciones). Trois significations distinctes, pas de composant générique honnête.</li><li><b>stat-row-standalone</b> 3 decks, et la slide introduction porte déjà les cartes de chiffres. Pas d&#x27;archétype séparé.</li><li><b>variantes-chaine-locales</b> remboursements-ijss (dimensionnement 3 maillons) et arrets-longue-duree (chorégraphie d&#x27;entrée propre) gardent leurs surcharges locales par-dessus la chaîne promue.</li><li><b>collisions-de-noms</b> ptag, ct et ladder existent dans 2 decks chacun avec des significations sans rapport (persona contre pilier, contact contre compteur, échelle de confiance contre escalier de niveaux de service). Collisions de noms pures, aucune fusion.</li><li><b>charges-sociales-responsive</b> Bloc media query de charges-sociales qui resserre 25 classes moteur pour les écrans portables 1366x768. Candidat à entrer dans slides.css lui-même, décision moteur séparée, hors périmètre composants.</li><li><b>css-mort</b> abo-dat (10 composants non référencés) et methode (un tiers du CSS local orphelin d&#x27;une slide en commentaire) portent du CSS mort à nettoyer au prochain edit de chaque deck.</li></ul></details>
     </section>
     <section class="tab-panel" id="panel-slides" data-panel="slides">
       <h1>Slides</h1>
-      <p class="panel-intro">Archétypes de slides complètes, prêtes à dupliquer dans un deck.</p>
-      <div class="empty-state"><b>Rien pour l'instant</b><p>Ce registre se remplit à l'incrément C du chantier portail de marque.</p></div>
+      <p class="panel-lead">Ces archétypes sont des partials build_deck.py, copiables tels quels dans slides/partials/ d'un deck.</p>
+      <div class="panel-search"><input class="search-input" type="search" placeholder="Rechercher un archétype..." autocomplete="off"></div>
+      <div class="archetype-grid" data-filter-container>        <article class="archetype-card filter-item" data-search="couverture slide d'ouverture, logo, titre de l'offre, visuel plein cadre. cover">
+          <div class="archetype-head">
+            <h3>Couverture</h3>
+            <span class="usage-badge">27 slides · 23 decks</span>
+          </div>
+          <p class="archetype-represente">Slide d&#x27;ouverture, logo, titre de l&#x27;offre, visuel plein cadre.</p>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 720;"><iframe class="preview-frame" width="1280" height="720" loading="lazy" title="Aperçu : Couverture" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; }&lt;/style&gt;
+
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:720px;&quot;&gt;&lt;!-- Archétype : couverture (cover)
+     Rôle : première diapositive du deck, logo, titre de l&#x27;offre et sous-titre sur fond image.
+     Distillé de : dat, présent (sous une forme ou une autre) dans 23 des 23 decks.
+     À adapter : data-chapter (identifiant unique dans le deck), le texte de cover-title,
+     cover-subtitle, et l&#x27;image cover-right (remplacer par un visuel propre à l&#x27;offre).
+     La classe &quot;cover active&quot; est volontaire, elle marque la première diapositive visible. --&gt;
+&lt;section class=&quot;slide cover active&quot; data-chapter=&quot;cover&quot;&gt;
+      &lt;div class=&quot;cover-layout&quot;&gt;
+        &lt;div class=&quot;cover-left&quot;&gt;
+          &lt;div class=&quot;cover-logo&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+          &lt;/div&gt;
+          &lt;h1 class=&quot;cover-title&quot;&gt;
+            Titre de&lt;br&gt;l&#x27;offre
+          &lt;/h1&gt;
+          &lt;p class=&quot;cover-subtitle&quot;&gt;Une phrase qui explique en une ligne ce que l&#x27;offre apporte et pour qui&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;cover-right&quot;&gt;
+          &lt;img class=&quot;cover-image&quot; src=&quot;https://ayming-france.github.io/assets/imagery/stock/unsplash-1600880292203-757bb62b4baf-1000x1200.jpg&quot; alt=&quot;Business meeting&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="archetype-file" data-copy-value="&lt;!-- Archétype : couverture (cover)
+     Rôle : première diapositive du deck, logo, titre de l&#x27;offre et sous-titre sur fond image.
+     Distillé de : dat, présent (sous une forme ou une autre) dans 23 des 23 decks.
+     À adapter : data-chapter (identifiant unique dans le deck), le texte de cover-title,
+     cover-subtitle, et l&#x27;image cover-right (remplacer par un visuel propre à l&#x27;offre).
+     La classe &quot;cover active&quot; est volontaire, elle marque la première diapositive visible. --&gt;
+&lt;section class=&quot;slide cover active&quot; data-chapter=&quot;cover&quot;&gt;
+      &lt;div class=&quot;cover-layout&quot;&gt;
+        &lt;div class=&quot;cover-left&quot;&gt;
+          &lt;div class=&quot;cover-logo&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+          &lt;/div&gt;
+          &lt;h1 class=&quot;cover-title&quot;&gt;
+            Titre de&lt;br&gt;l&#x27;offre
+          &lt;/h1&gt;
+          &lt;p class=&quot;cover-subtitle&quot;&gt;Une phrase qui explique en une ligne ce que l&#x27;offre apporte et pour qui&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;cover-right&quot;&gt;
+          &lt;img class=&quot;cover-image&quot; src=&quot;https://ayming-france.github.io/assets/imagery/stock/unsplash-1600880292203-757bb62b4baf-1000x1200.jpg&quot; alt=&quot;Business meeting&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+">
+            <span class="copy-feedback" hidden>Copié</span>
+            <code>.claude/skills/slides/templates/archetypes/archetype-cover.html</code>
+            <button type="button" class="btn-copy">Copier le partial</button>
+          </div>
+        </article>
+        <article class="archetype-card filter-item" data-search="introduction slide intro-hero avec le pitch et les cartes de chiffres cles. introduction">
+          <div class="archetype-head">
+            <h3>Introduction</h3>
+            <span class="usage-badge">24 slides · 21 decks</span>
+          </div>
+          <p class="archetype-represente">Slide intro-hero avec le pitch et les cartes de chiffres clés.</p>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 720;"><iframe class="preview-frame" width="1280" height="720" loading="lazy" title="Aperçu : Introduction" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; }&lt;/style&gt;
+
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:720px;&quot;&gt;&lt;!-- Archétype : introduction (intro-hero avec cartes de statistiques)
+     Rôle : bascule entre le problème et la solution, collage photo animé, titre flottant
+     et trois chiffres clés sous forme de cartes.
+     Distillé de : dat, présent dans 21 des 23 decks.
+     À adapter : data-chapter, les 5 images du collage (dupliquées deux fois pour la boucle
+     visuelle, garder les deux jeux identiques), intro-offer-title, les trois intro-stat-card
+     et le texte intro-pitch. --&gt;
+&lt;section class=&quot;slide slide-introduction active&quot; data-chapter=&quot;introduction&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;div class=&quot;intro-hero&quot;&gt;
+          &lt;div class=&quot;intro-hero-collage&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/hub-cards/at-mp-1.jpg&quot; alt=&quot;Illustration 1&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/dat/taux-at-6.jpg&quot; alt=&quot;Illustration 2&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/dat/at-mp-5.jpg&quot; alt=&quot;Illustration 3&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/arrets-longue-duree/at-mp-4.jpg&quot; alt=&quot;Illustration 4&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/dat/at-mp-2.jpg&quot; alt=&quot;Illustration 5&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/hub-cards/at-mp-1.jpg&quot; alt=&quot;Illustration 1&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/dat/taux-at-6.jpg&quot; alt=&quot;Illustration 2&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/dat/at-mp-5.jpg&quot; alt=&quot;Illustration 3&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/arrets-longue-duree/at-mp-4.jpg&quot; alt=&quot;Illustration 4&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/dat/at-mp-2.jpg&quot; alt=&quot;Illustration 5&quot;&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;intro-hero-logo&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;intro-title-band&quot;&gt;
+            &lt;h2 class=&quot;intro-offer-title&quot;&gt;Titre de l&#x27;offre&lt;/h2&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;intro-stats&quot;&gt;
+            &lt;div class=&quot;intro-stat-card&quot;&gt;
+              &lt;div class=&quot;intro-stat-number&quot;&gt;1 200+&lt;/div&gt;
+              &lt;div class=&quot;intro-stat-label&quot;&gt;Dossiers traités par an&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;intro-stat-card&quot;&gt;
+              &lt;div class=&quot;intro-stat-number&quot;&gt;300 000+&lt;/div&gt;
+              &lt;div class=&quot;intro-stat-label&quot;&gt;Salariés couverts&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;intro-stat-card&quot;&gt;
+              &lt;div class=&quot;intro-stat-number&quot;&gt;15+ ans&lt;/div&gt;
+              &lt;div class=&quot;intro-stat-label&quot;&gt;D&#x27;expertise sur le sujet&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;intro-content&quot;&gt;
+          &lt;p class=&quot;intro-pitch&quot;&gt;Une phrase qui pose la promesse de l&#x27;offre, ce qu&#x27;elle sécurise et le résultat mesurable attendu pour le client.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="archetype-file" data-copy-value="&lt;!-- Archétype : introduction (intro-hero avec cartes de statistiques)
+     Rôle : bascule entre le problème et la solution, collage photo animé, titre flottant
+     et trois chiffres clés sous forme de cartes.
+     Distillé de : dat, présent dans 21 des 23 decks.
+     À adapter : data-chapter, les 5 images du collage (dupliquées deux fois pour la boucle
+     visuelle, garder les deux jeux identiques), intro-offer-title, les trois intro-stat-card
+     et le texte intro-pitch. --&gt;
+&lt;section class=&quot;slide slide-introduction&quot; data-chapter=&quot;introduction&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;div class=&quot;intro-hero&quot;&gt;
+          &lt;div class=&quot;intro-hero-collage&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/hub-cards/at-mp-1.jpg&quot; alt=&quot;Illustration 1&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/dat/taux-at-6.jpg&quot; alt=&quot;Illustration 2&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/dat/at-mp-5.jpg&quot; alt=&quot;Illustration 3&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/arrets-longue-duree/at-mp-4.jpg&quot; alt=&quot;Illustration 4&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/dat/at-mp-2.jpg&quot; alt=&quot;Illustration 5&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/hub-cards/at-mp-1.jpg&quot; alt=&quot;Illustration 1&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/dat/taux-at-6.jpg&quot; alt=&quot;Illustration 2&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/dat/at-mp-5.jpg&quot; alt=&quot;Illustration 3&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/arrets-longue-duree/at-mp-4.jpg&quot; alt=&quot;Illustration 4&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/dat/at-mp-2.jpg&quot; alt=&quot;Illustration 5&quot;&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;intro-hero-logo&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;intro-title-band&quot;&gt;
+            &lt;h2 class=&quot;intro-offer-title&quot;&gt;Titre de l&#x27;offre&lt;/h2&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;intro-stats&quot;&gt;
+            &lt;div class=&quot;intro-stat-card&quot;&gt;
+              &lt;div class=&quot;intro-stat-number&quot;&gt;1 200+&lt;/div&gt;
+              &lt;div class=&quot;intro-stat-label&quot;&gt;Dossiers traités par an&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;intro-stat-card&quot;&gt;
+              &lt;div class=&quot;intro-stat-number&quot;&gt;300 000+&lt;/div&gt;
+              &lt;div class=&quot;intro-stat-label&quot;&gt;Salariés couverts&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;intro-stat-card&quot;&gt;
+              &lt;div class=&quot;intro-stat-number&quot;&gt;15+ ans&lt;/div&gt;
+              &lt;div class=&quot;intro-stat-label&quot;&gt;D&#x27;expertise sur le sujet&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;intro-content&quot;&gt;
+          &lt;p class=&quot;intro-pitch&quot;&gt;Une phrase qui pose la promesse de l&#x27;offre, ce qu&#x27;elle sécurise et le résultat mesurable attendu pour le client.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+">
+            <span class="copy-feedback" hidden>Copié</span>
+            <code>.claude/skills/slides/templates/archetypes/archetype-introduction.html</code>
+            <button type="button" class="btn-copy">Copier le partial</button>
+          </div>
+        </article>
+        <article class="archetype-card filter-item" data-search="insight marche le fait de marche qui installe le probleme, un chiffre fort et son explication. insight">
+          <div class="archetype-head">
+            <h3>Insight marché</h3>
+            <span class="usage-badge">25 slides · 22 decks</span>
+          </div>
+          <p class="archetype-represente">Le fait de marché qui installe le problème, un chiffre fort et son explication.</p>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 720;"><iframe class="preview-frame" width="1280" height="720" loading="lazy" title="Aperçu : Insight marché" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; }&lt;/style&gt;
+&lt;script src=&quot;https://ayming-france.github.io/assets/engine/lucide.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:720px;&quot;&gt;&lt;!-- Archétype : insight (constat de marché)
+     Rôle : pose le problème avec un texte argumenté à gauche et une image à droite,
+     deux badges flottants qui portent chacun un chiffre clé.
+     Distillé de : dat, présent dans 22 des 23 decks.
+     À adapter : data-chapter, le slide-title, les trois content-paragraph (le dernier,
+     en classe highlight, porte la conviction Ayming), l&#x27;image et les deux floating-badge. --&gt;
+&lt;section class=&quot;slide active&quot; data-chapter=&quot;insight&quot;&gt;
+      &lt;div class=&quot;layout-split&quot;&gt;
+        &lt;div class=&quot;content-side&quot;&gt;
+          &lt;h1 class=&quot;slide-title&quot;&gt;
+            Titre de la slide&lt;br&gt;
+            en une ligne ou deux
+          &lt;/h1&gt;
+
+          &lt;p class=&quot;content-paragraph&quot;&gt;
+            La plupart des organisations traitent ce sujet comme une &lt;strong&gt;tâche administrative&lt;/strong&gt;. C&#x27;est en réalité un enjeu qui peut peser sur leurs résultats pendant des années.
+          &lt;/p&gt;
+
+          &lt;p class=&quot;content-paragraph&quot;&gt;
+            Le processus se fragmente entre plusieurs intervenants et plusieurs outils. Chacun avance de son côté, et des informations initiales incomplètes fragilisent le dossier en cas de contrôle.
+          &lt;/p&gt;
+
+          &lt;p class=&quot;content-paragraph highlight&quot;&gt;
+            Chez Ayming, nous croyons que chaque dossier mérite une expertise dédiée dès la première minute.
+          &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;visual-side&quot;&gt;
+          &lt;div class=&quot;image-container&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/hub-cards/At-tiers-5.jpg&quot; alt=&quot;Illustration du constat&quot;&gt;
+            &lt;div class=&quot;floating-badge top-right&quot;&gt;
+              &lt;span class=&quot;badge-number&quot;&gt;87 %&lt;/span&gt; des dossiers concernés
+            &lt;/div&gt;
+            &lt;div class=&quot;floating-badge bottom-left&quot;&gt;
+              &lt;i data-lucide=&quot;circle-check-big&quot;&gt;&lt;/i&gt;
+              +50 % de démarches abouties
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+&lt;script&gt;if (window.lucide) { lucide.createIcons(); }&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="archetype-file" data-copy-value="&lt;!-- Archétype : insight (constat de marché)
+     Rôle : pose le problème avec un texte argumenté à gauche et une image à droite,
+     deux badges flottants qui portent chacun un chiffre clé.
+     Distillé de : dat, présent dans 22 des 23 decks.
+     À adapter : data-chapter, le slide-title, les trois content-paragraph (le dernier,
+     en classe highlight, porte la conviction Ayming), l&#x27;image et les deux floating-badge. --&gt;
+&lt;section class=&quot;slide&quot; data-chapter=&quot;insight&quot;&gt;
+      &lt;div class=&quot;layout-split&quot;&gt;
+        &lt;div class=&quot;content-side&quot;&gt;
+          &lt;h1 class=&quot;slide-title&quot;&gt;
+            Titre de la slide&lt;br&gt;
+            en une ligne ou deux
+          &lt;/h1&gt;
+
+          &lt;p class=&quot;content-paragraph&quot;&gt;
+            La plupart des organisations traitent ce sujet comme une &lt;strong&gt;tâche administrative&lt;/strong&gt;. C&#x27;est en réalité un enjeu qui peut peser sur leurs résultats pendant des années.
+          &lt;/p&gt;
+
+          &lt;p class=&quot;content-paragraph&quot;&gt;
+            Le processus se fragmente entre plusieurs intervenants et plusieurs outils. Chacun avance de son côté, et des informations initiales incomplètes fragilisent le dossier en cas de contrôle.
+          &lt;/p&gt;
+
+          &lt;p class=&quot;content-paragraph highlight&quot;&gt;
+            Chez Ayming, nous croyons que chaque dossier mérite une expertise dédiée dès la première minute.
+          &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;visual-side&quot;&gt;
+          &lt;div class=&quot;image-container&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/hub-cards/At-tiers-5.jpg&quot; alt=&quot;Illustration du constat&quot;&gt;
+            &lt;div class=&quot;floating-badge top-right&quot;&gt;
+              &lt;span class=&quot;badge-number&quot;&gt;87 %&lt;/span&gt; des dossiers concernés
+            &lt;/div&gt;
+            &lt;div class=&quot;floating-badge bottom-left&quot;&gt;
+              &lt;i data-lucide=&quot;circle-check-big&quot;&gt;&lt;/i&gt;
+              +50 % de démarches abouties
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+">
+            <span class="copy-feedback" hidden>Copié</span>
+            <code>.claude/skills/slides/templates/archetypes/archetype-insight.html</code>
+            <button type="button" class="btn-copy">Copier le partial</button>
+          </div>
+        </article>
+        <article class="archetype-card filter-item" data-search="valeur en detail approfondissement d'un pilier de valeur, texte a gauche, visuel a droite. value-detail">
+          <div class="archetype-head">
+            <h3>Valeur en détail</h3>
+            <span class="usage-badge">90 slides · 21 decks</span>
+          </div>
+          <p class="archetype-represente">Approfondissement d&#x27;un pilier de valeur, texte à gauche, visuel à droite.</p>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 720;"><iframe class="preview-frame" width="1280" height="720" loading="lazy" title="Aperçu : Valeur en détail" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; }&lt;/style&gt;
+&lt;script src=&quot;https://ayming-france.github.io/assets/engine/lucide.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:720px;&quot;&gt;&lt;!-- Archétype : approfondissement (value-detail-layout avec visuel latéral)
+     Rôle : détaille un des attributs core de l&#x27;offre, liste à puces à gauche, image à droite.
+     Une offre répète cette diapositive une fois par attribut core (3 à 5 fois en général).
+     Distillé de : dat, présent dans 21 des 23 decks.
+     À adapter : data-chapter, le titre h2, les 2 à 4 éléments de la value-detail-list
+     et l&#x27;image de la value-detail-visual. --&gt;
+&lt;section class=&quot;slide active&quot; data-chapter=&quot;valeur-1&quot;&gt;
+      &lt;div class=&quot;value-detail-layout&quot;&gt;
+        &lt;div class=&quot;value-detail-content&quot;&gt;
+          &lt;h2&gt;Titre de l&#x27;attribut détaillé&lt;/h2&gt;
+
+          &lt;ul class=&quot;value-detail-list&quot;&gt;
+            &lt;li&gt;
+              &lt;i data-lucide=&quot;check&quot; class=&quot;check-icon&quot;&gt;&lt;/i&gt;
+              Premier point qui explique comment l&#x27;attribut se traduit concrètement pour le client
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;i data-lucide=&quot;check&quot; class=&quot;check-icon&quot;&gt;&lt;/i&gt;
+              Deuxième point, centré sur un bénéfice mesurable plutôt que sur un outil
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;i data-lucide=&quot;check&quot; class=&quot;check-icon&quot;&gt;&lt;/i&gt;
+              Troisième point, qui écarte un risque ou une charge que le client portait seul
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;value-detail-visual&quot;&gt;
+          &lt;div class=&quot;value-image-container&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/hub-cards/at-mp-1.jpg&quot; alt=&quot;Illustration de l&#x27;attribut&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+&lt;script&gt;if (window.lucide) { lucide.createIcons(); }&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="archetype-file" data-copy-value="&lt;!-- Archétype : approfondissement (value-detail-layout avec visuel latéral)
+     Rôle : détaille un des attributs core de l&#x27;offre, liste à puces à gauche, image à droite.
+     Une offre répète cette diapositive une fois par attribut core (3 à 5 fois en général).
+     Distillé de : dat, présent dans 21 des 23 decks.
+     À adapter : data-chapter, le titre h2, les 2 à 4 éléments de la value-detail-list
+     et l&#x27;image de la value-detail-visual. --&gt;
+&lt;section class=&quot;slide&quot; data-chapter=&quot;valeur-1&quot;&gt;
+      &lt;div class=&quot;value-detail-layout&quot;&gt;
+        &lt;div class=&quot;value-detail-content&quot;&gt;
+          &lt;h2&gt;Titre de l&#x27;attribut détaillé&lt;/h2&gt;
+
+          &lt;ul class=&quot;value-detail-list&quot;&gt;
+            &lt;li&gt;
+              &lt;i data-lucide=&quot;check&quot; class=&quot;check-icon&quot;&gt;&lt;/i&gt;
+              Premier point qui explique comment l&#x27;attribut se traduit concrètement pour le client
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;i data-lucide=&quot;check&quot; class=&quot;check-icon&quot;&gt;&lt;/i&gt;
+              Deuxième point, centré sur un bénéfice mesurable plutôt que sur un outil
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;i data-lucide=&quot;check&quot; class=&quot;check-icon&quot;&gt;&lt;/i&gt;
+              Troisième point, qui écarte un risque ou une charge que le client portait seul
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;value-detail-visual&quot;&gt;
+          &lt;div class=&quot;value-image-container&quot;&gt;
+            &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/hub-cards/at-mp-1.jpg&quot; alt=&quot;Illustration de l&#x27;attribut&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+">
+            <span class="copy-feedback" hidden>Copié</span>
+            <code>.claude/skills/slides/templates/archetypes/archetype-value-detail.html</code>
+            <button type="button" class="btn-copy">Copier le partial</button>
+          </div>
+        </article>
+        <article class="archetype-card filter-item" data-search="grille de caracteristiques grille de 5 caracteristiques avec icone, titre et description. feature-grid">
+          <div class="archetype-head">
+            <h3>Grille de caractéristiques</h3>
+            <span class="usage-badge">45 slides · 22 decks</span>
+          </div>
+          <p class="archetype-represente">Grille de 5 caractéristiques avec icône, titre et description.</p>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 720;"><iframe class="preview-frame" width="1280" height="720" loading="lazy" title="Aperçu : Grille de caractéristiques" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; }&lt;/style&gt;
+&lt;script src=&quot;https://ayming-france.github.io/assets/engine/lucide.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:720px;&quot;&gt;&lt;!-- Archétype : grille d&#x27;attributs (feature-grid-5)
+     Rôle : la diapositive &quot;Ce qu&#x27;Ayming vous apporte&quot;, vue d&#x27;ensemble des attributs core
+     avant que chacun ne soit détaillé sur sa propre diapositive value-detail.
+     Distillé de : dat, présent dans 22 des 23 decks (formes feature-grid-3 à feature-grid-6
+     selon le nombre d&#x27;attributs, ici la forme à 5).
+     À adapter : data-chapter, le slide-title, et les 5 feature-item (icône Lucide, titre
+     h4, phrase courte). Retirer un feature-item et passer en feature-grid-4 pour 4 attributs. --&gt;
+&lt;section class=&quot;slide active&quot; data-chapter=&quot;valeur&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;h1 class=&quot;slide-title&quot;&gt;
+          Ce qu&#x27;Ayming vous apporte&lt;br&gt;
+          de différent
+        &lt;/h1&gt;
+
+        &lt;div class=&quot;feature-grid-5&quot;&gt;
+          &lt;div class=&quot;feature-item&quot;&gt;
+            &lt;div class=&quot;feature-icon&quot;&gt;
+              &lt;i data-lucide=&quot;file-check&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-content&quot;&gt;
+              &lt;h4&gt;Premier attribut&lt;/h4&gt;
+              &lt;p&gt;Bénéfice concret en une phrase courte&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;feature-item&quot;&gt;
+            &lt;div class=&quot;feature-icon&quot;&gt;
+              &lt;i data-lucide=&quot;timer&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-content&quot;&gt;
+              &lt;h4&gt;Deuxième attribut&lt;/h4&gt;
+              &lt;p&gt;Bénéfice concret en une phrase courte&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;feature-item&quot;&gt;
+            &lt;div class=&quot;feature-icon&quot;&gt;
+              &lt;i data-lucide=&quot;shield-check&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-content&quot;&gt;
+              &lt;h4&gt;Troisième attribut&lt;/h4&gt;
+              &lt;p&gt;Bénéfice concret en une phrase courte&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;feature-item&quot;&gt;
+            &lt;div class=&quot;feature-icon&quot;&gt;
+              &lt;i data-lucide=&quot;users&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-content&quot;&gt;
+              &lt;h4&gt;Quatrième attribut&lt;/h4&gt;
+              &lt;p&gt;Bénéfice concret en une phrase courte&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;feature-item&quot;&gt;
+            &lt;div class=&quot;feature-icon&quot;&gt;
+              &lt;i data-lucide=&quot;bar-chart-3&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-content&quot;&gt;
+              &lt;h4&gt;Cinquième attribut&lt;/h4&gt;
+              &lt;p&gt;Bénéfice concret en une phrase courte&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+&lt;script&gt;if (window.lucide) { lucide.createIcons(); }&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="archetype-file" data-copy-value="&lt;!-- Archétype : grille d&#x27;attributs (feature-grid-5)
+     Rôle : la diapositive &quot;Ce qu&#x27;Ayming vous apporte&quot;, vue d&#x27;ensemble des attributs core
+     avant que chacun ne soit détaillé sur sa propre diapositive value-detail.
+     Distillé de : dat, présent dans 22 des 23 decks (formes feature-grid-3 à feature-grid-6
+     selon le nombre d&#x27;attributs, ici la forme à 5).
+     À adapter : data-chapter, le slide-title, et les 5 feature-item (icône Lucide, titre
+     h4, phrase courte). Retirer un feature-item et passer en feature-grid-4 pour 4 attributs. --&gt;
+&lt;section class=&quot;slide&quot; data-chapter=&quot;valeur&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;h1 class=&quot;slide-title&quot;&gt;
+          Ce qu&#x27;Ayming vous apporte&lt;br&gt;
+          de différent
+        &lt;/h1&gt;
+
+        &lt;div class=&quot;feature-grid-5&quot;&gt;
+          &lt;div class=&quot;feature-item&quot;&gt;
+            &lt;div class=&quot;feature-icon&quot;&gt;
+              &lt;i data-lucide=&quot;file-check&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-content&quot;&gt;
+              &lt;h4&gt;Premier attribut&lt;/h4&gt;
+              &lt;p&gt;Bénéfice concret en une phrase courte&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;feature-item&quot;&gt;
+            &lt;div class=&quot;feature-icon&quot;&gt;
+              &lt;i data-lucide=&quot;timer&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-content&quot;&gt;
+              &lt;h4&gt;Deuxième attribut&lt;/h4&gt;
+              &lt;p&gt;Bénéfice concret en une phrase courte&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;feature-item&quot;&gt;
+            &lt;div class=&quot;feature-icon&quot;&gt;
+              &lt;i data-lucide=&quot;shield-check&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-content&quot;&gt;
+              &lt;h4&gt;Troisième attribut&lt;/h4&gt;
+              &lt;p&gt;Bénéfice concret en une phrase courte&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;feature-item&quot;&gt;
+            &lt;div class=&quot;feature-icon&quot;&gt;
+              &lt;i data-lucide=&quot;users&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-content&quot;&gt;
+              &lt;h4&gt;Quatrième attribut&lt;/h4&gt;
+              &lt;p&gt;Bénéfice concret en une phrase courte&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;feature-item&quot;&gt;
+            &lt;div class=&quot;feature-icon&quot;&gt;
+              &lt;i data-lucide=&quot;bar-chart-3&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-content&quot;&gt;
+              &lt;h4&gt;Cinquième attribut&lt;/h4&gt;
+              &lt;p&gt;Bénéfice concret en une phrase courte&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+">
+            <span class="copy-feedback" hidden>Copié</span>
+            <code>.claude/skills/slides/templates/archetypes/archetype-feature-grid.html</code>
+            <button type="button" class="btn-copy">Copier le partial</button>
+          </div>
+        </article>
+        <article class="archetype-card filter-item" data-search="deroule de mission etapes numerotees de la mission sur une frise horizontale. process-timeline">
+          <div class="archetype-head">
+            <h3>Déroulé de mission</h3>
+            <span class="usage-badge">21 slides · 19 decks</span>
+          </div>
+          <p class="archetype-represente">Étapes numérotées de la mission sur une frise horizontale.</p>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 720;"><iframe class="preview-frame" width="1280" height="720" loading="lazy" title="Aperçu : Déroulé de mission" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; }&lt;/style&gt;
+
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:720px;&quot;&gt;&lt;!-- Archétype : chronologie du processus (process-timeline-4)
+     Rôle : les étapes numérotées pour démarrer la mission, en général juste avant la
+     diapositive de clôture, avec une durée indicative par étape.
+     Distillé de : collecte-arrets, présent dans 19 des 23 decks (formes à 3 ou 4 étapes).
+     À adapter : data-chapter, le slide-title, et les process-step (step-title, step-duration,
+     step-description). Retirer un process-step et son step-arrow pour une forme à 3 étapes. --&gt;
+&lt;section class=&quot;slide active&quot; data-chapter=&quot;processus&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;h1 class=&quot;slide-title&quot;&gt;Prochaine étape&lt;/h1&gt;
+
+        &lt;div class=&quot;process-timeline-4&quot;&gt;
+          &lt;div class=&quot;process-step&quot;&gt;
+            &lt;div class=&quot;step-number&quot;&gt;1&lt;/div&gt;
+            &lt;h3 class=&quot;step-title&quot;&gt;Diagnostic&lt;/h3&gt;
+            &lt;p class=&quot;step-duration&quot;&gt;2 semaines&lt;/p&gt;
+            &lt;p class=&quot;step-description&quot;&gt;Analyse du fonctionnement actuel et identification des points de perte&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;span class=&quot;step-arrow&quot;&gt;&amp;rarr;&lt;/span&gt;
+
+          &lt;div class=&quot;process-step&quot;&gt;
+            &lt;div class=&quot;step-number&quot;&gt;2&lt;/div&gt;
+            &lt;h3 class=&quot;step-title&quot;&gt;Proposition sur mesure&lt;/h3&gt;
+            &lt;p class=&quot;step-duration&quot;&gt;+1 semaine&lt;/p&gt;
+            &lt;p class=&quot;step-description&quot;&gt;Modèle d&#x27;accompagnement adapté à votre organisation et à vos volumes&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;span class=&quot;step-arrow&quot;&gt;&amp;rarr;&lt;/span&gt;
+
+          &lt;div class=&quot;process-step&quot;&gt;
+            &lt;div class=&quot;step-number&quot;&gt;3&lt;/div&gt;
+            &lt;h3 class=&quot;step-title&quot;&gt;Pilote&lt;/h3&gt;
+            &lt;p class=&quot;step-duration&quot;&gt;3 mois&lt;/p&gt;
+            &lt;p class=&quot;step-description&quot;&gt;Démarrage sur un périmètre restreint pour démontrer la valeur&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;span class=&quot;step-arrow&quot;&gt;&amp;rarr;&lt;/span&gt;
+
+          &lt;div class=&quot;process-step&quot;&gt;
+            &lt;div class=&quot;step-number&quot;&gt;4&lt;/div&gt;
+            &lt;h3 class=&quot;step-title&quot;&gt;Déploiement complet&lt;/h3&gt;
+            &lt;p class=&quot;step-duration&quot;&gt;Selon planning&lt;/p&gt;
+            &lt;p class=&quot;step-description&quot;&gt;Extension à l&#x27;ensemble des sites et des populations concernées&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="archetype-file" data-copy-value="&lt;!-- Archétype : chronologie du processus (process-timeline-4)
+     Rôle : les étapes numérotées pour démarrer la mission, en général juste avant la
+     diapositive de clôture, avec une durée indicative par étape.
+     Distillé de : collecte-arrets, présent dans 19 des 23 decks (formes à 3 ou 4 étapes).
+     À adapter : data-chapter, le slide-title, et les process-step (step-title, step-duration,
+     step-description). Retirer un process-step et son step-arrow pour une forme à 3 étapes. --&gt;
+&lt;section class=&quot;slide&quot; data-chapter=&quot;processus&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;h1 class=&quot;slide-title&quot;&gt;Prochaine étape&lt;/h1&gt;
+
+        &lt;div class=&quot;process-timeline-4&quot;&gt;
+          &lt;div class=&quot;process-step&quot;&gt;
+            &lt;div class=&quot;step-number&quot;&gt;1&lt;/div&gt;
+            &lt;h3 class=&quot;step-title&quot;&gt;Diagnostic&lt;/h3&gt;
+            &lt;p class=&quot;step-duration&quot;&gt;2 semaines&lt;/p&gt;
+            &lt;p class=&quot;step-description&quot;&gt;Analyse du fonctionnement actuel et identification des points de perte&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;span class=&quot;step-arrow&quot;&gt;&amp;rarr;&lt;/span&gt;
+
+          &lt;div class=&quot;process-step&quot;&gt;
+            &lt;div class=&quot;step-number&quot;&gt;2&lt;/div&gt;
+            &lt;h3 class=&quot;step-title&quot;&gt;Proposition sur mesure&lt;/h3&gt;
+            &lt;p class=&quot;step-duration&quot;&gt;+1 semaine&lt;/p&gt;
+            &lt;p class=&quot;step-description&quot;&gt;Modèle d&#x27;accompagnement adapté à votre organisation et à vos volumes&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;span class=&quot;step-arrow&quot;&gt;&amp;rarr;&lt;/span&gt;
+
+          &lt;div class=&quot;process-step&quot;&gt;
+            &lt;div class=&quot;step-number&quot;&gt;3&lt;/div&gt;
+            &lt;h3 class=&quot;step-title&quot;&gt;Pilote&lt;/h3&gt;
+            &lt;p class=&quot;step-duration&quot;&gt;3 mois&lt;/p&gt;
+            &lt;p class=&quot;step-description&quot;&gt;Démarrage sur un périmètre restreint pour démontrer la valeur&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;span class=&quot;step-arrow&quot;&gt;&amp;rarr;&lt;/span&gt;
+
+          &lt;div class=&quot;process-step&quot;&gt;
+            &lt;div class=&quot;step-number&quot;&gt;4&lt;/div&gt;
+            &lt;h3 class=&quot;step-title&quot;&gt;Déploiement complet&lt;/h3&gt;
+            &lt;p class=&quot;step-duration&quot;&gt;Selon planning&lt;/p&gt;
+            &lt;p class=&quot;step-description&quot;&gt;Extension à l&#x27;ensemble des sites et des populations concernées&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+">
+            <span class="copy-feedback" hidden>Copié</span>
+            <code>.claude/skills/slides/templates/archetypes/archetype-process-timeline.html</code>
+            <button type="button" class="btn-copy">Copier le partial</button>
+          </div>
+        </article>
+        <article class="archetype-card filter-item" data-search="tableau comparatif comparaison avant/apres ou nous/eux en tableau. comparison-table">
+          <div class="archetype-head">
+            <h3>Tableau comparatif</h3>
+            <span class="usage-badge">18 slides · 14 decks</span>
+          </div>
+          <p class="archetype-represente">Comparaison avant/après ou nous/eux en tableau.</p>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 720;"><iframe class="preview-frame" width="1280" height="720" loading="lazy" title="Aperçu : Tableau comparatif" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; }&lt;/style&gt;
+
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:720px;&quot;&gt;&lt;!-- Archétype : tableau comparatif (avant/après ou nous/eux)
+     Rôle : oppose plusieurs approches existantes, avantages puis limites de chacune,
+     pour amener la solution proposée par l&#x27;offre.
+     Distillé de : collecte-arrets, présent dans 14 des 23 decks.
+     À adapter : data-chapter, le slide-title, et les lignes du tableau (une approche par
+     ligne, avantages et limites propres au sujet de l&#x27;offre). Garder 3 lignes maximum
+     pour tenir sur la diapositive. --&gt;
+&lt;section class=&quot;slide active&quot; data-chapter=&quot;comparaison&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;h1 class=&quot;slide-title&quot;&gt;
+          Chaque approche a ses limites
+        &lt;/h1&gt;
+
+        &lt;div class=&quot;table-container&quot;&gt;
+          &lt;table class=&quot;comparison-table&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Approche&lt;/th&gt;
+                &lt;th&gt;Avantages&lt;/th&gt;
+                &lt;th&gt;Limites&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Gestion manuelle&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Pas de coût externe&lt;/li&gt;
+                    &lt;li&gt;Processus connu des équipes&lt;/li&gt;
+                    &lt;li&gt;Flexibilité au cas par cas&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Dispersion des informations&lt;/li&gt;
+                    &lt;li&gt;Aucun contrôle systématique&lt;/li&gt;
+                    &lt;li&gt;Relances manuelles chronophages&lt;/li&gt;
+                    &lt;li&gt;Erreurs de saisie fréquentes&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Outil interne&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Portail intégré aux autres outils&lt;/li&gt;
+                    &lt;li&gt;Centralisation des données&lt;/li&gt;
+                    &lt;li&gt;Pas de nouvel abonnement&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Couvre le suivi, pas le fond&lt;/li&gt;
+                    &lt;li&gt;Pas de contrôle documentaire&lt;/li&gt;
+                    &lt;li&gt;Pas de détection des anomalies&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Prestataire généraliste&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Connaissance des cas courants&lt;/li&gt;
+                    &lt;li&gt;Traitement délégué&lt;/li&gt;
+                    &lt;li&gt;Peu de changement à gérer&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Surcharge en période de pointe&lt;/li&gt;
+                    &lt;li&gt;Suivi peu réactif&lt;/li&gt;
+                    &lt;li&gt;Pas de vision consolidée&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="archetype-file" data-copy-value="&lt;!-- Archétype : tableau comparatif (avant/après ou nous/eux)
+     Rôle : oppose plusieurs approches existantes, avantages puis limites de chacune,
+     pour amener la solution proposée par l&#x27;offre.
+     Distillé de : collecte-arrets, présent dans 14 des 23 decks.
+     À adapter : data-chapter, le slide-title, et les lignes du tableau (une approche par
+     ligne, avantages et limites propres au sujet de l&#x27;offre). Garder 3 lignes maximum
+     pour tenir sur la diapositive. --&gt;
+&lt;section class=&quot;slide&quot; data-chapter=&quot;comparaison&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;h1 class=&quot;slide-title&quot;&gt;
+          Chaque approche a ses limites
+        &lt;/h1&gt;
+
+        &lt;div class=&quot;table-container&quot;&gt;
+          &lt;table class=&quot;comparison-table&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Approche&lt;/th&gt;
+                &lt;th&gt;Avantages&lt;/th&gt;
+                &lt;th&gt;Limites&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Gestion manuelle&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Pas de coût externe&lt;/li&gt;
+                    &lt;li&gt;Processus connu des équipes&lt;/li&gt;
+                    &lt;li&gt;Flexibilité au cas par cas&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Dispersion des informations&lt;/li&gt;
+                    &lt;li&gt;Aucun contrôle systématique&lt;/li&gt;
+                    &lt;li&gt;Relances manuelles chronophages&lt;/li&gt;
+                    &lt;li&gt;Erreurs de saisie fréquentes&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Outil interne&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Portail intégré aux autres outils&lt;/li&gt;
+                    &lt;li&gt;Centralisation des données&lt;/li&gt;
+                    &lt;li&gt;Pas de nouvel abonnement&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Couvre le suivi, pas le fond&lt;/li&gt;
+                    &lt;li&gt;Pas de contrôle documentaire&lt;/li&gt;
+                    &lt;li&gt;Pas de détection des anomalies&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Prestataire généraliste&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Connaissance des cas courants&lt;/li&gt;
+                    &lt;li&gt;Traitement délégué&lt;/li&gt;
+                    &lt;li&gt;Peu de changement à gérer&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;Surcharge en période de pointe&lt;/li&gt;
+                    &lt;li&gt;Suivi peu réactif&lt;/li&gt;
+                    &lt;li&gt;Pas de vision consolidée&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+">
+            <span class="copy-feedback" hidden>Copié</span>
+            <code>.claude/skills/slides/templates/archetypes/archetype-comparison-table.html</code>
+            <button type="button" class="btn-copy">Copier le partial</button>
+          </div>
+        </article>
+        <article class="archetype-card filter-item" data-search="temoignages grille de cartes temoignage a retournement, photo devant, citation derriere. testimonial">
+          <div class="archetype-head">
+            <h3>Témoignages</h3>
+            <span class="usage-badge">18 slides · 18 decks</span>
+          </div>
+          <p class="archetype-represente">Grille de cartes témoignage à retournement, photo devant, citation derrière.</p>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 720;"><iframe class="preview-frame" width="1280" height="720" loading="lazy" title="Aperçu : Témoignages" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; }&lt;/style&gt;
+&lt;script src=&quot;https://ayming-france.github.io/assets/engine/lucide.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:720px;&quot;&gt;&lt;!-- Archétype : témoignages (testimonial-grid, cartes qui se retournent)
+     Rôle : trois preuves client, une carte par client, la face avant montre le résultat
+     en une phrase, la face arrière la citation complète et son auteur.
+     Distillé de : dat, présent dans 18 des 23 decks.
+     À adapter : data-chapter, les trois testimonial-card (photo, logo, phrase-résultat,
+     citation, auteur, poste, lien testimonial-cta). Remplacer les visuels et logos par
+     ceux du client réel avant publication, ce sont des placeholders. --&gt;
+&lt;section class=&quot;slide active&quot; data-chapter=&quot;preuves&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;h1 class=&quot;slide-title&quot;&gt;Ils nous font confiance&lt;/h1&gt;
+
+        &lt;div class=&quot;testimonial-grid&quot;&gt;
+          &lt;div class=&quot;testimonial-card&quot;&gt;
+            &lt;div class=&quot;testimonial-card-inner&quot;&gt;
+              &lt;div class=&quot;testimonial-front&quot;&gt;
+                &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/clients/STEF-1436-x-808.jpg&quot; alt=&quot;Nom du client 1&quot;&gt;
+                &lt;p class=&quot;testimonial-title&quot;&gt;Un client améliore son pilotage du sujet&lt;/p&gt;
+                &lt;div class=&quot;testimonial-logo&quot;&gt;&lt;img src=&quot;https://ayming-france.github.io/assets/imagery/clients/STEF_logo.png&quot; alt=&quot;Nom du client 1&quot;&gt;&lt;/div&gt;
+                &lt;span class=&quot;testimonial-hint&quot;&gt;
+                  &lt;i data-lucide=&quot;refresh-cw&quot;&gt;&lt;/i&gt;
+                  Découvrir
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;testimonial-back&quot;&gt;
+                &lt;div class=&quot;testimonial-stars&quot;&gt;&lt;span class=&quot;testimonial-stars-icons&quot;&gt;★★★★★&lt;/span&gt;&lt;span class=&quot;testimonial-date&quot;&gt;Janvier 2026&lt;/span&gt;&lt;/div&gt;
+                &lt;div class=&quot;testimonial-quote-section&quot;&gt;
+                  &lt;p class=&quot;testimonial-quote&quot;&gt;En quelques mois, notre indicateur clé s&#x27;est nettement amélioré et cette tendance se maintient dans le temps. L&#x27;accompagnement d&#x27;Ayming nous a permis de structurer notre démarche.&lt;/p&gt;
+                  &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;testimonial-cta&quot;&gt;Lire la suite&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;testimonial-author&quot;&gt;
+                  &lt;span class=&quot;testimonial-name&quot;&gt;Prénom Nom&lt;/span&gt;
+                  &lt;span class=&quot;testimonial-position&quot;&gt;Fonction, Entreprise&lt;/span&gt;
+                  &lt;img class=&quot;testimonial-company-logo&quot; src=&quot;https://ayming-france.github.io/assets/imagery/clients/STEF_logo.png&quot; alt=&quot;Nom du client 1&quot;&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;testimonial-card&quot;&gt;
+            &lt;div class=&quot;testimonial-card-inner&quot;&gt;
+              &lt;div class=&quot;testimonial-front&quot;&gt;
+                &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1436-x-808.jpg&quot; alt=&quot;Nom du client 2&quot;&gt;
+                &lt;p class=&quot;testimonial-title&quot;&gt;Un client réduit son exposition sur le sujet&lt;/p&gt;
+                &lt;div class=&quot;testimonial-logo&quot;&gt;&lt;img src=&quot;https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg&quot; alt=&quot;Nom du client 2&quot;&gt;&lt;/div&gt;
+                &lt;span class=&quot;testimonial-hint&quot;&gt;
+                  &lt;i data-lucide=&quot;refresh-cw&quot;&gt;&lt;/i&gt;
+                  Découvrir
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;testimonial-back&quot;&gt;
+                &lt;div class=&quot;testimonial-stars&quot;&gt;&lt;span class=&quot;testimonial-stars-icons&quot;&gt;★★★★★&lt;/span&gt;&lt;span class=&quot;testimonial-date&quot;&gt;Mars 2025&lt;/span&gt;&lt;/div&gt;
+                &lt;div class=&quot;testimonial-quote-section&quot;&gt;
+                  &lt;p class=&quot;testimonial-quote&quot;&gt;Nous sommes pleinement satisfaits de la qualité du service fourni. L&#x27;équipe d&#x27;Ayming est composée de consultants compétents qui comprennent nos enjeux.&lt;/p&gt;
+                  &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;testimonial-cta&quot;&gt;Lire la suite&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;testimonial-author&quot;&gt;
+                  &lt;span class=&quot;testimonial-name&quot;&gt;Prénom Nom&lt;/span&gt;
+                  &lt;span class=&quot;testimonial-position&quot;&gt;Fonction, Entreprise&lt;/span&gt;
+                  &lt;img class=&quot;testimonial-company-logo&quot; src=&quot;https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg&quot; alt=&quot;Nom du client 2&quot;&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;testimonial-card&quot;&gt;
+            &lt;div class=&quot;testimonial-card-inner&quot;&gt;
+              &lt;div class=&quot;testimonial-front&quot;&gt;
+                &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/clients/Colryut-1436-x-808.jpg&quot; alt=&quot;Nom du client 3&quot;&gt;
+                &lt;p class=&quot;testimonial-title&quot;&gt;Un client sécurise ses coûts sur le sujet&lt;/p&gt;
+                &lt;div class=&quot;testimonial-logo&quot;&gt;&lt;img src=&quot;https://ayming-france.github.io/assets/imagery/clients/colruyt-logo-png-transparent-e1759137868909.png&quot; alt=&quot;Nom du client 3&quot;&gt;&lt;/div&gt;
+                &lt;span class=&quot;testimonial-hint&quot;&gt;
+                  &lt;i data-lucide=&quot;refresh-cw&quot;&gt;&lt;/i&gt;
+                  Découvrir
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;testimonial-back&quot;&gt;
+                &lt;div class=&quot;testimonial-stars&quot;&gt;&lt;span class=&quot;testimonial-stars-icons&quot;&gt;★★★★★&lt;/span&gt;&lt;span class=&quot;testimonial-date&quot;&gt;Novembre 2025&lt;/span&gt;&lt;/div&gt;
+                &lt;div class=&quot;testimonial-quote-section&quot;&gt;
+                  &lt;p class=&quot;testimonial-quote&quot;&gt;L&#x27;expertise des équipes nous a permis de structurer nos pratiques sur ce sujet. C&#x27;est un partenariat qui s&#x27;inscrit dans la durée.&lt;/p&gt;
+                  &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;testimonial-cta&quot;&gt;Lire la suite&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;testimonial-author&quot;&gt;
+                  &lt;span class=&quot;testimonial-name&quot;&gt;Prénom Nom&lt;/span&gt;
+                  &lt;span class=&quot;testimonial-position&quot;&gt;Fonction, Entreprise&lt;/span&gt;
+                  &lt;img class=&quot;testimonial-company-logo&quot; src=&quot;https://ayming-france.github.io/assets/imagery/clients/colruyt-logo-png-transparent-e1759137868909.png&quot; alt=&quot;Nom du client 3&quot;&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+&lt;script&gt;if (window.lucide) { lucide.createIcons(); }&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="archetype-file" data-copy-value="&lt;!-- Archétype : témoignages (testimonial-grid, cartes qui se retournent)
+     Rôle : trois preuves client, une carte par client, la face avant montre le résultat
+     en une phrase, la face arrière la citation complète et son auteur.
+     Distillé de : dat, présent dans 18 des 23 decks.
+     À adapter : data-chapter, les trois testimonial-card (photo, logo, phrase-résultat,
+     citation, auteur, poste, lien testimonial-cta). Remplacer les visuels et logos par
+     ceux du client réel avant publication, ce sont des placeholders. --&gt;
+&lt;section class=&quot;slide&quot; data-chapter=&quot;preuves&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;h1 class=&quot;slide-title&quot;&gt;Ils nous font confiance&lt;/h1&gt;
+
+        &lt;div class=&quot;testimonial-grid&quot;&gt;
+          &lt;div class=&quot;testimonial-card&quot;&gt;
+            &lt;div class=&quot;testimonial-card-inner&quot;&gt;
+              &lt;div class=&quot;testimonial-front&quot;&gt;
+                &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/clients/STEF-1436-x-808.jpg&quot; alt=&quot;Nom du client 1&quot;&gt;
+                &lt;p class=&quot;testimonial-title&quot;&gt;Un client améliore son pilotage du sujet&lt;/p&gt;
+                &lt;div class=&quot;testimonial-logo&quot;&gt;&lt;img src=&quot;https://ayming-france.github.io/assets/imagery/clients/STEF_logo.png&quot; alt=&quot;Nom du client 1&quot;&gt;&lt;/div&gt;
+                &lt;span class=&quot;testimonial-hint&quot;&gt;
+                  &lt;i data-lucide=&quot;refresh-cw&quot;&gt;&lt;/i&gt;
+                  Découvrir
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;testimonial-back&quot;&gt;
+                &lt;div class=&quot;testimonial-stars&quot;&gt;&lt;span class=&quot;testimonial-stars-icons&quot;&gt;★★★★★&lt;/span&gt;&lt;span class=&quot;testimonial-date&quot;&gt;Janvier 2026&lt;/span&gt;&lt;/div&gt;
+                &lt;div class=&quot;testimonial-quote-section&quot;&gt;
+                  &lt;p class=&quot;testimonial-quote&quot;&gt;En quelques mois, notre indicateur clé s&#x27;est nettement amélioré et cette tendance se maintient dans le temps. L&#x27;accompagnement d&#x27;Ayming nous a permis de structurer notre démarche.&lt;/p&gt;
+                  &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;testimonial-cta&quot;&gt;Lire la suite&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;testimonial-author&quot;&gt;
+                  &lt;span class=&quot;testimonial-name&quot;&gt;Prénom Nom&lt;/span&gt;
+                  &lt;span class=&quot;testimonial-position&quot;&gt;Fonction, Entreprise&lt;/span&gt;
+                  &lt;img class=&quot;testimonial-company-logo&quot; src=&quot;https://ayming-france.github.io/assets/imagery/clients/STEF_logo.png&quot; alt=&quot;Nom du client 1&quot;&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;testimonial-card&quot;&gt;
+            &lt;div class=&quot;testimonial-card-inner&quot;&gt;
+              &lt;div class=&quot;testimonial-front&quot;&gt;
+                &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1436-x-808.jpg&quot; alt=&quot;Nom du client 2&quot;&gt;
+                &lt;p class=&quot;testimonial-title&quot;&gt;Un client réduit son exposition sur le sujet&lt;/p&gt;
+                &lt;div class=&quot;testimonial-logo&quot;&gt;&lt;img src=&quot;https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg&quot; alt=&quot;Nom du client 2&quot;&gt;&lt;/div&gt;
+                &lt;span class=&quot;testimonial-hint&quot;&gt;
+                  &lt;i data-lucide=&quot;refresh-cw&quot;&gt;&lt;/i&gt;
+                  Découvrir
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;testimonial-back&quot;&gt;
+                &lt;div class=&quot;testimonial-stars&quot;&gt;&lt;span class=&quot;testimonial-stars-icons&quot;&gt;★★★★★&lt;/span&gt;&lt;span class=&quot;testimonial-date&quot;&gt;Mars 2025&lt;/span&gt;&lt;/div&gt;
+                &lt;div class=&quot;testimonial-quote-section&quot;&gt;
+                  &lt;p class=&quot;testimonial-quote&quot;&gt;Nous sommes pleinement satisfaits de la qualité du service fourni. L&#x27;équipe d&#x27;Ayming est composée de consultants compétents qui comprennent nos enjeux.&lt;/p&gt;
+                  &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;testimonial-cta&quot;&gt;Lire la suite&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;testimonial-author&quot;&gt;
+                  &lt;span class=&quot;testimonial-name&quot;&gt;Prénom Nom&lt;/span&gt;
+                  &lt;span class=&quot;testimonial-position&quot;&gt;Fonction, Entreprise&lt;/span&gt;
+                  &lt;img class=&quot;testimonial-company-logo&quot; src=&quot;https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg&quot; alt=&quot;Nom du client 2&quot;&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;testimonial-card&quot;&gt;
+            &lt;div class=&quot;testimonial-card-inner&quot;&gt;
+              &lt;div class=&quot;testimonial-front&quot;&gt;
+                &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/clients/Colryut-1436-x-808.jpg&quot; alt=&quot;Nom du client 3&quot;&gt;
+                &lt;p class=&quot;testimonial-title&quot;&gt;Un client sécurise ses coûts sur le sujet&lt;/p&gt;
+                &lt;div class=&quot;testimonial-logo&quot;&gt;&lt;img src=&quot;https://ayming-france.github.io/assets/imagery/clients/colruyt-logo-png-transparent-e1759137868909.png&quot; alt=&quot;Nom du client 3&quot;&gt;&lt;/div&gt;
+                &lt;span class=&quot;testimonial-hint&quot;&gt;
+                  &lt;i data-lucide=&quot;refresh-cw&quot;&gt;&lt;/i&gt;
+                  Découvrir
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;testimonial-back&quot;&gt;
+                &lt;div class=&quot;testimonial-stars&quot;&gt;&lt;span class=&quot;testimonial-stars-icons&quot;&gt;★★★★★&lt;/span&gt;&lt;span class=&quot;testimonial-date&quot;&gt;Novembre 2025&lt;/span&gt;&lt;/div&gt;
+                &lt;div class=&quot;testimonial-quote-section&quot;&gt;
+                  &lt;p class=&quot;testimonial-quote&quot;&gt;L&#x27;expertise des équipes nous a permis de structurer nos pratiques sur ce sujet. C&#x27;est un partenariat qui s&#x27;inscrit dans la durée.&lt;/p&gt;
+                  &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;testimonial-cta&quot;&gt;Lire la suite&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;testimonial-author&quot;&gt;
+                  &lt;span class=&quot;testimonial-name&quot;&gt;Prénom Nom&lt;/span&gt;
+                  &lt;span class=&quot;testimonial-position&quot;&gt;Fonction, Entreprise&lt;/span&gt;
+                  &lt;img class=&quot;testimonial-company-logo&quot; src=&quot;https://ayming-france.github.io/assets/imagery/clients/colruyt-logo-png-transparent-e1759137868909.png&quot; alt=&quot;Nom du client 3&quot;&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+">
+            <span class="copy-feedback" hidden>Copié</span>
+            <code>.claude/skills/slides/templates/archetypes/archetype-testimonial.html</code>
+            <button type="button" class="btn-copy">Copier le partial</button>
+          </div>
+        </article>
+        <article class="archetype-card filter-item" data-search="faq grille de cartes question-reponse pour lever les objections. faq">
+          <div class="archetype-head">
+            <h3>FAQ</h3>
+            <span class="usage-badge">18 slides · 18 decks</span>
+          </div>
+          <p class="archetype-represente">Grille de cartes question-réponse pour lever les objections.</p>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 720;"><iframe class="preview-frame" width="1280" height="720" loading="lazy" title="Aperçu : FAQ" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; }&lt;/style&gt;
+&lt;script src=&quot;https://ayming-france.github.io/assets/engine/lucide.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:720px;&quot;&gt;&lt;!-- Archétype : questions fréquentes (faq-grid)
+     Rôle : lève les objections courantes en quatre cartes courtes, une question par carte
+     avec une icône Lucide et une réponse en une ou deux phrases.
+     Distillé de : dat, présent dans 18 des 23 decks.
+     À adapter : data-chapter, le slide-title, et les quatre faq-card (icône, question,
+     réponse). Choisir les quatre objections les plus fréquentes remontées par la vente. --&gt;
+&lt;section class=&quot;slide active&quot; data-chapter=&quot;questions&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;h1 class=&quot;slide-title&quot;&gt;
+          Questions qu&#x27;on nous pose souvent
+        &lt;/h1&gt;
+
+        &lt;div class=&quot;faq-grid&quot;&gt;
+          &lt;div class=&quot;faq-card&quot;&gt;
+            &lt;h4&gt;
+              &lt;i data-lucide=&quot;help-circle&quot;&gt;&lt;/i&gt;
+              Pourquoi passer par Ayming plutôt que de gérer cela en interne ?
+            &lt;/h4&gt;
+            &lt;p&gt;Traiter chaque dossier comme un cas à part entière, tenir les délais et intégrer une stratégie de maîtrise des coûts dès le premier jour.&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;faq-card&quot;&gt;
+            &lt;h4&gt;
+              &lt;i data-lucide=&quot;monitor&quot;&gt;&lt;/i&gt;
+              Cela remplace nos outils existants ?
+            &lt;/h4&gt;
+            &lt;p&gt;Notre accompagnement complète vos outils en couvrant les phases critiques de collecte et de traitement.&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;faq-card&quot;&gt;
+            &lt;h4&gt;
+              &lt;i data-lucide=&quot;pen-line&quot;&gt;&lt;/i&gt;
+              Faut-il utiliser un outil spécifique ?
+            &lt;/h4&gt;
+            &lt;p&gt;Non, l&#x27;outil dédié est optionnel. Nous nous adaptons à vos outils existants, bien qu&#x27;il offre l&#x27;avantage d&#x27;une capture horodatée.&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;faq-card&quot;&gt;
+            &lt;h4&gt;
+              &lt;i data-lucide=&quot;clipboard-list&quot;&gt;&lt;/i&gt;
+              Peut-on démarrer sur un périmètre restreint ?
+            &lt;/h4&gt;
+            &lt;p&gt;Tout à fait. Après diagnostic, nous proposons un déploiement total, partiel ou une montée en autonomie guidée.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+&lt;script&gt;if (window.lucide) { lucide.createIcons(); }&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="archetype-file" data-copy-value="&lt;!-- Archétype : questions fréquentes (faq-grid)
+     Rôle : lève les objections courantes en quatre cartes courtes, une question par carte
+     avec une icône Lucide et une réponse en une ou deux phrases.
+     Distillé de : dat, présent dans 18 des 23 decks.
+     À adapter : data-chapter, le slide-title, et les quatre faq-card (icône, question,
+     réponse). Choisir les quatre objections les plus fréquentes remontées par la vente. --&gt;
+&lt;section class=&quot;slide&quot; data-chapter=&quot;questions&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;h1 class=&quot;slide-title&quot;&gt;
+          Questions qu&#x27;on nous pose souvent
+        &lt;/h1&gt;
+
+        &lt;div class=&quot;faq-grid&quot;&gt;
+          &lt;div class=&quot;faq-card&quot;&gt;
+            &lt;h4&gt;
+              &lt;i data-lucide=&quot;help-circle&quot;&gt;&lt;/i&gt;
+              Pourquoi passer par Ayming plutôt que de gérer cela en interne ?
+            &lt;/h4&gt;
+            &lt;p&gt;Traiter chaque dossier comme un cas à part entière, tenir les délais et intégrer une stratégie de maîtrise des coûts dès le premier jour.&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;faq-card&quot;&gt;
+            &lt;h4&gt;
+              &lt;i data-lucide=&quot;monitor&quot;&gt;&lt;/i&gt;
+              Cela remplace nos outils existants ?
+            &lt;/h4&gt;
+            &lt;p&gt;Notre accompagnement complète vos outils en couvrant les phases critiques de collecte et de traitement.&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;faq-card&quot;&gt;
+            &lt;h4&gt;
+              &lt;i data-lucide=&quot;pen-line&quot;&gt;&lt;/i&gt;
+              Faut-il utiliser un outil spécifique ?
+            &lt;/h4&gt;
+            &lt;p&gt;Non, l&#x27;outil dédié est optionnel. Nous nous adaptons à vos outils existants, bien qu&#x27;il offre l&#x27;avantage d&#x27;une capture horodatée.&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;faq-card&quot;&gt;
+            &lt;h4&gt;
+              &lt;i data-lucide=&quot;clipboard-list&quot;&gt;&lt;/i&gt;
+              Peut-on démarrer sur un périmètre restreint ?
+            &lt;/h4&gt;
+            &lt;p&gt;Tout à fait. Après diagnostic, nous proposons un déploiement total, partiel ou une montée en autonomie guidée.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+">
+            <span class="copy-feedback" hidden>Copié</span>
+            <code>.claude/skills/slides/templates/archetypes/archetype-faq.html</code>
+            <button type="button" class="btn-copy">Copier le partial</button>
+          </div>
+        </article>
+        <article class="archetype-card filter-item" data-search="options et vente croisee slide des offres liees, construite sur la tuile option-card promue. le deck doit relier engine/components.css. options">
+          <div class="archetype-head">
+            <h3>Options et vente croisée</h3>
+            <span class="usage-badge">13 slides · 13 decks</span>
+          </div>
+          <p class="archetype-represente">Slide des offres liées, construite sur la tuile option-card promue. Le deck doit relier engine/components.css.</p>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 720;"><iframe class="preview-frame" width="1280" height="720" loading="lazy" title="Aperçu : Options et vente croisée" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; }&lt;/style&gt;
+
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:720px;&quot;&gt;&lt;!-- Archétype : options / vente croisée (option-card + card-overlay + option-badge)
+     Rôle : quatre cartes cliquables qui renvoient vers des offres sœurs ou des modules
+     complémentaires, badge &quot;En option&quot; et survol qui révèle un bouton Découvrir.
+     Distillé de : cotisations-atmp, présent (classes option-card/card-overlay/option-badge)
+     dans 13 des 23 decks.
+     À adapter : data-chapter, le slide-title, les 3 à 4 option-card (lien href, image,
+     option-badge, titre h3, phrase). option-card, card-overlay et option-badge ne sont
+     PAS des classes du moteur, le deck qui reçoit cette diapositive doit lier
+     engine/components.css en plus de slides.css. --&gt;
+&lt;section class=&quot;slide active&quot; data-chapter=&quot;options&quot; style=&quot;background: var(--bg-light);&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;h1 class=&quot;slide-title&quot;&gt;Aller plus loin&lt;/h1&gt;
+
+        &lt;div style=&quot;display: flex; justify-content: center; gap: 22px; width: 100%; max-width: 1180px;&quot;&gt;
+          &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;option-card&quot;&gt;
+            &lt;div class=&quot;column-card&quot;&gt;
+              &lt;div class=&quot;card-image&quot;&gt;
+                &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/hub-cards/At-tiers-5.jpg&quot; alt=&quot;Nom de l&#x27;offre complémentaire 1&quot;&gt;
+                &lt;div class=&quot;card-overlay&quot;&gt;&lt;span&gt;Découvrir cette offre&lt;/span&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;span class=&quot;option-badge&quot;&gt;En option&lt;/span&gt;
+              &lt;h3 style=&quot;font-size:17px;&quot;&gt;Nom de l&#x27;offre complémentaire 1&lt;/h3&gt;
+              &lt;p&gt;Une phrase qui explique le lien entre cette offre et celle présentée ici.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+
+          &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;option-card&quot;&gt;
+            &lt;div class=&quot;column-card&quot;&gt;
+              &lt;div class=&quot;card-image&quot;&gt;
+                &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/questionnaires-mp/questionnaire-mp.jpg&quot; alt=&quot;Nom de l&#x27;offre complémentaire 2&quot;&gt;
+                &lt;div class=&quot;card-overlay&quot;&gt;&lt;span&gt;Découvrir cette offre&lt;/span&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;span class=&quot;option-badge&quot;&gt;En option&lt;/span&gt;
+              &lt;h3 style=&quot;font-size:17px;&quot;&gt;Nom de l&#x27;offre complémentaire 2&lt;/h3&gt;
+              &lt;p&gt;Une phrase qui explique le lien entre cette offre et celle présentée ici.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+
+          &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;option-card&quot;&gt;
+            &lt;div class=&quot;column-card&quot;&gt;
+              &lt;div class=&quot;card-image&quot;&gt;
+                &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/hub-cards/export-arrets.jpg&quot; alt=&quot;Nom de l&#x27;offre complémentaire 3&quot;&gt;
+                &lt;div class=&quot;card-overlay&quot;&gt;&lt;span&gt;Découvrir cette offre&lt;/span&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;span class=&quot;option-badge&quot;&gt;En option&lt;/span&gt;
+              &lt;h3 style=&quot;font-size:17px;&quot;&gt;Nom de l&#x27;offre complémentaire 3&lt;/h3&gt;
+              &lt;p&gt;Une phrase qui explique le lien entre cette offre et celle présentée ici.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="archetype-file" data-copy-value="&lt;!-- Archétype : options / vente croisée (option-card + card-overlay + option-badge)
+     Rôle : quatre cartes cliquables qui renvoient vers des offres sœurs ou des modules
+     complémentaires, badge &quot;En option&quot; et survol qui révèle un bouton Découvrir.
+     Distillé de : cotisations-atmp, présent (classes option-card/card-overlay/option-badge)
+     dans 13 des 23 decks.
+     À adapter : data-chapter, le slide-title, les 3 à 4 option-card (lien href, image,
+     option-badge, titre h3, phrase). option-card, card-overlay et option-badge ne sont
+     PAS des classes du moteur, le deck qui reçoit cette diapositive doit lier
+     engine/components.css en plus de slides.css. --&gt;
+&lt;section class=&quot;slide&quot; data-chapter=&quot;options&quot; style=&quot;background: var(--bg-light);&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;h1 class=&quot;slide-title&quot;&gt;Aller plus loin&lt;/h1&gt;
+
+        &lt;div style=&quot;display: flex; justify-content: center; gap: 22px; width: 100%; max-width: 1180px;&quot;&gt;
+          &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;option-card&quot;&gt;
+            &lt;div class=&quot;column-card&quot;&gt;
+              &lt;div class=&quot;card-image&quot;&gt;
+                &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/hub-cards/At-tiers-5.jpg&quot; alt=&quot;Nom de l&#x27;offre complémentaire 1&quot;&gt;
+                &lt;div class=&quot;card-overlay&quot;&gt;&lt;span&gt;Découvrir cette offre&lt;/span&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;span class=&quot;option-badge&quot;&gt;En option&lt;/span&gt;
+              &lt;h3 style=&quot;font-size:17px;&quot;&gt;Nom de l&#x27;offre complémentaire 1&lt;/h3&gt;
+              &lt;p&gt;Une phrase qui explique le lien entre cette offre et celle présentée ici.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+
+          &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;option-card&quot;&gt;
+            &lt;div class=&quot;column-card&quot;&gt;
+              &lt;div class=&quot;card-image&quot;&gt;
+                &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/questionnaires-mp/questionnaire-mp.jpg&quot; alt=&quot;Nom de l&#x27;offre complémentaire 2&quot;&gt;
+                &lt;div class=&quot;card-overlay&quot;&gt;&lt;span&gt;Découvrir cette offre&lt;/span&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;span class=&quot;option-badge&quot;&gt;En option&lt;/span&gt;
+              &lt;h3 style=&quot;font-size:17px;&quot;&gt;Nom de l&#x27;offre complémentaire 2&lt;/h3&gt;
+              &lt;p&gt;Une phrase qui explique le lien entre cette offre et celle présentée ici.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+
+          &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;option-card&quot;&gt;
+            &lt;div class=&quot;column-card&quot;&gt;
+              &lt;div class=&quot;card-image&quot;&gt;
+                &lt;img src=&quot;https://ayming-france.github.io/assets/imagery/hub-cards/export-arrets.jpg&quot; alt=&quot;Nom de l&#x27;offre complémentaire 3&quot;&gt;
+                &lt;div class=&quot;card-overlay&quot;&gt;&lt;span&gt;Découvrir cette offre&lt;/span&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;span class=&quot;option-badge&quot;&gt;En option&lt;/span&gt;
+              &lt;h3 style=&quot;font-size:17px;&quot;&gt;Nom de l&#x27;offre complémentaire 3&lt;/h3&gt;
+              &lt;p&gt;Une phrase qui explique le lien entre cette offre et celle présentée ici.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+">
+            <span class="copy-feedback" hidden>Copié</span>
+            <code>.claude/skills/slides/templates/archetypes/archetype-options.html</code>
+            <button type="button" class="btn-copy">Copier le partial</button>
+          </div>
+        </article>
+        <article class="archetype-card filter-item" data-search="cloture et contact slide de fin, contact et bandeau prochaine etape. le deck doit relier engine/components.css. closing">
+          <div class="archetype-head">
+            <h3>Clôture et contact</h3>
+            <span class="usage-badge">17 slides · 17 decks</span>
+          </div>
+          <p class="archetype-represente">Slide de fin, contact et bandeau prochaine étape. Le deck doit relier engine/components.css.</p>
+          <div class="preview-stage-wrap" style="aspect-ratio: 1280 / 720;"><iframe class="preview-frame" width="1280" height="720" loading="lazy" title="Aperçu : Clôture et contact" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/slides.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ayming-france.github.io/assets/engine/components.css&quot;&gt;
+&lt;style&gt;html, body { margin: 0; background: #fff; overflow: hidden; }&lt;/style&gt;
+&lt;script src=&quot;https://ayming-france.github.io/assets/engine/lucide.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;&lt;body style=&quot;width:1280px;height:720px;&quot;&gt;&lt;!-- Archétype : clôture / contact (bannière next-step)
+     Rôle : dernière diapositive utile, ce qu&#x27;il faut du client pour démarrer, suivi d&#x27;une
+     bannière qui annonce le prochain pas concret.
+     Distillé de : collecte-arrets, présent (classe next-step) dans 17 des 23 decks.
+     À adapter : data-chapter, les trois éléments de la requirements-box et la phrase
+     du paragraphe next-step. next-step n&#x27;est PAS une classe du moteur, le deck qui reçoit
+     cette diapositive doit lier engine/components.css en plus de slides.css. --&gt;
+&lt;section class=&quot;slide active&quot; data-chapter=&quot;demarrage&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;h1 class=&quot;slide-title&quot;&gt;Ce dont nous avons besoin&lt;/h1&gt;
+
+        &lt;div class=&quot;requirements-box&quot;&gt;
+          &lt;h4&gt;Pour démarrer le diagnostic&lt;/h4&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;span class=&quot;check-icon&quot;&gt;
+                &lt;i data-lucide=&quot;check&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+              Données des 12 derniers mois sur le périmètre concerné
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;span class=&quot;check-icon&quot;&gt;
+                &lt;i data-lucide=&quot;check&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+              Entretien avec l&#x27;équipe concernée (1 à 2 heures)
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;span class=&quot;check-icon&quot;&gt;
+                &lt;i data-lucide=&quot;check&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+              Accès à un échantillon de dossiers récents
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;next-step&quot;&gt;Prochaine étape : un échange de 30 minutes pour cadrer le diagnostic.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+&lt;script&gt;if (window.lucide) { lucide.createIcons(); }&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;"></iframe></div>
+          <div class="archetype-file" data-copy-value="&lt;!-- Archétype : clôture / contact (bannière next-step)
+     Rôle : dernière diapositive utile, ce qu&#x27;il faut du client pour démarrer, suivi d&#x27;une
+     bannière qui annonce le prochain pas concret.
+     Distillé de : collecte-arrets, présent (classe next-step) dans 17 des 23 decks.
+     À adapter : data-chapter, les trois éléments de la requirements-box et la phrase
+     du paragraphe next-step. next-step n&#x27;est PAS une classe du moteur, le deck qui reçoit
+     cette diapositive doit lier engine/components.css en plus de slides.css. --&gt;
+&lt;section class=&quot;slide&quot; data-chapter=&quot;demarrage&quot;&gt;
+      &lt;div class=&quot;slide-inner&quot;&gt;
+        &lt;h1 class=&quot;slide-title&quot;&gt;Ce dont nous avons besoin&lt;/h1&gt;
+
+        &lt;div class=&quot;requirements-box&quot;&gt;
+          &lt;h4&gt;Pour démarrer le diagnostic&lt;/h4&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;span class=&quot;check-icon&quot;&gt;
+                &lt;i data-lucide=&quot;check&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+              Données des 12 derniers mois sur le périmètre concerné
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;span class=&quot;check-icon&quot;&gt;
+                &lt;i data-lucide=&quot;check&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+              Entretien avec l&#x27;équipe concernée (1 à 2 heures)
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;span class=&quot;check-icon&quot;&gt;
+                &lt;i data-lucide=&quot;check&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+              Accès à un échantillon de dossiers récents
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;next-step&quot;&gt;Prochaine étape : un échange de 30 minutes pour cadrer le diagnostic.&lt;/p&gt;
+
+      &lt;/div&gt;
+
+      &lt;div class=&quot;company-logo&quot;&gt;
+        &lt;img src=&quot;https://ayming-france.github.io/assets/logos/ayming-logo.png&quot; alt=&quot;Ayming&quot;&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+">
+            <span class="copy-feedback" hidden>Copié</span>
+            <code>.claude/skills/slides/templates/archetypes/archetype-closing.html</code>
+            <button type="button" class="btn-copy">Copier le partial</button>
+          </div>
+        </article>
+</div>
     </section></div></main>
   <div class="usage-modal-backdrop" id="usageModalBackdrop" hidden>
     <div class="usage-modal" role="dialog" aria-modal="true">
@@ -6896,6 +8542,26 @@
       if (overlay) overlay.classList.remove('open');
     }
 
+    // --- Aperçus Composants/Slides : la scène iframe reste à sa taille reelle
+    // (1280 de large, voir preview_iframe_srcdoc), l'enveloppe reserve sa
+    // hauteur en CSS (aspect-ratio), et un transform:scale calcule ici la
+    // reduit a la largeur de la carte. Un panneau cache (.tab-panel non
+    // .active) rend une largeur de 0, donc on ne calcule qu'au moment ou le
+    // panneau redevient visible (clic d'onglet), plus au chargement et au
+    // redimensionnement pour les cartes deja visibles.
+    function fitPreviewStages() {
+      Array.prototype.slice.call(document.querySelectorAll('.preview-stage-wrap')).forEach(function (wrap) {
+        var iframe = wrap.querySelector('iframe');
+        if (!iframe) return;
+        var stageW = parseInt(iframe.getAttribute('width'), 10);
+        var scale = wrap.clientWidth / stageW;
+        if (!scale) return;
+        iframe.style.transform = 'scale(' + scale + ')';
+      });
+    }
+    window.addEventListener('load', fitPreviewStages);
+    window.addEventListener('resize', fitPreviewStages);
+
     navItems.forEach(function (btn) {
       btn.addEventListener('click', function () {
         var key = btn.getAttribute('data-panel');
@@ -6904,6 +8570,7 @@
         navSubItems.forEach(function (n) { n.classList.remove('active'); });
         closeSidebarIfMobile();
         window.scrollTo(0, 0);
+        fitPreviewStages();
       });
     });
 
@@ -6917,6 +8584,7 @@
         btn.classList.add('active');
         closeSidebarIfMobile();
         window.scrollTo(0, 0);
+        fitPreviewStages();
       });
     });
 

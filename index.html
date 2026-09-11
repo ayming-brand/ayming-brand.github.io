@@ -173,7 +173,10 @@
 
     /* Grille de cartes : Images (miniature + nom, métadonnées au survol) et Logos (tuiles) */
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; margin-top: 18px; }
-    #panel-logos .grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+    /* Logos : colonnes de largeur FIXE (pas de 1fr qui etire), pour que les
+       quatre groupes (Logo principal, Certifications, Clients, Partenaires)
+       rendent des cartes rigoureusement identiques et que les lignes s'alignent. */
+    #panel-logos .grid { grid-template-columns: repeat(auto-fill, 260px); }
     .card {
       border: 1px solid var(--bg-subtle); border-radius: 14px; overflow: hidden; background: #fff;
       box-shadow: var(--shadow-sm); transition: box-shadow 0.2s ease;
@@ -215,11 +218,17 @@
     }
     .card-name .meta { display: block; font-size: 11px; font-weight: 400; color: var(--text-gray); margin-top: 2px; white-space: normal; }
 
+    /* Carte logo à largeur fixe, toujours une paire de tuiles carrées de taille
+       fixe (jamais étirées par flex/aspect-ratio) : les quatre groupes Logos
+       rendent donc des cartes identiques au pixel près. */
+    .card-logo { width: 260px; }
     .card-logo .logo-tiles { position: relative; display: flex; }
-    .logo-tile { flex: 1; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; padding: 26px; }
+    .logo-tile { width: 130px; height: 130px; flex: 0 0 130px; display: flex; align-items: center; justify-content: center; }
     .logo-tile-light { background: var(--bg-light); }
     .logo-tile-dark { background: #10222d; }
-    .logo-tile img { max-width: 100%; max-height: 100%; object-fit: contain; }
+    /* Le logo ne prend jamais sa taille naturelle : contenu, centré, dans une
+       zone d'au plus 65% de la largeur et 55% de la hauteur de sa tuile. */
+    .logo-tile img { max-width: 65%; max-height: 55%; object-fit: contain; display: block; }
     .logo-hover {
       position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
       justify-content: center; gap: 8px; padding: 14px; text-align: center;
@@ -274,7 +283,8 @@
     @media (max-width: 720px) {
       .content-inner { padding-left: 20px; padding-right: 20px; }
       .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
-      #panel-logos .grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+      /* #panel-logos garde ses cartes à 260px fixes (règle de base) : une carte
+         par ligne sur mobile plutôt qu'une largeur qui casserait l'uniformité. */
     }
 </style>
 </head>
@@ -723,7 +733,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Anras-logo-2-300x75-1.jpg&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;Anras-logo-2-300x75-1.jpg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/clients/Anras-logo-2-300x75-1.jpg&quot;, &quot;dims&quot;: &quot;300×75 px&quot;, &quot;weight&quot;: &quot;6 Ko&quot;, &quot;used_in&quot;: [&quot;controle-urssaf&quot;]}]}">1 utilisation</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/Anras-logo-2-300x75-1.jpg" alt="Anras-logo-2-300x75-1.jpg" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/Anras-logo-2-300x75-1.jpg" alt="Anras-logo-2-300x75-1.jpg" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/clients/Anras-logo-2-300x75-1.jpg" alt="Anras-logo-2-300x75-1.jpg, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               <p class="logo-usage">Utilisé dans : controle-urssaf</p>
               <div class="logo-hover-actions">
@@ -738,7 +748,7 @@
           <div class="logo-tiles">
             <button type="button" class="variant-chip" data-usage="{&quot;title&quot;: &quot;GEMFOS-1-e1759136624846.jpg&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;GEMFOS-1-e1759136624846.jpg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg&quot;, &quot;dims&quot;: &quot;500×130 px&quot;, &quot;weight&quot;: &quot;12 Ko&quot;, &quot;used_in&quot;: [&quot;questionnaires-maladie-professionnelle&quot;]}, {&quot;name&quot;: &quot;GEMFOS-1-e1759136624846-176x46.jpg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846-176x46.jpg&quot;, &quot;dims&quot;: &quot;176×46 px&quot;, &quot;weight&quot;: &quot;3 Ko&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;atmp&quot;, &quot;dat&quot;, &quot;laposte&quot;, &quot;veille-net-entreprises&quot;]}]}">2 tailles</button>
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;GEMFOS-1-e1759136624846.jpg&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;GEMFOS-1-e1759136624846.jpg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg&quot;, &quot;dims&quot;: &quot;500×130 px&quot;, &quot;weight&quot;: &quot;12 Ko&quot;, &quot;used_in&quot;: [&quot;questionnaires-maladie-professionnelle&quot;]}, {&quot;name&quot;: &quot;GEMFOS-1-e1759136624846-176x46.jpg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846-176x46.jpg&quot;, &quot;dims&quot;: &quot;176×46 px&quot;, &quot;weight&quot;: &quot;3 Ko&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;atmp&quot;, &quot;dat&quot;, &quot;laposte&quot;, &quot;veille-net-entreprises&quot;]}]}">6 utilisations</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg" alt="GEMFOS-1-e1759136624846.jpg" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg" alt="GEMFOS-1-e1759136624846.jpg" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg" alt="GEMFOS-1-e1759136624846.jpg, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               <p class="logo-usage">Utilisé dans : accidents-tiers, atmp, dat, laposte, questionnaires-maladie-professionnelle, veille-net-entreprises</p>
               <div class="logo-hover-actions">
@@ -753,7 +763,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Logo-BUT.jpg&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;Logo-BUT.jpg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/clients/Logo-BUT.jpg&quot;, &quot;dims&quot;: &quot;125×125 px&quot;, &quot;weight&quot;: &quot;2 Ko&quot;, &quot;used_in&quot;: [&quot;charges-sociales&quot;]}]}">1 utilisation</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/Logo-BUT.jpg" alt="Logo-BUT.jpg" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/Logo-BUT.jpg" alt="Logo-BUT.jpg" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/clients/Logo-BUT.jpg" alt="Logo-BUT.jpg, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               <p class="logo-usage">Utilisé dans : charges-sociales</p>
               <div class="logo-hover-actions">
@@ -768,7 +778,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Logo-clariane-176x99.jpg&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;Logo-clariane-176x99.jpg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/clients/Logo-clariane-176x99.jpg&quot;, &quot;dims&quot;: &quot;176×99 px&quot;, &quot;weight&quot;: &quot;2 Ko&quot;, &quot;used_in&quot;: [&quot;aides-apprentissage&quot;]}]}">1 utilisation</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/Logo-clariane-176x99.jpg" alt="Logo-clariane-176x99.jpg" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/Logo-clariane-176x99.jpg" alt="Logo-clariane-176x99.jpg" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/clients/Logo-clariane-176x99.jpg" alt="Logo-clariane-176x99.jpg, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               <p class="logo-usage">Utilisé dans : aides-apprentissage</p>
               <div class="logo-hover-actions">
@@ -783,7 +793,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Logo_Guerbet_DEF-176x57.png&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;Logo_Guerbet_DEF-176x57.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/clients/Logo_Guerbet_DEF-176x57.png&quot;, &quot;dims&quot;: &quot;176×57 px&quot;, &quot;weight&quot;: &quot;2 Ko&quot;, &quot;used_in&quot;: [&quot;arrets-longue-duree&quot;]}]}">1 utilisation</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/Logo_Guerbet_DEF-176x57.png" alt="Logo_Guerbet_DEF-176x57.png" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/Logo_Guerbet_DEF-176x57.png" alt="Logo_Guerbet_DEF-176x57.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/clients/Logo_Guerbet_DEF-176x57.png" alt="Logo_Guerbet_DEF-176x57.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               <p class="logo-usage">Utilisé dans : arrets-longue-duree</p>
               <div class="logo-hover-actions">
@@ -813,7 +823,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Sans-titre-3-176x88.jpg&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;Sans-titre-3-176x88.jpg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/clients/Sans-titre-3-176x88.jpg&quot;, &quot;dims&quot;: &quot;176×88 px&quot;, &quot;weight&quot;: &quot;4 Ko&quot;, &quot;used_in&quot;: [&quot;rattrapage-visites-medicales&quot;, &quot;visites-medicales&quot;]}]}">2 utilisations</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/Sans-titre-3-176x88.jpg" alt="Sans-titre-3-176x88.jpg" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/Sans-titre-3-176x88.jpg" alt="Sans-titre-3-176x88.jpg" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/clients/Sans-titre-3-176x88.jpg" alt="Sans-titre-3-176x88.jpg, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               <p class="logo-usage">Utilisé dans : rattrapage-visites-medicales, visites-medicales</p>
               <div class="logo-hover-actions">
@@ -1143,7 +1153,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;hppGHpbk_400x400-e1759306442143-176x55.jpeg&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;hppGHpbk_400x400-e1759306442143-176x55.jpeg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/clients/hppGHpbk_400x400-e1759306442143-176x55.jpeg&quot;, &quot;dims&quot;: &quot;176×55 px&quot;, &quot;weight&quot;: &quot;3 Ko&quot;, &quot;used_in&quot;: [&quot;rattrapage-visites-medicales&quot;, &quot;visites-medicales&quot;]}]}">2 utilisations</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/hppGHpbk_400x400-e1759306442143-176x55.jpeg" alt="hppGHpbk_400x400-e1759306442143-176x55.jpeg" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/hppGHpbk_400x400-e1759306442143-176x55.jpeg" alt="hppGHpbk_400x400-e1759306442143-176x55.jpeg" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/clients/hppGHpbk_400x400-e1759306442143-176x55.jpeg" alt="hppGHpbk_400x400-e1759306442143-176x55.jpeg, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               <p class="logo-usage">Utilisé dans : rattrapage-visites-medicales, visites-medicales</p>
               <div class="logo-hover-actions">
@@ -1458,7 +1468,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;sisca_logo-176x176.jpg&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;sisca_logo-176x176.jpg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/clients/sisca_logo-176x176.jpg&quot;, &quot;dims&quot;: &quot;176×176 px&quot;, &quot;weight&quot;: &quot;3 Ko&quot;, &quot;used_in&quot;: [&quot;charges-sociales&quot;]}]}">1 utilisation</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/sisca_logo-176x176.jpg" alt="sisca_logo-176x176.jpg" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/sisca_logo-176x176.jpg" alt="sisca_logo-176x176.jpg" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/clients/sisca_logo-176x176.jpg" alt="sisca_logo-176x176.jpg, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               <p class="logo-usage">Utilisé dans : charges-sociales</p>
               <div class="logo-hover-actions">
@@ -1578,7 +1588,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;terrena.png&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;terrena.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/clients/terrena.png&quot;, &quot;dims&quot;: &quot;252×142 px&quot;, &quot;weight&quot;: &quot;12 Ko&quot;, &quot;used_in&quot;: []}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/terrena.png" alt="terrena.png" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/clients/terrena.png" alt="terrena.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/clients/terrena.png" alt="terrena.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               
               <div class="logo-hover-actions">
@@ -1704,7 +1714,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;accdom.png&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;accdom.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/partenaires/accdom.png&quot;, &quot;dims&quot;: &quot;512×381 px&quot;, &quot;weight&quot;: &quot;83 Ko&quot;, &quot;used_in&quot;: []}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/accdom.png" alt="accdom.png" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/accdom.png" alt="accdom.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/partenaires/accdom.png" alt="accdom.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               
               <div class="logo-hover-actions">
@@ -1719,7 +1729,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;amf-assurances.png&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;amf-assurances.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/partenaires/amf-assurances.png&quot;, &quot;dims&quot;: &quot;701×285 px&quot;, &quot;weight&quot;: &quot;38 Ko&quot;, &quot;used_in&quot;: []}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/amf-assurances.png" alt="amf-assurances.png" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/amf-assurances.png" alt="amf-assurances.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/partenaires/amf-assurances.png" alt="amf-assurances.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               
               <div class="logo-hover-actions">
@@ -1734,7 +1744,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;area-centre-val-de-loire.png&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;area-centre-val-de-loire.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/partenaires/area-centre-val-de-loire.png&quot;, &quot;dims&quot;: &quot;800×240 px&quot;, &quot;weight&quot;: &quot;26 Ko&quot;, &quot;used_in&quot;: []}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/area-centre-val-de-loire.png" alt="area-centre-val-de-loire.png" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/area-centre-val-de-loire.png" alt="area-centre-val-de-loire.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/partenaires/area-centre-val-de-loire.png" alt="area-centre-val-de-loire.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               
               <div class="logo-hover-actions">
@@ -1749,7 +1759,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;cna.png&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;cna.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/partenaires/cna.png&quot;, &quot;dims&quot;: &quot;170×73 px&quot;, &quot;weight&quot;: &quot;6 Ko&quot;, &quot;used_in&quot;: []}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/cna.png" alt="cna.png" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/cna.png" alt="cna.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/partenaires/cna.png" alt="cna.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               
               <div class="logo-hover-actions">
@@ -1794,7 +1804,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;fhp-val-de-loire-ocean.jpg&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;fhp-val-de-loire-ocean.jpg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/partenaires/fhp-val-de-loire-ocean.jpg&quot;, &quot;dims&quot;: &quot;677×313 px&quot;, &quot;weight&quot;: &quot;31 Ko&quot;, &quot;used_in&quot;: []}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/fhp-val-de-loire-ocean.jpg" alt="fhp-val-de-loire-ocean.jpg" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/fhp-val-de-loire-ocean.jpg" alt="fhp-val-de-loire-ocean.jpg" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/partenaires/fhp-val-de-loire-ocean.jpg" alt="fhp-val-de-loire-ocean.jpg, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               
               <div class="logo-hover-actions">
@@ -1809,7 +1819,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;frbtp-guyane.png&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;frbtp-guyane.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/partenaires/frbtp-guyane.png&quot;, &quot;dims&quot;: &quot;423×126 px&quot;, &quot;weight&quot;: &quot;12 Ko&quot;, &quot;used_in&quot;: []}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/frbtp-guyane.png" alt="frbtp-guyane.png" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/frbtp-guyane.png" alt="frbtp-guyane.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/partenaires/frbtp-guyane.png" alt="frbtp-guyane.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               
               <div class="logo-hover-actions">
@@ -1824,7 +1834,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;frbtp-martinique.png&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;frbtp-martinique.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/partenaires/frbtp-martinique.png&quot;, &quot;dims&quot;: &quot;450×465 px&quot;, &quot;weight&quot;: &quot;101 Ko&quot;, &quot;used_in&quot;: []}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/frbtp-martinique.png" alt="frbtp-martinique.png" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/frbtp-martinique.png" alt="frbtp-martinique.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/partenaires/frbtp-martinique.png" alt="frbtp-martinique.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               
               <div class="logo-hover-actions">
@@ -1839,7 +1849,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;groupe-jlo.png&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;groupe-jlo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/partenaires/groupe-jlo.png&quot;, &quot;dims&quot;: &quot;1683×328 px&quot;, &quot;weight&quot;: &quot;40 Ko&quot;, &quot;used_in&quot;: []}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/groupe-jlo.png" alt="groupe-jlo.png" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/groupe-jlo.png" alt="groupe-jlo.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/partenaires/groupe-jlo.png" alt="groupe-jlo.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               
               <div class="logo-hover-actions">
@@ -1854,7 +1864,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;jobpublic.png&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;jobpublic.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/partenaires/jobpublic.png&quot;, &quot;dims&quot;: &quot;578×138 px&quot;, &quot;weight&quot;: &quot;56 Ko&quot;, &quot;used_in&quot;: []}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/jobpublic.png" alt="jobpublic.png" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/jobpublic.png" alt="jobpublic.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/partenaires/jobpublic.png" alt="jobpublic.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               
               <div class="logo-hover-actions">
@@ -1899,7 +1909,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;medef-guyane.png&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;medef-guyane.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/partenaires/medef-guyane.png&quot;, &quot;dims&quot;: &quot;1498×567 px&quot;, &quot;weight&quot;: &quot;72 Ko&quot;, &quot;used_in&quot;: []}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/medef-guyane.png" alt="medef-guyane.png" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/medef-guyane.png" alt="medef-guyane.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/partenaires/medef-guyane.png" alt="medef-guyane.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               
               <div class="logo-hover-actions">
@@ -1914,7 +1924,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;mercer-convictionsrh.png&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;mercer-convictionsrh.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/partenaires/mercer-convictionsrh.png&quot;, &quot;dims&quot;: &quot;1014×164 px&quot;, &quot;weight&quot;: &quot;34 Ko&quot;, &quot;used_in&quot;: []}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/mercer-convictionsrh.png" alt="mercer-convictionsrh.png" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/mercer-convictionsrh.png" alt="mercer-convictionsrh.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/partenaires/mercer-convictionsrh.png" alt="mercer-convictionsrh.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               
               <div class="logo-hover-actions">
@@ -1959,7 +1969,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;octime.png&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;octime.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/partenaires/octime.png&quot;, &quot;dims&quot;: &quot;450×126 px&quot;, &quot;weight&quot;: &quot;13 Ko&quot;, &quot;used_in&quot;: []}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/octime.png" alt="octime.png" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/octime.png" alt="octime.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/partenaires/octime.png" alt="octime.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               
               <div class="logo-hover-actions">
@@ -2049,7 +2059,7 @@
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;upe13.png&quot;, &quot;variants&quot;: [{&quot;name&quot;: &quot;upe13.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/partenaires/upe13.png&quot;, &quot;dims&quot;: &quot;144×51 px&quot;, &quot;weight&quot;: &quot;4 Ko&quot;, &quot;used_in&quot;: []}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/upe13.png" alt="upe13.png" loading="lazy"></div>
+            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/partenaires/upe13.png" alt="upe13.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/partenaires/upe13.png" alt="upe13.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               
               <div class="logo-hover-actions">

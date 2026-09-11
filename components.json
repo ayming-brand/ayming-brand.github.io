@@ -16,11 +16,16 @@
       ],
       "decks": 17,
       "statut": "promu",
-      "extrait_html": "<p class=\"next-step\">Prochaine étape : un échange de 30 minutes pour cadrer le diagnostic.</p>\n"
+      "extrait_html": "<p class=\"next-step\">Prochaine étape : un échange de 30 minutes pour cadrer le diagnostic.</p>\n",
+      "deck_source": null,
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
     },
     {
       "id": "option-card",
       "nom": "Tuile de vente croisée",
+      "apercu_hauteur": 340,
       "represente": "Carte cliquable qui renvoie vers une offre liée, enveloppe le column-card du moteur, ajoute une superposition au survol avec appel à l'action et un badge « En option ». Variante non cliquable via le modificateur static.",
       "classes": [
         "option-card",
@@ -29,7 +34,10 @@
       ],
       "decks": 13,
       "statut": "promu",
-      "extrait_html": "<a href=\"https://ayming-france.github.io/<offre>/\" target=\"_blank\" class=\"option-card\">\n  <div class=\"column-card\">\n    <div class=\"card-image\">\n      <img src=\"https://ayming-france.github.io/assets/imagery/...\" alt=\"Nom de l'offre\">\n      <div class=\"card-overlay\"><span>Découvrir cette offre</span></div>\n    </div>\n    <span class=\"option-badge\">En option</span>\n    <h3>Nom de l'offre liée</h3>\n    <p>Une phrase qui dit ce que l'offre apporte.</p>\n  </div>\n</a>\n"
+      "extrait_html": "<a href=\"https://ayming-france.github.io/<offre>/\" target=\"_blank\" class=\"option-card\">\n  <div class=\"column-card\">\n    <div class=\"card-image\">\n      <img src=\"https://ayming-france.github.io/assets/imagery/...\" alt=\"Nom de l'offre\">\n      <div class=\"card-overlay\"><span>Découvrir cette offre</span></div>\n    </div>\n    <span class=\"option-badge\">En option</span>\n    <h3>Nom de l'offre liée</h3>\n    <p>Une phrase qui dit ce que l'offre apporte.</p>\n  </div>\n</a>\n",
+      "deck_source": null,
+      "css": "",
+      "note": null
     },
     {
       "id": "atmp-chain",
@@ -49,7 +57,11 @@
       ],
       "decks": 4,
       "statut": "promu",
-      "extrait_html": "<div class=\"atmp-chain\">\n  <div class=\"atmp-link atmp-link-dim\">\n    <div class=\"atmp-number\">1</div>\n    <div class=\"atmp-title\">Première étape</div>\n    <ul class=\"atmp-bullets\"><li>Point clé</li><li>Point clé</li></ul>\n    <div class=\"atmp-offer\">Offre associée</div>\n  </div>\n  <div class=\"atmp-arrow\">&#8250;</div>\n  <div class=\"atmp-link atmp-link-active\">\n    <div class=\"atmp-number\">2</div>\n    <div class=\"atmp-title\">Étape mise en avant</div>\n    <ul class=\"atmp-bullets\"><li>Point clé</li><li>Point clé</li></ul>\n    <div class=\"atmp-offer\">Cette offre</div>\n  </div>\n</div>\n"
+      "extrait_html": "<div class=\"atmp-chain\">\n  <div class=\"atmp-link atmp-link-dim\">\n    <div class=\"atmp-number\">1</div>\n    <div class=\"atmp-title\">Première étape</div>\n    <ul class=\"atmp-bullets\"><li>Point clé</li><li>Point clé</li></ul>\n    <div class=\"atmp-offer\">Offre associée</div>\n  </div>\n  <div class=\"atmp-arrow\">&#8250;</div>\n  <div class=\"atmp-link atmp-link-active\">\n    <div class=\"atmp-number\">2</div>\n    <div class=\"atmp-title\">Étape mise en avant</div>\n    <ul class=\"atmp-bullets\"><li>Point clé</li><li>Point clé</li></ul>\n    <div class=\"atmp-offer\">Cette offre</div>\n  </div>\n</div>\n",
+      "deck_source": null,
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
     },
     {
       "id": "vd-titled",
@@ -60,13 +72,505 @@
       ],
       "decks": 1,
       "statut": "promu",
-      "extrait_html": "<ul class=\"value-detail-list vd-titled\">\n  <li><h4>1. Titre du point</h4><p>Une phrase qui développe le point.</p></li>\n  <li><h4>2. Titre du point</h4><p>Une phrase qui développe le point.</p></li>\n</ul>\n"
+      "extrait_html": "<ul class=\"value-detail-list vd-titled\">\n  <li><h4>1. Titre du point</h4><p>Une phrase qui développe le point.</p></li>\n  <li><h4>2. Titre du point</h4><p>Une phrase qui développe le point.</p></li>\n</ul>\n",
+      "deck_source": null,
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "intro-stats",
+      "nom": "Cartes de chiffres clés",
+      "statut": "moteur",
+      "decks": 19,
+      "deck_source": "dat",
+      "represente": "Bandeau de chiffres clés en bas d'une slide d'introduction.",
+      "classes": [
+        "intro-stats",
+        "intro-stat-card",
+        "intro-stat-number",
+        "intro-stat-label"
+      ],
+      "extrait_html": "<div class=\"intro-stats\">\n  <div class=\"intro-stat-card\">\n    <div class=\"intro-stat-number\">35 000+</div>\n    <div class=\"intro-stat-label\">Dossiers gérés par an</div>\n  </div>\n  <div class=\"intro-stat-card\">\n    <div class=\"intro-stat-number\">550 000+</div>\n    <div class=\"intro-stat-label\">Salariés couverts</div>\n  </div>\n  <div class=\"intro-stat-card\">\n    <div class=\"intro-stat-number\">20+ ans</div>\n    <div class=\"intro-stat-label\">D'expertise métier</div>\n  </div>\n</div>\n",
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "feature-grid-4",
+      "nom": "Grille de caractéristiques (4)",
+      "statut": "moteur",
+      "decks": 10,
+      "deck_source": "duerp",
+      "represente": "Grille 2x2, icône carrée, titre et texte, alignée à gauche.",
+      "classes": [
+        "feature-grid-4",
+        "feature-item",
+        "feature-icon",
+        "feature-content"
+      ],
+      "extrait_html": "<div class=\"feature-grid-4\">\n  <div class=\"feature-item\">\n    <div class=\"feature-icon\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15\"/></svg>\n    </div>\n    <div class=\"feature-content\">\n      <h4>Un suivi vivant, pas un document figé</h4>\n      <p>Une donnée tenue à jour en continu, structurée et exploitable.</p>\n    </div>\n  </div>\n  <div class=\"feature-item\">\n    <div class=\"feature-icon\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 10-5.656-5.656l-1.1 1.1\"/></svg>\n    </div>\n    <div class=\"feature-content\">\n      <h4>Connecté à vos dossiers réels</h4>\n      <p>Un pilotage guidé par votre réalité de terrain, pas par une liste générique.</p>\n    </div>\n  </div>\n  <div class=\"feature-item\">\n    <div class=\"feature-icon\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4\"/></svg>\n    </div>\n    <div class=\"feature-content\">\n      <h4>Un plan d'action piloté, pas une liste oubliée</h4>\n      <p>Des actions priorisées, suivies et tenues.</p>\n    </div>\n  </div>\n</div>\n",
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "feature-grid-6",
+      "nom": "Grille de caractéristiques (6)",
+      "statut": "moteur",
+      "decks": 3,
+      "deck_source": "offers-family/visites-medicales",
+      "represente": "Grille 2x3 compacte, icône, titre et texte.",
+      "classes": [
+        "feature-grid-6",
+        "feature-item",
+        "feature-icon",
+        "feature-content"
+      ],
+      "extrait_html": "<div class=\"feature-grid-6\">\n  <div class=\"feature-item\">\n    <div class=\"feature-icon\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9\"/></svg>\n    </div>\n    <div class=\"feature-content\">\n      <h4>Gestion externalisée</h4>\n      <p>Nous prenons le relais de bout en bout, planification, convocations, relances. Plus rien à gérer en interne.</p>\n    </div>\n  </div>\n  <div class=\"feature-item\">\n    <div class=\"feature-icon\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"18\" cy=\"5\" r=\"3\"/><circle cx=\"6\" cy=\"12\" r=\"3\"/><circle cx=\"18\" cy=\"19\" r=\"3\"/><path d=\"M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98\"/></svg>\n    </div>\n    <div class=\"feature-content\">\n      <h4>Suivi personnalisé</h4>\n      <p>Un seul interlocuteur coordonne le dossier, avec des relances adaptées par site et par profil.</p>\n    </div>\n  </div>\n</div>\n",
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "three-columns",
+      "nom": "Trois cartes à image",
+      "statut": "moteur",
+      "decks": 22,
+      "deck_source": "duerp",
+      "represente": "Trois cartes avec image en tête, titre et texte.",
+      "classes": [
+        "three-columns",
+        "column-card",
+        "card-image"
+      ],
+      "extrait_html": "<div class=\"three-columns\">\n  <div class=\"column-card\">\n    <div class=\"card-image\">\n      <img src=\"https://ayming-france.github.io/assets/imagery/stock/unsplash-1554224155-6726b3ff858f-600x400.jpg\" alt=\"Document figé Word ou Excel\">\n    </div>\n    <h3>Le document figé (Word / Excel)</h3>\n    <p><strong>Rempli une fois, jamais rouvert.</strong> Le document existe mais reste mort, déconnecté du terrain et sans plan d'action suivi.</p>\n  </div>\n  <div class=\"column-card\">\n    <div class=\"card-image\">\n      <img src=\"https://ayming-france.github.io/assets/imagery/stock/unsplash-1576091160550-2173dba999ef-600x400.jpg\" alt=\"Logiciel déconnecté\">\n    </div>\n    <h3>Le logiciel déconnecté</h3>\n    <p><strong>Un outil, pas une réduction du risque.</strong> Une plateforme en self-service qui historise et coche des cases mais ignore votre réalité et n'agit pas à votre place.</p>\n  </div>\n  <div class=\"column-card\">\n    <div class=\"card-image\">\n      <img src=\"https://ayming-france.github.io/assets/imagery/stock/unsplash-1589829545856-d10d557cf95f-600x400.jpg\" alt=\"Cabinet ponctuel\">\n    </div>\n    <h3>Le cabinet ponctuel</h3>\n    <p><strong>Un livrable, puis le silence.</strong> Un consultant révise le dossier une fois. Il est propre le jour de la remise, figé six mois plus tard.</p>\n  </div>\n</div>\n",
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "faq-grid",
+      "nom": "Cartes question-réponse",
+      "statut": "moteur",
+      "decks": 19,
+      "deck_source": "duerp",
+      "represente": "Cartes question-réponse, icône, titre bleu et texte.",
+      "classes": [
+        "faq-grid",
+        "faq-card"
+      ],
+      "extrait_html": "<div class=\"faq-grid\">\n  <div class=\"faq-card\">\n    <h4>\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"/></svg>\n      Nous avons déjà un outil de suivi\n    </h4>\n    <p>La question n'est pas d'avoir un outil, c'est qu'il soit vivant. Un document rempli une fois puis classé ne fait avancer aucun dossier. Notre logiciel le maintient à jour en continu et le relie à votre réalité.</p>\n  </div>\n  <div class=\"faq-card\">\n    <h4>\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z\"/></svg>\n      Est-ce que vous rédigez le dossier à notre place ?\n    </h4>\n    <p>Non. Le logiciel outille et accompagne le pilotage de votre démarche. Le contenu et les décisions restent de votre responsabilité.</p>\n  </div>\n  <div class=\"faq-card\">\n    <h4>\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 10-5.656-5.656l-1.1 1.1\"/></svg>\n      En quoi est-ce lié à notre sinistralité ?\n    </h4>\n    <p>Le logiciel relie l'évaluation à votre réalité de terrain. Les points qui causent vraiment vos incidents sont priorisés, et le pilotage ciblé nourrit la maîtrise du taux.</p>\n  </div>\n</div>\n",
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "requirements-box",
+      "nom": "Encadré prérequis",
+      "statut": "moteur",
+      "decks": 18,
+      "deck_source": "dat",
+      "represente": "Liste à puces avec coche en dégradé, encadré à bordure gauche.",
+      "classes": [
+        "requirements-box",
+        "check-icon"
+      ],
+      "extrait_html": "<div class=\"requirements-box\">\n  <h4>Trois éléments simples</h4>\n  <ul>\n    <li>\n      <span class=\"check-icon\">\n        <i data-lucide=\"check\"></i>\n      </span>\n      Accès aux données des 12-24 derniers mois\n    </li>\n    <li>\n      <span class=\"check-icon\">\n        <i data-lucide=\"check\"></i>\n      </span>\n      Entretien avec l'équipe RH (2 heures)\n    </li>\n    <li>\n      <span class=\"check-icon\">\n        <i data-lucide=\"check\"></i>\n      </span>\n      Revue d'un échantillon de dossiers\n    </li>\n  </ul>\n</div>\n",
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "comparison-table",
+      "nom": "Tableau comparatif",
+      "statut": "moteur",
+      "decks": 10,
+      "deck_source": "offers-family/atmp",
+      "represente": "Tableau à en-tête bleu, première colonne mise en avant, listes possibles dans les cellules.",
+      "classes": [
+        "comparison-table"
+      ],
+      "extrait_html": "<table class=\"comparison-table\">\n  <thead><tr><th>Alternative</th><th>Dossier probant</th><th>Suivi du dossier</th><th>Maîtrise du taux</th></tr></thead>\n  <tbody>\n    <tr><td><strong>Gestion interne</strong></td><td>Dans l'urgence</td><td>Suivi ponctuel</td><td>Taux subi</td></tr>\n    <tr><td><strong>Spécialiste mono-étape</strong></td><td>Hors périmètre</td><td>Selon la brique</td><td>Contestation seule</td></tr>\n    <tr style=\"background: linear-gradient(135deg, rgba(0,61,121,0.08), rgba(10,179,140,0.08));\"><td><strong style=\"color:#003d79;\">Ayming</strong></td><td><strong>Dossier constitué à chaud</strong></td><td><strong>Détection et suivi actifs</strong></td><td><strong>Piloté en continu</strong></td></tr>\n  </tbody>\n</table>\n",
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "process-timeline",
+      "nom": "Frise de processus (3 étapes)",
+      "statut": "moteur",
+      "decks": 11,
+      "deck_source": "offers-family/ijss",
+      "represente": "Étapes numérotées en cercle, reliées par des flèches, sur trois étapes.",
+      "classes": [
+        "process-timeline",
+        "process-step",
+        "step-arrow"
+      ],
+      "extrait_html": "<div class=\"process-timeline\">\n  <div class=\"process-step\">\n    <div class=\"step-number\">1</div>\n    <div class=\"step-title\">Diagnostic gratuit</div>\n    <div class=\"step-duration\">30 minutes</div>\n    <div class=\"step-description\">Évaluer où vous en êtes sur chaque maillon. Identifier le maillon prioritaire.</div>\n  </div>\n  <span class=\"step-arrow\">&rarr;</span>\n  <div class=\"process-step\">\n    <div class=\"step-number\">2</div>\n    <div class=\"step-title\">Cartographie des écarts</div>\n    <div class=\"step-duration\">Sous 2 semaines</div>\n    <div class=\"step-description\">Analyse des données disponibles. Estimation des montants et du calendrier.</div>\n  </div>\n  <span class=\"step-arrow\">&rarr;</span>\n  <div class=\"process-step\">\n    <div class=\"step-number\">3</div>\n    <div class=\"step-title\">Déploiement progressif</div>\n    <div class=\"step-duration\">Par maillon prioritaire</div>\n    <div class=\"step-description\">Démarrage sur le maillon le plus urgent, extension possible à la chaîne complète.</div>\n  </div>\n</div>\n",
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "process-timeline-4",
+      "nom": "Frise de processus (4 étapes)",
+      "statut": "moteur",
+      "decks": 3,
+      "deck_source": "collecte-arrets",
+      "represente": "Même principe que process-timeline, cercles plus petits, sur quatre étapes.",
+      "classes": [
+        "process-timeline-4",
+        "process-step",
+        "step-arrow"
+      ],
+      "extrait_html": "<div class=\"process-timeline-4\">\n  <div class=\"process-step\">\n    <div class=\"step-number\">1</div>\n    <h3 class=\"step-title\">Diagnostic gratuit</h3>\n    <p class=\"step-duration\">2 semaines</p>\n    <p class=\"step-description\">Analyse de votre processus actuel, identification des pertes.</p>\n  </div>\n  <span class=\"step-arrow\">&rarr;</span>\n  <div class=\"process-step\">\n    <div class=\"step-number\">2</div>\n    <h3 class=\"step-title\">Proposition sur-mesure</h3>\n    <p class=\"step-duration\">+1 semaine</p>\n    <p class=\"step-description\">Modèle d'externalisation adapté à votre environnement.</p>\n  </div>\n  <span class=\"step-arrow\">&rarr;</span>\n  <div class=\"process-step\">\n    <div class=\"step-number\">3</div>\n    <h3 class=\"step-title\">Pilote</h3>\n    <p class=\"step-duration\">3 mois</p>\n    <p class=\"step-description\">Démarrage avec un périmètre restreint pour démontrer la valeur.</p>\n  </div>\n  <span class=\"step-arrow\">&rarr;</span>\n  <div class=\"process-step\">\n    <div class=\"step-number\">4</div>\n    <h3 class=\"step-title\">Déploiement complet</h3>\n    <p class=\"step-duration\">Selon planning</p>\n    <p class=\"step-description\">Extension à l'ensemble de vos sites et populations.</p>\n  </div>\n</div>\n",
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "layout-split",
+      "nom": "Mise en page 50/50",
+      "statut": "moteur",
+      "decks": 21,
+      "deck_source": "duerp",
+      "represente": "Texte à gauche, visuel à droite, répartition 50/50.",
+      "classes": [
+        "layout-split",
+        "content-side",
+        "visual-side",
+        "image-container",
+        "floating-badge",
+        "badge-number"
+      ],
+      "extrait_html": "<div class=\"layout-split\">\n  <div class=\"content-side\">\n    <h1 class=\"slide-title\">Ce document n'est pas une formalité. C'est ce qui fait baisser vos incidents.</h1>\n    <p class=\"content-paragraph\">La plupart des organisations remplissent le document pour cocher l'obligation, puis le classent. Pourtant, <strong>c'est le seul document qui transforme vos risques en actions concrètes</strong>.</p>\n    <p class=\"content-paragraph highlight\">Chez Ayming, nous croyons qu'un document ne vaut que s'il est vivant, c'est ce qui fait baisser vos incidents, pas le fait de l'avoir rempli.</p>\n  </div>\n  <div class=\"visual-side\">\n    <div class=\"image-container\">\n      <img src=\"https://ayming-france.github.io/assets/imagery/hub-cards/taux-at-prob.jpg\" alt=\"Un document figé laisse filer le coût de la sinistralité\">\n      <div class=\"floating-badge top-right\">\n        <span class=\"badge-number\">15,6%</span> des établissements transmettent leur document\n      </div>\n      <div class=\"floating-badge bottom-left\">\n        <span class=\"badge-number\">40 ans</span> de conservation exigée\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "value-detail-layout",
+      "nom": "Valeur en détail, liste à coches",
+      "statut": "moteur",
+      "decks": 20,
+      "deck_source": "dat",
+      "represente": "Titre en dégradé et liste à coches à gauche, image flottante avec halo lumineux à droite.",
+      "classes": [
+        "value-detail-layout",
+        "value-detail-content",
+        "value-detail-list",
+        "value-detail-visual",
+        "value-image-container"
+      ],
+      "extrait_html": "<div class=\"value-detail-layout\">\n  <div class=\"value-detail-content\">\n    <h2>Capture et centralisation des preuves</h2>\n    <ul class=\"value-detail-list\">\n      <li>\n        <i data-lucide=\"check\" class=\"check-icon\"></i>\n        Collecte de preuves sur mobile avec horodatage\n      </li>\n      <li>\n        <i data-lucide=\"check\" class=\"check-icon\"></i>\n        Témoignages, documents et faits centralisés en temps réel\n      </li>\n      <li>\n        <i data-lucide=\"check\" class=\"check-icon\"></i>\n        Élimination du risque de perte d'informations critiques\n      </li>\n    </ul>\n  </div>\n  <div class=\"value-detail-visual\">\n    <div class=\"value-image-container\">\n      <img src=\"https://ayming-france.github.io/assets/imagery/hub-cards/at-mp-1.jpg\" alt=\"Capture de preuves sur mobile\">\n    </div>\n  </div>\n</div>\n",
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "testimonial-grid",
+      "nom": "Cartes témoignage à retournement",
+      "statut": "moteur",
+      "decks": 15,
+      "deck_source": "offers-family/ijss",
+      "represente": "Cartes qui se retournent au survol, logo client au recto, note et citation au verso. Modificateur count-2 fixe la largeur de grille.",
+      "classes": [
+        "testimonial-grid",
+        "testimonial-card",
+        "testimonial-card-inner",
+        "testimonial-front",
+        "testimonial-back"
+      ],
+      "extrait_html": "<div class=\"testimonial-grid count-2\">\n  <div class=\"testimonial-card\">\n    <div class=\"testimonial-card-inner\">\n      <div class=\"testimonial-front\">\n        <img src=\"https://ayming-france.github.io/assets/imagery/ijss/Sans-titre-72-532x470.png\" alt=\"Client du secteur santé\">\n        <p class=\"testimonial-title\">Un établissement de santé externalise le recouvrement avec Ayming</p>\n        <div class=\"testimonial-logo\"><img src=\"https://ayming-france.github.io/assets/imagery/clients/logo_clinique_du_parc_0.png\" alt=\"Logo client\"></div>\n        <span class=\"testimonial-hint\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15\" /></svg>\n          Découvrir\n        </span>\n      </div>\n      <div class=\"testimonial-back\">\n        <div class=\"testimonial-stars\"><span class=\"testimonial-stars-icons\">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class=\"testimonial-date\">2024</span></div>\n        <div class=\"testimonial-quote-section\">\n          <p class=\"testimonial-quote\">La relation avec les équipes Ayming est marquée par des conseils avisés et une transparence complète lors de chaque réunion. Les délais ont toujours été respectés.</p>\n          <a href=\"#\" class=\"testimonial-cta\">Lire la suite</a>\n        </div>\n        <div class=\"testimonial-author\">\n          <span class=\"testimonial-name\">Responsable RH</span>\n          <span class=\"testimonial-position\">Établissement de santé</span>\n          <img class=\"testimonial-company-logo\" src=\"https://ayming-france.github.io/assets/imagery/clients/logo_clinique_du_parc_0.png\" alt=\"Logo client\">\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"testimonial-card\">\n    <div class=\"testimonial-card-inner\">\n      <div class=\"testimonial-front\">\n        <img src=\"https://ayming-france.github.io/assets/imagery/ijss/Sans-titre-1-7-532x532.png\" alt=\"Client du secteur bancaire\">\n        <p class=\"testimonial-title\">Un établissement bancaire externalise la saisie et le suivi</p>\n        <div class=\"testimonial-logo\"><img src=\"https://ayming-france.github.io/assets/imagery/ijss/CTA-banner-662-x-413-176x110.png\" alt=\"Logo client\"></div>\n        <span class=\"testimonial-hint\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15\" /></svg>\n          Découvrir\n        </span>\n      </div>\n      <div class=\"testimonial-back\">\n        <div class=\"testimonial-stars\"><span class=\"testimonial-stars-icons\">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class=\"testimonial-date\">2023</span></div>\n        <div class=\"testimonial-quote-section\">\n          <p class=\"testimonial-quote\">Lors des soutenances, les consultants ont fait preuve d'un grand professionnalisme et ont su instaurer une relation de confiance.</p>\n          <a href=\"#\" class=\"testimonial-cta\">Lire la suite</a>\n        </div>\n        <div class=\"testimonial-author\">\n          <span class=\"testimonial-name\">Responsable RH</span>\n          <span class=\"testimonial-position\">Établissement bancaire</span>\n          <img class=\"testimonial-company-logo\" src=\"https://ayming-france.github.io/assets/imagery/ijss/CTA-banner-662-x-413-176x110.png\" alt=\"Logo client\">\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "testimonial-split",
+      "nom": "Témoignage pleine hauteur",
+      "statut": "moteur",
+      "decks": 3,
+      "deck_source": "duerp",
+      "represente": "Citation en grand avec étoiles, à côté d'une photo pleine hauteur.",
+      "classes": [
+        "testimonial-split",
+        "testimonial-split-content",
+        "testimonial-split-image"
+      ],
+      "extrait_html": "<div class=\"testimonial-split\">\n  <div class=\"testimonial-split-content\">\n    <div class=\"testimonial-split-stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n    <p class=\"testimonial-split-quote\">Une des spécificités les plus utiles de la plate-forme est l'accès à l'information de manière instantanée.</p>\n    <div>\n      <span class=\"testimonial-split-name\">Responsable Sécurité du Personnel</span>\n      <p class=\"testimonial-split-position\">Un groupe industriel</p>\n      <img class=\"testimonial-split-logo\" src=\"https://ayming-france.github.io/assets/imagery/duerp/Euro-Cargo-Rail-1436-x-808.jpg\" alt=\"Logo client\">\n    </div>\n    <a class=\"testimonial-split-cta\" href=\"#\">Lire le témoignage</a>\n  </div>\n  <div class=\"testimonial-split-image\">\n    <img src=\"https://ayming-france.github.io/assets/imagery/duerp/Euro-Cargo-Rail-1436-x-808.jpg\" alt=\"Un groupe industriel s'engage dans le pilotage de ses risques professionnels\">\n  </div>\n</div>\n",
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "ideal-card",
+      "nom": "Cartes monde idéal",
+      "statut": "moteur",
+      "decks": 20,
+      "deck_source": "methode",
+      "represente": "Variante de column-card avec image sur fond dégradé bleu-vert, pour une slide monde idéal.",
+      "classes": [
+        "four-columns",
+        "column-card",
+        "ideal-card",
+        "card-image"
+      ],
+      "extrait_html": "<div class=\"four-columns\">\n  <div class=\"column-card ideal-card\">\n    <div class=\"card-image\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15\"/></svg></div>\n    <h3>Une seule référence, toujours à jour</h3>\n    <p>Une adresse unique par offre. Une correction profite à tout le monde, instantanément, sur tous les supports.</p>\n  </div>\n  <div class=\"column-card ideal-card\">\n    <div class=\"card-image\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-1.13a4 4 0 10-4-4 4 4 0 004 4z\"/></svg></div>\n    <h3>La même expérience pour chaque interlocuteur</h3>\n    <p>Le même récit, structuré et soigné, quel que soit le collaborateur qui présente.</p>\n  </div>\n</div>\n",
+      "css": "",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "cover-layout",
+      "nom": "Couverture",
+      "apercu_hauteur": 420,
+      "statut": "moteur",
+      "decks": 23,
+      "deck_source": "dat",
+      "represente": "Couverture pleine page en deux blocs, dégradé de marque avec logo et titre à gauche, photo à droite.",
+      "classes": [
+        "cover-layout",
+        "cover-left",
+        "cover-logo",
+        "cover-title",
+        "cover-subtitle",
+        "cover-right",
+        "cover-image"
+      ],
+      "extrait_html": "<div class=\"cover-layout\">\n  <div class=\"cover-left\">\n    <div class=\"cover-logo\">\n      <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n    </div>\n    <h1 class=\"cover-title\">\n      Offre<br>Externalisation\n    </h1>\n    <p class=\"cover-subtitle\">Accompagnement expert de vos dossiers avec respect des délais légaux</p>\n  </div>\n  <div class=\"cover-right\">\n    <img class=\"cover-image\" src=\"https://ayming-france.github.io/assets/imagery/stock/unsplash-1600880292203-757bb62b4baf-1000x1200.jpg\" alt=\"Réunion de travail\">\n  </div>\n</div>\n",
+      "css": "",
+      "note": null
+    },
+    {
+      "id": "clients-grid",
+      "nom": "Slide clients par secteur",
+      "statut": "injecte",
+      "represente": "Slide clients par secteur, injectée par le moteur dès qu'un deck pose le conteneur vide. Neuf secteurs, logos alignés en grille.",
+      "classes": [
+        "clients-grid",
+        "client-sector"
+      ],
+      "note": "Rien à styler, le moteur remplit la slide. Le deck pose uniquement le conteneur vide ci-dessous.",
+      "extrait_html": "<section class=\"slide\" data-chapter=\"clients\" data-shared=\"clients\"></section>\n",
+      "deck_source": null,
+      "css": "",
+      "apercu_hauteur": null
+    },
+    {
+      "id": "partners-grid",
+      "nom": "Slide partenaires",
+      "statut": "injecte",
+      "represente": "Slide partenaires, logos filtrables par marché, injectée automatiquement par le moteur dans tous les decks.",
+      "classes": [
+        "partners-grid",
+        "partner-tile",
+        "pfilter"
+      ],
+      "note": "Injectée partout sans rien poser dans le HTML. Opt-out par deck avec l'attribut data-no-partners.",
+      "extrait_html": "<!-- Injectée automatiquement par slides.js, aucun balisage à poser dans le deck -->\n",
+      "deck_source": null,
+      "css": "",
+      "apercu_hauteur": null
+    },
+    {
+      "id": "cert-strip",
+      "nom": "Badges de certification",
+      "statut": "injecte",
+      "represente": "Bandeau de logos de certification, injecté par le moteur en bas de la photo de couverture.",
+      "classes": [
+        "cert-strip",
+        "cert-chip"
+      ],
+      "note": "Injecté automatiquement sur chaque couverture, rien à poser dans le HTML.",
+      "extrait_html": "<!-- Injecté automatiquement par slides.js sur chaque couverture, aucun balisage à poser dans le deck -->\n",
+      "deck_source": null,
+      "css": "",
+      "apercu_hauteur": null
+    },
+    {
+      "id": "pricing-essentiel",
+      "nom": "Élément tarifaire",
+      "statut": "local",
+      "deck_source": "essentiel",
+      "represente": "Carte de tarif par abonnement avec modules inclus, checklist de fonctionnalités et liste d'options payantes.",
+      "classes": [
+        "pr",
+        "pr-main",
+        "pr-main-head",
+        "pr-offer",
+        "pr-price",
+        "pr-modules",
+        "pr-mod-title",
+        "pr-mod",
+        "pr-mod-ic",
+        "pr-mod-body",
+        "pr-feats",
+        "pr-apps",
+        "pr-app",
+        "pr-app-ic",
+        "pr-addons-wrap",
+        "pr-addons-label",
+        "pr-addons",
+        "pr-addon",
+        "pr-addon-ic",
+        "pr-addon-body",
+        "pr-addon-price",
+        "pr-free",
+        "pr-was",
+        "pr-unit"
+      ],
+      "extrait_html": "<div class=\"pr\">\n  <div class=\"pr-main\">\n    <div class=\"pr-main-head\"><span class=\"pr-offer\">Offre Essentiel</span><span class=\"pr-price\">25&nbsp;&euro; <small>/ mois</small></span></div>\n    <div class=\"pr-modules\">\n      <div class=\"pr-mod-title\">Modules inclus</div>\n      <div class=\"pr-mod\">\n        <img class=\"pr-mod-ic\" src=\"https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-evaluation.png\" alt=\"\">\n        <div class=\"pr-mod-body\">\n          <h4>Module Évaluation des Risques</h4>\n          <ul class=\"pr-feats\">\n            <li>Répertoire des risques de référence</li>\n            <li>1 établissement inclus</li>\n            <li>Critères d'évaluation personnalisables</li>\n            <li>Catalogue des mesures préventives</li>\n          </ul>\n        </div>\n      </div>\n      <div class=\"pr-mod\">\n        <img class=\"pr-mod-ic\" src=\"https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-plans.png\" alt=\"\">\n        <div class=\"pr-mod-body\">\n          <h4>Module Plans d'Actions</h4>\n          <ul class=\"pr-feats\">\n            <li>Identification des actions à mettre en œuvre</li>\n            <li>Actions liées à l'évaluation des risques</li>\n            <li>Planification des actions</li>\n            <li>Notifications par email et application</li>\n          </ul>\n        </div>\n      </div>\n    </div>\n    <div class=\"pr-apps\">\n      <div class=\"pr-app\"><span class=\"pr-app-ic\"><img src=\"https://ayming-france.github.io/assets/imagery/essentiel/apps/acciline-app.png\" alt=\"\"></span><span>Acciline+ <b>APP</b></span></div>\n      <div class=\"pr-app\"><span class=\"pr-app-ic\"><img src=\"https://ayming-france.github.io/assets/imagery/essentiel/apps/acciline-analytics.png\" alt=\"\"></span><span>Acciline+ <b>Analytics</b></span></div>\n    </div>\n  </div>\n  <div class=\"pr-addons-wrap\">\n    <span class=\"pr-addons-label\">Options</span>\n    <div class=\"pr-addons\">\n      <div class=\"pr-addon\">\n        <span class=\"pr-addon-ic\"><svg viewBox=\"0 0 24 24\"><path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/></svg></span>\n        <div class=\"pr-addon-body\"><h4>Accès collaboratif pour vos clients</h4><p>Améliorez la collaboration via l'application web ou mobile, avec des interactions en temps réel.</p></div>\n        <div class=\"pr-addon-price\"><span class=\"pr-free\">Offert</span><span class=\"pr-was\">+7&nbsp;&euro; / mois / utilisateur</span></div>\n      </div>\n      <div class=\"pr-addon\">\n        <span class=\"pr-addon-ic\"><svg viewBox=\"0 0 24 24\"><path d=\"M4 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16\"/></svg></span>\n        <div class=\"pr-addon-body\"><h4>Établissement supplémentaire</h4><p>Débloquez des établissements supplémentaires pour suivre plusieurs missions en parallèle.</p></div>\n        <div class=\"pr-addon-price\">+5&nbsp;&euro;<span class=\"pr-unit\">/ mois / établissement</span></div>\n      </div>\n      <div class=\"pr-addon compact pr-optional\">\n        <span class=\"pr-addon-ic\"><img src=\"https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-audits.png\" alt=\"\"></span>\n        <div class=\"pr-addon-body\"><h4>Module Diagnostic &amp; Inspections</h4></div>\n        <div class=\"pr-addon-price\">+30&nbsp;&euro;<span class=\"pr-unit\">/ mois</span></div>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "css": ".pr{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;max-width:1330px;margin:16px auto 0;align-items:center;text-align:left}\n.pr-main{background:#f4f6f9;border:1px solid #eaeef2;border-radius:20px;padding:20px 22px}\n.pr-main-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:13px}\n.pr-offer{font-size:24px;font-weight:800;color:#11a9e6}\n.pr-price{font-size:24px;font-weight:800;color:#11a9e6}\n.pr-price small{font-size:15px;font-weight:700}\n.pr-modules{background:#fff;border:1px solid #eef2f6;border-radius:14px;padding:15px 18px}\n.pr-mod-title{font-size:14px;font-weight:700;color:#334155;border-bottom:1px solid #e5e9ee;padding-bottom:9px;margin-bottom:13px}\n.pr-mod{display:flex;gap:13px;margin-bottom:14px}\n.pr-mod:last-child{margin-bottom:0}\n.pr-mod-ic{width:44px;height:44px;flex-shrink:0}\n.pr-mod-body{flex:1;min-width:0}\n.pr-mod-body h4{font-size:14px;font-weight:800;color:#00456d;margin:2px 0 9px}\n.pr-feats{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}\n.pr-feats li{position:relative;padding-left:19px;font-size:11.5px;color:#475569;line-height:1.3}\n.pr-feats li::before{content:\"✓\";position:absolute;left:0;top:0;color:#11a9e6;font-weight:800;font-size:11px}\n.pr-apps{display:flex;gap:13px;margin-top:15px}\n.pr-app{flex:1;display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #eef2f6;border-radius:13px;box-shadow:0 3px 10px rgba(0,0,0,.05);padding:9px 13px}\n.pr-app-ic{width:34px;height:34px;border-radius:9px;background:#f1f6fb;display:flex;align-items:center;justify-content:center;flex-shrink:0}\n.pr-app-ic svg{width:19px;height:19px}\n.pr-app-ic img{width:22px;height:22px;object-fit:contain}\n.pr-app span{font-size:11px;color:#94a3b8;line-height:1.15}\n.pr-app b{display:block;font-size:13.5px;color:#00456d;font-weight:800}\n.pr-addons-wrap{display:flex;gap:11px;align-items:stretch}\n.pr-addons-label{writing-mode:vertical-rl;transform:rotate(180deg);font-size:15px;font-weight:800;color:#c4ccd6;letter-spacing:1.5px;align-self:center;flex-shrink:0}\n.pr-addons{flex:1;display:flex;flex-direction:column;gap:9px}\n.pr-addon{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;background:#f7f9fb;border:1px solid #eef2f6;border-radius:14px;padding:11px 16px}\n.pr-addon.compact{padding:10px 16px}\n.pr-addon-ic{width:42px;height:42px;border-radius:11px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.06);display:flex;align-items:center;justify-content:center;gap:2px;flex-shrink:0}\n.pr-addon-ic svg{width:22px;height:22px;stroke:#11a9e6;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}\n.pr-addon-ic img{width:24px;height:24px}\n.pr-addon-body h4{font-size:13.5px;font-weight:800;color:#00456d;margin:0}\n.pr-addon-body p{font-size:11px;color:#6b7280;line-height:1.35;margin:4px 0 0}\n.pr-addon-price{font-size:16px;font-weight:800;color:#11a9e6;text-align:right;white-space:nowrap;line-height:1.15}\n.pr-addon-price .pr-unit{display:block;font-size:10.5px;font-weight:600;color:#94a3b8}\n.pr-free{display:block;color:#0ab38c;font-size:15px}\n.pr-was{display:block;color:#b0b8c1;font-weight:600;font-size:10.5px;text-decoration:line-through;margin-top:1px}\n.pr-addons.show-opt .pr-optional{display:grid}\n",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "pricing-calculator",
+      "nom": "Simulateur tarifaire",
+      "statut": "local",
+      "deck_source": "essentiel",
+      "represente": "Simulateur interactif de tarif, curseur relié à un graphique SVG en temps réel. Le markup seul ne suffit pas, la logique de calcul et de tracé de courbe vit dans le JavaScript du deck.",
+      "classes": [
+        "es-calc",
+        "es-calc-top",
+        "es-seg",
+        "es-hint",
+        "es-slider-row",
+        "es-calc-grid",
+        "es-col",
+        "es-chartwrap",
+        "es-legend",
+        "es-eqrow",
+        "es-eqc",
+        "es-op",
+        "es-annual",
+        "es-ro",
+        "es-cnote"
+      ],
+      "extrait_html": "<div class=\"es-calc\">\n  <div class=\"es-calc-top\">\n    <div class=\"es-seg\" role=\"tablist\">\n      <button id=\"esIprp\" class=\"on\" role=\"tab\">Cabinet</button>\n      <button id=\"esPme\" role=\"tab\" style=\"display:none\">Entreprise multi-sites</button>\n    </div>\n    <span class=\"es-hint\">Tarifs annuels HT, hors mise en service</span>\n  </div>\n  <div class=\"es-slider-row\">\n    <span class=\"val\"><span id=\"esN\"><span class=\"z\">0</span>1</span> site</span>\n    <input type=\"range\" id=\"esSlider\" min=\"1\" max=\"50\" value=\"1\" aria-label=\"Nombre de sites\">\n  </div>\n  <div class=\"es-calc-grid\">\n    <div>\n      <div class=\"es-chartwrap\">\n        <svg id=\"esChart\" viewBox=\"0 0 600 300\" role=\"img\" aria-label=\"Courbe de prix\">\n          <g id=\"esGrid\"></g>\n          <path id=\"esArea\" fill=\"rgba(17,169,230,.10)\" stroke=\"none\"></path>\n          <path id=\"esLine\" fill=\"none\" stroke=\"url(#esGl)\" stroke-width=\"3\"></path>\n          <line id=\"esMark\" stroke=\"#11a9e6\" stroke-width=\"1\" stroke-dasharray=\"3 3\"></line>\n          <circle id=\"esDot\" r=\"5.5\" fill=\"#fff\" stroke=\"#11a9e6\" stroke-width=\"3\"></circle>\n          <g id=\"esAxis\"></g>\n          <defs><linearGradient id=\"esGl\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"0\"><stop offset=\"0\" stop-color=\"#0fa7e2\"/><stop offset=\"1\" stop-color=\"#0ab38c\"/></linearGradient></defs>\n        </svg>\n      </div>\n      <div class=\"es-legend\">\n        <span class=\"k\"><i style=\"background:linear-gradient(90deg,#0fa7e2,#0ab38c)\"></i>Prix annuel selon le nombre de sites</span>\n      </div>\n    </div>\n    <div class=\"es-col\">\n      <div class=\"es-eqrow\">\n        <div class=\"es-eqc\"><div class=\"k\">Module de base</div><div class=\"v\"><span id=\"esBase\">20</span> <small>&euro; / mois</small></div></div>\n        <div class=\"es-op\">+</div>\n        <div class=\"es-eqc\"><div class=\"k\" id=\"esVlab\">1 site &times; 5 &euro;</div><div class=\"v\"><span id=\"esVar\">5</span> <small>&euro; / mois</small></div></div>\n        <div class=\"es-op\">=</div>\n        <div class=\"es-eqc alt\"><div class=\"k\">Mensuel</div><div class=\"v\"><span id=\"esM\">25</span> <small>&euro; / mois</small></div></div>\n      </div>\n      <div class=\"es-ro hero es-annual\"><div class=\"k\">Soit, par an</div><div class=\"v\"><span id=\"esY\">300</span> <small>&euro;</small></div></div>\n      <p class=\"es-cnote\" id=\"esNote\"></p>\n    </div>\n  </div>\n</div>\n",
+      "css": ".es-calc{background:#fff;border:1px solid #eef2f6;border-radius:20px;box-shadow:0 10px 40px rgba(0,0,0,.10);padding:24px 26px;margin-top:18px;text-align:left;width:1120px;max-width:100%}\n.es-calc-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}\n.es-seg{display:inline-flex;background:#f8fafc;border:1px solid #eef2f6;border-radius:11px;padding:4px}\n.es-seg button{border:0;background:transparent;padding:9px 20px;border-radius:8px;font-family:inherit;font-size:14px;font-weight:700;color:#6b7280;cursor:pointer;transition:.2s}\n.es-seg button.on{background:#fff;color:#11a9e6;box-shadow:0 1px 3px rgba(0,0,0,.08)}\n.es-hint{font-size:13px;color:#9ca3af}\n.es-slider-row{display:flex;align-items:center;gap:16px;margin-bottom:8px}\n.es-slider-row .val{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#6b7280;text-align:left;white-space:nowrap;font-variant-numeric:tabular-nums}\n.es-slider-row .val #esN{font-size:48px;font-weight:700;color:#11a9e6;letter-spacing:0;text-transform:none;margin-right:4px}\n#esN .z{visibility:hidden}\n.es-calc input[type=range]{-webkit-appearance:none;appearance:none;flex:1;height:6px;border-radius:9999px;background:#eef2f6;outline:none;cursor:pointer}\n.es-calc input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:#fff;border:3px solid #11a9e6;box-shadow:0 4px 12px rgba(0,0,0,.08);cursor:pointer}\n.es-calc-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:26px;margin-top:12px;align-items:stretch}\n.es-col{display:flex;flex-direction:column;height:100%}\n.es-calc-grid>div:first-child{order:2}\n.es-calc-grid>div:last-child{order:1}\n.es-chartwrap svg{width:100%;height:auto;display:block}\n.es-legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:8px;font-size:13px;color:#6b7280}\n.es-legend .k{display:inline-flex;align-items:center;gap:7px;font-weight:600}\n.es-legend .k i{width:16px;height:3px;border-radius:2px;display:inline-block}\n.es-eqrow{display:flex;align-items:stretch;gap:9px}\n.es-eqc{flex:1;min-width:0;background:#f8fafc;border:1px solid #eef2f6;border-radius:14px;padding:18px 16px}\n.es-eqc .k{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.3px;color:#6b7280}\n.es-eqc .v{font-size:27px;font-weight:700;color:#00456d;margin-top:9px;line-height:1;font-variant-numeric:tabular-nums}\n.es-eqc .v small{font-size:12px;font-weight:600;color:#9ca3af}\n.es-eqc.alt{background:linear-gradient(135deg,rgba(15,167,226,.10),rgba(10,179,140,.10));border-color:rgba(17,169,230,.25)}\n.es-eqc.alt .v{color:#11a9e6}\n.es-op{display:flex;align-items:center;font-size:24px;font-weight:700;color:#c4ccd6}\n.es-annual{margin-top:12px;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}\n.es-ro.es-annual .k{margin:0;font-size:15px}\n.es-ro.es-annual .v{margin-top:14px;font-size:64px}\n.es-ro.es-annual .v small{font-size:26px}\n.es-ro{background:#f8fafc;border:1px solid #eef2f6;border-radius:13px;padding:15px}\n.es-ro .k{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#6b7280}\n.es-ro .v{font-size:28px;font-weight:700;color:#00456d;font-variant-numeric:tabular-nums;margin-top:6px;line-height:1}\n.es-ro .v small{font-size:14px;font-weight:600;color:#9ca3af}\n.es-ro.hero{background:linear-gradient(135deg,rgba(15,167,226,.10),rgba(10,179,140,.10));border-color:rgba(17,169,230,.25)}\n.es-cnote{font-size:12.5px;color:#9ca3af;margin-top:12px;line-height:1.5}\n",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "cost-escalation",
+      "nom": "Barres de coût croissant",
+      "apercu_hauteur": 380,
+      "statut": "local",
+      "deck_source": "arrets-longue-duree",
+      "represente": "Graphique en barres animées qui montent en hauteur et en couleur pour illustrer un coût qui s'aggrave avec le temps.",
+      "classes": [
+        "cost-escalation",
+        "cost-bar",
+        "cost-bar-visual",
+        "cost-amount",
+        "cost-label",
+        "cost-threshold",
+        "cost-days",
+        "cost-connector",
+        "cost-connector-badge",
+        "cost-connector-line"
+      ],
+      "extrait_html": "<div class=\"cost-escalation\">\n  <div class=\"cost-bar cost-bar-1\">\n    <div class=\"cost-bar-visual\">\n      <div class=\"cost-amount\">6 700 &euro;</div>\n      <div class=\"cost-label\">coût moyen</div>\n    </div>\n    <div class=\"cost-threshold\">Palier 1</div>\n    <div class=\"cost-days\">À partir de 46 jours</div>\n  </div>\n  <div class=\"cost-connector cost-connector-1\">\n    <div class=\"cost-connector-line\"></div>\n    <div class=\"cost-connector-badge\">+87%</div>\n    <div class=\"cost-connector-line\"></div>\n  </div>\n  <div class=\"cost-bar cost-bar-2\">\n    <div class=\"cost-bar-visual\">\n      <div class=\"cost-amount\">12 600 &euro;</div>\n      <div class=\"cost-label\">coût moyen</div>\n    </div>\n    <div class=\"cost-threshold\">Palier 2</div>\n    <div class=\"cost-days\">À partir de 91 jours</div>\n  </div>\n  <div class=\"cost-connector cost-connector-2\">\n    <div class=\"cost-connector-line\"></div>\n    <div class=\"cost-connector-badge\">+345%</div>\n    <div class=\"cost-connector-line\"></div>\n  </div>\n  <div class=\"cost-bar cost-bar-3\">\n    <div class=\"cost-bar-visual\">\n      <div class=\"cost-amount\">30 000 &euro;</div>\n      <div class=\"cost-label\">coût moyen</div>\n    </div>\n    <div class=\"cost-threshold\">Palier 3</div>\n    <div class=\"cost-days\">Au-delà de 180 jours</div>\n  </div>\n</div>\n",
+      "css": "@keyframes barSlideUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }\n@keyframes barFill { from { height: 0; } to { height: 100%; } }\n@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }\n@keyframes popIn { from { opacity: 0; transform: scale(0.6); } to { opacity: 1; transform: scale(1); } }\n.cost-escalation { display: flex; justify-content: center; align-items: flex-end; gap: 48px; margin: 48px auto 0; max-width: 900px; }\n.cost-bar { text-align: center; flex: 1; opacity: 0; }\n.cost-bar-visual { border-radius: 16px 16px 0 0; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; padding: 24px 16px; min-width: 180px; position: relative; overflow: hidden; }\n.cost-bar-visual::before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 0; }\n.cost-bar-1 .cost-bar-visual { height: 160px; background: rgba(0,61,121,0.08); }\n.cost-bar-1 .cost-bar-visual::before { background: linear-gradient(180deg, #4a90d9 0%, #003d79 100%); }\n.cost-bar-2 .cost-bar-visual { height: 240px; background: rgba(10,179,140,0.08); }\n.cost-bar-2 .cost-bar-visual::before { background: linear-gradient(180deg, #0ab38c 0%, #078a6c 100%); }\n.cost-bar-3 .cost-bar-visual { height: 380px; background: rgba(232,93,74,0.08); }\n.cost-bar-3 .cost-bar-visual::before { background: linear-gradient(180deg, #e85d4a 0%, #c0392b 100%); }\n.cost-amount { color: #fff; font-size: 32px; font-weight: 700; line-height: 1; position: relative; z-index: 1; opacity: 0; }\n.cost-label { color: rgba(255,255,255,0.85); font-size: 13px; margin-top: 6px; position: relative; z-index: 1; opacity: 0; }\n.cost-threshold { margin-top: 16px; font-size: 15px; color: #333; font-weight: 600; }\n.cost-days { font-size: 13px; color: #777; margin-top: 4px; }\n.cost-connector { display: flex; align-items: center; padding-bottom: 80px; opacity: 0; }\n.cost-connector-1 .cost-connector-badge { background: linear-gradient(135deg, #003d79, #0ab38c); color: #fff; font-size: 14px; font-weight: 700; padding: 8px 16px; border-radius: 24px; white-space: nowrap; }\n.cost-connector-2 .cost-connector-badge { background: linear-gradient(135deg, #0ab38c, #e85d4a); color: #fff; font-size: 14px; font-weight: 700; padding: 8px 16px; border-radius: 24px; white-space: nowrap; }\n.cost-connector-line { width: 24px; height: 2px; background: #003d79; }\n.slide.active .cost-bar-1 { animation: barSlideUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.2s forwards; }\n.slide.active .cost-bar-2 { animation: barSlideUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.5s forwards; }\n.slide.active .cost-bar-3 { animation: barSlideUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.8s forwards; }\n.slide.active .cost-bar-1 .cost-bar-visual::before { animation: barFill 1s cubic-bezier(0.22,1,0.36,1) 0.4s forwards; }\n.slide.active .cost-bar-2 .cost-bar-visual::before { animation: barFill 1s cubic-bezier(0.22,1,0.36,1) 0.7s forwards; }\n.slide.active .cost-bar-3 .cost-bar-visual::before { animation: barFill 1s cubic-bezier(0.22,1,0.36,1) 1.0s forwards; }\n.slide.active .cost-bar-1 .cost-amount { animation: fadeIn 0.4s ease 1.0s forwards; }\n.slide.active .cost-bar-1 .cost-label { animation: fadeIn 0.4s ease 1.1s forwards; }\n.slide.active .cost-bar-2 .cost-amount { animation: fadeIn 0.4s ease 1.3s forwards; }\n.slide.active .cost-bar-2 .cost-label { animation: fadeIn 0.4s ease 1.4s forwards; }\n.slide.active .cost-bar-3 .cost-amount { animation: fadeIn 0.4s ease 1.6s forwards; }\n.slide.active .cost-bar-3 .cost-label { animation: fadeIn 0.4s ease 1.7s forwards; }\n.slide.active .cost-connector-1 { animation: popIn 0.4s cubic-bezier(0.22,1,0.36,1) 1.2s forwards; }\n.slide.active .cost-connector-2 { animation: popIn 0.4s cubic-bezier(0.22,1,0.36,1) 1.6s forwards; }\n",
+      "note": null
+    },
+    {
+      "id": "case-study-card",
+      "nom": "Carte étude de cas",
+      "statut": "local",
+      "deck_source": "arrets-longue-duree",
+      "represente": "Carte étude de cas, bandeau d'en-tête avec nom du dossier et résultat chiffré, corps en deux colonnes, pied de page avec icône de validation.",
+      "classes": [
+        "case-study-box",
+        "case-header",
+        "case-header-left",
+        "case-result",
+        "case-result-number",
+        "case-result-label",
+        "case-body",
+        "case-section",
+        "case-footer"
+      ],
+      "extrait_html": "<div class=\"case-study-box\">\n  <div class=\"case-header\">\n    <div class=\"case-header-left\">\n      <h3>Lombalgie suite à manutention</h3>\n      <p>Salarié déchargeant des bacs. Constat initial : lombalgie. Arrêt initial de 7 jours.</p>\n    </div>\n    <div class=\"case-result\">\n      <div class=\"case-result-number\">141 j</div>\n      <div class=\"case-result-label\">Reprise du salarié</div>\n    </div>\n  </div>\n  <div class=\"case-body\">\n    <div class=\"case-section\">\n      <h4>Ce que l'analyse a révélé</h4>\n      <p>Aucun spécialiste consulté, uniquement le médecin traitant. Prolongations en série. Durée disproportionnée pour une lombalgie simple.</p>\n    </div>\n    <div class=\"case-section\">\n      <h4>Actions menées</h4>\n      <p>Deux courriers de signalement successifs. Mise en place d'une procédure de contrôle. Le salarié a repris à 141 jours.</p>\n    </div>\n  </div>\n  <div class=\"case-footer\">\n    <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"/></svg>\n    <p>Reprise anticipée par rapport au parcours habituel. Économie potentielle estimée à 43 800 euros de cotisations.</p>\n  </div>\n</div>\n",
+      "css": ".case-study-box { max-width: 900px; margin: 32px auto 0; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); overflow: hidden; }\n.case-header { background: linear-gradient(135deg, #003d79 0%, #0057a8 100%); color: #fff; padding: 28px 36px; display: flex; justify-content: space-between; align-items: center; }\n.case-header-left h3 { font-size: 20px; margin: 0 0 6px; font-weight: 700; }\n.case-header-left p { font-size: 14px; opacity: 0.8; margin: 0; }\n.case-result { text-align: right; }\n.case-result-number { font-size: 36px; font-weight: 700; color: #0ab38c; }\n.case-result-label { font-size: 13px; opacity: 0.8; }\n.case-body { padding: 28px 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }\n.case-section h4 { font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: #003d79; margin: 0 0 12px; }\n.case-section p { font-size: 14px; line-height: 1.6; color: #555; margin: 0; }\n.case-footer { padding: 20px 36px; background: rgba(10,179,140,0.06); border-top: 1px solid rgba(10,179,140,0.15); display: flex; align-items: center; gap: 12px; }\n.case-footer svg { width: 20px; height: 20px; color: #0ab38c; flex-shrink: 0; }\n.case-footer p { font-size: 14px; color: #333; margin: 0; font-weight: 600; }\n",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "chain-journey",
+      "nom": "Chaîne de parcours",
+      "statut": "local",
+      "deck_source": "offers-family/atmp",
+      "represente": "Chaîne horizontale de maillons numérotés, un dégradé de marque filé sur l'ensemble, avec verbe d'action, titre et description sous chaque maillon.",
+      "classes": [
+        "chain-journey",
+        "chain-link",
+        "chain-number",
+        "chain-verb",
+        "chain-title",
+        "chain-desc",
+        "chain-offer",
+        "chain-arrow"
+      ],
+      "extrait_html": "<div class=\"chain-journey\">\n  <div class=\"chain-link\" style=\"background: linear-gradient(135deg, #003d79 0%, #00509b 100%); color: #fff;\">\n    <div class=\"chain-number\">1</div>\n    <div class=\"chain-verb\">Déclarer</div>\n    <div class=\"chain-title\">La déclaration comme dossier probant</div>\n    <div class=\"chain-desc\">Constituer le dossier complet et déclarer dans les délais, dès la première minute.</div>\n    <div class=\"chain-offer\">Déclarer un incident</div>\n  </div>\n  <div class=\"chain-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"white\"><path d=\"M10 17l5-5-5-5v10z\"/></svg></div>\n  <div class=\"chain-link\" style=\"background: linear-gradient(135deg, #00509b 0%, #0073b8 100%); color: #fff;\">\n    <div class=\"chain-number\">2</div>\n    <div class=\"chain-verb\">Défendre</div>\n    <div class=\"chain-title\">Le dossier suivi pendant l'instruction</div>\n    <div class=\"chain-desc\">Questionnaires documentés, suivi jusqu'à la décision.</div>\n    <div class=\"chain-offer\">Traiter un questionnaire</div>\n  </div>\n  <div class=\"chain-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"white\"><path d=\"M10 17l5-5-5-5v10z\"/></svg></div>\n  <div class=\"chain-link\" style=\"background: linear-gradient(135deg, #0073b8 0%, #0a9cc4 100%); color: #fff;\">\n    <div class=\"chain-number\">3</div>\n    <div class=\"chain-verb\">Piloter</div>\n    <div class=\"chain-title\">Les dossiers longs sous contrôle</div>\n    <div class=\"chain-desc\">Détecter les dossiers qui durent et suivre leur évolution.</div>\n    <div class=\"chain-offer\">Piloter les dossiers longue durée</div>\n  </div>\n</div>\n",
+      "css": ".chain-journey { display: flex; align-items: stretch; gap: 0; width: 100%; max-width: 1220px; margin: 28px auto 0; }\n.chain-link { flex: 1; padding: 26px 14px; position: relative; text-align: center; }\n.chain-link:first-child { border-radius: 16px 0 0 16px; }\n.chain-link:last-child { border-radius: 0 16px 16px 0; }\n.chain-number { font-size: 38px; font-weight: 700; opacity: 0.25; line-height: 1; margin-bottom: 6px; }\n.chain-verb { font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; opacity: 0.7; margin-bottom: 6px; }\n.chain-title { font-size: 16px; font-weight: 700; margin-bottom: 9px; line-height: 1.3; }\n.chain-desc { font-size: 12.5px; opacity: 0.85; line-height: 1.45; }\n.chain-offer { font-size: 10.5px; opacity: 0.6; margin-top: 12px; font-style: italic; }\n.chain-arrow { display: flex; align-items: center; margin: 0 -12px; z-index: 2; position: relative; }\n.chain-arrow svg { width: 24px; height: 24px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }\n",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "icon-grid-bleed-photo",
+      "nom": "Bloc solution, photo pleine page et grille d'icônes",
+      "statut": "local",
+      "deck_source": "es-cotizaciones-sociales",
+      "represente": "Bloc solution, grille d'icônes et de texte sur deux colonnes occupant environ 60% de la largeur, photo plein cadre sur le reste, au ras du bord de la diapositive.",
+      "classes": [
+        "uis-layout",
+        "uis-main",
+        "uis-title",
+        "uis-grid",
+        "uis-item",
+        "uis-ic",
+        "uis-photo"
+      ],
+      "extrait_html": "<div class=\"uis-layout\">\n  <div class=\"uis-main\">\n    <h1 class=\"slide-title uis-title\">Une solution complète</h1>\n    <div class=\"uis-grid\">\n      <div class=\"uis-item\">\n        <div class=\"uis-ic\"><i data-lucide=\"scan-search\"></i></div>\n        <p>Revue complète de la classification et diagnostic à 360 degrés des postes et des taux appliqués, sur données historiques et réalité opérationnelle.</p>\n      </div>\n      <div class=\"uis-item\">\n        <div class=\"uis-ic\"><i data-lucide=\"file-search\"></i></div>\n        <p>Revue exhaustive des versements, identification des montants non compensés et des opportunités de récupération.</p>\n      </div>\n      <div class=\"uis-item\">\n        <div class=\"uis-ic\"><i data-lucide=\"calculator\"></i></div>\n        <p>Chiffrage des montants récupérables et des économies récurrentes.</p>\n      </div>\n      <div class=\"uis-item\">\n        <div class=\"uis-ic\"><i data-lucide=\"users\"></i></div>\n        <p>Équipe d'experts avec dédicace complète et capacité de mobilisation immédiate.</p>\n      </div>\n    </div>\n  </div>\n  <div class=\"uis-photo\">\n    <img src=\"https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/alstom-le-creusot.jpg\" alt=\"Équipe sur site\">\n  </div>\n</div>\n",
+      "css": ".slide[data-chapter=\"valeur\"] .slide-inner { height: 100%; }\n.uis-layout { display: grid; grid-template-columns: 1.63fr 1fr; align-items: stretch; gap: 0; width: 100%; max-width: none; height: 100%; margin-top: 4px; }\n.uis-main { padding-right: 44px; display: flex; flex-direction: column; justify-content: center; }\n.uis-title { text-align: left; margin: 0 0 20px; }\n.uis-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 30px; }\n.uis-item { text-align: left; }\n.uis-ic { width: 58px; height: 58px; border-radius: 50%; background: #e9f5fc; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }\n.uis-ic svg { width: 26px; height: 26px; color: #11a9e6; }\n.uis-item p { font-size: 13.5px; line-height: 1.5; color: #3d4d5a; margin: 0; }\n.uis-photo { position: relative; overflow: hidden; margin-right: -24px; margin-top: -60px; margin-bottom: calc(-60px - var(--banner-h)); }\n.uis-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; display: block; }\n",
+      "note": null,
+      "apercu_hauteur": null
+    },
+    {
+      "id": "gantt",
+      "nom": "Diagramme de Gantt",
+      "statut": "local",
+      "deck_source": "arrets-longue-duree",
+      "represente": "Diagramme de Gantt mensuel, bandeau de mois, grille de jours, barres de phase avec extrémités arrondies.",
+      "classes": [
+        "gantt",
+        "gantt-row",
+        "gantt-row-label",
+        "gantt-month-cell",
+        "gantt-days-grid",
+        "gantt-phase",
+        "gantt-phase-spacer",
+        "gantt-track",
+        "gantt-bar",
+        "gantt-label"
+      ],
+      "extrait_html": "<div class=\"gantt\">\n  <div class=\"gantt-row\">\n    <div class=\"gantt-row-label\"></div>\n    <div class=\"gantt-month-cell\">Mois</div>\n  </div>\n  <div class=\"gantt-row\">\n    <div class=\"gantt-row-label\">Jours :</div>\n    <div class=\"gantt-days-grid\">\n      <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>\n    </div>\n  </div>\n  <div class=\"gantt-phase\">\n    <div class=\"gantt-phase-spacer\"></div>\n    <div class=\"gantt-track\">\n      <div class=\"gantt-bar bar-1\" style=\"left: 1.5%; width: 25%;\"></div>\n      <div class=\"gantt-label lbl-1\" style=\"left: 1.5%; max-width: 240px;\"><strong>J1-J8 :</strong> collecte digitalisée des dossiers</div>\n    </div>\n  </div>\n  <div class=\"gantt-phase\">\n    <div class=\"gantt-phase-spacer\"></div>\n    <div class=\"gantt-track\">\n      <div class=\"gantt-bar bar-2\" style=\"left: 24.5%; width: 8%;\"></div>\n      <div class=\"gantt-label lbl-2\" style=\"left: 24.5%; max-width: 240px;\"><strong>J+8-10 :</strong> étude des éléments par nos experts</div>\n    </div>\n  </div>\n  <div class=\"gantt-phase\">\n    <div class=\"gantt-phase-spacer\"></div>\n    <div class=\"gantt-track\">\n      <div class=\"gantt-bar bar-3\" style=\"left: 31%; width: 13%;\"></div>\n      <div class=\"gantt-label lbl-3\" style=\"left: 31%; max-width: 220px;\"><strong>J+10 :</strong> communication au client</div>\n    </div>\n  </div>\n</div>\n",
+      "css": "@keyframes ganttBarGrow { from { opacity: 0; transform: scaleX(0); transform-origin: left; } to { opacity: 1; transform: scaleX(1); } }\n@keyframes ganttLabelFade { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }\n.gantt { width: 100%; max-width: 1180px; margin: 24px auto 0; padding: 0 24px; box-sizing: border-box; }\n.gantt-row { display: flex; align-items: center; width: 100%; }\n.gantt-row-label { width: 70px; flex: 0 0 70px; font-size: 11px; color: #888; padding-right: 8px; box-sizing: border-box; }\n.gantt-month-cell { flex: 1 1 auto; background: linear-gradient(90deg, #4a90d9 0%, #003d79 100%); color: #fff; text-align: center; font-weight: 700; font-size: 15px; letter-spacing: 1px; padding: 10px 0; border-radius: 8px 8px 0 0; }\n.gantt-days-grid { flex: 1 1 auto; display: grid; grid-template-columns: repeat(30, 1fr); padding: 8px 0; border-bottom: 1px solid #e0e0e0; min-width: 0; }\n.gantt-days-grid span { text-align: center; font-size: 11px; color: #888; min-width: 0; }\n.gantt-phase { display: flex; align-items: flex-start; padding-top: 16px; width: 100%; }\n.gantt-phase-spacer { width: 70px; flex: 0 0 70px; }\n.gantt-track { flex: 1 1 auto; position: relative; height: 52px; min-width: 0; }\n.gantt-bar { position: absolute; top: 8px; height: 5px; border-radius: 3px; opacity: 0; }\n.gantt-bar::before, .gantt-bar::after { content: ''; position: absolute; top: 50%; transform: translateY(-50%); width: 9px; height: 9px; border-radius: 50%; }\n.gantt-bar::before { left: -4px; }\n.gantt-bar::after { right: -4px; }\n.gantt-bar.bar-1 { background: #4a90d9; }\n.gantt-bar.bar-1::before, .gantt-bar.bar-1::after { background: #4a90d9; }\n.gantt-bar.bar-2 { background: #4a90d9; }\n.gantt-bar.bar-2::before, .gantt-bar.bar-2::after { background: #4a90d9; }\n.gantt-bar.bar-3 { background: #0ab38c; }\n.gantt-bar.bar-3::before, .gantt-bar.bar-3::after { background: #0ab38c; }\n.gantt-label { position: absolute; top: 22px; font-size: 13px; color: #333; line-height: 1.4; opacity: 0; }\n.gantt-label strong { color: #003d79; font-weight: 700; }\n.slide.active .gantt-bar.bar-1 { animation: ganttBarGrow 0.5s cubic-bezier(0.22,1,0.36,1) 0.3s forwards; }\n.slide.active .gantt-bar.bar-2 { animation: ganttBarGrow 0.5s cubic-bezier(0.22,1,0.36,1) 0.6s forwards; }\n.slide.active .gantt-bar.bar-3 { animation: ganttBarGrow 0.5s cubic-bezier(0.22,1,0.36,1) 0.9s forwards; }\n.slide.active .gantt-label.lbl-1 { animation: ganttLabelFade 0.4s ease 0.6s forwards; }\n.slide.active .gantt-label.lbl-2 { animation: ganttLabelFade 0.4s ease 0.9s forwards; }\n.slide.active .gantt-label.lbl-3 { animation: ganttLabelFade 0.4s ease 1.2s forwards; }\n",
+      "note": null,
+      "apercu_hauteur": null
     }
   ],
   "archetypes": [
     {
       "id": "cover",
       "nom": "Couverture",
+      "etape": "Couverture",
+      "ordre": 0,
       "fichier": ".claude/skills/slides/templates/archetypes/archetype-cover.html",
       "represente": "Slide d'ouverture, logo, titre de l'offre, visuel plein cadre.",
       "frequence": {
@@ -76,19 +580,10 @@
       "markup": "<!-- Archétype : couverture (cover)\n     Rôle : première diapositive du deck, logo, titre de l'offre et sous-titre sur fond image.\n     Distillé de : dat, présent (sous une forme ou une autre) dans 23 des 23 decks.\n     À adapter : data-chapter (identifiant unique dans le deck), le texte de cover-title,\n     cover-subtitle, et l'image cover-right (remplacer par un visuel propre à l'offre).\n     La classe \"cover active\" est volontaire, elle marque la première diapositive visible. -->\n<section class=\"slide cover active\" data-chapter=\"cover\">\n      <div class=\"cover-layout\">\n        <div class=\"cover-left\">\n          <div class=\"cover-logo\">\n            <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n          </div>\n          <h1 class=\"cover-title\">\n            Titre de<br>l'offre\n          </h1>\n          <p class=\"cover-subtitle\">Une phrase qui explique en une ligne ce que l'offre apporte et pour qui</p>\n        </div>\n        <div class=\"cover-right\">\n          <img class=\"cover-image\" src=\"https://ayming-france.github.io/assets/imagery/stock/unsplash-1600880292203-757bb62b4baf-1000x1200.jpg\" alt=\"Business meeting\">\n        </div>\n      </div>\n    </section>\n"
     },
     {
-      "id": "introduction",
-      "nom": "Introduction",
-      "fichier": ".claude/skills/slides/templates/archetypes/archetype-introduction.html",
-      "represente": "Slide intro-hero avec le pitch et les cartes de chiffres clés.",
-      "frequence": {
-        "slides": 24,
-        "decks": 21
-      },
-      "markup": "<!-- Archétype : introduction (intro-hero avec cartes de statistiques)\n     Rôle : bascule entre le problème et la solution, collage photo animé, titre flottant\n     et trois chiffres clés sous forme de cartes.\n     Distillé de : dat, présent dans 21 des 23 decks.\n     À adapter : data-chapter, les 5 images du collage (dupliquées deux fois pour la boucle\n     visuelle, garder les deux jeux identiques), intro-offer-title, les trois intro-stat-card\n     et le texte intro-pitch. -->\n<section class=\"slide slide-introduction\" data-chapter=\"introduction\">\n      <div class=\"slide-inner\">\n        <div class=\"intro-hero\">\n          <div class=\"intro-hero-collage\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/hub-cards/at-mp-1.jpg\" alt=\"Illustration 1\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/dat/taux-at-6.jpg\" alt=\"Illustration 2\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/dat/at-mp-5.jpg\" alt=\"Illustration 3\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/arrets-longue-duree/at-mp-4.jpg\" alt=\"Illustration 4\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/dat/at-mp-2.jpg\" alt=\"Illustration 5\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/hub-cards/at-mp-1.jpg\" alt=\"Illustration 1\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/dat/taux-at-6.jpg\" alt=\"Illustration 2\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/dat/at-mp-5.jpg\" alt=\"Illustration 3\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/arrets-longue-duree/at-mp-4.jpg\" alt=\"Illustration 4\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/dat/at-mp-2.jpg\" alt=\"Illustration 5\">\n          </div>\n          <div class=\"intro-hero-logo\">\n            <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n          </div>\n\n          <div class=\"intro-title-band\">\n            <h2 class=\"intro-offer-title\">Titre de l'offre</h2>\n          </div>\n\n          <div class=\"intro-stats\">\n            <div class=\"intro-stat-card\">\n              <div class=\"intro-stat-number\">1 200+</div>\n              <div class=\"intro-stat-label\">Dossiers traités par an</div>\n            </div>\n            <div class=\"intro-stat-card\">\n              <div class=\"intro-stat-number\">300 000+</div>\n              <div class=\"intro-stat-label\">Salariés couverts</div>\n            </div>\n            <div class=\"intro-stat-card\">\n              <div class=\"intro-stat-number\">15+ ans</div>\n              <div class=\"intro-stat-label\">D'expertise sur le sujet</div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"intro-content\">\n          <p class=\"intro-pitch\">Une phrase qui pose la promesse de l'offre, ce qu'elle sécurise et le résultat mesurable attendu pour le client.</p>\n        </div>\n      </div>\n    </section>\n"
-    },
-    {
       "id": "insight",
       "nom": "Insight marché",
+      "etape": "Insight",
+      "ordre": 1,
       "fichier": ".claude/skills/slides/templates/archetypes/archetype-insight.html",
       "represente": "Le fait de marché qui installe le problème, un chiffre fort et son explication.",
       "frequence": {
@@ -98,43 +593,25 @@
       "markup": "<!-- Archétype : insight (constat de marché)\n     Rôle : pose le problème avec un texte argumenté à gauche et une image à droite,\n     deux badges flottants qui portent chacun un chiffre clé.\n     Distillé de : dat, présent dans 22 des 23 decks.\n     À adapter : data-chapter, le slide-title, les trois content-paragraph (le dernier,\n     en classe highlight, porte la conviction Ayming), l'image et les deux floating-badge. -->\n<section class=\"slide\" data-chapter=\"insight\">\n      <div class=\"layout-split\">\n        <div class=\"content-side\">\n          <h1 class=\"slide-title\">\n            Titre de la slide<br>\n            en une ligne ou deux\n          </h1>\n\n          <p class=\"content-paragraph\">\n            La plupart des organisations traitent ce sujet comme une <strong>tâche administrative</strong>. C'est en réalité un enjeu qui peut peser sur leurs résultats pendant des années.\n          </p>\n\n          <p class=\"content-paragraph\">\n            Le processus se fragmente entre plusieurs intervenants et plusieurs outils. Chacun avance de son côté, et des informations initiales incomplètes fragilisent le dossier en cas de contrôle.\n          </p>\n\n          <p class=\"content-paragraph highlight\">\n            Chez Ayming, nous croyons que chaque dossier mérite une expertise dédiée dès la première minute.\n          </p>\n        </div>\n\n        <div class=\"visual-side\">\n          <div class=\"image-container\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/hub-cards/At-tiers-5.jpg\" alt=\"Illustration du constat\">\n            <div class=\"floating-badge top-right\">\n              <span class=\"badge-number\">87 %</span> des dossiers concernés\n            </div>\n            <div class=\"floating-badge bottom-left\">\n              <i data-lucide=\"circle-check-big\"></i>\n              +50 % de démarches abouties\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
     },
     {
-      "id": "value-detail",
-      "nom": "Valeur en détail",
-      "fichier": ".claude/skills/slides/templates/archetypes/archetype-value-detail.html",
-      "represente": "Approfondissement d'un pilier de valeur, texte à gauche, visuel à droite.",
+      "id": "alternatives-cards",
+      "nom": "Alternatives en cartes",
+      "etape": "Alternatives (cartes)",
+      "ordre": 2,
+      "fichier": ".claude/skills/slides/templates/archetypes/archetype-alternatives-cards.html",
+      "represente": "Les trois approches que les organisations emploient aujourd'hui, une carte par alternative.",
       "frequence": {
-        "slides": 90,
-        "decks": 21
+        "slides": 18,
+        "decks": 18
       },
-      "markup": "<!-- Archétype : approfondissement (value-detail-layout avec visuel latéral)\n     Rôle : détaille un des attributs core de l'offre, liste à puces à gauche, image à droite.\n     Une offre répète cette diapositive une fois par attribut core (3 à 5 fois en général).\n     Distillé de : dat, présent dans 21 des 23 decks.\n     À adapter : data-chapter, le titre h2, les 2 à 4 éléments de la value-detail-list\n     et l'image de la value-detail-visual. -->\n<section class=\"slide\" data-chapter=\"valeur-1\">\n      <div class=\"value-detail-layout\">\n        <div class=\"value-detail-content\">\n          <h2>Titre de l'attribut détaillé</h2>\n\n          <ul class=\"value-detail-list\">\n            <li>\n              <i data-lucide=\"check\" class=\"check-icon\"></i>\n              Premier point qui explique comment l'attribut se traduit concrètement pour le client\n            </li>\n            <li>\n              <i data-lucide=\"check\" class=\"check-icon\"></i>\n              Deuxième point, centré sur un bénéfice mesurable plutôt que sur un outil\n            </li>\n            <li>\n              <i data-lucide=\"check\" class=\"check-icon\"></i>\n              Troisième point, qui écarte un risque ou une charge que le client portait seul\n            </li>\n          </ul>\n        </div>\n\n        <div class=\"value-detail-visual\">\n          <div class=\"value-image-container\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/hub-cards/at-mp-1.jpg\" alt=\"Illustration de l'attribut\">\n          </div>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
-    },
-    {
-      "id": "feature-grid",
-      "nom": "Grille de caractéristiques",
-      "fichier": ".claude/skills/slides/templates/archetypes/archetype-feature-grid.html",
-      "represente": "Grille de 5 caractéristiques avec icône, titre et description.",
-      "frequence": {
-        "slides": 45,
-        "decks": 22
-      },
-      "markup": "<!-- Archétype : grille d'attributs (feature-grid-5)\n     Rôle : la diapositive \"Ce qu'Ayming vous apporte\", vue d'ensemble des attributs core\n     avant que chacun ne soit détaillé sur sa propre diapositive value-detail.\n     Distillé de : dat, présent dans 22 des 23 decks (formes feature-grid-3 à feature-grid-6\n     selon le nombre d'attributs, ici la forme à 5).\n     À adapter : data-chapter, le slide-title, et les 5 feature-item (icône Lucide, titre\n     h4, phrase courte). Retirer un feature-item et passer en feature-grid-4 pour 4 attributs. -->\n<section class=\"slide\" data-chapter=\"valeur\">\n      <div class=\"slide-inner\">\n        <h1 class=\"slide-title\">\n          Ce qu'Ayming vous apporte<br>\n          de différent\n        </h1>\n\n        <div class=\"feature-grid-5\">\n          <div class=\"feature-item\">\n            <div class=\"feature-icon\">\n              <i data-lucide=\"file-check\"></i>\n            </div>\n            <div class=\"feature-content\">\n              <h4>Premier attribut</h4>\n              <p>Bénéfice concret en une phrase courte</p>\n            </div>\n          </div>\n\n          <div class=\"feature-item\">\n            <div class=\"feature-icon\">\n              <i data-lucide=\"timer\"></i>\n            </div>\n            <div class=\"feature-content\">\n              <h4>Deuxième attribut</h4>\n              <p>Bénéfice concret en une phrase courte</p>\n            </div>\n          </div>\n\n          <div class=\"feature-item\">\n            <div class=\"feature-icon\">\n              <i data-lucide=\"shield-check\"></i>\n            </div>\n            <div class=\"feature-content\">\n              <h4>Troisième attribut</h4>\n              <p>Bénéfice concret en une phrase courte</p>\n            </div>\n          </div>\n\n          <div class=\"feature-item\">\n            <div class=\"feature-icon\">\n              <i data-lucide=\"users\"></i>\n            </div>\n            <div class=\"feature-content\">\n              <h4>Quatrième attribut</h4>\n              <p>Bénéfice concret en une phrase courte</p>\n            </div>\n          </div>\n\n          <div class=\"feature-item\">\n            <div class=\"feature-icon\">\n              <i data-lucide=\"bar-chart-3\"></i>\n            </div>\n            <div class=\"feature-content\">\n              <h4>Cinquième attribut</h4>\n              <p>Bénéfice concret en une phrase courte</p>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
-    },
-    {
-      "id": "process-timeline",
-      "nom": "Déroulé de mission",
-      "fichier": ".claude/skills/slides/templates/archetypes/archetype-process-timeline.html",
-      "represente": "Étapes numérotées de la mission sur une frise horizontale.",
-      "frequence": {
-        "slides": 21,
-        "decks": 19
-      },
-      "markup": "<!-- Archétype : chronologie du processus (process-timeline-4)\n     Rôle : les étapes numérotées pour démarrer la mission, en général juste avant la\n     diapositive de clôture, avec une durée indicative par étape.\n     Distillé de : collecte-arrets, présent dans 19 des 23 decks (formes à 3 ou 4 étapes).\n     À adapter : data-chapter, le slide-title, et les process-step (step-title, step-duration,\n     step-description). Retirer un process-step et son step-arrow pour une forme à 3 étapes. -->\n<section class=\"slide\" data-chapter=\"processus\">\n      <div class=\"slide-inner\">\n        <h1 class=\"slide-title\">Prochaine étape</h1>\n\n        <div class=\"process-timeline-4\">\n          <div class=\"process-step\">\n            <div class=\"step-number\">1</div>\n            <h3 class=\"step-title\">Diagnostic</h3>\n            <p class=\"step-duration\">2 semaines</p>\n            <p class=\"step-description\">Analyse du fonctionnement actuel et identification des points de perte</p>\n          </div>\n\n          <span class=\"step-arrow\">&rarr;</span>\n\n          <div class=\"process-step\">\n            <div class=\"step-number\">2</div>\n            <h3 class=\"step-title\">Proposition sur mesure</h3>\n            <p class=\"step-duration\">+1 semaine</p>\n            <p class=\"step-description\">Modèle d'accompagnement adapté à votre organisation et à vos volumes</p>\n          </div>\n\n          <span class=\"step-arrow\">&rarr;</span>\n\n          <div class=\"process-step\">\n            <div class=\"step-number\">3</div>\n            <h3 class=\"step-title\">Pilote</h3>\n            <p class=\"step-duration\">3 mois</p>\n            <p class=\"step-description\">Démarrage sur un périmètre restreint pour démontrer la valeur</p>\n          </div>\n\n          <span class=\"step-arrow\">&rarr;</span>\n\n          <div class=\"process-step\">\n            <div class=\"step-number\">4</div>\n            <h3 class=\"step-title\">Déploiement complet</h3>\n            <p class=\"step-duration\">Selon planning</p>\n            <p class=\"step-description\">Extension à l'ensemble des sites et des populations concernées</p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
+      "markup": "<!-- Archétype : trois approches existantes (cartes)\n     Rôle : la diapositive \"Comment les organisations gèrent le sujet aujourd'hui\", une carte\n     par approche déjà utilisée par le client, avant la table de comparaison qui en détaille\n     les avantages et les limites.\n     Distillé de : collecte-arrets, présent (three-columns + column-card) dans 8 des 23 decks\n     sous cette forme précise à trois colonnes.\n     À adapter : data-chapter, le slide-title, et les trois column-card (image, h3, paragraphe\n     avec un mot-clé en gras suivi de la limite concrète). Garder 3 cartes, jamais 4 sur cette\n     forme. -->\n<section class=\"slide\" data-chapter=\"alternatives\">\n      <div class=\"slide-inner\">\n        <h1 class=\"slide-title\">\n          Comment les organisations gèrent<br>\n          le sujet aujourd'hui\n        </h1>\n\n        <div class=\"three-columns\">\n          <div class=\"column-card\">\n            <div class=\"card-image\">\n              <img src=\"https://ayming-france.github.io/assets/imagery/stock/unsplash-1586281380349-632531db7ed4-600x400.jpg\" alt=\"Première approche\">\n            </div>\n            <h3>Première approche existante</h3>\n            <p><strong>Résumé en un mot.</strong> Description courte de la limite structurelle de cette approche.</p>\n          </div>\n\n          <div class=\"column-card\">\n            <div class=\"card-image\">\n              <img src=\"https://ayming-france.github.io/assets/imagery/stock/unsplash-1551288049-bebda4e38f71-600x400.jpg\" alt=\"Deuxième approche\">\n            </div>\n            <h3>Deuxième approche existante</h3>\n            <p><strong>Résumé en un mot.</strong> Description courte de la limite structurelle de cette approche.</p>\n          </div>\n\n          <div class=\"column-card\">\n            <div class=\"card-image\">\n              <img src=\"https://ayming-france.github.io/assets/imagery/stock/unsplash-1454165804606-c3d57bc86b40-600x400.jpg\" alt=\"Troisième approche\">\n            </div>\n            <h3>Troisième approche existante</h3>\n            <p><strong>Résumé en un mot.</strong> Description courte de la limite structurelle de cette approche.</p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
     },
     {
       "id": "comparison-table",
-      "nom": "Tableau comparatif",
+      "nom": "Alternatives en tableau",
+      "etape": "Alternatives (tableau)",
+      "ordre": 3,
       "fichier": ".claude/skills/slides/templates/archetypes/archetype-comparison-table.html",
-      "represente": "Comparaison avant/après ou nous/eux en tableau.",
+      "represente": "Chaque approche a ses limites, avantages et inconvénients par alternative en tableau.",
       "frequence": {
         "slides": 18,
         "decks": 14
@@ -142,30 +619,62 @@
       "markup": "<!-- Archétype : tableau comparatif (avant/après ou nous/eux)\n     Rôle : oppose plusieurs approches existantes, avantages puis limites de chacune,\n     pour amener la solution proposée par l'offre.\n     Distillé de : collecte-arrets, présent dans 14 des 23 decks.\n     À adapter : data-chapter, le slide-title, et les lignes du tableau (une approche par\n     ligne, avantages et limites propres au sujet de l'offre). Garder 3 lignes maximum\n     pour tenir sur la diapositive. -->\n<section class=\"slide\" data-chapter=\"comparaison\">\n      <div class=\"slide-inner\">\n        <h1 class=\"slide-title\">\n          Chaque approche a ses limites\n        </h1>\n\n        <div class=\"table-container\">\n          <table class=\"comparison-table\">\n            <thead>\n              <tr>\n                <th>Approche</th>\n                <th>Avantages</th>\n                <th>Limites</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Gestion manuelle</td>\n                <td>\n                  <ul>\n                    <li>Pas de coût externe</li>\n                    <li>Processus connu des équipes</li>\n                    <li>Flexibilité au cas par cas</li>\n                  </ul>\n                </td>\n                <td>\n                  <ul>\n                    <li>Dispersion des informations</li>\n                    <li>Aucun contrôle systématique</li>\n                    <li>Relances manuelles chronophages</li>\n                    <li>Erreurs de saisie fréquentes</li>\n                  </ul>\n                </td>\n              </tr>\n              <tr>\n                <td>Outil interne</td>\n                <td>\n                  <ul>\n                    <li>Portail intégré aux autres outils</li>\n                    <li>Centralisation des données</li>\n                    <li>Pas de nouvel abonnement</li>\n                  </ul>\n                </td>\n                <td>\n                  <ul>\n                    <li>Couvre le suivi, pas le fond</li>\n                    <li>Pas de contrôle documentaire</li>\n                    <li>Pas de détection des anomalies</li>\n                  </ul>\n                </td>\n              </tr>\n              <tr>\n                <td>Prestataire généraliste</td>\n                <td>\n                  <ul>\n                    <li>Connaissance des cas courants</li>\n                    <li>Traitement délégué</li>\n                    <li>Peu de changement à gérer</li>\n                  </ul>\n                </td>\n                <td>\n                  <ul>\n                    <li>Surcharge en période de pointe</li>\n                    <li>Suivi peu réactif</li>\n                    <li>Pas de vision consolidée</li>\n                  </ul>\n                </td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
     },
     {
-      "id": "testimonial",
-      "nom": "Témoignages",
-      "fichier": ".claude/skills/slides/templates/archetypes/archetype-testimonial.html",
-      "represente": "Grille de cartes témoignage à retournement, photo devant, citation derrière.",
+      "id": "monde-ideal",
+      "nom": "Monde idéal",
+      "etape": "Monde idéal",
+      "ordre": 4,
+      "fichier": ".claude/skills/slides/templates/archetypes/archetype-monde-ideal.html",
+      "represente": "Les caractéristiques de la solution idéale, trois cartes ideal-card.",
       "frequence": {
-        "slides": 18,
-        "decks": 18
+        "slides": 19,
+        "decks": 19
       },
-      "markup": "<!-- Archétype : témoignages (testimonial-grid, cartes qui se retournent)\n     Rôle : trois preuves client, une carte par client, la face avant montre le résultat\n     en une phrase, la face arrière la citation complète et son auteur.\n     Distillé de : dat, présent dans 18 des 23 decks.\n     À adapter : data-chapter, les trois testimonial-card (photo, logo, phrase-résultat,\n     citation, auteur, poste, lien testimonial-cta). Remplacer les visuels et logos par\n     ceux du client réel avant publication, ce sont des placeholders. -->\n<section class=\"slide\" data-chapter=\"preuves\">\n      <div class=\"slide-inner\">\n        <h1 class=\"slide-title\">Ils nous font confiance</h1>\n\n        <div class=\"testimonial-grid\">\n          <div class=\"testimonial-card\">\n            <div class=\"testimonial-card-inner\">\n              <div class=\"testimonial-front\">\n                <img src=\"https://ayming-france.github.io/assets/imagery/clients/STEF-1436-x-808.jpg\" alt=\"Nom du client 1\">\n                <p class=\"testimonial-title\">Un client améliore son pilotage du sujet</p>\n                <div class=\"testimonial-logo\"><img src=\"https://ayming-france.github.io/assets/imagery/clients/STEF_logo.png\" alt=\"Nom du client 1\"></div>\n                <span class=\"testimonial-hint\">\n                  <i data-lucide=\"refresh-cw\"></i>\n                  Découvrir\n                </span>\n              </div>\n              <div class=\"testimonial-back\">\n                <div class=\"testimonial-stars\"><span class=\"testimonial-stars-icons\">★★★★★</span><span class=\"testimonial-date\">Janvier 2026</span></div>\n                <div class=\"testimonial-quote-section\">\n                  <p class=\"testimonial-quote\">En quelques mois, notre indicateur clé s'est nettement amélioré et cette tendance se maintient dans le temps. L'accompagnement d'Ayming nous a permis de structurer notre démarche.</p>\n                  <a href=\"#\" target=\"_blank\" class=\"testimonial-cta\">Lire la suite</a>\n                </div>\n                <div class=\"testimonial-author\">\n                  <span class=\"testimonial-name\">Prénom Nom</span>\n                  <span class=\"testimonial-position\">Fonction, Entreprise</span>\n                  <img class=\"testimonial-company-logo\" src=\"https://ayming-france.github.io/assets/imagery/clients/STEF_logo.png\" alt=\"Nom du client 1\">\n                </div>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"testimonial-card\">\n            <div class=\"testimonial-card-inner\">\n              <div class=\"testimonial-front\">\n                <img src=\"https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1436-x-808.jpg\" alt=\"Nom du client 2\">\n                <p class=\"testimonial-title\">Un client réduit son exposition sur le sujet</p>\n                <div class=\"testimonial-logo\"><img src=\"https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg\" alt=\"Nom du client 2\"></div>\n                <span class=\"testimonial-hint\">\n                  <i data-lucide=\"refresh-cw\"></i>\n                  Découvrir\n                </span>\n              </div>\n              <div class=\"testimonial-back\">\n                <div class=\"testimonial-stars\"><span class=\"testimonial-stars-icons\">★★★★★</span><span class=\"testimonial-date\">Mars 2025</span></div>\n                <div class=\"testimonial-quote-section\">\n                  <p class=\"testimonial-quote\">Nous sommes pleinement satisfaits de la qualité du service fourni. L'équipe d'Ayming est composée de consultants compétents qui comprennent nos enjeux.</p>\n                  <a href=\"#\" target=\"_blank\" class=\"testimonial-cta\">Lire la suite</a>\n                </div>\n                <div class=\"testimonial-author\">\n                  <span class=\"testimonial-name\">Prénom Nom</span>\n                  <span class=\"testimonial-position\">Fonction, Entreprise</span>\n                  <img class=\"testimonial-company-logo\" src=\"https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg\" alt=\"Nom du client 2\">\n                </div>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"testimonial-card\">\n            <div class=\"testimonial-card-inner\">\n              <div class=\"testimonial-front\">\n                <img src=\"https://ayming-france.github.io/assets/imagery/clients/Colryut-1436-x-808.jpg\" alt=\"Nom du client 3\">\n                <p class=\"testimonial-title\">Un client sécurise ses coûts sur le sujet</p>\n                <div class=\"testimonial-logo\"><img src=\"https://ayming-france.github.io/assets/imagery/clients/colruyt-logo-png-transparent-e1759137868909.png\" alt=\"Nom du client 3\"></div>\n                <span class=\"testimonial-hint\">\n                  <i data-lucide=\"refresh-cw\"></i>\n                  Découvrir\n                </span>\n              </div>\n              <div class=\"testimonial-back\">\n                <div class=\"testimonial-stars\"><span class=\"testimonial-stars-icons\">★★★★★</span><span class=\"testimonial-date\">Novembre 2025</span></div>\n                <div class=\"testimonial-quote-section\">\n                  <p class=\"testimonial-quote\">L'expertise des équipes nous a permis de structurer nos pratiques sur ce sujet. C'est un partenariat qui s'inscrit dans la durée.</p>\n                  <a href=\"#\" target=\"_blank\" class=\"testimonial-cta\">Lire la suite</a>\n                </div>\n                <div class=\"testimonial-author\">\n                  <span class=\"testimonial-name\">Prénom Nom</span>\n                  <span class=\"testimonial-position\">Fonction, Entreprise</span>\n                  <img class=\"testimonial-company-logo\" src=\"https://ayming-france.github.io/assets/imagery/clients/colruyt-logo-png-transparent-e1759137868909.png\" alt=\"Nom du client 3\">\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
+      "markup": "<!-- Archétype : le monde idéal (trois cartes)\n     Rôle : la diapositive \"Ce que serait un [sujet] maîtrisé\", décrit l'état cible avant de\n     présenter Ayming, sans encore nommer l'offre. Clôt la partie Marché de la navigation.\n     Distillé de : visites-medicales (offer-family), présent (three-columns + ideal-card) dans\n     9 des 23 decks sous cette forme à trois colonnes.\n     À adapter : data-chapter, le slide-title, et les trois column-card.ideal-card (icône\n     Lucide, h3, paragraphe). Passer à four-columns pour une forme à quatre caractéristiques\n     idéales (voir collecte-arrets), présente dans 10 des 23 decks. -->\n<section class=\"slide\" data-chapter=\"monde-ideal\">\n      <div class=\"slide-inner\">\n        <h1 class=\"slide-title\">Ce que serait le sujet maîtrisé</h1>\n\n        <div class=\"three-columns\">\n          <div class=\"column-card ideal-card\">\n            <div class=\"card-image\">\n              <i data-lucide=\"workflow\"></i>\n            </div>\n            <h3>Première caractéristique idéale</h3>\n            <p>Description courte de ce que permet cette caractéristique</p>\n          </div>\n\n          <div class=\"column-card ideal-card\">\n            <div class=\"card-image\">\n              <i data-lucide=\"shield-check\"></i>\n            </div>\n            <h3>Deuxième caractéristique idéale</h3>\n            <p>Description courte de ce que permet cette caractéristique</p>\n          </div>\n\n          <div class=\"column-card ideal-card\">\n            <div class=\"card-image\">\n              <i data-lucide=\"clipboard-check\"></i>\n            </div>\n            <h3>Troisième caractéristique idéale</h3>\n            <p>Description courte de ce que permet cette caractéristique</p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
     },
     {
-      "id": "faq",
-      "nom": "FAQ",
-      "fichier": ".claude/skills/slides/templates/archetypes/archetype-faq.html",
-      "represente": "Grille de cartes question-réponse pour lever les objections.",
+      "id": "introduction",
+      "nom": "Introduction",
+      "etape": "Introduction",
+      "ordre": 5,
+      "fichier": ".claude/skills/slides/templates/archetypes/archetype-introduction.html",
+      "represente": "Slide intro-hero avec le pitch et les cartes de chiffres clés.",
       "frequence": {
-        "slides": 18,
-        "decks": 18
+        "slides": 24,
+        "decks": 21
       },
-      "markup": "<!-- Archétype : questions fréquentes (faq-grid)\n     Rôle : lève les objections courantes en quatre cartes courtes, une question par carte\n     avec une icône Lucide et une réponse en une ou deux phrases.\n     Distillé de : dat, présent dans 18 des 23 decks.\n     À adapter : data-chapter, le slide-title, et les quatre faq-card (icône, question,\n     réponse). Choisir les quatre objections les plus fréquentes remontées par la vente. -->\n<section class=\"slide\" data-chapter=\"questions\">\n      <div class=\"slide-inner\">\n        <h1 class=\"slide-title\">\n          Questions qu'on nous pose souvent\n        </h1>\n\n        <div class=\"faq-grid\">\n          <div class=\"faq-card\">\n            <h4>\n              <i data-lucide=\"help-circle\"></i>\n              Pourquoi passer par Ayming plutôt que de gérer cela en interne ?\n            </h4>\n            <p>Traiter chaque dossier comme un cas à part entière, tenir les délais et intégrer une stratégie de maîtrise des coûts dès le premier jour.</p>\n          </div>\n\n          <div class=\"faq-card\">\n            <h4>\n              <i data-lucide=\"monitor\"></i>\n              Cela remplace nos outils existants ?\n            </h4>\n            <p>Notre accompagnement complète vos outils en couvrant les phases critiques de collecte et de traitement.</p>\n          </div>\n\n          <div class=\"faq-card\">\n            <h4>\n              <i data-lucide=\"pen-line\"></i>\n              Faut-il utiliser un outil spécifique ?\n            </h4>\n            <p>Non, l'outil dédié est optionnel. Nous nous adaptons à vos outils existants, bien qu'il offre l'avantage d'une capture horodatée.</p>\n          </div>\n\n          <div class=\"faq-card\">\n            <h4>\n              <i data-lucide=\"clipboard-list\"></i>\n              Peut-on démarrer sur un périmètre restreint ?\n            </h4>\n            <p>Tout à fait. Après diagnostic, nous proposons un déploiement total, partiel ou une montée en autonomie guidée.</p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
+      "markup": "<!-- Archétype : introduction (intro-hero avec cartes de statistiques)\n     Rôle : bascule entre le problème et la solution, collage photo animé, titre flottant\n     et trois chiffres clés sous forme de cartes.\n     Distillé de : dat, présent dans 21 des 23 decks.\n     À adapter : data-chapter, les 5 images du collage (dupliquées deux fois pour la boucle\n     visuelle, garder les deux jeux identiques), intro-offer-title, les trois intro-stat-card\n     et le texte intro-pitch. -->\n<section class=\"slide slide-introduction\" data-chapter=\"introduction\">\n      <div class=\"slide-inner\">\n        <div class=\"intro-hero\">\n          <div class=\"intro-hero-collage\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/hub-cards/at-mp-1.jpg\" alt=\"Illustration 1\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/dat/taux-at-6.jpg\" alt=\"Illustration 2\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/dat/at-mp-5.jpg\" alt=\"Illustration 3\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/arrets-longue-duree/at-mp-4.jpg\" alt=\"Illustration 4\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/dat/at-mp-2.jpg\" alt=\"Illustration 5\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/hub-cards/at-mp-1.jpg\" alt=\"Illustration 1\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/dat/taux-at-6.jpg\" alt=\"Illustration 2\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/dat/at-mp-5.jpg\" alt=\"Illustration 3\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/arrets-longue-duree/at-mp-4.jpg\" alt=\"Illustration 4\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/dat/at-mp-2.jpg\" alt=\"Illustration 5\">\n          </div>\n          <div class=\"intro-hero-logo\">\n            <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n          </div>\n\n          <div class=\"intro-title-band\">\n            <h2 class=\"intro-offer-title\">Titre de l'offre</h2>\n          </div>\n\n          <div class=\"intro-stats\">\n            <div class=\"intro-stat-card\">\n              <div class=\"intro-stat-number\">1 200+</div>\n              <div class=\"intro-stat-label\">Dossiers traités par an</div>\n            </div>\n            <div class=\"intro-stat-card\">\n              <div class=\"intro-stat-number\">300 000+</div>\n              <div class=\"intro-stat-label\">Salariés couverts</div>\n            </div>\n            <div class=\"intro-stat-card\">\n              <div class=\"intro-stat-number\">15+ ans</div>\n              <div class=\"intro-stat-label\">D'expertise sur le sujet</div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"intro-content\">\n          <p class=\"intro-pitch\">Une phrase qui pose la promesse de l'offre, ce qu'elle sécurise et le résultat mesurable attendu pour le client.</p>\n        </div>\n      </div>\n    </section>\n"
+    },
+    {
+      "id": "feature-grid",
+      "nom": "Vue d'ensemble valeur",
+      "etape": "Vue d'ensemble valeur",
+      "ordre": 6,
+      "fichier": ".claude/skills/slides/templates/archetypes/archetype-feature-grid.html",
+      "represente": "Ce qu'Ayming vous apporte, la grille des piliers de valeur avec icône, titre et description.",
+      "frequence": {
+        "slides": 45,
+        "decks": 22
+      },
+      "markup": "<!-- Archétype : grille d'attributs (feature-grid-5)\n     Rôle : la diapositive \"Ce qu'Ayming vous apporte\", vue d'ensemble des attributs core\n     avant que chacun ne soit détaillé sur sa propre diapositive value-detail.\n     Distillé de : dat, présent dans 22 des 23 decks (formes feature-grid-3 à feature-grid-6\n     selon le nombre d'attributs, ici la forme à 5).\n     À adapter : data-chapter, le slide-title, et les 5 feature-item (icône Lucide, titre\n     h4, phrase courte). Retirer un feature-item et passer en feature-grid-4 pour 4 attributs. -->\n<section class=\"slide\" data-chapter=\"valeur\">\n      <div class=\"slide-inner\">\n        <h1 class=\"slide-title\">\n          Ce qu'Ayming vous apporte<br>\n          de différent\n        </h1>\n\n        <div class=\"feature-grid-5\">\n          <div class=\"feature-item\">\n            <div class=\"feature-icon\">\n              <i data-lucide=\"file-check\"></i>\n            </div>\n            <div class=\"feature-content\">\n              <h4>Premier attribut</h4>\n              <p>Bénéfice concret en une phrase courte</p>\n            </div>\n          </div>\n\n          <div class=\"feature-item\">\n            <div class=\"feature-icon\">\n              <i data-lucide=\"timer\"></i>\n            </div>\n            <div class=\"feature-content\">\n              <h4>Deuxième attribut</h4>\n              <p>Bénéfice concret en une phrase courte</p>\n            </div>\n          </div>\n\n          <div class=\"feature-item\">\n            <div class=\"feature-icon\">\n              <i data-lucide=\"shield-check\"></i>\n            </div>\n            <div class=\"feature-content\">\n              <h4>Troisième attribut</h4>\n              <p>Bénéfice concret en une phrase courte</p>\n            </div>\n          </div>\n\n          <div class=\"feature-item\">\n            <div class=\"feature-icon\">\n              <i data-lucide=\"users\"></i>\n            </div>\n            <div class=\"feature-content\">\n              <h4>Quatrième attribut</h4>\n              <p>Bénéfice concret en une phrase courte</p>\n            </div>\n          </div>\n\n          <div class=\"feature-item\">\n            <div class=\"feature-icon\">\n              <i data-lucide=\"bar-chart-3\"></i>\n            </div>\n            <div class=\"feature-content\">\n              <h4>Cinquième attribut</h4>\n              <p>Bénéfice concret en une phrase courte</p>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
+    },
+    {
+      "id": "value-detail",
+      "nom": "Valeur en détail",
+      "etape": "Valeur en détail",
+      "ordre": 7,
+      "fichier": ".claude/skills/slides/templates/archetypes/archetype-value-detail.html",
+      "represente": "Approfondissement d'un pilier de valeur, texte à gauche, visuel à droite. Une slide par pilier.",
+      "frequence": {
+        "slides": 90,
+        "decks": 21
+      },
+      "markup": "<!-- Archétype : approfondissement (value-detail-layout avec visuel latéral)\n     Rôle : détaille un des attributs core de l'offre, liste à puces à gauche, image à droite.\n     Une offre répète cette diapositive une fois par attribut core (3 à 5 fois en général).\n     Distillé de : dat, présent dans 21 des 23 decks.\n     À adapter : data-chapter, le titre h2, les 2 à 4 éléments de la value-detail-list\n     et l'image de la value-detail-visual. -->\n<section class=\"slide\" data-chapter=\"valeur-1\">\n      <div class=\"value-detail-layout\">\n        <div class=\"value-detail-content\">\n          <h2>Titre de l'attribut détaillé</h2>\n\n          <ul class=\"value-detail-list\">\n            <li>\n              <i data-lucide=\"check\" class=\"check-icon\"></i>\n              Premier point qui explique comment l'attribut se traduit concrètement pour le client\n            </li>\n            <li>\n              <i data-lucide=\"check\" class=\"check-icon\"></i>\n              Deuxième point, centré sur un bénéfice mesurable plutôt que sur un outil\n            </li>\n            <li>\n              <i data-lucide=\"check\" class=\"check-icon\"></i>\n              Troisième point, qui écarte un risque ou une charge que le client portait seul\n            </li>\n          </ul>\n        </div>\n\n        <div class=\"value-detail-visual\">\n          <div class=\"value-image-container\">\n            <img src=\"https://ayming-france.github.io/assets/imagery/hub-cards/at-mp-1.jpg\" alt=\"Illustration de l'attribut\">\n          </div>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
     },
     {
       "id": "options",
       "nom": "Options et vente croisée",
+      "etape": "Options",
+      "ordre": 8,
       "fichier": ".claude/skills/slides/templates/archetypes/archetype-options.html",
       "represente": "Slide des offres liées, construite sur la tuile option-card promue. Le deck doit relier engine/components.css.",
       "frequence": {
@@ -175,10 +684,77 @@
       "markup": "<!-- Archétype : options / vente croisée (option-card + card-overlay + option-badge)\n     Rôle : quatre cartes cliquables qui renvoient vers des offres sœurs ou des modules\n     complémentaires, badge \"En option\" et survol qui révèle un bouton Découvrir.\n     Distillé de : cotisations-atmp, présent (classes option-card/card-overlay/option-badge)\n     dans 13 des 23 decks.\n     À adapter : data-chapter, le slide-title, les 3 à 4 option-card (lien href, image,\n     option-badge, titre h3, phrase). option-card, card-overlay et option-badge ne sont\n     PAS des classes du moteur, le deck qui reçoit cette diapositive doit lier\n     engine/components.css en plus de slides.css. -->\n<section class=\"slide\" data-chapter=\"options\" style=\"background: var(--bg-light);\">\n      <div class=\"slide-inner\">\n        <h1 class=\"slide-title\">Aller plus loin</h1>\n\n        <div style=\"display: flex; justify-content: center; gap: 22px; width: 100%; max-width: 1180px;\">\n          <a href=\"#\" target=\"_blank\" class=\"option-card\">\n            <div class=\"column-card\">\n              <div class=\"card-image\">\n                <img src=\"https://ayming-france.github.io/assets/imagery/hub-cards/At-tiers-5.jpg\" alt=\"Nom de l'offre complémentaire 1\">\n                <div class=\"card-overlay\"><span>Découvrir cette offre</span></div>\n              </div>\n              <span class=\"option-badge\">En option</span>\n              <h3 style=\"font-size:17px;\">Nom de l'offre complémentaire 1</h3>\n              <p>Une phrase qui explique le lien entre cette offre et celle présentée ici.</p>\n            </div>\n          </a>\n\n          <a href=\"#\" target=\"_blank\" class=\"option-card\">\n            <div class=\"column-card\">\n              <div class=\"card-image\">\n                <img src=\"https://ayming-france.github.io/assets/imagery/questionnaires-mp/questionnaire-mp.jpg\" alt=\"Nom de l'offre complémentaire 2\">\n                <div class=\"card-overlay\"><span>Découvrir cette offre</span></div>\n              </div>\n              <span class=\"option-badge\">En option</span>\n              <h3 style=\"font-size:17px;\">Nom de l'offre complémentaire 2</h3>\n              <p>Une phrase qui explique le lien entre cette offre et celle présentée ici.</p>\n            </div>\n          </a>\n\n          <a href=\"#\" target=\"_blank\" class=\"option-card\">\n            <div class=\"column-card\">\n              <div class=\"card-image\">\n                <img src=\"https://ayming-france.github.io/assets/imagery/hub-cards/export-arrets.jpg\" alt=\"Nom de l'offre complémentaire 3\">\n                <div class=\"card-overlay\"><span>Découvrir cette offre</span></div>\n              </div>\n              <span class=\"option-badge\">En option</span>\n              <h3 style=\"font-size:17px;\">Nom de l'offre complémentaire 3</h3>\n              <p>Une phrase qui explique le lien entre cette offre et celle présentée ici.</p>\n            </div>\n          </a>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
     },
     {
+      "id": "testimonial",
+      "nom": "Preuves",
+      "etape": "Preuves",
+      "ordre": 9,
+      "fichier": ".claude/skills/slides/templates/archetypes/archetype-testimonial.html",
+      "represente": "Grille de cartes témoignage à retournement, photo devant, citation derrière.",
+      "frequence": {
+        "slides": 18,
+        "decks": 18
+      },
+      "markup": "<!-- Archétype : témoignages (testimonial-grid, cartes qui se retournent)\n     Rôle : trois preuves client, une carte par client, la face avant montre le résultat\n     en une phrase, la face arrière la citation complète et son auteur.\n     Distillé de : dat, présent dans 18 des 23 decks.\n     À adapter : data-chapter, les trois testimonial-card (photo, logo, phrase-résultat,\n     citation, auteur, poste, lien testimonial-cta). Remplacer les visuels et logos par\n     ceux du client réel avant publication, ce sont des placeholders. -->\n<section class=\"slide\" data-chapter=\"preuves\">\n      <div class=\"slide-inner\">\n        <h1 class=\"slide-title\">Ils nous font confiance</h1>\n\n        <div class=\"testimonial-grid\">\n          <div class=\"testimonial-card\">\n            <div class=\"testimonial-card-inner\">\n              <div class=\"testimonial-front\">\n                <img src=\"https://ayming-france.github.io/assets/imagery/clients/STEF-1436-x-808.jpg\" alt=\"Nom du client 1\">\n                <p class=\"testimonial-title\">Un client améliore son pilotage du sujet</p>\n                <div class=\"testimonial-logo\"><img src=\"https://ayming-france.github.io/assets/imagery/clients/STEF_logo.png\" alt=\"Nom du client 1\"></div>\n                <span class=\"testimonial-hint\">\n                  <i data-lucide=\"refresh-cw\"></i>\n                  Découvrir\n                </span>\n              </div>\n              <div class=\"testimonial-back\">\n                <div class=\"testimonial-stars\"><span class=\"testimonial-stars-icons\">★★★★★</span><span class=\"testimonial-date\">Janvier 2026</span></div>\n                <div class=\"testimonial-quote-section\">\n                  <p class=\"testimonial-quote\">En quelques mois, notre indicateur clé s'est nettement amélioré et cette tendance se maintient dans le temps. L'accompagnement d'Ayming nous a permis de structurer notre démarche.</p>\n                  <a href=\"#\" target=\"_blank\" class=\"testimonial-cta\">Lire la suite</a>\n                </div>\n                <div class=\"testimonial-author\">\n                  <span class=\"testimonial-name\">Prénom Nom</span>\n                  <span class=\"testimonial-position\">Fonction, Entreprise</span>\n                  <img class=\"testimonial-company-logo\" src=\"https://ayming-france.github.io/assets/imagery/clients/STEF_logo.png\" alt=\"Nom du client 1\">\n                </div>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"testimonial-card\">\n            <div class=\"testimonial-card-inner\">\n              <div class=\"testimonial-front\">\n                <img src=\"https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1436-x-808.jpg\" alt=\"Nom du client 2\">\n                <p class=\"testimonial-title\">Un client réduit son exposition sur le sujet</p>\n                <div class=\"testimonial-logo\"><img src=\"https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg\" alt=\"Nom du client 2\"></div>\n                <span class=\"testimonial-hint\">\n                  <i data-lucide=\"refresh-cw\"></i>\n                  Découvrir\n                </span>\n              </div>\n              <div class=\"testimonial-back\">\n                <div class=\"testimonial-stars\"><span class=\"testimonial-stars-icons\">★★★★★</span><span class=\"testimonial-date\">Mars 2025</span></div>\n                <div class=\"testimonial-quote-section\">\n                  <p class=\"testimonial-quote\">Nous sommes pleinement satisfaits de la qualité du service fourni. L'équipe d'Ayming est composée de consultants compétents qui comprennent nos enjeux.</p>\n                  <a href=\"#\" target=\"_blank\" class=\"testimonial-cta\">Lire la suite</a>\n                </div>\n                <div class=\"testimonial-author\">\n                  <span class=\"testimonial-name\">Prénom Nom</span>\n                  <span class=\"testimonial-position\">Fonction, Entreprise</span>\n                  <img class=\"testimonial-company-logo\" src=\"https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg\" alt=\"Nom du client 2\">\n                </div>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"testimonial-card\">\n            <div class=\"testimonial-card-inner\">\n              <div class=\"testimonial-front\">\n                <img src=\"https://ayming-france.github.io/assets/imagery/clients/Colryut-1436-x-808.jpg\" alt=\"Nom du client 3\">\n                <p class=\"testimonial-title\">Un client sécurise ses coûts sur le sujet</p>\n                <div class=\"testimonial-logo\"><img src=\"https://ayming-france.github.io/assets/imagery/clients/colruyt-logo-png-transparent-e1759137868909.png\" alt=\"Nom du client 3\"></div>\n                <span class=\"testimonial-hint\">\n                  <i data-lucide=\"refresh-cw\"></i>\n                  Découvrir\n                </span>\n              </div>\n              <div class=\"testimonial-back\">\n                <div class=\"testimonial-stars\"><span class=\"testimonial-stars-icons\">★★★★★</span><span class=\"testimonial-date\">Novembre 2025</span></div>\n                <div class=\"testimonial-quote-section\">\n                  <p class=\"testimonial-quote\">L'expertise des équipes nous a permis de structurer nos pratiques sur ce sujet. C'est un partenariat qui s'inscrit dans la durée.</p>\n                  <a href=\"#\" target=\"_blank\" class=\"testimonial-cta\">Lire la suite</a>\n                </div>\n                <div class=\"testimonial-author\">\n                  <span class=\"testimonial-name\">Prénom Nom</span>\n                  <span class=\"testimonial-position\">Fonction, Entreprise</span>\n                  <img class=\"testimonial-company-logo\" src=\"https://ayming-france.github.io/assets/imagery/clients/colruyt-logo-png-transparent-e1759137868909.png\" alt=\"Nom du client 3\">\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
+    },
+    {
+      "id": "implantation-france",
+      "nom": "Implantation France",
+      "etape": "Implantation France",
+      "ordre": 10,
+      "fichier": ".claude/skills/slides/templates/archetypes/archetype-implantation-france.html",
+      "represente": "L'ancrage territorial, carte de France en SVG statique et texte d'accompagnement.",
+      "frequence": {
+        "slides": 19,
+        "decks": 19
+      },
+      "markup": "<!-- Archétype : ancrage France (texte + carte)\n     Rôle : première des deux diapositives d'implantation, met en avant le maillage local\n     avant la diapositive internationale qui la suit directement.\n     Distillé de : collecte-arrets, présent (ancrage-layout) dans plusieurs decks.\n     Le moteur n'injecte PAS la carte, l'image SVG est une source statique du dépôt assets\n     (ayming-france/assets, maps/france-map.svg), stylée par les classes .ancrage-layout /\n     .ancrage-map de slides.css. Copier ce markup tel quel, ne changer que le texte.\n     À adapter : data-chapter, le slide-title et les deux paragraphes de ancrage-text. Garder\n     le lien vers maps/france-map.svg identique, l'image est partagée entre tous les decks. -->\n<section class=\"slide\" data-chapter=\"implantation\">\n      <div class=\"slide-inner\">\n        <div class=\"ancrage-layout\">\n          <div class=\"ancrage-text\">\n            <h1 class=\"slide-title\" style=\"text-align: left; margin-bottom: 28px;\">Un fort ancrage <strong>en France</strong>...</h1>\n            <p>Nos équipes locales accompagnent au quotidien nos clients dans leur développement et leurs transformations <strong>en s'appuyant sur un écosystème de professionnels en régions</strong> :</p>\n            <p>experts scientifiques, experts comptables, établissements bancaires, pôles de compétitivité, fédérations professionnelles, avec un maillage de cabinets d'avocats et de médecins indépendants.</p>\n          </div>\n          <div class=\"ancrage-map\">\n            <img src=\"https://ayming-france.github.io/assets/maps/france-map.svg\" alt=\"France\" />\n          </div>\n        </div>\n      </div>\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
+    },
+    {
+      "id": "implantation-international",
+      "nom": "Implantation International",
+      "etape": "Implantation International",
+      "ordre": 11,
+      "fichier": ".claude/skills/slides/templates/archetypes/archetype-implantation-international.html",
+      "represente": "La présence internationale, cartes Europe et Amérique du Nord en SVG statique.",
+      "frequence": {
+        "slides": 19,
+        "decks": 19
+      },
+      "markup": "<!-- Archétype : implantation Internationale (carte double)\n     Rôle : seconde des deux diapositives d'implantation, suit directement l'ancrage France\n     et élargit sur les bureaux hors de France.\n     Distillé de : collecte-arrets, présent (implantation-container) dans plusieurs decks.\n     Le moteur n'injecte PAS les cartes, les deux images SVG sont des sources statiques du\n     dépôt assets (ayming-france/assets, maps/na-map.svg et maps/eu-map.svg), stylées par\n     les classes .implantation-container / .implantation-na / .implantation-eu de slides.css.\n     À adapter : data-chapter et le slide-title (nombre de pays, texte de proximité). Garder\n     les deux liens vers na-map.svg et eu-map.svg identiques, images partagées entre tous les\n     decks. -->\n<section class=\"slide\" data-chapter=\"implantation\">\n      <div class=\"slide-inner\">\n        <h1 class=\"slide-title\">\n          ... avec des bureaux dans <strong>14 pays</strong> pour une proximité accrue\n          avec nos clients et leur écosystème\n        </h1>\n        <div class=\"implantation-container\">\n          <img src=\"https://ayming-france.github.io/assets/maps/na-map.svg\" alt=\"Amérique du Nord\" class=\"implantation-na\"/>\n          <img src=\"https://ayming-france.github.io/assets/maps/eu-map.svg\" alt=\"Europe\" class=\"implantation-eu\"/>\n        </div>\n      </div>\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
+    },
+    {
+      "id": "faq",
+      "nom": "Questions",
+      "etape": "Questions",
+      "ordre": 12,
+      "fichier": ".claude/skills/slides/templates/archetypes/archetype-faq.html",
+      "represente": "Grille de cartes question-réponse pour lever les objections.",
+      "frequence": {
+        "slides": 18,
+        "decks": 18
+      },
+      "markup": "<!-- Archétype : questions fréquentes (faq-grid)\n     Rôle : lève les objections courantes en quatre cartes courtes, une question par carte\n     avec une icône Lucide et une réponse en une ou deux phrases.\n     Distillé de : dat, présent dans 18 des 23 decks.\n     À adapter : data-chapter, le slide-title, et les quatre faq-card (icône, question,\n     réponse). Choisir les quatre objections les plus fréquentes remontées par la vente. -->\n<section class=\"slide\" data-chapter=\"questions\">\n      <div class=\"slide-inner\">\n        <h1 class=\"slide-title\">\n          Questions qu'on nous pose souvent\n        </h1>\n\n        <div class=\"faq-grid\">\n          <div class=\"faq-card\">\n            <h4>\n              <i data-lucide=\"help-circle\"></i>\n              Pourquoi passer par Ayming plutôt que de gérer cela en interne ?\n            </h4>\n            <p>Traiter chaque dossier comme un cas à part entière, tenir les délais et intégrer une stratégie de maîtrise des coûts dès le premier jour.</p>\n          </div>\n\n          <div class=\"faq-card\">\n            <h4>\n              <i data-lucide=\"monitor\"></i>\n              Cela remplace nos outils existants ?\n            </h4>\n            <p>Notre accompagnement complète vos outils en couvrant les phases critiques de collecte et de traitement.</p>\n          </div>\n\n          <div class=\"faq-card\">\n            <h4>\n              <i data-lucide=\"pen-line\"></i>\n              Faut-il utiliser un outil spécifique ?\n            </h4>\n            <p>Non, l'outil dédié est optionnel. Nous nous adaptons à vos outils existants, bien qu'il offre l'avantage d'une capture horodatée.</p>\n          </div>\n\n          <div class=\"faq-card\">\n            <h4>\n              <i data-lucide=\"clipboard-list\"></i>\n              Peut-on démarrer sur un périmètre restreint ?\n            </h4>\n            <p>Tout à fait. Après diagnostic, nous proposons un déploiement total, partiel ou une montée en autonomie guidée.</p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
+    },
+    {
+      "id": "process-timeline",
+      "nom": "Processus",
+      "etape": "Processus",
+      "ordre": 13,
+      "fichier": ".claude/skills/slides/templates/archetypes/archetype-process-timeline.html",
+      "represente": "Prochaine étape, le déroulé de la mission en étapes numérotées sur une frise.",
+      "frequence": {
+        "slides": 21,
+        "decks": 19
+      },
+      "markup": "<!-- Archétype : chronologie du processus (process-timeline-4)\n     Rôle : les étapes numérotées pour démarrer la mission, en général juste avant la\n     diapositive de clôture, avec une durée indicative par étape.\n     Distillé de : collecte-arrets, présent dans 19 des 23 decks (formes à 3 ou 4 étapes).\n     À adapter : data-chapter, le slide-title, et les process-step (step-title, step-duration,\n     step-description). Retirer un process-step et son step-arrow pour une forme à 3 étapes. -->\n<section class=\"slide\" data-chapter=\"processus\">\n      <div class=\"slide-inner\">\n        <h1 class=\"slide-title\">Prochaine étape</h1>\n\n        <div class=\"process-timeline-4\">\n          <div class=\"process-step\">\n            <div class=\"step-number\">1</div>\n            <h3 class=\"step-title\">Diagnostic</h3>\n            <p class=\"step-duration\">2 semaines</p>\n            <p class=\"step-description\">Analyse du fonctionnement actuel et identification des points de perte</p>\n          </div>\n\n          <span class=\"step-arrow\">&rarr;</span>\n\n          <div class=\"process-step\">\n            <div class=\"step-number\">2</div>\n            <h3 class=\"step-title\">Proposition sur mesure</h3>\n            <p class=\"step-duration\">+1 semaine</p>\n            <p class=\"step-description\">Modèle d'accompagnement adapté à votre organisation et à vos volumes</p>\n          </div>\n\n          <span class=\"step-arrow\">&rarr;</span>\n\n          <div class=\"process-step\">\n            <div class=\"step-number\">3</div>\n            <h3 class=\"step-title\">Pilote</h3>\n            <p class=\"step-duration\">3 mois</p>\n            <p class=\"step-description\">Démarrage sur un périmètre restreint pour démontrer la valeur</p>\n          </div>\n\n          <span class=\"step-arrow\">&rarr;</span>\n\n          <div class=\"process-step\">\n            <div class=\"step-number\">4</div>\n            <h3 class=\"step-title\">Déploiement complet</h3>\n            <p class=\"step-duration\">Selon planning</p>\n            <p class=\"step-description\">Extension à l'ensemble des sites et des populations concernées</p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"company-logo\">\n        <img src=\"https://ayming-france.github.io/assets/logos/ayming-logo.png\" alt=\"Ayming\">\n      </div>\n    </section>\n"
+    },
+    {
       "id": "closing",
-      "nom": "Clôture et contact",
+      "nom": "Démarrage",
+      "etape": "Démarrage",
+      "ordre": 14,
       "fichier": ".claude/skills/slides/templates/archetypes/archetype-closing.html",
-      "represente": "Slide de fin, contact et bandeau prochaine étape. Le deck doit relier engine/components.css.",
+      "represente": "Ce dont nous avons besoin pour démarrer, et le bandeau prochaine étape. Le deck doit relier engine/components.css.",
       "frequence": {
         "slides": 17,
         "decks": 17

@@ -1,7 +1,7 @@
 {
   "generated_by": "build_portal.py",
   "source_repo": "/Users/encarv/projects/ayming-france-assets",
-  "count": 381,
+  "count": 363,
   "assets": [
     {
       "path": "imagery/aides-apprentissage/Standout-Image-1436-x-808-3.jpg",
@@ -22,7 +22,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/aides-apprentissage/Standout-Image-1436-x-808-3.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/aides-apprentissage/Standout-Image-1436-x-808-3.jpg",
-      "display_name": "Standout Image 1436 X 808 3"
+      "display_name": "Standout Image 1436 X 808 3",
+      "masque": false
     },
     {
       "path": "imagery/aides-apprentissage/aides-1.jpg",
@@ -43,7 +44,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/aides-apprentissage/aides-1.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/aides-apprentissage/aides-1.jpg",
-      "display_name": "Aides 1"
+      "display_name": "Aides 1",
+      "masque": false
     },
     {
       "path": "imagery/aides-apprentissage/aides-2.jpg",
@@ -64,7 +66,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/aides-apprentissage/aides-2.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/aides-apprentissage/aides-2.jpg",
-      "display_name": "Aides 2"
+      "display_name": "Aides 2",
+      "masque": false
     },
     {
       "path": "imagery/aides-apprentissage/aides-3.jpg",
@@ -85,7 +88,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/aides-apprentissage/aides-3.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/aides-apprentissage/aides-3.jpg",
-      "display_name": "Aides 3"
+      "display_name": "Aides 3",
+      "masque": false
     },
     {
       "path": "imagery/aides-apprentissage/aides-4.jpg",
@@ -106,7 +110,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/aides-apprentissage/aides-4.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/aides-apprentissage/aides-4.jpg",
-      "display_name": "Aides 4"
+      "display_name": "Aides 4",
+      "masque": false
     },
     {
       "path": "imagery/aides-apprentissage/fond-clariane-1-1436x808.jpg",
@@ -127,7 +132,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/aides-apprentissage/fond-clariane-1-1436x808.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/aides-apprentissage/fond-clariane-1-1436x808.jpg",
-      "display_name": "Fond Clariane 1"
+      "display_name": "Fond Clariane 1",
+      "masque": false
     },
     {
       "path": "imagery/arrets-longue-duree/Nicollin-1436-x-808.jpg",
@@ -148,7 +154,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/arrets-longue-duree/Nicollin-1436-x-808.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/arrets-longue-duree/Nicollin-1436-x-808.jpg",
-      "display_name": "Nicollin"
+      "display_name": "Nicollin",
+      "masque": false
     },
     {
       "path": "imagery/arrets-longue-duree/at-mp-4.jpg",
@@ -171,7 +178,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/arrets-longue-duree/at-mp-4.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/arrets-longue-duree/at-mp-4.jpg",
-      "display_name": "At Mp 4"
+      "display_name": "At Mp 4",
+      "masque": false
     },
     {
       "path": "imagery/arrets-longue-duree/collecter.jpg",
@@ -194,7 +202,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/arrets-longue-duree/collecter.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/arrets-longue-duree/collecter.jpg",
-      "display_name": "Collecter"
+      "display_name": "Collecter",
+      "masque": false
     },
     {
       "path": "imagery/arrets-longue-duree/guerbet-plant.webp",
@@ -215,7 +224,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/arrets-longue-duree/guerbet-plant.webp",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/arrets-longue-duree/guerbet-plant.webp",
-      "display_name": "Guerbet Plant"
+      "display_name": "Guerbet Plant",
+      "masque": false
     },
     {
       "path": "imagery/arrets-longue-duree/performancepaie-1324x650.jpg",
@@ -231,12 +241,14 @@
         "arrets-longue-duree"
       ],
       "tags": [
-        "arrets-longue-duree"
+        "arrets-longue-duree",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/arrets-longue-duree/performancepaie-1324x650.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/arrets-longue-duree/performancepaie-1324x650.jpg",
-      "display_name": "Performancepaie"
+      "display_name": "Performancepaie",
+      "masque": true
     },
     {
       "path": "imagery/arrets-longue-duree/taux-at-1.jpg",
@@ -257,7 +269,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/arrets-longue-duree/taux-at-1.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/arrets-longue-duree/taux-at-1.jpg",
-      "display_name": "Taux At 1"
+      "display_name": "Taux At 1",
+      "masque": false
     },
     {
       "path": "imagery/arrets-longue-duree/yt-5Qs8VSGXL4M.jpg",
@@ -273,12 +286,14 @@
         "arrets-longue-duree"
       ],
       "tags": [
-        "arrets-longue-duree"
+        "arrets-longue-duree",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/arrets-longue-duree/yt-5Qs8VSGXL4M.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/arrets-longue-duree/yt-5Qs8VSGXL4M.jpg",
-      "display_name": "Yt 5qs8vsgxl4m"
+      "display_name": "Yt 5qs8vsgxl4m",
+      "masque": true
     },
     {
       "path": "imagery/arrets-longue-duree/yt-5ipxgXx4O7U.jpg",
@@ -294,12 +309,14 @@
         "arrets-longue-duree"
       ],
       "tags": [
-        "arrets-longue-duree"
+        "arrets-longue-duree",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/arrets-longue-duree/yt-5ipxgXx4O7U.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/arrets-longue-duree/yt-5ipxgXx4O7U.jpg",
-      "display_name": "Yt 5ipxgxx4o7u"
+      "display_name": "Yt 5ipxgxx4o7u",
+      "masque": true
     },
     {
       "path": "imagery/arrets-longue-duree/yt-vwx6hTfOoHU.jpg",
@@ -315,12 +332,14 @@
         "arrets-longue-duree"
       ],
       "tags": [
-        "arrets-longue-duree"
+        "arrets-longue-duree",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/arrets-longue-duree/yt-vwx6hTfOoHU.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/arrets-longue-duree/yt-vwx6hTfOoHU.jpg",
-      "display_name": "Yt Vwx6htfoohu"
+      "display_name": "Yt Vwx6htfoohu",
+      "masque": true
     },
     {
       "path": "imagery/certifications/afaq-hds.png",
@@ -342,7 +361,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/certifications/afaq-hds.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/certifications/afaq-hds.png",
-      "display_name": "Afaq Hds"
+      "display_name": "Afaq Hds",
+      "masque": false
     },
     {
       "path": "imagery/certifications/afaq-iso-27001.png",
@@ -363,7 +383,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/certifications/afaq-iso-27001.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/certifications/afaq-iso-27001.png",
-      "display_name": "Afaq Iso 27001"
+      "display_name": "Afaq Iso 27001",
+      "masque": false
     },
     {
       "path": "imagery/certifications/afaq-iso-9001.png",
@@ -384,7 +405,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/certifications/afaq-iso-9001.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/certifications/afaq-iso-9001.png",
-      "display_name": "Afaq Iso 9001"
+      "display_name": "Afaq Iso 9001",
+      "masque": false
     },
     {
       "path": "imagery/certifications/ecovadis.png",
@@ -403,7 +425,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/certifications/ecovadis.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/certifications/ecovadis.png",
-      "display_name": "Ecovadis"
+      "display_name": "Ecovadis",
+      "masque": false
     },
     {
       "path": "imagery/certifications/opqcm.png",
@@ -422,7 +445,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/certifications/opqcm.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/certifications/opqcm.png",
-      "display_name": "Opqcm"
+      "display_name": "Opqcm",
+      "masque": false
     },
     {
       "path": "imagery/certifications/qualiopi.png",
@@ -443,7 +467,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/certifications/qualiopi.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/certifications/qualiopi.png",
-      "display_name": "Qualiopi"
+      "display_name": "Qualiopi",
+      "masque": false
     },
     {
       "path": "imagery/certifications/rse-iso-26000.png",
@@ -462,7 +487,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/certifications/rse-iso-26000.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/certifications/rse-iso-26000.png",
-      "display_name": "Rse Iso 26000"
+      "display_name": "Rse Iso 26000",
+      "masque": false
     },
     {
       "path": "imagery/certifications/un-global-compact.png",
@@ -481,7 +507,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/certifications/un-global-compact.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/certifications/un-global-compact.png",
-      "display_name": "Un Global Compact"
+      "display_name": "Un Global Compact",
+      "masque": false
     },
     {
       "path": "imagery/charges-sociales/charges-2.jpg",
@@ -503,7 +530,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/charges-sociales/charges-2.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/charges-sociales/charges-2.jpg",
-      "display_name": "Charges 2"
+      "display_name": "Charges 2",
+      "masque": false
     },
     {
       "path": "imagery/charges-sociales/charges-3.jpg",
@@ -525,7 +553,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/charges-sociales/charges-3.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/charges-sociales/charges-3.jpg",
-      "display_name": "Charges 3"
+      "display_name": "Charges 3",
+      "masque": false
     },
     {
       "path": "imagery/charges-sociales/charges-4.jpg",
@@ -547,7 +576,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/charges-sociales/charges-4.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/charges-sociales/charges-4.jpg",
-      "display_name": "Charges 4"
+      "display_name": "Charges 4",
+      "masque": false
     },
     {
       "path": "imagery/charges-sociales/charges.jpg",
@@ -568,7 +598,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/charges-sociales/charges.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/charges-sociales/charges.jpg",
-      "display_name": "Charges"
+      "display_name": "Charges",
+      "masque": false
     },
     {
       "path": "imagery/clients/Anras-logo-2-300x75-1.jpg",
@@ -589,7 +620,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/Anras-logo-2-300x75-1.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/Anras-logo-2-300x75-1.jpg",
-      "display_name": "Anras Logo 2 300x75 1"
+      "display_name": "Anras Logo 2 300x75 1",
+      "masque": false
     },
     {
       "path": "imagery/clients/BUT-532-x-532.jpg",
@@ -605,12 +637,14 @@
         "charges-sociales"
       ],
       "tags": [
-        "client"
+        "client",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/clients/BUT-532-x-532.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/BUT-532-x-532.jpg",
-      "display_name": "But"
+      "display_name": "But",
+      "masque": true
     },
     {
       "path": "imagery/clients/Colryut-1436-x-808.jpg",
@@ -626,12 +660,14 @@
         "questionnaires-maladie-professionnelle"
       ],
       "tags": [
-        "client"
+        "client",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/clients/Colryut-1436-x-808.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/Colryut-1436-x-808.jpg",
-      "display_name": "Colryut"
+      "display_name": "Colryut",
+      "masque": true
     },
     {
       "path": "imagery/clients/Colryut-532-x-532.jpg",
@@ -657,7 +693,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/Colryut-532-x-532.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/Colryut-532-x-532.jpg",
-      "display_name": "Colryut"
+      "display_name": "Colryut",
+      "masque": false
     },
     {
       "path": "imagery/clients/Ehpad-SD-532-x-532.jpg",
@@ -673,12 +710,14 @@
         "charges-sociales"
       ],
       "tags": [
-        "client"
+        "client",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/clients/Ehpad-SD-532-x-532.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/Ehpad-SD-532-x-532.jpg",
-      "display_name": "Ehpad Sd"
+      "display_name": "Ehpad Sd",
+      "masque": true
     },
     {
       "path": "imagery/clients/Euralis-1436-x-808-1.jpg",
@@ -700,7 +739,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/Euralis-1436-x-808-1.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/Euralis-1436-x-808-1.jpg",
-      "display_name": "Euralis 1436 X 808 1"
+      "display_name": "Euralis 1436 X 808 1",
+      "masque": false
     },
     {
       "path": "imagery/clients/Euralis-532-x-532.jpg",
@@ -719,7 +759,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/Euralis-532-x-532.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/Euralis-532-x-532.jpg",
-      "display_name": "Euralis"
+      "display_name": "Euralis",
+      "masque": false
     },
     {
       "path": "imagery/clients/GEMFOS-1-e1759136624846-176x46.jpg",
@@ -744,7 +785,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/GEMFOS-1-e1759136624846-176x46.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846-176x46.jpg",
-      "display_name": "Gemfos 1"
+      "display_name": "Gemfos 1",
+      "masque": false
     },
     {
       "path": "imagery/clients/GEMFOS-1-e1759136624846.jpg",
@@ -765,7 +807,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/GEMFOS-1-e1759136624846.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg",
-      "display_name": "Gemfos 1"
+      "display_name": "Gemfos 1",
+      "masque": false
     },
     {
       "path": "imagery/clients/GEMFOS-1436-x-808.jpg",
@@ -786,7 +829,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/GEMFOS-1436-x-808.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1436-x-808.jpg",
-      "display_name": "Gemfos"
+      "display_name": "Gemfos",
+      "masque": false
     },
     {
       "path": "imagery/clients/GEMFOS-532-x-532.jpg",
@@ -811,7 +855,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/GEMFOS-532-x-532.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/GEMFOS-532-x-532.jpg",
-      "display_name": "Gemfos"
+      "display_name": "Gemfos",
+      "masque": false
     },
     {
       "path": "imagery/clients/KparK-532x470.jpg",
@@ -833,7 +878,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/KparK-532x470.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/KparK-532x470.jpg",
-      "display_name": "Kpark"
+      "display_name": "Kpark",
+      "masque": false
     },
     {
       "path": "imagery/clients/KparK.jpg",
@@ -854,7 +900,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/KparK.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/KparK.jpg",
-      "display_name": "Kpark"
+      "display_name": "Kpark",
+      "masque": false
     },
     {
       "path": "imagery/clients/Logo-BUT.jpg",
@@ -875,7 +922,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/Logo-BUT.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/Logo-BUT.jpg",
-      "display_name": "Logo But"
+      "display_name": "Logo But",
+      "masque": false
     },
     {
       "path": "imagery/clients/Logo-clariane-176x99.jpg",
@@ -896,7 +944,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/Logo-clariane-176x99.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/Logo-clariane-176x99.jpg",
-      "display_name": "Logo Clariane"
+      "display_name": "Logo Clariane",
+      "masque": false
     },
     {
       "path": "imagery/clients/Logo_Guerbet_DEF-176x57.png",
@@ -917,7 +966,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/Logo_Guerbet_DEF-176x57.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/Logo_Guerbet_DEF-176x57.png",
-      "display_name": "Logo Guerbet Def"
+      "display_name": "Logo Guerbet Def",
+      "masque": false
     },
     {
       "path": "imagery/clients/Logo_Guerbet_DEF.png",
@@ -938,7 +988,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/Logo_Guerbet_DEF.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/Logo_Guerbet_DEF.png",
-      "display_name": "Logo Guerbet Def"
+      "display_name": "Logo Guerbet Def",
+      "masque": false
     },
     {
       "path": "imagery/clients/SISCA-532-x-532.jpg",
@@ -959,7 +1010,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/SISCA-532-x-532.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/SISCA-532-x-532.jpg",
-      "display_name": "Sisca"
+      "display_name": "Sisca",
+      "masque": false
     },
     {
       "path": "imagery/clients/STEF-1436-x-808.jpg",
@@ -980,7 +1032,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/STEF-1436-x-808.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/STEF-1436-x-808.jpg",
-      "display_name": "Stef"
+      "display_name": "Stef",
+      "masque": false
     },
     {
       "path": "imagery/clients/STEF-532-x-532.jpg",
@@ -1007,7 +1060,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/STEF-532-x-532.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/STEF-532-x-532.jpg",
-      "display_name": "Stef"
+      "display_name": "Stef",
+      "masque": false
     },
     {
       "path": "imagery/clients/STEF_logo.png",
@@ -1036,7 +1090,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/STEF_logo.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/STEF_logo.png",
-      "display_name": "Stef Logo"
+      "display_name": "Stef Logo",
+      "masque": false
     },
     {
       "path": "imagery/clients/Sans-titre-3-176x88.jpg",
@@ -1058,7 +1113,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/Sans-titre-3-176x88.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/Sans-titre-3-176x88.jpg",
-      "display_name": "Sans Titre 3"
+      "display_name": "Sans Titre 3",
+      "masque": false
     },
     {
       "path": "imagery/clients/Virbac_logo_CMYK-1.svg.png",
@@ -1079,7 +1135,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/Virbac_logo_CMYK-1.svg.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/Virbac_logo_CMYK-1.svg.png",
-      "display_name": "Virbac Logo Cmyk 1.svg"
+      "display_name": "Virbac Logo Cmyk 1.svg",
+      "masque": false
     },
     {
       "path": "imagery/clients/accor.svg",
@@ -1098,7 +1155,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/accor.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/accor.svg",
-      "display_name": "Accor"
+      "display_name": "Accor",
+      "masque": false
     },
     {
       "path": "imagery/clients/aftral.svg",
@@ -1117,7 +1175,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/aftral.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/aftral.svg",
-      "display_name": "Aftral"
+      "display_name": "Aftral",
+      "masque": false
     },
     {
       "path": "imagery/clients/airbus.svg",
@@ -1136,7 +1195,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/airbus.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/airbus.svg",
-      "display_name": "Airbus"
+      "display_name": "Airbus",
+      "masque": false
     },
     {
       "path": "imagery/clients/airfrance-klm.svg",
@@ -1155,7 +1215,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/airfrance-klm.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/airfrance-klm.svg",
-      "display_name": "Airfrance Klm"
+      "display_name": "Airfrance Klm",
+      "masque": false
     },
     {
       "path": "imagery/clients/aldi.svg",
@@ -1174,7 +1235,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/aldi.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/aldi.svg",
-      "display_name": "Aldi"
+      "display_name": "Aldi",
+      "masque": false
     },
     {
       "path": "imagery/clients/andros.png",
@@ -1193,7 +1255,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/andros.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/andros.png",
-      "display_name": "Andros"
+      "display_name": "Andros",
+      "masque": false
     },
     {
       "path": "imagery/clients/arcelormittal.svg",
@@ -1212,12 +1275,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/arcelormittal.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/arcelormittal.svg",
-      "display_name": "Arcelormittal"
+      "display_name": "Arcelormittal",
+      "masque": false
     },
     {
       "path": "imagery/clients/arterris.svg",
       "url": "https://ayming-france.github.io/assets/imagery/clients/arterris.svg",
-      "section": "images",
+      "section": "logos",
       "sha1": "d85ceeca76479d73940518a57632e420278a068a",
       "bytes": 6923,
       "format": "svg",
@@ -1231,7 +1295,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/arterris.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/arterris.svg",
-      "display_name": "Arterris"
+      "display_name": "Arterris",
+      "masque": false
     },
     {
       "path": "imagery/clients/auchan.svg",
@@ -1250,7 +1315,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/auchan.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/auchan.svg",
-      "display_name": "Auchan"
+      "display_name": "Auchan",
+      "masque": false
     },
     {
       "path": "imagery/clients/baxter.svg",
@@ -1269,7 +1335,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/baxter.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/baxter.svg",
-      "display_name": "Baxter"
+      "display_name": "Baxter",
+      "masque": false
     },
     {
       "path": "imagery/clients/bnp.svg",
@@ -1288,12 +1355,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/bnp.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/bnp.svg",
-      "display_name": "Bnp"
+      "display_name": "Bnp",
+      "masque": false
     },
     {
       "path": "imagery/clients/bonduelle.svg",
       "url": "https://ayming-france.github.io/assets/imagery/clients/bonduelle.svg",
-      "section": "images",
+      "section": "logos",
       "sha1": "3bd71f6f167b6d7b9bf369023104a5a6f468cf1c",
       "bytes": 9412,
       "format": "svg",
@@ -1307,7 +1375,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/bonduelle.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/bonduelle.svg",
-      "display_name": "Bonduelle"
+      "display_name": "Bonduelle",
+      "masque": false
     },
     {
       "path": "imagery/clients/bouygues.svg",
@@ -1326,7 +1395,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/bouygues.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/bouygues.svg",
-      "display_name": "Bouygues"
+      "display_name": "Bouygues",
+      "masque": false
     },
     {
       "path": "imagery/clients/casino.svg",
@@ -1345,12 +1415,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/casino.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/casino.svg",
-      "display_name": "Casino"
+      "display_name": "Casino",
+      "masque": false
     },
     {
       "path": "imagery/clients/cdc.svg",
       "url": "https://ayming-france.github.io/assets/imagery/clients/cdc.svg",
-      "section": "images",
+      "section": "logos",
       "sha1": "5584c7043045633c5405c1823f7269f7e3a47901",
       "bytes": 505435,
       "format": "svg",
@@ -1364,12 +1435,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/cdc.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/cdc.svg",
-      "display_name": "Cdc"
+      "display_name": "Cdc",
+      "masque": false
     },
     {
       "path": "imagery/clients/cegelec.png",
       "url": "https://ayming-france.github.io/assets/imagery/clients/cegelec.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "f676286b722a91c0e055addd5f0a3cfeac6a6ab9",
       "bytes": 180016,
       "format": "png",
@@ -1383,12 +1455,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/cegelec.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/cegelec.png",
-      "display_name": "Cegelec"
+      "display_name": "Cegelec",
+      "masque": false
     },
     {
       "path": "imagery/clients/cmacgm.svg",
       "url": "https://ayming-france.github.io/assets/imagery/clients/cmacgm.svg",
-      "section": "images",
+      "section": "logos",
       "sha1": "5e8f5e8badb999f3e82b8504b9e3bf2793dff415",
       "bytes": 3642,
       "format": "svg",
@@ -1402,7 +1475,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/cmacgm.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/cmacgm.svg",
-      "display_name": "Cmacgm"
+      "display_name": "Cmacgm",
+      "masque": false
     },
     {
       "path": "imagery/clients/colruyt-logo-png-transparent-e1759137868909-176x80.png",
@@ -1428,7 +1502,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/colruyt-logo-png-transparent-e1759137868909-176x80.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/colruyt-logo-png-transparent-e1759137868909-176x80.png",
-      "display_name": "Colruyt Logo Png Transparent"
+      "display_name": "Colruyt Logo Png Transparent",
+      "masque": false
     },
     {
       "path": "imagery/clients/colruyt-logo-png-transparent-e1759137868909.png",
@@ -1449,7 +1524,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/colruyt-logo-png-transparent-e1759137868909.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/colruyt-logo-png-transparent-e1759137868909.png",
-      "display_name": "Colruyt Logo Png Transparent"
+      "display_name": "Colruyt Logo Png Transparent",
+      "masque": false
     },
     {
       "path": "imagery/clients/cooperl.png",
@@ -1468,7 +1544,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/cooperl.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/cooperl.png",
-      "display_name": "Cooperl"
+      "display_name": "Cooperl",
+      "masque": false
     },
     {
       "path": "imagery/clients/covea.png",
@@ -1487,7 +1564,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/covea.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/covea.png",
-      "display_name": "Covea"
+      "display_name": "Covea",
+      "masque": false
     },
     {
       "path": "imagery/clients/credit-agricole.svg",
@@ -1506,7 +1584,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/credit-agricole.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/credit-agricole.svg",
-      "display_name": "Credit Agricole"
+      "display_name": "Credit Agricole",
+      "masque": false
     },
     {
       "path": "imagery/clients/credit-mutuel.svg",
@@ -1525,7 +1604,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/credit-mutuel.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/credit-mutuel.svg",
-      "display_name": "Credit Mutuel"
+      "display_name": "Credit Mutuel",
+      "masque": false
     },
     {
       "path": "imagery/clients/cropped-cropped-EHPAD-Saint-Dominique_arcachon-176x55.png",
@@ -1546,12 +1626,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/cropped-cropped-EHPAD-Saint-Dominique_arcachon-176x55.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/cropped-cropped-EHPAD-Saint-Dominique_arcachon-176x55.png",
-      "display_name": "Cropped Cropped Ehpad Saint Dominique Arcachon"
+      "display_name": "Cropped Cropped Ehpad Saint Dominique Arcachon",
+      "masque": false
     },
     {
       "path": "imagery/clients/delpharm.png",
       "url": "https://ayming-france.github.io/assets/imagery/clients/delpharm.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "cbda3d20df1fa89d39673ba0383df363be043596",
       "bytes": 65705,
       "format": "png",
@@ -1565,7 +1646,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/delpharm.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/delpharm.png",
-      "display_name": "Delpharm"
+      "display_name": "Delpharm",
+      "masque": false
     },
     {
       "path": "imagery/clients/edf.svg",
@@ -1584,7 +1666,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/edf.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/edf.svg",
-      "display_name": "Edf"
+      "display_name": "Edf",
+      "masque": false
     },
     {
       "path": "imagery/clients/eiffage.svg",
@@ -1603,7 +1686,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/eiffage.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/eiffage.svg",
-      "display_name": "Eiffage"
+      "display_name": "Eiffage",
+      "masque": false
     },
     {
       "path": "imagery/clients/elsan.png",
@@ -1622,7 +1706,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/elsan.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/elsan.png",
-      "display_name": "Elsan"
+      "display_name": "Elsan",
+      "masque": false
     },
     {
       "path": "imagery/clients/engie.svg",
@@ -1641,12 +1726,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/engie.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/engie.svg",
-      "display_name": "Engie"
+      "display_name": "Engie",
+      "masque": false
     },
     {
       "path": "imagery/clients/fayat.png",
       "url": "https://ayming-france.github.io/assets/imagery/clients/fayat.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "2eca7b335b92360a6dc54914696447b27b1bda62",
       "bytes": 17492,
       "format": "png",
@@ -1660,7 +1746,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/fayat.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/fayat.png",
-      "display_name": "Fayat"
+      "display_name": "Fayat",
+      "masque": false
     },
     {
       "path": "imagery/clients/gls.svg",
@@ -1679,7 +1766,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/gls.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/gls.svg",
-      "display_name": "Gls"
+      "display_name": "Gls",
+      "masque": false
     },
     {
       "path": "imagery/clients/groupama.svg",
@@ -1698,12 +1786,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/groupama.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/groupama.svg",
-      "display_name": "Groupama"
+      "display_name": "Groupama",
+      "masque": false
     },
     {
       "path": "imagery/clients/gsk.png",
       "url": "https://ayming-france.github.io/assets/imagery/clients/gsk.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "1485a1a8eb0b2bf5e817b7f3a48da58d9b1dd3c2",
       "bytes": 295927,
       "format": "png",
@@ -1717,12 +1806,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/gsk.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/gsk.png",
-      "display_name": "Gsk"
+      "display_name": "Gsk",
+      "masque": false
     },
     {
       "path": "imagery/clients/haribo.svg",
       "url": "https://ayming-france.github.io/assets/imagery/clients/haribo.svg",
-      "section": "images",
+      "section": "logos",
       "sha1": "f9f80a7a325540be70dbc8e27176cb70bc9781af",
       "bytes": 174324,
       "format": "svg",
@@ -1736,12 +1826,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/haribo.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/haribo.svg",
-      "display_name": "Haribo"
+      "display_name": "Haribo",
+      "masque": false
     },
     {
       "path": "imagery/clients/hermes.svg",
       "url": "https://ayming-france.github.io/assets/imagery/clients/hermes.svg",
-      "section": "images",
+      "section": "logos",
       "sha1": "5bba8e58cc9662e7b4f2dc5ea83ca3b39c4b435f",
       "bytes": 36401,
       "format": "svg",
@@ -1755,7 +1846,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/hermes.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/hermes.svg",
-      "display_name": "Hermes"
+      "display_name": "Hermes",
+      "masque": false
     },
     {
       "path": "imagery/clients/hppGHpbk_400x400-e1759306442143-176x55.jpeg",
@@ -1777,7 +1869,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/hppGHpbk_400x400-e1759306442143-176x55.jpeg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/hppGHpbk_400x400-e1759306442143-176x55.jpeg",
-      "display_name": "Euralis"
+      "display_name": "Euralis",
+      "masque": false
     },
     {
       "path": "imagery/clients/ikea.svg",
@@ -1796,7 +1889,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/ikea.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/ikea.svg",
-      "display_name": "Ikea"
+      "display_name": "Ikea",
+      "masque": false
     },
     {
       "path": "imagery/clients/intermarche.svg",
@@ -1815,7 +1909,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/intermarche.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/intermarche.svg",
-      "display_name": "Intermarche"
+      "display_name": "Intermarche",
+      "masque": false
     },
     {
       "path": "imagery/clients/jacky-perrenot.png",
@@ -1834,7 +1929,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/jacky-perrenot.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/jacky-perrenot.png",
-      "display_name": "Jacky Perrenot"
+      "display_name": "Jacky Perrenot",
+      "masque": false
     },
     {
       "path": "imagery/clients/knauf.svg",
@@ -1853,7 +1949,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/knauf.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/knauf.svg",
-      "display_name": "Knauf"
+      "display_name": "Knauf",
+      "masque": false
     },
     {
       "path": "imagery/clients/laposte.svg",
@@ -1872,7 +1969,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/laposte.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/laposte.svg",
-      "display_name": "Laposte"
+      "display_name": "Laposte",
+      "masque": false
     },
     {
       "path": "imagery/clients/leclerc.svg",
@@ -1891,7 +1989,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/leclerc.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/leclerc.svg",
-      "display_name": "Leclerc"
+      "display_name": "Leclerc",
+      "masque": false
     },
     {
       "path": "imagery/clients/legrand.svg",
@@ -1910,7 +2009,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/legrand.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/legrand.svg",
-      "display_name": "Legrand"
+      "display_name": "Legrand",
+      "masque": false
     },
     {
       "path": "imagery/clients/lemonde.svg",
@@ -1929,7 +2029,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/lemonde.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/lemonde.svg",
-      "display_name": "Lemonde"
+      "display_name": "Lemonde",
+      "masque": false
     },
     {
       "path": "imagery/clients/lindt.svg",
@@ -1948,7 +2049,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/lindt.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/lindt.svg",
-      "display_name": "Lindt"
+      "display_name": "Lindt",
+      "masque": false
     },
     {
       "path": "imagery/clients/logo-groupe-nicollin-1.png",
@@ -1969,7 +2071,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/logo-groupe-nicollin-1.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/logo-groupe-nicollin-1.png",
-      "display_name": "Logo Groupe Nicollin 1"
+      "display_name": "Logo Groupe Nicollin 1",
+      "masque": false
     },
     {
       "path": "imagery/clients/logo_clinique_du_parc_0.png",
@@ -1992,7 +2095,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/logo_clinique_du_parc_0.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/logo_clinique_du_parc_0.png",
-      "display_name": "Logo Clinique Du Parc 0"
+      "display_name": "Logo Clinique Du Parc 0",
+      "masque": false
     },
     {
       "path": "imagery/clients/loreal.svg",
@@ -2011,12 +2115,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/loreal.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/loreal.svg",
-      "display_name": "Loreal"
+      "display_name": "Loreal",
+      "masque": false
     },
     {
       "path": "imagery/clients/lvmh.svg",
       "url": "https://ayming-france.github.io/assets/imagery/clients/lvmh.svg",
-      "section": "images",
+      "section": "logos",
       "sha1": "a67434ab1a09743cbaeeb92c1fbb443779944f7b",
       "bytes": 7362,
       "format": "svg",
@@ -2030,7 +2135,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/lvmh.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/lvmh.svg",
-      "display_name": "Lvmh"
+      "display_name": "Lvmh",
+      "masque": false
     },
     {
       "path": "imagery/clients/m6.svg",
@@ -2049,7 +2155,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/m6.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/m6.svg",
-      "display_name": "M6"
+      "display_name": "M6",
+      "masque": false
     },
     {
       "path": "imagery/clients/marie-brizard.svg",
@@ -2068,7 +2175,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/marie-brizard.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/marie-brizard.svg",
-      "display_name": "Marie Brizard"
+      "display_name": "Marie Brizard",
+      "masque": false
     },
     {
       "path": "imagery/clients/mersen.svg",
@@ -2087,12 +2195,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/mersen.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/mersen.svg",
-      "display_name": "Mersen"
+      "display_name": "Mersen",
+      "masque": false
     },
     {
       "path": "imagery/clients/min-culture.png",
       "url": "https://ayming-france.github.io/assets/imagery/clients/min-culture.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "6d48b289396fea22fc5e820d1f24a66e1ab6ee97",
       "bytes": 181656,
       "format": "png",
@@ -2106,7 +2215,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/min-culture.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/min-culture.png",
-      "display_name": "Min Culture"
+      "display_name": "Min Culture",
+      "masque": false
     },
     {
       "path": "imagery/clients/nexans.svg",
@@ -2125,7 +2235,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/nexans.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/nexans.svg",
-      "display_name": "Nexans"
+      "display_name": "Nexans",
+      "masque": false
     },
     {
       "path": "imagery/clients/nge.svg",
@@ -2144,12 +2255,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/nge.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/nge.svg",
-      "display_name": "Nge"
+      "display_name": "Nge",
+      "masque": false
     },
     {
       "path": "imagery/clients/nicollin.png",
       "url": "https://ayming-france.github.io/assets/imagery/clients/nicollin.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "496591f1155c49b0361051b06543dbfc52351f1f",
       "bytes": 23319,
       "format": "png",
@@ -2163,7 +2275,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/nicollin.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/nicollin.png",
-      "display_name": "Nicollin"
+      "display_name": "Nicollin",
+      "masque": false
     },
     {
       "path": "imagery/clients/omnes.svg",
@@ -2182,12 +2295,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/omnes.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/omnes.svg",
-      "display_name": "Omnes"
+      "display_name": "Omnes",
+      "masque": false
     },
     {
       "path": "imagery/clients/oppbtp.png",
       "url": "https://ayming-france.github.io/assets/imagery/clients/oppbtp.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "78e06af3048294dd3bc0263a6b718a43e2b33b83",
       "bytes": 99721,
       "format": "png",
@@ -2201,7 +2315,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/oppbtp.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/oppbtp.png",
-      "display_name": "Oppbtp"
+      "display_name": "Oppbtp",
+      "masque": false
     },
     {
       "path": "imagery/clients/orange.svg",
@@ -2220,7 +2335,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/orange.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/orange.svg",
-      "display_name": "Orange"
+      "display_name": "Orange",
+      "masque": false
     },
     {
       "path": "imagery/clients/otis.svg",
@@ -2239,12 +2355,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/otis.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/otis.svg",
-      "display_name": "Otis"
+      "display_name": "Otis",
+      "masque": false
     },
     {
       "path": "imagery/clients/pierre-fabre.png",
       "url": "https://ayming-france.github.io/assets/imagery/clients/pierre-fabre.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "5bfdcc69f6d4fb34ee9156007f6a563ea8d6f45f",
       "bytes": 22099,
       "format": "png",
@@ -2258,7 +2375,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/pierre-fabre.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/pierre-fabre.png",
-      "display_name": "Pierre Fabre"
+      "display_name": "Pierre Fabre",
+      "masque": false
     },
     {
       "path": "imagery/clients/safran.svg",
@@ -2277,7 +2395,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/safran.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/safran.svg",
-      "display_name": "Safran"
+      "display_name": "Safran",
+      "masque": false
     },
     {
       "path": "imagery/clients/seb.svg",
@@ -2296,7 +2415,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/seb.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/seb.svg",
-      "display_name": "Seb"
+      "display_name": "Seb",
+      "masque": false
     },
     {
       "path": "imagery/clients/sisca_logo-176x176.jpg",
@@ -2317,7 +2437,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/sisca_logo-176x176.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/sisca_logo-176x176.jpg",
-      "display_name": "Sisca Logo"
+      "display_name": "Sisca Logo",
+      "masque": false
     },
     {
       "path": "imagery/clients/sncf.svg",
@@ -2336,7 +2457,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/sncf.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/sncf.svg",
-      "display_name": "Sncf"
+      "display_name": "Sncf",
+      "masque": false
     },
     {
       "path": "imagery/clients/sodexo.svg",
@@ -2355,7 +2477,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/sodexo.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/sodexo.svg",
-      "display_name": "Sodexo"
+      "display_name": "Sodexo",
+      "masque": false
     },
     {
       "path": "imagery/clients/solocal.svg",
@@ -2374,7 +2497,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/solocal.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/solocal.svg",
-      "display_name": "Solocal"
+      "display_name": "Solocal",
+      "masque": false
     },
     {
       "path": "imagery/clients/spie-batignolles.svg",
@@ -2393,12 +2517,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/spie-batignolles.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/spie-batignolles.svg",
-      "display_name": "Spie Batignolles"
+      "display_name": "Spie Batignolles",
+      "masque": false
     },
     {
       "path": "imagery/clients/sqli.png",
       "url": "https://ayming-france.github.io/assets/imagery/clients/sqli.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "18278befa24fc743d495ec1982eeecc1832011b9",
       "bytes": 22085,
       "format": "png",
@@ -2412,7 +2537,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/sqli.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/sqli.png",
-      "display_name": "Sqli"
+      "display_name": "Sqli",
+      "masque": false
     },
     {
       "path": "imagery/clients/squad.svg",
@@ -2431,7 +2557,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/squad.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/squad.svg",
-      "display_name": "Squad"
+      "display_name": "Squad",
+      "masque": false
     },
     {
       "path": "imagery/clients/suez.svg",
@@ -2450,7 +2577,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/suez.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/suez.svg",
-      "display_name": "Suez"
+      "display_name": "Suez",
+      "masque": false
     },
     {
       "path": "imagery/clients/systeme-u.svg",
@@ -2469,7 +2597,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/systeme-u.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/systeme-u.svg",
-      "display_name": "Systeme U"
+      "display_name": "Systeme U",
+      "masque": false
     },
     {
       "path": "imagery/clients/terrena.png",
@@ -2488,7 +2617,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/terrena.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/terrena.png",
-      "display_name": "Terrena"
+      "display_name": "Terrena",
+      "masque": false
     },
     {
       "path": "imagery/clients/thales.svg",
@@ -2507,7 +2637,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/thales.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/thales.svg",
-      "display_name": "Thales"
+      "display_name": "Thales",
+      "masque": false
     },
     {
       "path": "imagery/clients/transdev.svg",
@@ -2526,7 +2657,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/transdev.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/transdev.svg",
-      "display_name": "Transdev"
+      "display_name": "Transdev",
+      "masque": false
     },
     {
       "path": "imagery/clients/unilever.svg",
@@ -2545,12 +2677,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/unilever.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/unilever.svg",
-      "display_name": "Unilever"
+      "display_name": "Unilever",
+      "masque": false
     },
     {
       "path": "imagery/clients/upjv.png",
       "url": "https://ayming-france.github.io/assets/imagery/clients/upjv.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "b9ef06f308a14474b407702f5946908250cf855c",
       "bytes": 93715,
       "format": "png",
@@ -2564,7 +2697,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/upjv.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/upjv.png",
-      "display_name": "Upjv"
+      "display_name": "Upjv",
+      "masque": false
     },
     {
       "path": "imagery/clients/urssaf.svg",
@@ -2583,7 +2717,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/urssaf.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/urssaf.svg",
-      "display_name": "Urssaf"
+      "display_name": "Urssaf",
+      "masque": false
     },
     {
       "path": "imagery/clients/veolia.svg",
@@ -2602,7 +2737,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/veolia.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/veolia.svg",
-      "display_name": "Veolia"
+      "display_name": "Veolia",
+      "masque": false
     },
     {
       "path": "imagery/clients/vinci.svg",
@@ -2621,7 +2757,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/vinci.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/vinci.svg",
-      "display_name": "Vinci"
+      "display_name": "Vinci",
+      "masque": false
     },
     {
       "path": "imagery/clients/virbac.svg",
@@ -2640,12 +2777,13 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/virbac.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/virbac.svg",
-      "display_name": "Virbac"
+      "display_name": "Virbac",
+      "masque": false
     },
     {
       "path": "imagery/clients/vivalto.png",
       "url": "https://ayming-france.github.io/assets/imagery/clients/vivalto.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "1bb7d3aa740406a38f613d92d78fe3859a9ea8d8",
       "bytes": 24042,
       "format": "png",
@@ -2659,7 +2797,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/clients/vivalto.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/clients/vivalto.png",
-      "display_name": "Vivalto"
+      "display_name": "Vivalto",
+      "masque": false
     },
     {
       "path": "imagery/collecte-arrets/Ayming-alert.jpg",
@@ -2680,7 +2819,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/collecte-arrets/Ayming-alert.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/collecte-arrets/Ayming-alert.jpg",
-      "display_name": "Ayming Alert"
+      "display_name": "Ayming Alert",
+      "masque": false
     },
     {
       "path": "imagery/collecte-arrets/Data-transfer.jpg",
@@ -2701,7 +2841,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/collecte-arrets/Data-transfer.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/collecte-arrets/Data-transfer.jpg",
-      "display_name": "Data Transfer"
+      "display_name": "Data Transfer",
+      "masque": false
     },
     {
       "path": "imagery/collecte-arrets/Design-sans-titre-9-1324x662.jpg",
@@ -2720,7 +2861,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/collecte-arrets/Design-sans-titre-9-1324x662.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/collecte-arrets/Design-sans-titre-9-1324x662.jpg",
-      "display_name": "Design Sans Titre 9"
+      "display_name": "Design Sans Titre 9",
+      "masque": false
     },
     {
       "path": "imagery/collecte-arrets/Design-sans-titre-9-532x532.jpg",
@@ -2741,7 +2883,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/collecte-arrets/Design-sans-titre-9-532x532.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/collecte-arrets/Design-sans-titre-9-532x532.jpg",
-      "display_name": "Design Sans Titre 9"
+      "display_name": "Design Sans Titre 9",
+      "masque": false
     },
     {
       "path": "imagery/collecte-arrets/authenticite.jpg",
@@ -2762,7 +2905,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/collecte-arrets/authenticite.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/collecte-arrets/authenticite.jpg",
-      "display_name": "Authenticite"
+      "display_name": "Authenticite",
+      "masque": false
     },
     {
       "path": "imagery/collecte-arrets/naissance.jpg",
@@ -2783,7 +2927,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/collecte-arrets/naissance.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/collecte-arrets/naissance.jpg",
-      "display_name": "Naissance"
+      "display_name": "Naissance",
+      "masque": false
     },
     {
       "path": "imagery/collecte-arrets/relances.jpg",
@@ -2804,7 +2949,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/collecte-arrets/relances.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/collecte-arrets/relances.jpg",
-      "display_name": "Relances"
+      "display_name": "Relances",
+      "masque": false
     },
     {
       "path": "imagery/controle-urssaf/ANRAS-1436-x-808.jpg",
@@ -2820,12 +2966,14 @@
         "controle-urssaf"
       ],
       "tags": [
-        "controle-urssaf"
+        "controle-urssaf",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/controle-urssaf/ANRAS-1436-x-808.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/controle-urssaf/ANRAS-1436-x-808.jpg",
-      "display_name": "Anras"
+      "display_name": "Anras",
+      "masque": true
     },
     {
       "path": "imagery/controle-urssaf/ursaff-1.jpg",
@@ -2846,7 +2994,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/controle-urssaf/ursaff-1.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/controle-urssaf/ursaff-1.jpg",
-      "display_name": "Ursaff 1"
+      "display_name": "Ursaff 1",
+      "masque": false
     },
     {
       "path": "imagery/controle-urssaf/ursaff-2.jpg",
@@ -2868,7 +3017,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/controle-urssaf/ursaff-2.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/controle-urssaf/ursaff-2.jpg",
-      "display_name": "Ursaff 2"
+      "display_name": "Ursaff 2",
+      "masque": false
     },
     {
       "path": "imagery/controle-urssaf/ursaff-3.jpg",
@@ -2889,7 +3039,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/controle-urssaf/ursaff-3.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/controle-urssaf/ursaff-3.jpg",
-      "display_name": "Ursaff 3"
+      "display_name": "Ursaff 3",
+      "masque": false
     },
     {
       "path": "imagery/controle-urssaf/ursaff-cover.jpg",
@@ -2910,7 +3061,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/controle-urssaf/ursaff-cover.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/controle-urssaf/ursaff-cover.jpg",
-      "display_name": "Ursaff Cover"
+      "display_name": "Ursaff Cover",
+      "masque": false
     },
     {
       "path": "imagery/controle-urssaf/ursaff-prob.jpg",
@@ -2931,7 +3083,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/controle-urssaf/ursaff-prob.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/controle-urssaf/ursaff-prob.jpg",
-      "display_name": "Ursaff Prob"
+      "display_name": "Ursaff Prob",
+      "masque": false
     },
     {
       "path": "imagery/cotisations-atmp/export-arrets.jpg",
@@ -2952,7 +3105,8 @@
       "is_canonical": false,
       "canonical_path": "imagery/hub-cards/export-arrets.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/hub-cards/export-arrets.jpg",
-      "display_name": "Export Arrets"
+      "display_name": "Export Arrets",
+      "masque": false
     },
     {
       "path": "imagery/dat/Add-on-duerp.jpg",
@@ -2973,7 +3127,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/dat/Add-on-duerp.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/dat/Add-on-duerp.jpg",
-      "display_name": "Add On Duerp"
+      "display_name": "Add On Duerp",
+      "masque": false
     },
     {
       "path": "imagery/dat/add-on-international.jpg",
@@ -2994,7 +3149,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/dat/add-on-international.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/dat/add-on-international.jpg",
-      "display_name": "Add On International"
+      "display_name": "Add On International",
+      "masque": false
     },
     {
       "path": "imagery/dat/add-on-myacci.jpg",
@@ -3015,7 +3171,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/dat/add-on-myacci.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/dat/add-on-myacci.jpg",
-      "display_name": "Add On Myacci"
+      "display_name": "Add On Myacci",
+      "masque": false
     },
     {
       "path": "imagery/dat/at-mp-2.jpg",
@@ -3036,7 +3193,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/dat/at-mp-2.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/dat/at-mp-2.jpg",
-      "display_name": "At Mp 2"
+      "display_name": "At Mp 2",
+      "masque": false
     },
     {
       "path": "imagery/dat/at-mp-5.jpg",
@@ -3057,7 +3215,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/dat/at-mp-5.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/dat/at-mp-5.jpg",
-      "display_name": "At Mp 5"
+      "display_name": "At Mp 5",
+      "masque": false
     },
     {
       "path": "imagery/dat/taux-at-6.jpg",
@@ -3078,7 +3237,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/dat/taux-at-6.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/dat/taux-at-6.jpg",
-      "display_name": "Taux At 6"
+      "display_name": "Taux At 6",
+      "masque": false
     },
     {
       "path": "imagery/duerp/Euro-Cargo-Rail-1436-x-808.jpg",
@@ -3094,12 +3254,14 @@
         "duerp"
       ],
       "tags": [
-        "duerp"
+        "duerp",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/duerp/Euro-Cargo-Rail-1436-x-808.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/duerp/Euro-Cargo-Rail-1436-x-808.jpg",
-      "display_name": "Euro Cargo Rail"
+      "display_name": "Euro Cargo Rail",
+      "masque": true
     },
     {
       "path": "imagery/duerp/Euro-Cargo-Rail-532-x-532.jpg",
@@ -3120,7 +3282,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/duerp/Euro-Cargo-Rail-532-x-532.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/duerp/Euro-Cargo-Rail-532-x-532.jpg",
-      "display_name": "Euro Cargo Rail"
+      "display_name": "Euro Cargo Rail",
+      "masque": false
     },
     {
       "path": "imagery/duerp/duerp-1.jpg",
@@ -3143,7 +3306,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/duerp/duerp-1.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/duerp/duerp-1.jpg",
-      "display_name": "Duerp 1"
+      "display_name": "Duerp 1",
+      "masque": false
     },
     {
       "path": "imagery/duerp/duerp-2.jpg",
@@ -3164,7 +3328,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/duerp/duerp-2.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/duerp/duerp-2.jpg",
-      "display_name": "Duerp 2"
+      "display_name": "Duerp 2",
+      "masque": false
     },
     {
       "path": "imagery/duerp/duerp-3.jpg",
@@ -3186,7 +3351,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/duerp/duerp-3.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/duerp/duerp-3.jpg",
-      "display_name": "Duerp 3"
+      "display_name": "Duerp 3",
+      "masque": false
     },
     {
       "path": "imagery/duerp/duerp-4.jpg",
@@ -3207,7 +3373,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/duerp/duerp-4.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/duerp/duerp-4.jpg",
-      "display_name": "Duerp 4"
+      "display_name": "Duerp 4",
+      "masque": false
     },
     {
       "path": "imagery/duerp/duerp-5.jpg",
@@ -3228,7 +3395,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/duerp/duerp-5.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/duerp/duerp-5.jpg",
-      "display_name": "Duerp 5"
+      "display_name": "Duerp 5",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/alstom-almacen-cover.jpg",
@@ -3244,12 +3412,14 @@
         "es-cotizaciones-sociales"
       ],
       "tags": [
-        "es-cotizaciones-sociales"
+        "es-cotizaciones-sociales",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/alstom-almacen-cover.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/alstom-almacen-cover.jpg",
-      "display_name": "Alstom Almacen Cover"
+      "display_name": "Alstom Almacen Cover",
+      "masque": true
     },
     {
       "path": "imagery/es-cotizaciones-sociales/alstom-le-creusot.jpg",
@@ -3265,12 +3435,14 @@
         "es-cotizaciones-sociales"
       ],
       "tags": [
-        "es-cotizaciones-sociales"
+        "es-cotizaciones-sociales",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/alstom-le-creusot.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/alstom-le-creusot.jpg",
-      "display_name": "Alstom Le Creusot"
+      "display_name": "Alstom Le Creusot",
+      "masque": true
     },
     {
       "path": "imagery/es-cotizaciones-sociales/alstom-logo-blanco.png",
@@ -3291,7 +3463,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/alstom-logo-blanco.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/alstom-logo-blanco.png",
-      "display_name": "Alstom Logo Blanco"
+      "display_name": "Alstom Logo Blanco",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/alstom-tecnica-tren.jpg",
@@ -3307,12 +3480,14 @@
         "es-cotizaciones-sociales"
       ],
       "tags": [
-        "es-cotizaciones-sociales"
+        "es-cotizaciones-sociales",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/alstom-tecnica-tren.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/alstom-tecnica-tren.jpg",
-      "display_name": "Alstom Tecnica Tren"
+      "display_name": "Alstom Tecnica Tren",
+      "masque": true
     },
     {
       "path": "imagery/es-cotizaciones-sociales/alstom-top-employer.jpg",
@@ -3328,12 +3503,14 @@
         "es-cotizaciones-sociales"
       ],
       "tags": [
-        "es-cotizaciones-sociales"
+        "es-cotizaciones-sociales",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/alstom-top-employer.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/alstom-top-employer.jpg",
-      "display_name": "Alstom Top Employer"
+      "display_name": "Alstom Top Employer",
+      "masque": true
     },
     {
       "path": "imagery/es-cotizaciones-sociales/alstom-tren.jpg",
@@ -3349,12 +3526,14 @@
         "es-cotizaciones-sociales"
       ],
       "tags": [
-        "es-cotizaciones-sociales"
+        "es-cotizaciones-sociales",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/alstom-tren.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/alstom-tren.jpg",
-      "display_name": "Alstom Tren"
+      "display_name": "Alstom Tren",
+      "masque": true
     },
     {
       "path": "imagery/es-cotizaciones-sociales/aymingsphere-portatil.jpg",
@@ -3375,7 +3554,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/aymingsphere-portatil.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/aymingsphere-portatil.jpg",
-      "display_name": "Aymingsphere Portatil"
+      "display_name": "Aymingsphere Portatil",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/agco.png",
@@ -3396,7 +3576,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/agco.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/agco.png",
-      "display_name": "Agco"
+      "display_name": "Agco",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/airbus.png",
@@ -3417,7 +3598,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/airbus.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/airbus.png",
-      "display_name": "Airbus"
+      "display_name": "Airbus",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/alstom.png",
@@ -3438,7 +3620,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/alstom.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/alstom.png",
-      "display_name": "Alstom"
+      "display_name": "Alstom",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/bbva.png",
@@ -3459,7 +3642,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/bbva.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/bbva.png",
-      "display_name": "Bbva"
+      "display_name": "Bbva",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/cabify.png",
@@ -3480,7 +3664,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/cabify.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/cabify.png",
-      "display_name": "Cabify"
+      "display_name": "Cabify",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/danone.png",
@@ -3501,7 +3686,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/danone.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/danone.png",
-      "display_name": "Danone"
+      "display_name": "Danone",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/ebn.png",
@@ -3522,7 +3708,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/ebn.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/ebn.png",
-      "display_name": "Ebn"
+      "display_name": "Ebn",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/europcar.png",
@@ -3543,7 +3730,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/europcar.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/europcar.png",
-      "display_name": "Europcar"
+      "display_name": "Europcar",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/glovo.png",
@@ -3564,7 +3752,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/glovo.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/glovo.png",
-      "display_name": "Glovo"
+      "display_name": "Glovo",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/ing-direct.png",
@@ -3585,7 +3774,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/ing-direct.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/ing-direct.png",
-      "display_name": "Ing Direct"
+      "display_name": "Ing Direct",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/legrand.png",
@@ -3606,7 +3796,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/legrand.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/legrand.png",
-      "display_name": "Legrand"
+      "display_name": "Legrand",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/louis-vuitton.png",
@@ -3627,7 +3818,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/louis-vuitton.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/louis-vuitton.png",
-      "display_name": "Louis Vuitton"
+      "display_name": "Louis Vuitton",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/nationale-nederlanden.png",
@@ -3648,7 +3840,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/nationale-nederlanden.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/nationale-nederlanden.png",
-      "display_name": "Nationale Nederlanden"
+      "display_name": "Nationale Nederlanden",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/navantia.png",
@@ -3669,7 +3862,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/navantia.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/navantia.png",
-      "display_name": "Navantia"
+      "display_name": "Navantia",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/pelayo.png",
@@ -3690,7 +3884,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/pelayo.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/pelayo.png",
-      "display_name": "Pelayo"
+      "display_name": "Pelayo",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/popular.png",
@@ -3711,7 +3906,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/popular.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/popular.png",
-      "display_name": "Popular"
+      "display_name": "Popular",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/rsi.png",
@@ -3732,7 +3928,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/rsi.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/rsi.png",
-      "display_name": "Rsi"
+      "display_name": "Rsi",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/safran.png",
@@ -3753,7 +3950,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/safran.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/safran.png",
-      "display_name": "Safran"
+      "display_name": "Safran",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/santalucia.png",
@@ -3774,7 +3972,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/santalucia.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/santalucia.png",
-      "display_name": "Santalucia"
+      "display_name": "Santalucia",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/sareb.png",
@@ -3795,7 +3994,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/sareb.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/sareb.png",
-      "display_name": "Sareb"
+      "display_name": "Sareb",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/schneider.png",
@@ -3816,7 +4016,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/schneider.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/schneider.png",
-      "display_name": "Schneider"
+      "display_name": "Schneider",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/seat.png",
@@ -3837,7 +4038,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/seat.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/seat.png",
-      "display_name": "Seat"
+      "display_name": "Seat",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/smurfit.png",
@@ -3858,7 +4060,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/smurfit.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/smurfit.png",
-      "display_name": "Smurfit"
+      "display_name": "Smurfit",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/stef.png",
@@ -3879,7 +4082,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/stef.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/stef.png",
-      "display_name": "Stef"
+      "display_name": "Stef",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/unilever.png",
@@ -3900,7 +4104,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/unilever.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/unilever.png",
-      "display_name": "Unilever"
+      "display_name": "Unilever",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/veolia.png",
@@ -3921,7 +4126,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/veolia.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/veolia.png",
-      "display_name": "Veolia"
+      "display_name": "Veolia",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/vinci.png",
@@ -3942,7 +4148,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/clientes/vinci.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/vinci.png",
-      "display_name": "Vinci"
+      "display_name": "Vinci",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/equipo-axel-cut-v2.png",
@@ -3965,29 +4172,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/equipo-axel-cut-v2.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-axel-cut-v2.png",
-      "display_name": "Equipo Axel Cut V2"
-    },
-    {
-      "path": "imagery/es-cotizaciones-sociales/equipo-axel.jpg",
-      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-axel.jpg",
-      "section": "images",
-      "sha1": "9b78087c39bada4b7090c1f6c9c3fab0471e1f0c",
-      "bytes": 12900,
-      "format": "jpg",
-      "width": 256,
-      "height": 256,
-      "orientation": "carre",
-      "used_in": [],
-      "tags": [
-        "axel",
-        "es-cotizaciones-sociales",
-        "source",
-        "équipe"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/es-cotizaciones-sociales/equipo-axel.jpg",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-axel.jpg",
-      "display_name": "Equipo Axel"
+      "display_name": "Equipo Axel Cut V2",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/equipo-jose-cut-v2.png",
@@ -4010,26 +4196,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/equipo-jose-cut-v2.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-jose-cut-v2.png",
-      "display_name": "Equipo Jose Cut V2"
-    },
-    {
-      "path": "imagery/es-cotizaciones-sociales/equipo-jose.png",
-      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-jose.png",
-      "section": "images",
-      "sha1": "2e6fa9fcdba14eb4b104dbd61aca43108b3bac12",
-      "bytes": 77649,
-      "format": "png",
-      "width": 256,
-      "height": 256,
-      "orientation": "carre",
-      "used_in": [],
-      "tags": [
-        "es-cotizaciones-sociales"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/es-cotizaciones-sociales/equipo-jose.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-jose.png",
-      "display_name": "Equipo Jose"
+      "display_name": "Equipo Jose Cut V2",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/equipo-lola-cut-v2.png",
@@ -4052,26 +4220,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/equipo-lola-cut-v2.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-lola-cut-v2.png",
-      "display_name": "Equipo Lola Cut V2"
-    },
-    {
-      "path": "imagery/es-cotizaciones-sociales/equipo-lola.png",
-      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-lola.png",
-      "section": "images",
-      "sha1": "fb4dfb244c543852c569cab56c9366d9adeaefc2",
-      "bytes": 86817,
-      "format": "png",
-      "width": 210,
-      "height": 206,
-      "orientation": "paysage",
-      "used_in": [],
-      "tags": [
-        "es-cotizaciones-sociales"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/es-cotizaciones-sociales/equipo-lola.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-lola.png",
-      "display_name": "Equipo Lola"
+      "display_name": "Equipo Lola Cut V2",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/equipo-maddalena-cut-v2.png",
@@ -4094,26 +4244,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/equipo-maddalena-cut-v2.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-maddalena-cut-v2.png",
-      "display_name": "Equipo Maddalena Cut V2"
-    },
-    {
-      "path": "imagery/es-cotizaciones-sociales/equipo-maddalena.png",
-      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-maddalena.png",
-      "section": "images",
-      "sha1": "ee758f30c465772469c52baa14cbe52df7a00007",
-      "bytes": 59823,
-      "format": "png",
-      "width": 217,
-      "height": 217,
-      "orientation": "carre",
-      "used_in": [],
-      "tags": [
-        "es-cotizaciones-sociales"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/es-cotizaciones-sociales/equipo-maddalena.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-maddalena.png",
-      "display_name": "Equipo Maddalena"
+      "display_name": "Equipo Maddalena Cut V2",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/equipo-olivier-cut-v2.png",
@@ -4136,26 +4268,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/equipo-olivier-cut-v2.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-olivier-cut-v2.png",
-      "display_name": "Equipo Olivier Cut V2"
-    },
-    {
-      "path": "imagery/es-cotizaciones-sociales/equipo-olivier.png",
-      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-olivier.png",
-      "section": "images",
-      "sha1": "f3c2114fb1d76239907aa47297666d3bc016be9a",
-      "bytes": 64384,
-      "format": "png",
-      "width": 256,
-      "height": 256,
-      "orientation": "carre",
-      "used_in": [],
-      "tags": [
-        "es-cotizaciones-sociales"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/es-cotizaciones-sociales/equipo-olivier.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/equipo-olivier.png",
-      "display_name": "Equipo Olivier"
+      "display_name": "Equipo Olivier Cut V2",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/pruebas-at-declaracion.jpg",
@@ -4176,7 +4290,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/pruebas-at-declaracion.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/pruebas-at-declaracion.jpg",
-      "display_name": "Pruebas At Declaracion"
+      "display_name": "Pruebas At Declaracion",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/pruebas-auditoria.jpg",
@@ -4197,7 +4312,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/pruebas-auditoria.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/pruebas-auditoria.jpg",
-      "display_name": "Pruebas Auditoria"
+      "display_name": "Pruebas Auditoria",
+      "masque": false
     },
     {
       "path": "imagery/es-cotizaciones-sociales/pruebas-medioambiente.jpg",
@@ -4218,7 +4334,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/es-cotizaciones-sociales/pruebas-medioambiente.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/pruebas-medioambiente.jpg",
-      "display_name": "Pruebas Medioambiente"
+      "display_name": "Pruebas Medioambiente",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/acciline-logo.png",
@@ -4239,7 +4356,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/acciline-logo.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png",
-      "display_name": "Acciline Logo"
+      "display_name": "Acciline Logo",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/alt-fragmentee.jpg",
@@ -4258,7 +4376,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/alt-fragmentee.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/alt-fragmentee.jpg",
-      "display_name": "Alt Fragmentee"
+      "display_name": "Alt Fragmentee",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/alt-systemes.jpg",
@@ -4277,7 +4396,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/alt-systemes.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/alt-systemes.jpg",
-      "display_name": "Alt Systemes"
+      "display_name": "Alt Systemes",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/alt-tableurs.jpg",
@@ -4296,83 +4416,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/alt-tableurs.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/alt-tableurs.jpg",
-      "display_name": "Alt Tableurs"
-    },
-    {
-      "path": "imagery/essentiel/analytics-clean.png",
-      "url": "https://ayming-france.github.io/assets/imagery/essentiel/analytics-clean.png",
-      "section": "images",
-      "sha1": "e11702dc85c88c68b370f1046cafb5f1cbabdf66",
-      "bytes": 84506,
-      "format": "png",
-      "width": 648,
-      "height": 429,
-      "orientation": "paysage",
-      "used_in": [],
-      "tags": [
-        "essentiel"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/essentiel/analytics-clean.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/analytics-clean.png",
-      "display_name": "Analytics Clean"
-    },
-    {
-      "path": "imagery/essentiel/analytics-laptop.png",
-      "url": "https://ayming-france.github.io/assets/imagery/essentiel/analytics-laptop.png",
-      "section": "images",
-      "sha1": "159970864bc43db8686b6b618a0505b9ba3de539",
-      "bytes": 170682,
-      "format": "png",
-      "width": 1540,
-      "height": 990,
-      "orientation": "paysage",
-      "used_in": [],
-      "tags": [
-        "essentiel"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/essentiel/analytics-laptop.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/analytics-laptop.png",
-      "display_name": "Analytics Laptop"
-    },
-    {
-      "path": "imagery/essentiel/analytics.png",
-      "url": "https://ayming-france.github.io/assets/imagery/essentiel/analytics.png",
-      "section": "images",
-      "sha1": "461287c57eb0f0951de08b669ddf78d624728344",
-      "bytes": 50935,
-      "format": "png",
-      "width": 739,
-      "height": 110,
-      "orientation": "paysage",
-      "used_in": [],
-      "tags": [
-        "essentiel"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/essentiel/analytics.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/analytics.png",
-      "display_name": "Analytics"
-    },
-    {
-      "path": "imagery/essentiel/app-mockup.png",
-      "url": "https://ayming-france.github.io/assets/imagery/essentiel/app-mockup.png",
-      "section": "images",
-      "sha1": "3107d22f2b9c299494efffeac10e9df4960ed8a4",
-      "bytes": 186961,
-      "format": "png",
-      "width": 290,
-      "height": 741,
-      "orientation": "portrait",
-      "used_in": [],
-      "tags": [
-        "essentiel"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/essentiel/app-mockup.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/app-mockup.png",
-      "display_name": "App Mockup"
+      "display_name": "Alt Tableurs",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/apps/acciline-analytics.png",
@@ -4393,7 +4438,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/apps/acciline-analytics.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/apps/acciline-analytics.png",
-      "display_name": "Acciline Analytics"
+      "display_name": "Acciline Analytics",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/apps/acciline-app.png",
@@ -4414,7 +4460,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/apps/acciline-app.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/apps/acciline-app.png",
-      "display_name": "Acciline App"
+      "display_name": "Acciline App",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/apps/acciline-share.png",
@@ -4435,83 +4482,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/apps/acciline-share.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/apps/acciline-share.png",
-      "display_name": "Acciline Share"
-    },
-    {
-      "path": "imagery/essentiel/appstore-badges.png",
-      "url": "https://ayming-france.github.io/assets/imagery/essentiel/appstore-badges.png",
-      "section": "images",
-      "sha1": "7b774efd3e18cabd663f4b9944ef76a103e030dd",
-      "bytes": 31128,
-      "format": "png",
-      "width": 680,
-      "height": 158,
-      "orientation": "paysage",
-      "used_in": [],
-      "tags": [
-        "essentiel"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/essentiel/appstore-badges.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/appstore-badges.png",
-      "display_name": "Appstore Badges"
-    },
-    {
-      "path": "imagery/essentiel/badge-appstore.png",
-      "url": "https://ayming-france.github.io/assets/imagery/essentiel/badge-appstore.png",
-      "section": "images",
-      "sha1": "56c72e5bea4afb7adfba64decb31901ce1e225fb",
-      "bytes": 9179,
-      "format": "png",
-      "width": 278,
-      "height": 91,
-      "orientation": "paysage",
-      "used_in": [],
-      "tags": [
-        "essentiel"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/essentiel/badge-appstore.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/badge-appstore.png",
-      "display_name": "Badge Appstore"
-    },
-    {
-      "path": "imagery/essentiel/badge-googleplay.png",
-      "url": "https://ayming-france.github.io/assets/imagery/essentiel/badge-googleplay.png",
-      "section": "images",
-      "sha1": "d1c74144baeae72c4c6d4e5b1db26263c65593b3",
-      "bytes": 24472,
-      "format": "png",
-      "width": 305,
-      "height": 123,
-      "orientation": "paysage",
-      "used_in": [],
-      "tags": [
-        "essentiel"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/essentiel/badge-googleplay.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/badge-googleplay.png",
-      "display_name": "Badge Googleplay"
-    },
-    {
-      "path": "imagery/essentiel/contact.png",
-      "url": "https://ayming-france.github.io/assets/imagery/essentiel/contact.png",
-      "section": "images",
-      "sha1": "b3bedecfdbe9292619fc68408db51ecc902a5c67",
-      "bytes": 57181,
-      "format": "png",
-      "width": 1920,
-      "height": 1920,
-      "orientation": "carre",
-      "used_in": [],
-      "tags": [
-        "essentiel"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/essentiel/contact.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/contact.png",
-      "display_name": "Contact"
+      "display_name": "Acciline Share",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/cover.jpg",
@@ -4532,26 +4504,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/cover.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/cover.jpg",
-      "display_name": "Cover"
-    },
-    {
-      "path": "imagery/essentiel/demo-laptop.png",
-      "url": "https://ayming-france.github.io/assets/imagery/essentiel/demo-laptop.png",
-      "section": "images",
-      "sha1": "d624f4b73242f4e45b66ce5d5381a8474d351fe9",
-      "bytes": 413463,
-      "format": "png",
-      "width": 1336,
-      "height": 998,
-      "orientation": "paysage",
-      "used_in": [],
-      "tags": [
-        "essentiel"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/essentiel/demo-laptop.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/demo-laptop.png",
-      "display_name": "Demo Laptop"
+      "display_name": "Cover",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/demo-platform.jpg",
@@ -4567,12 +4521,14 @@
         "essentiel"
       ],
       "tags": [
-        "essentiel"
+        "essentiel",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/demo-platform.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/demo-platform.jpg",
-      "display_name": "Demo Platform"
+      "display_name": "Demo Platform",
+      "masque": true
     },
     {
       "path": "imagery/essentiel/evaluation-risques.png",
@@ -4593,7 +4549,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/evaluation-risques.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/evaluation-risques.png",
-      "display_name": "Evaluation Risques"
+      "display_name": "Evaluation Risques",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/fragmentation-center.jpg",
@@ -4612,26 +4569,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/fragmentation-center.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/fragmentation-center.jpg",
-      "display_name": "Fragmentation Center"
-    },
-    {
-      "path": "imagery/essentiel/fragmentation-diagram.png",
-      "url": "https://ayming-france.github.io/assets/imagery/essentiel/fragmentation-diagram.png",
-      "section": "images",
-      "sha1": "ae3d181cb4a623dbb06aa2c0372d85b14651f508",
-      "bytes": 592401,
-      "format": "png",
-      "width": 3840,
-      "height": 1350,
-      "orientation": "paysage",
-      "used_in": [],
-      "tags": [
-        "essentiel"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/essentiel/fragmentation-diagram.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/fragmentation-diagram.png",
-      "display_name": "Fragmentation Diagram"
+      "display_name": "Fragmentation Center",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/ic-drive.png",
@@ -4650,7 +4589,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/ic-drive.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/ic-drive.png",
-      "display_name": "Ic Drive"
+      "display_name": "Ic Drive",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/ic-forms.png",
@@ -4669,7 +4609,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/ic-forms.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/ic-forms.png",
-      "display_name": "Ic Forms"
+      "display_name": "Ic Forms",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/ic-pdf.png",
@@ -4688,7 +4629,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/ic-pdf.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/ic-pdf.png",
-      "display_name": "Ic Pdf"
+      "display_name": "Ic Pdf",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/ic-sheets.png",
@@ -4707,7 +4649,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/ic-sheets.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/ic-sheets.png",
-      "display_name": "Ic Sheets"
+      "display_name": "Ic Sheets",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/ic-teams.png",
@@ -4726,7 +4669,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/ic-teams.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/ic-teams.png",
-      "display_name": "Ic Teams"
+      "display_name": "Ic Teams",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/ic-trello.png",
@@ -4745,7 +4689,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/ic-trello.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/ic-trello.png",
-      "display_name": "Ic Trello"
+      "display_name": "Ic Trello",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/ic-whatsapp.png",
@@ -4764,7 +4709,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/ic-whatsapp.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/ic-whatsapp.png",
-      "display_name": "Ic Whatsapp"
+      "display_name": "Ic Whatsapp",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/ic-word.png",
@@ -4783,7 +4729,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/ic-word.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/ic-word.png",
-      "display_name": "Ic Word"
+      "display_name": "Ic Word",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/mod-audits.png",
@@ -4804,7 +4751,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/mod-audits.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-audits.png",
-      "display_name": "Mod Audits"
+      "display_name": "Mod Audits",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/mod-causes.png",
@@ -4825,7 +4773,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/mod-causes.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-causes.png",
-      "display_name": "Mod Causes"
+      "display_name": "Mod Causes",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/mod-equipements.png",
@@ -4846,7 +4795,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/mod-equipements.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-equipements.png",
-      "display_name": "Mod Equipements"
+      "display_name": "Mod Equipements",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/mod-evaluation.png",
@@ -4867,7 +4817,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/mod-evaluation.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-evaluation.png",
-      "display_name": "Mod Evaluation"
+      "display_name": "Mod Evaluation",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/mod-evenements.png",
@@ -4888,7 +4839,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/mod-evenements.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-evenements.png",
-      "display_name": "Mod Evenements"
+      "display_name": "Mod Evenements",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/mod-formations.png",
@@ -4909,7 +4861,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/mod-formations.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-formations.png",
-      "display_name": "Mod Formations"
+      "display_name": "Mod Formations",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/mod-plans.png",
@@ -4930,7 +4883,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/mod-plans.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-plans.png",
-      "display_name": "Mod Plans"
+      "display_name": "Mod Plans",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/mod-veille.png",
@@ -4951,7 +4905,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/mod-veille.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-veille.png",
-      "display_name": "Mod Veille"
+      "display_name": "Mod Veille",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/step-accompagnement.png",
@@ -4970,7 +4925,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/step-accompagnement.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/step-accompagnement.png",
-      "display_name": "Step Accompagnement"
+      "display_name": "Step Accompagnement",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/step-contrat.png",
@@ -4989,7 +4945,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/step-contrat.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/step-contrat.png",
-      "display_name": "Step Contrat"
+      "display_name": "Step Contrat",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/step-devis.png",
@@ -5008,7 +4965,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/step-devis.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/step-devis.png",
-      "display_name": "Step Devis"
+      "display_name": "Step Devis",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/step-formation.png",
@@ -5027,7 +4985,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/step-formation.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/step-formation.png",
-      "display_name": "Step Formation"
+      "display_name": "Step Formation",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/step-missions.png",
@@ -5046,7 +5005,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/step-missions.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/step-missions.png",
-      "display_name": "Step Missions"
+      "display_name": "Step Missions",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/icons/step-onboarding.png",
@@ -5065,7 +5025,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/icons/step-onboarding.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/icons/step-onboarding.png",
-      "display_name": "Step Onboarding"
+      "display_name": "Step Onboarding",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/intro.jpg",
@@ -5086,7 +5047,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/intro.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/intro.jpg",
-      "display_name": "Intro"
+      "display_name": "Intro",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/limites-fragmentee.png",
@@ -5107,7 +5069,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/limites-fragmentee.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/limites-fragmentee.png",
-      "display_name": "Limites Fragmentee"
+      "display_name": "Limites Fragmentee",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/limites-systemes.png",
@@ -5128,7 +5091,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/limites-systemes.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/limites-systemes.png",
-      "display_name": "Limites Systemes"
+      "display_name": "Limites Systemes",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/limites-tableurs.png",
@@ -5149,7 +5113,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/limites-tableurs.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/limites-tableurs.png",
-      "display_name": "Limites Tableurs"
+      "display_name": "Limites Tableurs",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/mouvement-logos-clean.png",
@@ -5170,7 +5135,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/mouvement-logos-clean.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/mouvement-logos-clean.png",
-      "display_name": "Mouvement Logos Clean"
+      "display_name": "Mouvement Logos Clean",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/mouvement-logos.png",
@@ -5189,7 +5155,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/mouvement-logos.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/mouvement-logos.png",
-      "display_name": "Mouvement Logos"
+      "display_name": "Mouvement Logos",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/mouvement-social-clean.png",
@@ -5210,26 +5177,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/mouvement-social-clean.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/mouvement-social-clean.png",
-      "display_name": "Mouvement Social Clean"
-    },
-    {
-      "path": "imagery/essentiel/mouvement-social.png",
-      "url": "https://ayming-france.github.io/assets/imagery/essentiel/mouvement-social.png",
-      "section": "images",
-      "sha1": "e5a0cec9b672318b0e3356afcccc946ce55f1ebc",
-      "bytes": 209395,
-      "format": "png",
-      "width": 1280,
-      "height": 968,
-      "orientation": "paysage",
-      "used_in": [],
-      "tags": [
-        "essentiel"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/essentiel/mouvement-social.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/mouvement-social.png",
-      "display_name": "Mouvement Social"
+      "display_name": "Mouvement Social Clean",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/parcours-steps.png",
@@ -5248,7 +5197,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/parcours-steps.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/parcours-steps.png",
-      "display_name": "Parcours Steps"
+      "display_name": "Parcours Steps",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/plans-actions.png",
@@ -5269,7 +5219,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/plans-actions.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/plans-actions.png",
-      "display_name": "Plans Actions"
+      "display_name": "Plans Actions",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/pourquoi-1.jpg",
@@ -5290,7 +5241,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/pourquoi-1.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/pourquoi-1.jpg",
-      "display_name": "Pourquoi 1"
+      "display_name": "Pourquoi 1",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/pourquoi-2.jpg",
@@ -5311,7 +5263,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/pourquoi-2.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/pourquoi-2.jpg",
-      "display_name": "Pourquoi 2"
+      "display_name": "Pourquoi 2",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/pourquoi-3.jpg",
@@ -5332,7 +5285,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/pourquoi-3.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/pourquoi-3.jpg",
-      "display_name": "Pourquoi 3"
+      "display_name": "Pourquoi 3",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/reviews/capterra.png",
@@ -5348,12 +5302,14 @@
         "essentiel"
       ],
       "tags": [
-        "essentiel"
+        "essentiel",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/reviews/capterra.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/reviews/capterra.png",
-      "display_name": "Capterra"
+      "display_name": "Capterra",
+      "masque": true
     },
     {
       "path": "imagery/essentiel/reviews/getapp.png",
@@ -5369,12 +5325,14 @@
         "essentiel"
       ],
       "tags": [
-        "essentiel"
+        "essentiel",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/reviews/getapp.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/reviews/getapp.png",
-      "display_name": "Getapp"
+      "display_name": "Getapp",
+      "masque": true
     },
     {
       "path": "imagery/essentiel/reviews/software-advice.png",
@@ -5390,12 +5348,14 @@
         "essentiel"
       ],
       "tags": [
-        "essentiel"
+        "essentiel",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/reviews/software-advice.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/reviews/software-advice.png",
-      "display_name": "Software Advice"
+      "display_name": "Software Advice",
+      "masque": true
     },
     {
       "path": "imagery/essentiel/securite-1.jpg",
@@ -5416,7 +5376,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/securite-1.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/securite-1.jpg",
-      "display_name": "Securite 1"
+      "display_name": "Securite 1",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/securite-2.jpg",
@@ -5437,7 +5398,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/securite-2.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/securite-2.jpg",
-      "display_name": "Securite 2"
+      "display_name": "Securite 2",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/securite-3.jpg",
@@ -5458,26 +5420,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/securite-3.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/securite-3.jpg",
-      "display_name": "Securite 3"
-    },
-    {
-      "path": "imagery/essentiel/suite-modules.png",
-      "url": "https://ayming-france.github.io/assets/imagery/essentiel/suite-modules.png",
-      "section": "images",
-      "sha1": "137be850f17c3a29fa6b9f3c70f2230b137b095e",
-      "bytes": 289443,
-      "format": "png",
-      "width": 3780,
-      "height": 1530,
-      "orientation": "paysage",
-      "used_in": [],
-      "tags": [
-        "essentiel"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/essentiel/suite-modules.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/suite-modules.png",
-      "display_name": "Suite Modules"
+      "display_name": "Securite 3",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/support.png",
@@ -5498,7 +5442,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/support.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/support.png",
-      "display_name": "Support"
+      "display_name": "Support",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/valeur-centraliser.png",
@@ -5519,7 +5464,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/valeur-centraliser.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/valeur-centraliser.png",
-      "display_name": "Valeur Centraliser"
+      "display_name": "Valeur Centraliser",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/valeur-connecter.png",
@@ -5540,7 +5486,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/valeur-connecter.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/valeur-connecter.png",
-      "display_name": "Valeur Connecter"
+      "display_name": "Valeur Connecter",
+      "masque": false
     },
     {
       "path": "imagery/essentiel/valeur-eclairer.png",
@@ -5561,7 +5508,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/essentiel/valeur-eclairer.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/essentiel/valeur-eclairer.png",
-      "display_name": "Valeur Eclairer"
+      "display_name": "Valeur Eclairer",
+      "masque": false
     },
     {
       "path": "imagery/hub-cards/At-tiers-5.jpg",
@@ -5591,7 +5539,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/hub-cards/At-tiers-5.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/hub-cards/At-tiers-5.jpg",
-      "display_name": "At Tiers 5"
+      "display_name": "At Tiers 5",
+      "masque": false
     },
     {
       "path": "imagery/hub-cards/People-AdobeStock_1139995023.jpeg",
@@ -5613,7 +5562,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/hub-cards/People-AdobeStock_1139995023.jpeg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/hub-cards/People-AdobeStock_1139995023.jpeg",
-      "display_name": "People Adobestock 1139995023"
+      "display_name": "People Adobestock 1139995023",
+      "masque": false
     },
     {
       "path": "imagery/hub-cards/Recuperer-prevoyance.jpg",
@@ -5637,7 +5587,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/hub-cards/Recuperer-prevoyance.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/hub-cards/Recuperer-prevoyance.jpg",
-      "display_name": "Recuperer Prevoyance"
+      "display_name": "Recuperer Prevoyance",
+      "masque": false
     },
     {
       "path": "imagery/hub-cards/aides.jpg",
@@ -5659,7 +5610,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/hub-cards/aides.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/hub-cards/aides.jpg",
-      "display_name": "Aides"
+      "display_name": "Aides",
+      "masque": false
     },
     {
       "path": "imagery/hub-cards/at-mp-1.jpg",
@@ -5684,7 +5636,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/hub-cards/at-mp-1.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/hub-cards/at-mp-1.jpg",
-      "display_name": "At Mp 1"
+      "display_name": "At Mp 1",
+      "masque": false
     },
     {
       "path": "imagery/hub-cards/charges-1.jpg",
@@ -5711,7 +5664,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/hub-cards/charges-1.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/hub-cards/charges-1.jpg",
-      "display_name": "Charges 1"
+      "display_name": "Charges 1",
+      "masque": false
     },
     {
       "path": "imagery/hub-cards/export-arrets.jpg",
@@ -5741,7 +5695,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/hub-cards/export-arrets.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/hub-cards/export-arrets.jpg",
-      "display_name": "Export Arrets"
+      "display_name": "Export Arrets",
+      "masque": false
     },
     {
       "path": "imagery/hub-cards/exporting-at.jpg",
@@ -5769,7 +5724,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/hub-cards/exporting-at.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/hub-cards/exporting-at.jpg",
-      "display_name": "Exporting At"
+      "display_name": "Exporting At",
+      "masque": false
     },
     {
       "path": "imagery/hub-cards/taux-at-prob.jpg",
@@ -5793,7 +5749,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/hub-cards/taux-at-prob.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/hub-cards/taux-at-prob.jpg",
-      "display_name": "Taux At Prob"
+      "display_name": "Taux At Prob",
+      "masque": false
     },
     {
       "path": "imagery/hub-cards/ursaff.jpg",
@@ -5815,7 +5772,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/hub-cards/ursaff.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/hub-cards/ursaff.jpg",
-      "display_name": "Ursaff"
+      "display_name": "Ursaff",
+      "masque": false
     },
     {
       "path": "imagery/hub-cards/vm-1.jpg",
@@ -5838,7 +5796,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/hub-cards/vm-1.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/hub-cards/vm-1.jpg",
-      "display_name": "Vm 1"
+      "display_name": "Vm 1",
+      "masque": false
     },
     {
       "path": "imagery/hub-cards/vm-rec-2.jpg",
@@ -5861,7 +5820,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/hub-cards/vm-rec-2.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/hub-cards/vm-rec-2.jpg",
-      "display_name": "Vm Rec 2"
+      "display_name": "Vm Rec 2",
+      "masque": false
     },
     {
       "path": "imagery/ijss/CTA-banner-662-x-413-176x110.png",
@@ -5878,12 +5838,14 @@
         "recuperer-ij"
       ],
       "tags": [
-        "ijss"
+        "ijss",
+        "masque"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/ijss/CTA-banner-662-x-413-176x110.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/ijss/CTA-banner-662-x-413-176x110.png",
-      "display_name": "Cta Banner"
+      "display_name": "Cta Banner",
+      "masque": true
     },
     {
       "path": "imagery/ijss/Gerer-control-URSSAF_0000s_0000_1.jpg",
@@ -5911,7 +5873,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/ijss/Gerer-control-URSSAF_0000s_0000_1.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/ijss/Gerer-control-URSSAF_0000s_0000_1.jpg",
-      "display_name": "Gerer Control Urssaf 0000s 0000 1"
+      "display_name": "Gerer Control Urssaf 0000s 0000 1",
+      "masque": false
     },
     {
       "path": "imagery/ijss/Recuperer-ij.jpg",
@@ -5932,7 +5895,8 @@
       "is_canonical": false,
       "canonical_path": "imagery/recuperer-ij/Recuperer-ij.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/recuperer-ij/Recuperer-ij.jpg",
-      "display_name": "Recuperer Ij"
+      "display_name": "Recuperer Ij",
+      "masque": false
     },
     {
       "path": "imagery/ijss/Sans-titre-1-7-532x532.png",
@@ -5953,7 +5917,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/ijss/Sans-titre-1-7-532x532.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/ijss/Sans-titre-1-7-532x532.png",
-      "display_name": "Sans Titre 1 7"
+      "display_name": "Sans Titre 1 7",
+      "masque": false
     },
     {
       "path": "imagery/ijss/Sans-titre-72-532x470.png",
@@ -5974,7 +5939,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/ijss/Sans-titre-72-532x470.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/ijss/Sans-titre-72-532x470.png",
-      "display_name": "Sans Titre 72"
+      "display_name": "Sans Titre 72",
+      "masque": false
     },
     {
       "path": "imagery/ijss/Suivi-ijss.jpg",
@@ -5995,7 +5961,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/ijss/Suivi-ijss.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/ijss/Suivi-ijss.jpg",
-      "display_name": "Suivi Ijss"
+      "display_name": "Suivi Ijss",
+      "masque": false
     },
     {
       "path": "imagery/ijss/suivi-ijss-2.jpg",
@@ -6016,7 +5983,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/ijss/suivi-ijss-2.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/ijss/suivi-ijss-2.jpg",
-      "display_name": "Suivi Ijss 2"
+      "display_name": "Suivi Ijss 2",
+      "masque": false
     },
     {
       "path": "imagery/ijss/suivi-ijss-3.jpg",
@@ -6039,7 +6007,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/ijss/suivi-ijss-3.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/ijss/suivi-ijss-3.jpg",
-      "display_name": "Suivi Ijss 3"
+      "display_name": "Suivi Ijss 3",
+      "masque": false
     },
     {
       "path": "imagery/ijss/suivi-pain.jpg",
@@ -6064,26 +6033,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/ijss/suivi-pain.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/ijss/suivi-pain.jpg",
-      "display_name": "Suivi Pain"
-    },
-    {
-      "path": "imagery/methode/hub-full.png",
-      "url": "https://ayming-france.github.io/assets/imagery/methode/hub-full.png",
-      "section": "images",
-      "sha1": "56a28191960bf0fb4db2a21fbaab53c68c3358bc",
-      "bytes": 1905873,
-      "format": "png",
-      "width": 1440,
-      "height": 3684,
-      "orientation": "portrait",
-      "used_in": [],
-      "tags": [
-        "methode"
-      ],
-      "is_canonical": true,
-      "canonical_path": "imagery/methode/hub-full.png",
-      "canonical_url": "https://ayming-france.github.io/assets/imagery/methode/hub-full.png",
-      "display_name": "Hub Full"
+      "display_name": "Suivi Pain",
+      "masque": false
     },
     {
       "path": "imagery/methode/hub.png",
@@ -6099,12 +6050,14 @@
         "methode"
       ],
       "tags": [
+        "masque",
         "methode"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/methode/hub.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/methode/hub.png",
-      "display_name": "Hub"
+      "display_name": "Hub",
+      "masque": true
     },
     {
       "path": "imagery/methode/ijss-demo.png",
@@ -6120,12 +6073,14 @@
         "methode"
       ],
       "tags": [
+        "masque",
         "methode"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/methode/ijss-demo.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/methode/ijss-demo.png",
-      "display_name": "Ijss Demo"
+      "display_name": "Ijss Demo",
+      "masque": true
     },
     {
       "path": "imagery/partenaires/accdom.png",
@@ -6144,7 +6099,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/accdom.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/accdom.png",
-      "display_name": "Accdom"
+      "display_name": "Accdom",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/amf-assurances.png",
@@ -6163,7 +6119,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/amf-assurances.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/amf-assurances.png",
-      "display_name": "Amf Assurances"
+      "display_name": "Amf Assurances",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/area-centre-val-de-loire.png",
@@ -6182,7 +6139,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/area-centre-val-de-loire.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/area-centre-val-de-loire.png",
-      "display_name": "Area Centre Val De Loire"
+      "display_name": "Area Centre Val De Loire",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/cna.png",
@@ -6201,7 +6159,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/cna.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/cna.png",
-      "display_name": "Cna"
+      "display_name": "Cna",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/dfcg.svg",
@@ -6220,7 +6179,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/dfcg.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/dfcg.svg",
-      "display_name": "Dfcg"
+      "display_name": "Dfcg",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/eleas.png",
@@ -6239,7 +6199,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/eleas.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/eleas.png",
-      "display_name": "Eleas"
+      "display_name": "Eleas",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/fhp-val-de-loire-ocean.jpg",
@@ -6258,7 +6219,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/fhp-val-de-loire-ocean.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/fhp-val-de-loire-ocean.jpg",
-      "display_name": "Fhp Val De Loire Ocean"
+      "display_name": "Fhp Val De Loire Ocean",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/frbtp-guyane.png",
@@ -6277,7 +6239,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/frbtp-guyane.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/frbtp-guyane.png",
-      "display_name": "Frbtp Guyane"
+      "display_name": "Frbtp Guyane",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/frbtp-martinique.png",
@@ -6296,7 +6259,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/frbtp-martinique.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/frbtp-martinique.png",
-      "display_name": "Frbtp Martinique"
+      "display_name": "Frbtp Martinique",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/groupe-jlo.png",
@@ -6315,7 +6279,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/groupe-jlo.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/groupe-jlo.png",
-      "display_name": "Groupe Jlo"
+      "display_name": "Groupe Jlo",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/jobpublic.png",
@@ -6334,7 +6299,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/jobpublic.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/jobpublic.png",
-      "display_name": "Jobpublic"
+      "display_name": "Jobpublic",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/kpmg.svg",
@@ -6353,7 +6319,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/kpmg.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/kpmg.svg",
-      "display_name": "Kpmg"
+      "display_name": "Kpmg",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/lcl.svg",
@@ -6372,7 +6339,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/lcl.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/lcl.svg",
-      "display_name": "Lcl"
+      "display_name": "Lcl",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/medef-guyane.png",
@@ -6391,7 +6359,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/medef-guyane.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/medef-guyane.png",
-      "display_name": "Medef Guyane"
+      "display_name": "Medef Guyane",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/mercer-convictionsrh.png",
@@ -6410,7 +6379,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/mercer-convictionsrh.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/mercer-convictionsrh.png",
-      "display_name": "Mercer Convictionsrh"
+      "display_name": "Mercer Convictionsrh",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/nexem.svg",
@@ -6429,7 +6399,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/nexem.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/nexem.svg",
-      "display_name": "Nexem"
+      "display_name": "Nexem",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/numeum.svg",
@@ -6448,7 +6419,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/numeum.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/numeum.svg",
-      "display_name": "Numeum"
+      "display_name": "Numeum",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/octime.png",
@@ -6467,7 +6439,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/octime.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/octime.png",
-      "display_name": "Octime"
+      "display_name": "Octime",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/primexis.svg",
@@ -6486,7 +6459,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/primexis.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/primexis.svg",
-      "display_name": "Primexis"
+      "display_name": "Primexis",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/resah.png",
@@ -6505,7 +6479,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/resah.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/resah.png",
-      "display_name": "Resah"
+      "display_name": "Resah",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/ude-medef-guadeloupe.svg",
@@ -6524,7 +6499,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/ude-medef-guadeloupe.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/ude-medef-guadeloupe.svg",
-      "display_name": "Ude Medef Guadeloupe"
+      "display_name": "Ude Medef Guadeloupe",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/una.png",
@@ -6543,7 +6519,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/una.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/una.png",
-      "display_name": "Una"
+      "display_name": "Una",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/unccas.svg",
@@ -6562,7 +6539,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/unccas.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/unccas.svg",
-      "display_name": "Unccas"
+      "display_name": "Unccas",
+      "masque": false
     },
     {
       "path": "imagery/partenaires/upe13.png",
@@ -6581,7 +6559,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/partenaires/upe13.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/partenaires/upe13.png",
-      "display_name": "Upe13"
+      "display_name": "Upe13",
+      "masque": false
     },
     {
       "path": "imagery/questionnaires-mp/questionnaire-mp-4.jpg",
@@ -6602,7 +6581,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/questionnaires-mp/questionnaire-mp-4.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/questionnaires-mp/questionnaire-mp-4.jpg",
-      "display_name": "Questionnaire Mp 4"
+      "display_name": "Questionnaire Mp 4",
+      "masque": false
     },
     {
       "path": "imagery/questionnaires-mp/questionnaire-mp-5.jpg",
@@ -6623,7 +6603,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/questionnaires-mp/questionnaire-mp-5.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/questionnaires-mp/questionnaire-mp-5.jpg",
-      "display_name": "Questionnaire Mp 5"
+      "display_name": "Questionnaire Mp 5",
+      "masque": false
     },
     {
       "path": "imagery/questionnaires-mp/questionnaire-mp-6.jpg",
@@ -6644,7 +6625,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/questionnaires-mp/questionnaire-mp-6.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/questionnaires-mp/questionnaire-mp-6.jpg",
-      "display_name": "Questionnaire Mp 6"
+      "display_name": "Questionnaire Mp 6",
+      "masque": false
     },
     {
       "path": "imagery/questionnaires-mp/questionnaire-mp-prob.jpg",
@@ -6665,7 +6647,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/questionnaires-mp/questionnaire-mp-prob.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/questionnaires-mp/questionnaire-mp-prob.jpg",
-      "display_name": "Questionnaire Mp Prob"
+      "display_name": "Questionnaire Mp Prob",
+      "masque": false
     },
     {
       "path": "imagery/questionnaires-mp/questionnaire-mp.jpg",
@@ -6691,7 +6674,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/questionnaires-mp/questionnaire-mp.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/questionnaires-mp/questionnaire-mp.jpg",
-      "display_name": "Questionnaire Mp"
+      "display_name": "Questionnaire Mp",
+      "masque": false
     },
     {
       "path": "imagery/rattrapage-visites-medicales/vm-rec-3.jpg",
@@ -6712,7 +6696,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/rattrapage-visites-medicales/vm-rec-3.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/rattrapage-visites-medicales/vm-rec-3.jpg",
-      "display_name": "Vm Rec 3"
+      "display_name": "Vm Rec 3",
+      "masque": false
     },
     {
       "path": "imagery/rattrapage-visites-medicales/vm-rec-4.jpg",
@@ -6733,7 +6718,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/rattrapage-visites-medicales/vm-rec-4.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/rattrapage-visites-medicales/vm-rec-4.jpg",
-      "display_name": "Vm Rec 4"
+      "display_name": "Vm Rec 4",
+      "masque": false
     },
     {
       "path": "imagery/rattrapage-visites-medicales/vm-rec.jpg",
@@ -6754,7 +6740,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/rattrapage-visites-medicales/vm-rec.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/rattrapage-visites-medicales/vm-rec.jpg",
-      "display_name": "Vm Rec"
+      "display_name": "Vm Rec",
+      "masque": false
     },
     {
       "path": "imagery/recuperer-ij/Gerer-control-URSSAF_0000s_0001_2.jpg",
@@ -6776,7 +6763,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/recuperer-ij/Gerer-control-URSSAF_0000s_0001_2.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/recuperer-ij/Gerer-control-URSSAF_0000s_0001_2.jpg",
-      "display_name": "Gerer Control Urssaf 0000s 0001 2"
+      "display_name": "Gerer Control Urssaf 0000s 0001 2",
+      "masque": false
     },
     {
       "path": "imagery/recuperer-ij/Gerer-control-URSSAF_0000s_0002_3.jpg",
@@ -6798,7 +6786,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/recuperer-ij/Gerer-control-URSSAF_0000s_0002_3.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/recuperer-ij/Gerer-control-URSSAF_0000s_0002_3.jpg",
-      "display_name": "Gerer Control Urssaf 0000s 0002 3"
+      "display_name": "Gerer Control Urssaf 0000s 0002 3",
+      "masque": false
     },
     {
       "path": "imagery/recuperer-ij/Recuperer-ij.jpg",
@@ -6822,7 +6811,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/recuperer-ij/Recuperer-ij.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/recuperer-ij/Recuperer-ij.jpg",
-      "display_name": "Recuperer Ij"
+      "display_name": "Recuperer Ij",
+      "masque": false
     },
     {
       "path": "imagery/recuperer-ij/Sans-titre-1-7-1324x650.png",
@@ -6843,7 +6833,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/recuperer-ij/Sans-titre-1-7-1324x650.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/recuperer-ij/Sans-titre-1-7-1324x650.png",
-      "display_name": "Sans Titre 1 7"
+      "display_name": "Sans Titre 1 7",
+      "masque": false
     },
     {
       "path": "imagery/recuperer-ij/Sans-titre-72.png",
@@ -6860,12 +6851,14 @@
         "remboursements-ijss"
       ],
       "tags": [
+        "masque",
         "recuperer-ij"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/recuperer-ij/Sans-titre-72.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/recuperer-ij/Sans-titre-72.png",
-      "display_name": "Sans Titre 72"
+      "display_name": "Sans Titre 72",
+      "masque": true
     },
     {
       "path": "imagery/stock/unsplash-1450101499163-c8848c66ca85-600x400.jpg",
@@ -6887,7 +6880,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1450101499163-c8848c66ca85-600x400.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1450101499163-c8848c66ca85-600x400.jpg",
-      "display_name": "Unsplash 1450101499163 C8848c66ca85"
+      "display_name": "Unsplash 1450101499163 C8848c66ca85",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1454165804606-c3d57bc86b40-1000x1200.jpg",
@@ -6909,7 +6903,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1454165804606-c3d57bc86b40-1000x1200.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1454165804606-c3d57bc86b40-1000x1200.jpg",
-      "display_name": "Unsplash 1454165804606 C3d57bc86b40"
+      "display_name": "Unsplash 1454165804606 C3d57bc86b40",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1454165804606-c3d57bc86b40-600x400.jpg",
@@ -6932,7 +6927,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1454165804606-c3d57bc86b40-600x400.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1454165804606-c3d57bc86b40-600x400.jpg",
-      "display_name": "Unsplash 1454165804606 C3d57bc86b40"
+      "display_name": "Unsplash 1454165804606 C3d57bc86b40",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1460925895917-afdab827c52f-400x300.jpg",
@@ -6953,7 +6949,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1460925895917-afdab827c52f-400x300.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1460925895917-afdab827c52f-400x300.jpg",
-      "display_name": "Unsplash 1460925895917 Afdab827c52f"
+      "display_name": "Unsplash 1460925895917 Afdab827c52f",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1460925895917-afdab827c52f-600x400.jpg",
@@ -6977,7 +6974,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1460925895917-afdab827c52f-600x400.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1460925895917-afdab827c52f-600x400.jpg",
-      "display_name": "Unsplash 1460925895917 Afdab827c52f"
+      "display_name": "Unsplash 1460925895917 Afdab827c52f",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1460925895917-afdab827c52f-w1600.jpg",
@@ -6998,7 +6996,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1460925895917-afdab827c52f-w1600.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1460925895917-afdab827c52f-w1600.jpg",
-      "display_name": "Unsplash 1460925895917 Afdab827c52f W1600"
+      "display_name": "Unsplash 1460925895917 Afdab827c52f W1600",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1507679799987-c73779587ccf-600x400.jpg",
@@ -7020,7 +7019,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1507679799987-c73779587ccf-600x400.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1507679799987-c73779587ccf-600x400.jpg",
-      "display_name": "Unsplash 1507679799987 C73779587ccf"
+      "display_name": "Unsplash 1507679799987 C73779587ccf",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1521737711867-e3b97375f902-1000x1200.jpg",
@@ -7042,7 +7042,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1521737711867-e3b97375f902-1000x1200.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1521737711867-e3b97375f902-1000x1200.jpg",
-      "display_name": "Unsplash 1521737711867 E3b97375f902"
+      "display_name": "Unsplash 1521737711867 E3b97375f902",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1521737711867-e3b97375f902-600x400.jpg",
@@ -7065,7 +7066,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1521737711867-e3b97375f902-600x400.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1521737711867-e3b97375f902-600x400.jpg",
-      "display_name": "Unsplash 1521737711867 E3b97375f902"
+      "display_name": "Unsplash 1521737711867 E3b97375f902",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1521791136064-7986c2920216-600x400.jpg",
@@ -7087,7 +7089,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1521791136064-7986c2920216-600x400.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1521791136064-7986c2920216-600x400.jpg",
-      "display_name": "Unsplash 1521791136064 7986c2920216"
+      "display_name": "Unsplash 1521791136064 7986c2920216",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1551288049-bebda4e38f71-400x280.jpg",
@@ -7108,7 +7111,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1551288049-bebda4e38f71-400x280.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1551288049-bebda4e38f71-400x280.jpg",
-      "display_name": "Unsplash 1551288049 Bebda4e38f71"
+      "display_name": "Unsplash 1551288049 Bebda4e38f71",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1551288049-bebda4e38f71-600x400.jpg",
@@ -7134,7 +7138,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1551288049-bebda4e38f71-600x400.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1551288049-bebda4e38f71-600x400.jpg",
-      "display_name": "Unsplash 1551288049 Bebda4e38f71"
+      "display_name": "Unsplash 1551288049 Bebda4e38f71",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1551288049-bebda4e38f71-w1200.jpg",
@@ -7155,7 +7160,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1551288049-bebda4e38f71-w1200.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1551288049-bebda4e38f71-w1200.jpg",
-      "display_name": "Unsplash 1551288049 Bebda4e38f71 W1200"
+      "display_name": "Unsplash 1551288049 Bebda4e38f71 W1200",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1551836022-4c4c79ecde51-400x300.jpg",
@@ -7176,7 +7182,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1551836022-4c4c79ecde51-400x300.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1551836022-4c4c79ecde51-400x300.jpg",
-      "display_name": "Unsplash 1551836022 4c4c79ecde51"
+      "display_name": "Unsplash 1551836022 4c4c79ecde51",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1551836022-4c4c79ecde51-w1600.jpg",
@@ -7197,7 +7204,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1551836022-4c4c79ecde51-w1600.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1551836022-4c4c79ecde51-w1600.jpg",
-      "display_name": "Unsplash 1551836022 4c4c79ecde51 W1600"
+      "display_name": "Unsplash 1551836022 4c4c79ecde51 W1600",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1554224155-6726b3ff858f-400x280.jpg",
@@ -7220,7 +7228,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1554224155-6726b3ff858f-400x280.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1554224155-6726b3ff858f-400x280.jpg",
-      "display_name": "Unsplash 1554224155 6726b3ff858f"
+      "display_name": "Unsplash 1554224155 6726b3ff858f",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1554224155-6726b3ff858f-600x400.jpg",
@@ -7247,7 +7256,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1554224155-6726b3ff858f-600x400.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1554224155-6726b3ff858f-600x400.jpg",
-      "display_name": "Unsplash 1554224155 6726b3ff858f"
+      "display_name": "Unsplash 1554224155 6726b3ff858f",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1573497491208-6b1acb260507-400x300.jpg",
@@ -7268,7 +7278,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1573497491208-6b1acb260507-400x300.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1573497491208-6b1acb260507-400x300.jpg",
-      "display_name": "Unsplash 1573497491208 6b1acb260507"
+      "display_name": "Unsplash 1573497491208 6b1acb260507",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1573497491208-6b1acb260507-w1600.jpg",
@@ -7289,7 +7300,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1573497491208-6b1acb260507-w1600.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1573497491208-6b1acb260507-w1600.jpg",
-      "display_name": "Unsplash 1573497491208 6b1acb260507 W1600"
+      "display_name": "Unsplash 1573497491208 6b1acb260507 W1600",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1576091160550-2173dba999ef-400x280.jpg",
@@ -7312,7 +7324,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1576091160550-2173dba999ef-400x280.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1576091160550-2173dba999ef-400x280.jpg",
-      "display_name": "Unsplash 1576091160550 2173dba999ef"
+      "display_name": "Unsplash 1576091160550 2173dba999ef",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1576091160550-2173dba999ef-600x400.jpg",
@@ -7333,7 +7346,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1576091160550-2173dba999ef-600x400.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1576091160550-2173dba999ef-600x400.jpg",
-      "display_name": "Unsplash 1576091160550 2173dba999ef"
+      "display_name": "Unsplash 1576091160550 2173dba999ef",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1586281380349-632531db7ed4-600x400.jpg",
@@ -7354,7 +7368,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1586281380349-632531db7ed4-600x400.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1586281380349-632531db7ed4-600x400.jpg",
-      "display_name": "Unsplash 1586281380349 632531db7ed4"
+      "display_name": "Unsplash 1586281380349 632531db7ed4",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1589829545856-d10d557cf95f-400x280.jpg",
@@ -7377,7 +7392,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1589829545856-d10d557cf95f-400x280.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1589829545856-d10d557cf95f-400x280.jpg",
-      "display_name": "Unsplash 1589829545856 D10d557cf95f"
+      "display_name": "Unsplash 1589829545856 D10d557cf95f",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1589829545856-d10d557cf95f-600x400.jpg",
@@ -7399,7 +7415,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1589829545856-d10d557cf95f-600x400.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1589829545856-d10d557cf95f-600x400.jpg",
-      "display_name": "Unsplash 1589829545856 D10d557cf95f"
+      "display_name": "Unsplash 1589829545856 D10d557cf95f",
+      "masque": false
     },
     {
       "path": "imagery/stock/unsplash-1600880292203-757bb62b4baf-1000x1200.jpg",
@@ -7424,7 +7441,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/stock/unsplash-1600880292203-757bb62b4baf-1000x1200.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/stock/unsplash-1600880292203-757bb62b4baf-1000x1200.jpg",
-      "display_name": "Unsplash 1600880292203 757bb62b4baf"
+      "display_name": "Unsplash 1600880292203 757bb62b4baf",
+      "masque": false
     },
     {
       "path": "imagery/veille-net-entreprises/acciline-dashboard.png",
@@ -7441,12 +7459,14 @@
         "veille-net-entreprises"
       ],
       "tags": [
+        "masque",
         "veille-net-entreprises"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/veille-net-entreprises/acciline-dashboard.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/veille-net-entreprises/acciline-dashboard.png",
-      "display_name": "Acciline Dashboard"
+      "display_name": "Acciline Dashboard",
+      "masque": true
     },
     {
       "path": "imagery/veille-net-entreprises/acciline-logo.png",
@@ -7465,7 +7485,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/veille-net-entreprises/acciline-logo.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/veille-net-entreprises/acciline-logo.png",
-      "display_name": "Acciline Logo"
+      "display_name": "Acciline Logo",
+      "masque": false
     },
     {
       "path": "imagery/visites-medicales/integrations/adp.svg",
@@ -7481,12 +7502,14 @@
         "visites-medicales"
       ],
       "tags": [
+        "masque",
         "visites-medicales"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/visites-medicales/integrations/adp.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/visites-medicales/integrations/adp.svg",
-      "display_name": "Adp"
+      "display_name": "Adp",
+      "masque": true
     },
     {
       "path": "imagery/visites-medicales/integrations/cegid.png",
@@ -7502,12 +7525,14 @@
         "visites-medicales"
       ],
       "tags": [
+        "masque",
         "visites-medicales"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/visites-medicales/integrations/cegid.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/visites-medicales/integrations/cegid.png",
-      "display_name": "Cegid"
+      "display_name": "Cegid",
+      "masque": true
     },
     {
       "path": "imagery/visites-medicales/integrations/payfit.png",
@@ -7523,12 +7548,14 @@
         "visites-medicales"
       ],
       "tags": [
+        "masque",
         "visites-medicales"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/visites-medicales/integrations/payfit.png",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/visites-medicales/integrations/payfit.png",
-      "display_name": "Payfit"
+      "display_name": "Payfit",
+      "masque": true
     },
     {
       "path": "imagery/visites-medicales/integrations/sage.svg",
@@ -7549,7 +7576,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/visites-medicales/integrations/sage.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/visites-medicales/integrations/sage.svg",
-      "display_name": "Sage"
+      "display_name": "Sage",
+      "masque": false
     },
     {
       "path": "imagery/visites-medicales/integrations/sap.svg",
@@ -7565,12 +7593,14 @@
         "visites-medicales"
       ],
       "tags": [
+        "masque",
         "visites-medicales"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/visites-medicales/integrations/sap.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/visites-medicales/integrations/sap.svg",
-      "display_name": "Sap"
+      "display_name": "Sap",
+      "masque": true
     },
     {
       "path": "imagery/visites-medicales/integrations/silae.svg",
@@ -7591,7 +7621,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/visites-medicales/integrations/silae.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/visites-medicales/integrations/silae.svg",
-      "display_name": "Silae"
+      "display_name": "Silae",
+      "masque": false
     },
     {
       "path": "imagery/visites-medicales/integrations/soprahr.svg",
@@ -7607,12 +7638,14 @@
         "visites-medicales"
       ],
       "tags": [
+        "masque",
         "visites-medicales"
       ],
       "is_canonical": true,
       "canonical_path": "imagery/visites-medicales/integrations/soprahr.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/visites-medicales/integrations/soprahr.svg",
-      "display_name": "Soprahr"
+      "display_name": "Soprahr",
+      "masque": true
     },
     {
       "path": "imagery/visites-medicales/integrations/workday.svg",
@@ -7633,7 +7666,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/visites-medicales/integrations/workday.svg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/visites-medicales/integrations/workday.svg",
-      "display_name": "Workday"
+      "display_name": "Workday",
+      "masque": false
     },
     {
       "path": "imagery/visites-medicales/vm-2.jpg",
@@ -7654,7 +7688,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/visites-medicales/vm-2.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/visites-medicales/vm-2.jpg",
-      "display_name": "Vm 2"
+      "display_name": "Vm 2",
+      "masque": false
     },
     {
       "path": "imagery/visites-medicales/vm-3.jpg",
@@ -7675,7 +7710,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/visites-medicales/vm-3.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/visites-medicales/vm-3.jpg",
-      "display_name": "Vm 3"
+      "display_name": "Vm 3",
+      "masque": false
     },
     {
       "path": "imagery/visites-medicales/vm-4.jpg",
@@ -7697,7 +7733,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/visites-medicales/vm-4.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/visites-medicales/vm-4.jpg",
-      "display_name": "Vm 4"
+      "display_name": "Vm 4",
+      "masque": false
     },
     {
       "path": "imagery/visites-medicales/vm-5.jpg",
@@ -7718,7 +7755,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/visites-medicales/vm-5.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/visites-medicales/vm-5.jpg",
-      "display_name": "Vm 5"
+      "display_name": "Vm 5",
+      "masque": false
     },
     {
       "path": "imagery/visites-medicales/vm-cover.jpg",
@@ -7739,7 +7777,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/visites-medicales/vm-cover.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/visites-medicales/vm-cover.jpg",
-      "display_name": "Vm Cover"
+      "display_name": "Vm Cover",
+      "masque": false
     },
     {
       "path": "imagery/visites-medicales/vm-problem.jpg",
@@ -7761,7 +7800,8 @@
       "is_canonical": true,
       "canonical_path": "imagery/visites-medicales/vm-problem.jpg",
       "canonical_url": "https://ayming-france.github.io/assets/imagery/visites-medicales/vm-problem.jpg",
-      "display_name": "Vm Problem"
+      "display_name": "Vm Problem",
+      "masque": false
     },
     {
       "path": "logos/ayming-logo.png",
@@ -7808,7 +7848,8 @@
       "is_canonical": true,
       "canonical_path": "logos/ayming-logo.png",
       "canonical_url": "https://ayming-france.github.io/assets/logos/ayming-logo.png",
-      "display_name": "Ayming Logo"
+      "display_name": "Ayming Logo",
+      "masque": false
     },
     {
       "path": "maps/eu-map-es.svg",
@@ -7831,7 +7872,8 @@
       "is_canonical": true,
       "canonical_path": "maps/eu-map-es.svg",
       "canonical_url": "https://ayming-france.github.io/assets/maps/eu-map-es.svg",
-      "display_name": "Eu Map Es"
+      "display_name": "Eu Map Es",
+      "masque": false
     },
     {
       "path": "maps/eu-map.svg",
@@ -7870,7 +7912,8 @@
       "is_canonical": true,
       "canonical_path": "maps/eu-map.svg",
       "canonical_url": "https://ayming-france.github.io/assets/maps/eu-map.svg",
-      "display_name": "Eu Map"
+      "display_name": "Eu Map",
+      "masque": false
     },
     {
       "path": "maps/france-map.svg",
@@ -7909,7 +7952,8 @@
       "is_canonical": true,
       "canonical_path": "maps/france-map.svg",
       "canonical_url": "https://ayming-france.github.io/assets/maps/france-map.svg",
-      "display_name": "France Map"
+      "display_name": "France Map",
+      "masque": false
     },
     {
       "path": "maps/na-map.svg",
@@ -7948,7 +7992,8 @@
       "is_canonical": true,
       "canonical_path": "maps/na-map.svg",
       "canonical_url": "https://ayming-france.github.io/assets/maps/na-map.svg",
-      "display_name": "Na Map"
+      "display_name": "Na Map",
+      "masque": false
     },
     {
       "path": "maps/spain-map.svg",
@@ -7970,7 +8015,8 @@
       "is_canonical": true,
       "canonical_path": "maps/spain-map.svg",
       "canonical_url": "https://ayming-france.github.io/assets/maps/spain-map.svg",
-      "display_name": "Spain Map"
+      "display_name": "Spain Map",
+      "masque": false
     }
   ]
 }

@@ -414,9 +414,7 @@
       "width": 544,
       "height": 267,
       "orientation": "paysage",
-      "used_in": [
-        "brand-portal"
-      ],
+      "used_in": [],
       "tags": [
         "certification",
         "certification-qualite",
@@ -681,9 +679,7 @@
       "width": 532,
       "height": 532,
       "orientation": "carre",
-      "used_in": [
-        "visites-medicales"
-      ],
+      "used_in": [],
       "tags": [
         "client"
       ],
@@ -883,7 +879,7 @@
     {
       "path": "imagery/clients/Logo_Guerbet_DEF.png",
       "url": "https://ayming-france.github.io/assets/imagery/clients/Logo_Guerbet_DEF.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "1ba156d4d471194fc7111566a66e43f1b1ee839b",
       "bytes": 142496,
       "format": "png",
@@ -1018,7 +1014,7 @@
     {
       "path": "imagery/clients/Virbac_logo_CMYK-1.svg.png",
       "url": "https://ayming-france.github.io/assets/imagery/clients/Virbac_logo_CMYK-1.svg.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "8bb0a8ea289e6d1de9050c2d37bd84a8de55ce8e",
       "bytes": 76237,
       "format": "png",
@@ -2583,9 +2579,7 @@
       "width": 1324,
       "height": 662,
       "orientation": "paysage",
-      "used_in": [
-        "collecte-arrets"
-      ],
+      "used_in": [],
       "tags": [
         "collecte-arrets"
       ],
@@ -2987,8 +2981,7 @@
       "used_in": [
         "IPRP",
         "duerp",
-        "hub",
-        "sitemap"
+        "hub"
       ],
       "tags": [
         "duerp"
@@ -3121,7 +3114,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/alstom-logo-blanco.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/alstom-logo-blanco.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "dd23fa57bc421ec877c6592ce362091b570cf45a",
       "bytes": 32253,
       "format": "png",
@@ -3221,7 +3214,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/agco.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/agco.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "355d4c2fb9cffcea9939caaa6ae09f3735ad258a",
       "bytes": 31904,
       "format": "png",
@@ -3241,7 +3234,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/airbus.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/airbus.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "0a02d902287d5a1c43c857a21ec4a6a8a34b09de",
       "bytes": 9831,
       "format": "png",
@@ -3261,7 +3254,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/alstom.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/alstom.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "a30c53f6f69b27db8fe6e972cc666da9a42f5711",
       "bytes": 63155,
       "format": "png",
@@ -3281,7 +3274,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/bbva.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/bbva.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "a76176d71ce9b034464f0757d47b3844fa751a62",
       "bytes": 14133,
       "format": "png",
@@ -3301,7 +3294,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/cabify.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/cabify.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "af52038f040cfc278f371bb7f01633e97c6245b0",
       "bytes": 10347,
       "format": "png",
@@ -3321,7 +3314,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/danone.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/danone.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "223f00996127db64747b12d7110279332231167e",
       "bytes": 157148,
       "format": "png",
@@ -3341,7 +3334,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/ebn.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/ebn.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "6257aaee6c3e5d72dbc672aaaca23146a51ec879",
       "bytes": 15333,
       "format": "png",
@@ -3361,7 +3354,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/europcar.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/europcar.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "2afb993ab05cc57aa9488da834c08c6f93df461a",
       "bytes": 7933,
       "format": "png",
@@ -3381,7 +3374,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/glovo.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/glovo.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "24119736df183bda2e44fb6a85225ad832b51e6d",
       "bytes": 16746,
       "format": "png",
@@ -3401,7 +3394,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/ing-direct.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/ing-direct.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "837db056fc4562714d4d9cd5905603eab954536f",
       "bytes": 7400,
       "format": "png",
@@ -3421,7 +3414,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/legrand.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/legrand.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "0aecfdfd650a5d84c45305e7496b80893577c34b",
       "bytes": 75198,
       "format": "png",
@@ -3441,7 +3434,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/louis-vuitton.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/louis-vuitton.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "085610c9976e2e74d049590bdf049ab5ab77e27f",
       "bytes": 49020,
       "format": "png",
@@ -3461,7 +3454,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/nationale-nederlanden.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/nationale-nederlanden.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "536c391e521f7ed36f1213c60371cfade4b84faa",
       "bytes": 141861,
       "format": "png",
@@ -3481,7 +3474,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/navantia.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/navantia.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "68b0154cb8f104d6a003383ed9faab58d92d8fef",
       "bytes": 12482,
       "format": "png",
@@ -3501,7 +3494,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/pelayo.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/pelayo.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "cf2e35bea8067a6cb75f62bae6f529efb26ce4c7",
       "bytes": 4194,
       "format": "png",
@@ -3521,7 +3514,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/popular.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/popular.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "0ebea3f412fc07cf5fb92f214bd73a52745fa155",
       "bytes": 127422,
       "format": "png",
@@ -3541,7 +3534,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/rsi.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/rsi.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "26ef8e8dfee6f147b29513d4e087fc976d376ee9",
       "bytes": 2671,
       "format": "png",
@@ -3561,7 +3554,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/safran.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/safran.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "ca59e5649c5f241157735cca4f7ea117fd283604",
       "bytes": 24811,
       "format": "png",
@@ -3581,7 +3574,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/santalucia.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/santalucia.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "e67bfc90142f7cb61f5ff03ef297daa7ae6077d0",
       "bytes": 18960,
       "format": "png",
@@ -3601,7 +3594,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/sareb.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/sareb.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "d3d261c10931950c4d7059daf829a40daf5f2189",
       "bytes": 16839,
       "format": "png",
@@ -3621,7 +3614,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/schneider.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/schneider.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "519901e0ae03711b497436551aaac7c901ae7688",
       "bytes": 37870,
       "format": "png",
@@ -3641,7 +3634,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/seat.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/seat.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "9ef45b049668c13ca313ce795f4366311b0e5a41",
       "bytes": 24298,
       "format": "png",
@@ -3661,7 +3654,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/smurfit.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/smurfit.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "3e41a96933d70cafa72d1cacdb899894d909ccc2",
       "bytes": 51396,
       "format": "png",
@@ -3681,7 +3674,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/stef.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/stef.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "0d6bee284367e48f56342695dcb9f967409610f0",
       "bytes": 105602,
       "format": "png",
@@ -3701,7 +3694,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/unilever.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/unilever.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "6b0bafa88ef42c849a85ff248051caf071c695b8",
       "bytes": 34449,
       "format": "png",
@@ -3721,7 +3714,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/veolia.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/veolia.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "3255d87e2e679ba5041b0ffc1eebf6dc73b3268a",
       "bytes": 62658,
       "format": "png",
@@ -3741,7 +3734,7 @@
     {
       "path": "imagery/es-cotizaciones-sociales/clientes/vinci.png",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/clientes/vinci.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "bf4e81a8f724637dcd5f51231fa9fd31641a5d94",
       "bytes": 86143,
       "format": "png",
@@ -3769,7 +3762,6 @@
       "height": 1402,
       "orientation": "portrait",
       "used_in": [
-        "brand-portal",
         "es-cotizaciones-sociales"
       ],
       "tags": [
@@ -3791,9 +3783,7 @@
       "width": 256,
       "height": 256,
       "orientation": "carre",
-      "used_in": [
-        "brand-portal"
-      ],
+      "used_in": [],
       "tags": [
         "axel",
         "es-cotizaciones-sociales",
@@ -3815,7 +3805,6 @@
       "height": 1402,
       "orientation": "portrait",
       "used_in": [
-        "brand-portal",
         "es-cotizaciones-sociales"
       ],
       "tags": [
@@ -3856,7 +3845,6 @@
       "height": 1278,
       "orientation": "portrait",
       "used_in": [
-        "brand-portal",
         "es-cotizaciones-sociales"
       ],
       "tags": [
@@ -3897,7 +3885,6 @@
       "height": 1402,
       "orientation": "portrait",
       "used_in": [
-        "brand-portal",
         "es-cotizaciones-sociales"
       ],
       "tags": [
@@ -3938,7 +3925,6 @@
       "height": 1384,
       "orientation": "portrait",
       "used_in": [
-        "brand-portal",
         "es-cotizaciones-sociales"
       ],
       "tags": [
@@ -4031,7 +4017,7 @@
     {
       "path": "imagery/essentiel/acciline-logo-ayming.png",
       "url": "https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo-ayming.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "32711edce70f2786d7f19d895479607f799204c1",
       "bytes": 74662,
       "format": "png",
@@ -4049,7 +4035,7 @@
     {
       "path": "imagery/essentiel/acciline-logo.png",
       "url": "https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "4c7c96bbb25e36ccccca5b6b981a1b9f918cd057",
       "bytes": 48508,
       "format": "png",
@@ -4933,7 +4919,7 @@
     {
       "path": "imagery/essentiel/mouvement-logos-clean.png",
       "url": "https://ayming-france.github.io/assets/imagery/essentiel/mouvement-logos-clean.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "c108cfffc8f8c3abe4ea1895d2b764b573fde36c",
       "bytes": 76988,
       "format": "png",
@@ -4953,7 +4939,7 @@
     {
       "path": "imagery/essentiel/mouvement-logos.png",
       "url": "https://ayming-france.github.io/assets/imagery/essentiel/mouvement-logos.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "7ef73856a1cd33dbf29edc042189f1550fd54190",
       "bytes": 132264,
       "format": "png",
@@ -5336,12 +5322,10 @@
         "accidents-tiers",
         "arrets-longue-duree",
         "atmp",
-        "brand-portal",
         "cotisations-atmp",
         "dat",
         "hub",
         "laposte",
-        "sitemap",
         "veille-net-entreprises"
       ],
       "tags": [
@@ -5365,8 +5349,7 @@
       "orientation": "paysage",
       "used_in": [
         "hub",
-        "ijss",
-        "sitemap"
+        "ijss"
       ],
       "tags": [
         "hub-cards"
@@ -5389,8 +5372,7 @@
         "hub",
         "ijss",
         "recuperer-ij",
-        "remboursements-ijss",
-        "sitemap"
+        "remboursements-ijss"
       ],
       "tags": [
         "hub-cards"
@@ -5411,8 +5393,7 @@
       "orientation": "paysage",
       "used_in": [
         "aides-apprentissage",
-        "hub",
-        "sitemap"
+        "hub"
       ],
       "tags": [
         "hub-cards"
@@ -5436,8 +5417,7 @@
         "cotisations-atmp",
         "dat",
         "duerp",
-        "hub",
-        "sitemap"
+        "hub"
       ],
       "tags": [
         "hub-cards"
@@ -5463,7 +5443,6 @@
         "cotisations-atmp",
         "hub",
         "laposte",
-        "sitemap",
         "veille-net-entreprises"
       ],
       "tags": [
@@ -5493,7 +5472,6 @@
         "ijss",
         "laposte",
         "remboursements-ijss",
-        "sitemap",
         "veille-net-entreprises"
       ],
       "tags": [
@@ -5521,7 +5499,6 @@
         "hub",
         "ijss",
         "laposte",
-        "sitemap",
         "veille-net-entreprises"
       ],
       "tags": [
@@ -5545,8 +5522,7 @@
         "arrets-longue-duree",
         "cotisations-atmp",
         "duerp",
-        "hub",
-        "sitemap"
+        "hub"
       ],
       "tags": [
         "hub-cards"
@@ -5567,8 +5543,7 @@
       "orientation": "paysage",
       "used_in": [
         "charges-sociales",
-        "hub",
-        "sitemap"
+        "hub"
       ],
       "tags": [
         "hub-cards"
@@ -5590,7 +5565,6 @@
       "used_in": [
         "duerp",
         "hub",
-        "sitemap",
         "visites-medicales"
       ],
       "tags": [
@@ -5613,7 +5587,6 @@
       "used_in": [
         "hub",
         "rattrapage-visites-medicales",
-        "sitemap",
         "visites-medicales"
       ],
       "tags": [
@@ -6403,7 +6376,6 @@
         "hub",
         "laposte",
         "questionnaires-maladie-professionnelle",
-        "sitemap",
         "veille-net-entreprises"
       ],
       "tags": [
@@ -6529,8 +6501,7 @@
         "hub",
         "ijss",
         "recuperer-ij",
-        "remboursements-ijss",
-        "sitemap"
+        "remboursements-ijss"
       ],
       "tags": [
         "recuperer-ij"
@@ -6613,8 +6584,7 @@
       "orientation": "portrait",
       "used_in": [
         "abo-dat",
-        "hub",
-        "sitemap"
+        "hub"
       ],
       "tags": [
         "stock"
@@ -6741,8 +6711,7 @@
       "orientation": "portrait",
       "used_in": [
         "collecte-arrets",
-        "hub",
-        "sitemap"
+        "hub"
       ],
       "tags": [
         "stock"
@@ -7107,8 +7076,7 @@
         "aides-apprentissage",
         "dat",
         "es-cotizaciones-sociales",
-        "hub",
-        "sitemap"
+        "hub"
       ],
       "tags": [
         "stock"
@@ -7141,7 +7109,7 @@
     {
       "path": "imagery/veille-net-entreprises/acciline-logo.png",
       "url": "https://ayming-france.github.io/assets/imagery/veille-net-entreprises/acciline-logo.png",
-      "section": "images",
+      "section": "logos",
       "sha1": "76c3cf4a7da4fcd6dda64947a960933660f8eeec",
       "bytes": 3888,
       "format": "png",
@@ -7455,8 +7423,6 @@
         "aides-apprentissage",
         "arrets-longue-duree",
         "atmp",
-        "ayming-digital",
-        "brand-portal",
         "charges-sociales",
         "collecte-arrets",
         "controle-urssaf",
@@ -7474,7 +7440,6 @@
         "rattrapage-visites-medicales",
         "recuperer-ij",
         "remboursements-ijss",
-        "sinistralite",
         "veille-net-entreprises",
         "visites-medicales"
       ],
@@ -7562,7 +7527,6 @@
         "aides-apprentissage",
         "arrets-longue-duree",
         "atmp",
-        "brand-portal",
         "charges-sociales",
         "collecte-arrets",
         "controle-urssaf",

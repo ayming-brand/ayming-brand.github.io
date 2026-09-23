@@ -249,6 +249,17 @@
     .hover-row button { background: #fff; color: var(--navy); font-size: 11px; font-weight: 700; padding: 8px 14px; border-radius: 8px; }
     .hover-row button:hover { background: var(--bg-light); }
 
+    /* Carte produit (Solutions digitales) : trois sélecteurs sous les tuiles.
+       Le focus d'un sélecteur ne doit pas recouvrir l'aperçu qu'il change. */
+    .variant-pick { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; padding: 9px 10px 2px; }
+    .pick-seg { display: flex; border: 1px solid #d7dde3; border-radius: 7px; overflow: hidden; }
+    .pick-seg button { font-size: 10.5px; font-weight: 700; padding: 4px 8px; color: var(--text-gray); background: #fff; }
+    .pick-seg button + button { border-left: 1px solid #d7dde3; }
+    .pick-seg button.on { background: var(--navy); color: #fff; }
+    .pick-seg button:disabled { color: #c9ced4; cursor: not-allowed; }
+    .card-product:focus-within:not(:hover) .logo-hover { opacity: 0; }
+    .card-product .logo-tiles:focus-within .logo-hover { opacity: 1; }
+
     .btn-use.copied { color: #0ab38c !important; }
 
     /* Modal d'usage : ouvert par le badge de comptage ou la puce "N tailles",
@@ -496,7 +507,7 @@
     <button class="nav-item" data-panel="rayons">Rayons</button>
     <button class="nav-item" data-panel="motion">Motion</button>
     <div class="nav-group-label">Bibliothèque</div>
-    <button class="nav-item" data-panel="logos">Logos<span class="nav-count">161</span></button>
+    <button class="nav-item" data-panel="logos">Logos<span class="nav-count">164</span></button>
     <div class="nav-sub"><button class="nav-subitem" data-panel="logos" data-anchor="logo-principal">Logo principal</button><button class="nav-subitem" data-panel="logos" data-anchor="solutions">Solutions digitales</button><button class="nav-subitem" data-panel="logos" data-anchor="certifications">Certifications</button><button class="nav-subitem" data-panel="logos" data-anchor="clients">Clients</button><button class="nav-subitem" data-panel="logos" data-anchor="partenaires">Partenaires</button></div>
     <button class="nav-item" data-panel="images">Images<span class="nav-count">242</span></button>
     <div class="nav-sub"><button class="nav-subitem" data-panel="images" data-anchor="offres">Offres</button><button class="nav-subitem" data-panel="images" data-anchor="stock">Stock</button><button class="nav-subitem" data-panel="images" data-anchor="cartes">Cartes</button><button class="nav-subitem" data-panel="images" data-anchor="equipe">Équipe</button><button class="nav-subitem" data-panel="images" data-anchor="icones">Icônes</button></div>
@@ -812,8 +823,8 @@
         <h2 id="logo-principal">Logo principal <span class="nav-count">3</span></h2>
         <div class="grid">        <article class="card card-logo filter-item" data-search="imagery/essentiel/acciline-logo.png essentiel" data-tags="essentiel" data-format="png">
           <div class="logo-tiles">
-            <button type="button" class="variant-chip" data-usage="{&quot;title&quot;: &quot;Acciline Logo&quot;, &quot;used_in&quot;: [&quot;essentiel&quot;], &quot;variants&quot;: [{&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png&quot;, &quot;dims&quot;: &quot;1844×499 px&quot;}, {&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/veille-net-entreprises/acciline-logo.png&quot;, &quot;dims&quot;: &quot;227×144 px&quot;}]}">2 tailles</button>
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Acciline Logo&quot;, &quot;used_in&quot;: [&quot;essentiel&quot;], &quot;variants&quot;: [{&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png&quot;, &quot;dims&quot;: &quot;1844×499 px&quot;}, {&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/veille-net-entreprises/acciline-logo.png&quot;, &quot;dims&quot;: &quot;227×144 px&quot;}]}">1 utilisation</button>
+            <button type="button" class="variant-chip" data-usage="{&quot;title&quot;: &quot;Acciline Logo&quot;, &quot;used_in&quot;: [&quot;moteur (tous les decks)&quot;], &quot;variants&quot;: [{&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png&quot;, &quot;dims&quot;: &quot;1844×499 px&quot;}, {&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/veille-net-entreprises/acciline-logo.png&quot;, &quot;dims&quot;: &quot;227×144 px&quot;}]}">2 tailles</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Acciline Logo&quot;, &quot;used_in&quot;: [&quot;moteur (tous les decks)&quot;], &quot;variants&quot;: [{&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png&quot;, &quot;dims&quot;: &quot;1844×499 px&quot;}, {&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/veille-net-entreprises/acciline-logo.png&quot;, &quot;dims&quot;: &quot;227×144 px&quot;}]}">1 utilisation</button>
             <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png" alt="acciline-logo.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png" alt="acciline-logo.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               <div class="hover-row">
@@ -850,88 +861,35 @@
         
       </div>
       <div class="subgroup" data-group="solutions" data-nav-visible="true" data-filter-container data-block-title="solutions digitales">
-        <h2 id="solutions">Solutions digitales <span class="nav-count">6</span></h2>
-        <div class="grid">        <article class="card card-logo filter-item" data-search="logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg logo" data-tags="logo" data-format="svg">
+        <h2 id="solutions">Solutions digitales <span class="nav-count">8</span></h2>
+        <div class="grid">        <article class="card card-logo card-product filter-item" data-search="logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.png logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.svg logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.png logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png logos/solutions/ayming-checkup/ayming-checkup-white-vertical.svg logo" data-tags="logo" data-format="svg" data-files="{&quot;colour-horizontal-png&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.png&quot;, &quot;name&quot;: &quot;ayming-checkup-colour-horizontal.png&quot;}, &quot;colour-horizontal-svg&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg&quot;, &quot;name&quot;: &quot;ayming-checkup-colour-horizontal.svg&quot;}, &quot;colour-vertical-png&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png&quot;, &quot;name&quot;: &quot;ayming-checkup-colour-vertical.png&quot;}, &quot;colour-vertical-svg&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.svg&quot;, &quot;name&quot;: &quot;ayming-checkup-colour-vertical.svg&quot;}, &quot;white-horizontal-png&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.png&quot;, &quot;name&quot;: &quot;ayming-checkup-white-horizontal.png&quot;}, &quot;white-horizontal-svg&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg&quot;, &quot;name&quot;: &quot;ayming-checkup-white-horizontal.svg&quot;}, &quot;white-vertical-png&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png&quot;, &quot;name&quot;: &quot;ayming-checkup-white-vertical.png&quot;}, &quot;white-vertical-svg&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.svg&quot;, &quot;name&quot;: &quot;ayming-checkup-white-vertical.svg&quot;}}">
           <div class="logo-tiles">
-            <button type="button" class="variant-chip" data-usage="{&quot;title&quot;: &quot;Ayming Checkup Colour Horizontal&quot;, &quot;used_in&quot;: [], &quot;variants&quot;: [{&quot;name&quot;: &quot;ayming-checkup-colour-horizontal.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg&quot;, &quot;dims&quot;: &quot;614×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-colour-horizontal.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.png&quot;, &quot;dims&quot;: &quot;586×256 px&quot;}]}">2 tailles</button>
-            <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;Ayming Checkup Colour Horizontal&quot;, &quot;used_in&quot;: [], &quot;variants&quot;: [{&quot;name&quot;: &quot;ayming-checkup-colour-horizontal.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg&quot;, &quot;dims&quot;: &quot;614×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-colour-horizontal.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.png&quot;, &quot;dims&quot;: &quot;586×256 px&quot;}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg" alt="ayming-checkup-colour-horizontal.svg" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg" alt="ayming-checkup-colour-horizontal.svg, aperçu sur fond sombre" loading="lazy"></div>
+            <button type="button" class="variant-chip" data-usage="{&quot;title&quot;: &quot;Ayming Checkup Colour Horizontal&quot;, &quot;used_in&quot;: [], &quot;variants&quot;: [{&quot;name&quot;: &quot;ayming-checkup-colour-horizontal.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.png&quot;, &quot;dims&quot;: &quot;586×256 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-colour-horizontal.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg&quot;, &quot;dims&quot;: &quot;614×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-colour-vertical.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png&quot;, &quot;dims&quot;: &quot;286×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-colour-vertical.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.svg&quot;, &quot;dims&quot;: &quot;614×460 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-white-horizontal.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.png&quot;, &quot;dims&quot;: &quot;586×256 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-white-horizontal.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg&quot;, &quot;dims&quot;: &quot;614×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-white-vertical.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png&quot;, &quot;dims&quot;: &quot;286×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-white-vertical.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.svg&quot;, &quot;dims&quot;: &quot;614×460 px&quot;}]}">8 déclinaisons</button>
+            <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;Ayming Checkup Colour Horizontal&quot;, &quot;used_in&quot;: [], &quot;variants&quot;: [{&quot;name&quot;: &quot;ayming-checkup-colour-horizontal.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.png&quot;, &quot;dims&quot;: &quot;586×256 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-colour-horizontal.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg&quot;, &quot;dims&quot;: &quot;614×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-colour-vertical.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png&quot;, &quot;dims&quot;: &quot;286×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-colour-vertical.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.svg&quot;, &quot;dims&quot;: &quot;614×460 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-white-horizontal.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.png&quot;, &quot;dims&quot;: &quot;586×256 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-white-horizontal.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg&quot;, &quot;dims&quot;: &quot;614×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-white-vertical.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png&quot;, &quot;dims&quot;: &quot;286×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-white-vertical.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.svg&quot;, &quot;dims&quot;: &quot;614×460 px&quot;}]}">non utilisé</button>
+            <div class="logo-tile logo-tile-light"><img data-tile="colour" src="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg" alt="Ayming Checkup" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img data-tile="white" src="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg" alt="Ayming Checkup, version blanche" loading="lazy"></div>
             <div class="logo-hover">
               <div class="hover-row">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg" data-name="ayming-checkup-colour-horizontal.svg">Télécharger</button>
               </div>
               <div class="curation-row">
-                <button type="button" class="btn-del" data-path="logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg">Supprimer</button>
-                <button type="button" class="btn-move" data-path="logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg">Déplacer</button>
+                <button type="button" class="btn-del" data-path="logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.png">Supprimer</button>
+                <button type="button" class="btn-move" data-path="logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.png">Déplacer</button>
               </div>
             </div>
           </div>
-          <div class="card-name" title="logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg">ayming-checkup-colour-horizontal.svg<span class="meta">614&times;421 px &middot; 14 Ko &middot; .svg</span></div>
-        </article>
-        <article class="card card-logo filter-item" data-search="logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png logo" data-tags="logo" data-format="png">
-          <div class="logo-tiles">
-            
-            <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;Ayming Checkup Colour Vertical&quot;, &quot;used_in&quot;: [], &quot;variants&quot;: []}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png" alt="ayming-checkup-colour-vertical.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png" alt="ayming-checkup-colour-vertical.png, aperçu sur fond sombre" loading="lazy"></div>
-            <div class="logo-hover">
-              <div class="hover-row">
-                <button class="btn-use" data-url="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png">Utiliser</button>
-                <button class="btn-dl" data-url="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png" data-name="ayming-checkup-colour-vertical.png">Télécharger</button>
-              </div>
-              <div class="curation-row">
-                <button type="button" class="btn-del" data-path="logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png">Supprimer</button>
-                <button type="button" class="btn-move" data-path="logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png">Déplacer</button>
-              </div>
-            </div>
-          </div>
-          <div class="card-name" title="logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png">ayming-checkup-colour-vertical.png<span class="meta">286&times;421 px &middot; 18 Ko &middot; .png</span></div>
-        </article>
-        <article class="card card-logo filter-item" data-search="logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg logo" data-tags="logo" data-format="svg">
-          <div class="logo-tiles">
-            <button type="button" class="variant-chip" data-usage="{&quot;title&quot;: &quot;Ayming Checkup White Horizontal&quot;, &quot;used_in&quot;: [], &quot;variants&quot;: [{&quot;name&quot;: &quot;ayming-checkup-white-horizontal.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg&quot;, &quot;dims&quot;: &quot;614×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-white-horizontal.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.png&quot;, &quot;dims&quot;: &quot;586×256 px&quot;}]}">2 tailles</button>
-            <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;Ayming Checkup White Horizontal&quot;, &quot;used_in&quot;: [], &quot;variants&quot;: [{&quot;name&quot;: &quot;ayming-checkup-white-horizontal.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg&quot;, &quot;dims&quot;: &quot;614×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-white-horizontal.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.png&quot;, &quot;dims&quot;: &quot;586×256 px&quot;}]}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg" alt="ayming-checkup-white-horizontal.svg" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg" alt="ayming-checkup-white-horizontal.svg, aperçu sur fond sombre" loading="lazy"></div>
-            <div class="logo-hover">
-              <div class="hover-row">
-                <button class="btn-use" data-url="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg">Utiliser</button>
-                <button class="btn-dl" data-url="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg" data-name="ayming-checkup-white-horizontal.svg">Télécharger</button>
-              </div>
-              <div class="curation-row">
-                <button type="button" class="btn-del" data-path="logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg">Supprimer</button>
-                <button type="button" class="btn-move" data-path="logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg">Déplacer</button>
-              </div>
-            </div>
-          </div>
-          <div class="card-name" title="logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg">ayming-checkup-white-horizontal.svg<span class="meta">614&times;421 px &middot; 14 Ko &middot; .svg</span></div>
-        </article>
-        <article class="card card-logo filter-item" data-search="logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png logo" data-tags="logo" data-format="png">
-          <div class="logo-tiles">
-            
-            <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;Ayming Checkup White Vertical&quot;, &quot;used_in&quot;: [], &quot;variants&quot;: []}">non utilisé</button>
-            <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png" alt="ayming-checkup-white-vertical.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png" alt="ayming-checkup-white-vertical.png, aperçu sur fond sombre" loading="lazy"></div>
-            <div class="logo-hover">
-              <div class="hover-row">
-                <button class="btn-use" data-url="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png">Utiliser</button>
-                <button class="btn-dl" data-url="https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png" data-name="ayming-checkup-white-vertical.png">Télécharger</button>
-              </div>
-              <div class="curation-row">
-                <button type="button" class="btn-del" data-path="logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png">Supprimer</button>
-                <button type="button" class="btn-move" data-path="logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png">Déplacer</button>
-              </div>
-            </div>
-          </div>
-          <div class="card-name" title="logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png">ayming-checkup-white-vertical.png<span class="meta">286&times;421 px &middot; 17 Ko &middot; .png</span></div>
+          <div class="variant-pick"><div class="pick-seg" data-seg="couleur"><button type="button" data-val="colour" class="on">Couleur</button><button type="button" data-val="white">Blanc</button></div><div class="pick-seg" data-seg="sens"><button type="button" data-val="horizontal" class="on">Horizontal</button><button type="button" data-val="vertical">Vertical</button></div><div class="pick-seg" data-seg="fmt"><button type="button" data-val="svg" class="on">SVG</button><button type="button" data-val="png">PNG</button></div></div>
+          <div class="card-name" title="logos/solutions/ayming-checkup/">Ayming Checkup<span class="meta">8 fichiers</span></div>
         </article>
 </div>
         
       </div>
       <div class="subgroup" data-group="certifications" data-nav-visible="true" data-filter-container data-block-title="certifications">
-        <h2 id="certifications">Certifications <span class="nav-count">8</span></h2>
+        <h2 id="certifications">Certifications <span class="nav-count">9</span></h2>
         <div class="grid">        <article class="card card-logo filter-item" data-search="imagery/certifications/afaq-hds.png certification" data-tags="certification" data-format="png">
           <div class="logo-tiles">
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Afaq Hds&quot;, &quot;used_in&quot;: [&quot;es-pagos-delegados&quot;, &quot;es-revision-tipo-cotizacion&quot;, &quot;essentiel&quot;], &quot;variants&quot;: []}">3 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Afaq Hds&quot;, &quot;used_in&quot;: [&quot;es-pagos-delegados&quot;, &quot;es-revision-tipo-cotizacion&quot;, &quot;moteur (tous les decks)&quot;], &quot;variants&quot;: []}">3 utilisations</button>
             <div class="logo-tile logo-tile-light logo-tile-wide"><img src="https://ayming-france.github.io/assets/imagery/certifications/afaq-hds.png" alt="afaq-hds.png" loading="lazy"></div>
             <div class="logo-hover">
               <div class="hover-row">
@@ -980,7 +938,7 @@
               </div>
             </div>
           </div>
-          <div class="card-name" title="imagery/certifications/afaq-iso-9001.png">afaq-iso-9001.png<span class="meta">141&times;130 px &middot; 13 Ko &middot; .png</span></div>
+          <div class="card-name" title="imagery/certifications/afaq-iso-9001.png">afaq-iso-9001.png<span class="meta">678&times;624 px &middot; 183 Ko &middot; .png</span></div>
         </article>
         <article class="card card-logo filter-item" data-search="imagery/certifications/ecovadis.png certification" data-tags="certification" data-format="png">
           <div class="logo-tiles">
@@ -1054,6 +1012,24 @@
           </div>
           <div class="card-name" title="imagery/certifications/rse-iso-26000.png">rse-iso-26000.png<span class="meta">1181&times;1224 px &middot; 44 Ko &middot; .png</span></div>
         </article>
+        <article class="card card-logo filter-item" data-search="imagery/certifications/un-global-compact-en.png certification" data-tags="certification" data-format="png">
+          <div class="logo-tiles">
+            
+            <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;Un Global Compact En&quot;, &quot;used_in&quot;: [], &quot;variants&quot;: []}">non utilisé</button>
+            <div class="logo-tile logo-tile-light logo-tile-wide"><img src="https://ayming-france.github.io/assets/imagery/certifications/un-global-compact-en.png" alt="un-global-compact-en.png" loading="lazy"></div>
+            <div class="logo-hover">
+              <div class="hover-row">
+                <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/certifications/un-global-compact-en.png">Utiliser</button>
+                <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/certifications/un-global-compact-en.png" data-name="un-global-compact-en.png">Télécharger</button>
+              </div>
+              <div class="curation-row">
+                <button type="button" class="btn-del" data-path="imagery/certifications/un-global-compact-en.png">Supprimer</button>
+                <button type="button" class="btn-move" data-path="imagery/certifications/un-global-compact-en.png">Déplacer</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-name" title="imagery/certifications/un-global-compact-en.png">un-global-compact-en.png<span class="meta">1281&times;1568 px &middot; 413 Ko &middot; .png</span></div>
+        </article>
         <article class="card card-logo filter-item" data-search="imagery/certifications/un-global-compact.png certification" data-tags="certification" data-format="png">
           <div class="logo-tiles">
             
@@ -1070,7 +1046,7 @@
               </div>
             </div>
           </div>
-          <div class="card-name" title="imagery/certifications/un-global-compact.png">un-global-compact.png<span class="meta">184&times;216 px &middot; 32 Ko &middot; .png</span></div>
+          <div class="card-name" title="imagery/certifications/un-global-compact.png">un-global-compact.png<span class="meta">805&times;952 px &middot; 116 Ko &middot; .png</span></div>
         </article>
 </div>
         
@@ -12890,6 +12866,46 @@
       btn.textContent = 'Copié !';
       btn.classList.add('copied');
       setTimeout(function () { btn.textContent = original; btn.classList.remove('copied'); }, 1200);
+    });
+
+    // Carte produit : les trois selecteurs designent le fichier vise par
+    // Utiliser/Telecharger et le sens des deux apercus (data-files, cle
+    // couleur-sens-format). Un format absent se desactive, la carte retombe
+    // sur celui qui existe.
+    function pickVariant(card) {
+      var files = JSON.parse(card.getAttribute('data-files'));
+      var sel = {};
+      card.querySelectorAll('.pick-seg').forEach(function (seg) {
+        var on = seg.querySelector('button.on');
+        sel[seg.getAttribute('data-seg')] = on ? on.getAttribute('data-val') : null;
+      });
+      var fmtSeg = card.querySelector('.pick-seg[data-seg="fmt"]');
+      fmtSeg.querySelectorAll('button').forEach(function (b) {
+        b.disabled = !files[sel.couleur + '-' + sel.sens + '-' + b.getAttribute('data-val')];
+      });
+      if (!files[sel.couleur + '-' + sel.sens + '-' + sel.fmt]) {
+        var alt = fmtSeg.querySelector('button:not(:disabled)');
+        if (!alt) return;
+        fmtSeg.querySelectorAll('button').forEach(function (b) { b.classList.toggle('on', b === alt); });
+        sel.fmt = alt.getAttribute('data-val');
+      }
+      var file = files[sel.couleur + '-' + sel.sens + '-' + sel.fmt];
+      card.querySelectorAll('.logo-hover .btn-use, .logo-hover .btn-dl').forEach(function (b) {
+        b.setAttribute('data-url', file.url);
+        if (b.classList.contains('btn-dl')) b.setAttribute('data-name', file.name);
+      });
+      card.querySelectorAll('img[data-tile]').forEach(function (img) {
+        var c = img.getAttribute('data-tile');
+        var f = files[c + '-' + sel.sens + '-svg'] || files[c + '-' + sel.sens + '-png'];
+        if (f) img.src = f.url;
+      });
+    }
+    document.querySelectorAll('.card-product').forEach(pickVariant);
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest('.pick-seg button');
+      if (!btn || btn.disabled) return;
+      btn.parentNode.querySelectorAll('button').forEach(function (b) { b.classList.toggle('on', b === btn); });
+      pickVariant(btn.closest('.card-product'));
     });
 
     // fetch + blob : GitHub Pages sert des en-tetes CORS ouverts, mais un simple

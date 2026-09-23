@@ -1,7 +1,7 @@
 {
   "generated_by": "build_portal.py",
   "source_repo": "/Users/encarv/projects/ayming-france-assets",
-  "count": 403,
+  "count": 406,
   "assets": [
     {
       "path": "imagery/aides-apprentissage/Standout-Image-1436-x-808-3.jpg",
@@ -368,7 +368,7 @@
       "used_in": [
         "es-pagos-delegados",
         "es-revision-tipo-cotizacion",
-        "essentiel"
+        "moteur (tous les decks)"
       ],
       "tags": [
         "certification"
@@ -409,11 +409,11 @@
       "path": "imagery/certifications/afaq-iso-9001.png",
       "url": "https://ayming-france.github.io/assets/imagery/certifications/afaq-iso-9001.png",
       "section": "logos",
-      "sha1": "f2969670fa38d6069747aa52d1027c2ede134f1f",
-      "bytes": 13345,
+      "sha1": "e4f09257cdfc0d5567f9d77bd63530f8a09e02e1",
+      "bytes": 187169,
       "format": "png",
-      "width": 141,
-      "height": 130,
+      "width": 678,
+      "height": 624,
       "orientation": "paysage",
       "used_in": [
         "es-pagos-delegados",
@@ -525,14 +525,35 @@
       "reutilisable": true
     },
     {
+      "path": "imagery/certifications/un-global-compact-en.png",
+      "url": "https://ayming-france.github.io/assets/imagery/certifications/un-global-compact-en.png",
+      "section": "logos",
+      "sha1": "d2503895b8426b5d4787359308827518d842694b",
+      "bytes": 422940,
+      "format": "png",
+      "width": 1281,
+      "height": 1568,
+      "orientation": "portrait",
+      "used_in": [],
+      "tags": [
+        "certification"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/certifications/un-global-compact-en.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/certifications/un-global-compact-en.png",
+      "display_name": "Un Global Compact En",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
       "path": "imagery/certifications/un-global-compact.png",
       "url": "https://ayming-france.github.io/assets/imagery/certifications/un-global-compact.png",
       "section": "logos",
-      "sha1": "852fa4c9dbcafb8ca62c2ed0b5df693725f3abde",
-      "bytes": 33197,
+      "sha1": "097c1feabbc124051e54b0f3527c39ba3ef81979",
+      "bytes": 119004,
       "format": "png",
-      "width": 184,
-      "height": 216,
+      "width": 805,
+      "height": 952,
       "orientation": "portrait",
       "used_in": [
         "moteur (tous les decks)"
@@ -5594,7 +5615,7 @@
       "height": 499,
       "orientation": "paysage",
       "used_in": [
-        "essentiel"
+        "moteur (tous les decks)"
       ],
       "tags": [
         "essentiel"
@@ -8737,7 +8758,9 @@
       "width": 227,
       "height": 144,
       "orientation": "paysage",
-      "used_in": [],
+      "used_in": [
+        "moteur (tous les decks)"
+      ],
       "tags": [
         "veille-net-entreprises"
       ],
@@ -9192,6 +9215,27 @@
       "reutilisable": true
     },
     {
+      "path": "logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.svg",
+      "url": "https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.svg",
+      "section": "logos",
+      "sha1": "3f8a43a17d64dcd3e819f34ac5b01834afafbd53",
+      "bytes": 15966,
+      "format": "svg",
+      "width": 614,
+      "height": 460,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "logo"
+      ],
+      "is_canonical": true,
+      "canonical_path": "logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.svg",
+      "canonical_url": "https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.svg",
+      "display_name": "Ayming Checkup Colour Vertical",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
       "path": "logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.png",
       "url": "https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.png",
       "section": "logos",
@@ -9250,6 +9294,27 @@
       "is_canonical": true,
       "canonical_path": "logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png",
       "canonical_url": "https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png",
+      "display_name": "Ayming Checkup White Vertical",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "logos/solutions/ayming-checkup/ayming-checkup-white-vertical.svg",
+      "url": "https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.svg",
+      "section": "logos",
+      "sha1": "4cd55359c966e1ec3c54ccda6c5fcfe039e8d2f3",
+      "bytes": 15919,
+      "format": "svg",
+      "width": 614,
+      "height": 460,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "logo"
+      ],
+      "is_canonical": true,
+      "canonical_path": "logos/solutions/ayming-checkup/ayming-checkup-white-vertical.svg",
+      "canonical_url": "https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.svg",
       "display_name": "Ayming Checkup White Vertical",
       "masque": false,
       "reutilisable": true

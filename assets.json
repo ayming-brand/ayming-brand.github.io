@@ -1,7 +1,7 @@
 {
   "generated_by": "build_portal.py",
   "source_repo": "/Users/encarv/projects/ayming-france-assets",
-  "count": 363,
+  "count": 403,
   "assets": [
     {
       "path": "imagery/aides-apprentissage/Standout-Image-1436-x-808-3.jpg",
@@ -176,8 +176,7 @@
       "orientation": "paysage",
       "used_in": [
         "arrets-longue-duree",
-        "dat",
-        "es-cotizaciones-sociales"
+        "dat"
       ],
       "tags": [
         "arrets-longue-duree"
@@ -367,8 +366,7 @@
       "height": 450,
       "orientation": "portrait",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion",
         "essentiel"
       ],
@@ -386,15 +384,14 @@
       "path": "imagery/certifications/afaq-iso-27001.png",
       "url": "https://ayming-france.github.io/assets/imagery/certifications/afaq-iso-27001.png",
       "section": "logos",
-      "sha1": "a425f1f5200f708c1e5c96aba869698b653a1293",
-      "bytes": 15726,
+      "sha1": "d369af71aac7444c8a494281c591868ab6273c70",
+      "bytes": 57314,
       "format": "png",
-      "width": 141,
-      "height": 146,
+      "width": 680,
+      "height": 702,
       "orientation": "portrait",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion",
         "moteur (tous les decks)"
       ],
@@ -419,8 +416,7 @@
       "height": 130,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion",
         "moteur (tous les decks)"
       ],
@@ -562,8 +558,7 @@
       "height": 1080,
       "orientation": "paysage",
       "used_in": [
-        "charges-sociales",
-        "es-cotizaciones-sociales"
+        "charges-sociales"
       ],
       "tags": [
         "charges-sociales"
@@ -586,8 +581,7 @@
       "height": 1080,
       "orientation": "paysage",
       "used_in": [
-        "charges-sociales",
-        "es-cotizaciones-sociales"
+        "charges-sociales"
       ],
       "tags": [
         "charges-sociales"
@@ -610,8 +604,7 @@
       "height": 1080,
       "orientation": "paysage",
       "used_in": [
-        "charges-sociales",
-        "es-cotizaciones-sociales"
+        "charges-sociales"
       ],
       "tags": [
         "charges-sociales"
@@ -2115,6 +2108,7 @@
       "height": 103,
       "orientation": "paysage",
       "used_in": [
+        "ij-activite-non-autorisee",
         "ijss",
         "recuperer-ij",
         "remboursements-ijss"
@@ -3006,7 +3000,8 @@
       "height": 1000,
       "orientation": "paysage",
       "used_in": [
-        "collecte-arrets"
+        "collecte-arrets",
+        "ij-activite-non-autorisee"
       ],
       "tags": [
         "collecte-arrets"
@@ -3052,7 +3047,8 @@
       "height": 1080,
       "orientation": "paysage",
       "used_in": [
-        "collecte-arrets"
+        "collecte-arrets",
+        "ij-activite-non-autorisee"
       ],
       "tags": [
         "collecte-arrets"
@@ -3122,8 +3118,7 @@
       "height": 1080,
       "orientation": "paysage",
       "used_in": [
-        "controle-urssaf",
-        "es-cotizaciones-sociales"
+        "controle-urssaf"
       ],
       "tags": [
         "controle-urssaf"
@@ -3214,9 +3209,7 @@
       "width": 1920,
       "height": 1080,
       "orientation": "paysage",
-      "used_in": [
-        "es-cotizaciones-sociales"
-      ],
+      "used_in": [],
       "tags": [
         "cotisations-atmp"
       ],
@@ -3508,6 +3501,594 @@
       "reutilisable": true
     },
     {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-botellas.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-botellas.jpg",
+      "section": "images",
+      "sha1": "0bcb6e82268253d3390f0e02ab001d2eab83a447",
+      "bytes": 247059,
+      "format": "jpg",
+      "width": 1082,
+      "height": 1600,
+      "orientation": "portrait",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-botellas.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-botellas.jpg",
+      "display_name": "Air Liquide Botellas",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-cover-operarios.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-cover-operarios.jpg",
+      "section": "images",
+      "sha1": "d1a75282df66c8f84359a365343f7a332bb09a58",
+      "bytes": 626567,
+      "format": "jpg",
+      "width": 2267,
+      "height": 2400,
+      "orientation": "portrait",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-cover-operarios.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-cover-operarios.jpg",
+      "display_name": "Air Liquide Cover Operarios",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-equipo-plano-169.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-equipo-plano-169.jpg",
+      "section": "images",
+      "sha1": "7ada4b7a2a6e82ca40d9ed7cc4c576602f8335de",
+      "bytes": 349704,
+      "format": "jpg",
+      "width": 1920,
+      "height": 1080,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-equipo-plano-169.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-equipo-plano-169.jpg",
+      "display_name": "Air Liquide Equipo Plano 169",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-equipo-sio.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-equipo-sio.jpg",
+      "section": "images",
+      "sha1": "257adb47a2845c2b41f000022c8b113af859919a",
+      "bytes": 187316,
+      "format": "jpg",
+      "width": 1500,
+      "height": 614,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-equipo-sio.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-equipo-sio.jpg",
+      "display_name": "Air Liquide Equipo Sio",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-graduado-planta.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-graduado-planta.jpg",
+      "section": "images",
+      "sha1": "29ee553a84b1a78115dda2db2488d22e8c4df0e3",
+      "bytes": 163393,
+      "format": "jpg",
+      "width": 789,
+      "height": 1190,
+      "orientation": "portrait",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-graduado-planta.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-graduado-planta.jpg",
+      "display_name": "Air Liquide Graduado Planta",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-ingeniera-planta-169.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-ingeniera-planta-169.jpg",
+      "section": "images",
+      "sha1": "23e014162d172a6d9e6d640f17ecc4ae0d517f0a",
+      "bytes": 211781,
+      "format": "jpg",
+      "width": 1694,
+      "height": 953,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-ingeniera-planta-169.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-ingeniera-planta-169.jpg",
+      "display_name": "Air Liquide Ingeniera Planta 169",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-ingeniera-planta.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-ingeniera-planta.jpg",
+      "section": "images",
+      "sha1": "6b22174870c8de19419bda8a030d19f87c7081ff",
+      "bytes": 145649,
+      "format": "jpg",
+      "width": 1600,
+      "height": 762,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-ingeniera-planta.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-ingeniera-planta.jpg",
+      "display_name": "Air Liquide Ingeniera Planta",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-logo-blanco.png",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-logo-blanco.png",
+      "section": "logos",
+      "sha1": "6d48c18143c167a4aaa38d87848342958a6ace20",
+      "bytes": 11103,
+      "format": "png",
+      "width": 800,
+      "height": 153,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-logo-blanco.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-logo-blanco.png",
+      "display_name": "Air Liquide Logo Blanco",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-logo.png",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-logo.png",
+      "section": "logos",
+      "sha1": "7671c4d29d3625494c8539e219c82c8f454d79c2",
+      "bytes": 14112,
+      "format": "png",
+      "width": 800,
+      "height": 153,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-logo.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-logo.png",
+      "display_name": "Air Liquide Logo",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-oficina.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-oficina.jpg",
+      "section": "images",
+      "sha1": "0b465a23eac75177c325cc3ce079f522b9698f1f",
+      "bytes": 114314,
+      "format": "jpg",
+      "width": 1024,
+      "height": 683,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-oficina.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-oficina.jpg",
+      "display_name": "Air Liquide Oficina",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-operaria-tableta-hd.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operaria-tableta-hd.jpg",
+      "section": "images",
+      "sha1": "69da8f0276402a3ebf42bdd80c2357c8e9509f16",
+      "bytes": 514053,
+      "format": "jpg",
+      "width": 3000,
+      "height": 2000,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-operaria-tableta-hd.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operaria-tableta-hd.jpg",
+      "display_name": "Air Liquide Operaria Tableta Hd",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-operaria-tableta.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operaria-tableta.jpg",
+      "section": "images",
+      "sha1": "5b1a14c371f6a9d88fa6d95336c91065f9bba11d",
+      "bytes": 166413,
+      "format": "jpg",
+      "width": 1600,
+      "height": 1067,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-operaria-tableta.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operaria-tableta.jpg",
+      "display_name": "Air Liquide Operaria Tableta",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-operaria-valvulas-169.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operaria-valvulas-169.jpg",
+      "section": "images",
+      "sha1": "8a16e403929f270b2fd900f5498ec618567aaa4a",
+      "bytes": 95888,
+      "format": "jpg",
+      "width": 1024,
+      "height": 576,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-operaria-valvulas-169.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operaria-valvulas-169.jpg",
+      "display_name": "Air Liquide Operaria Valvulas 169",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-operaria-valvulas.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operaria-valvulas.jpg",
+      "section": "images",
+      "sha1": "a9cdafb8801ec905d8563a52c514c36e148934f7",
+      "bytes": 97420,
+      "format": "jpg",
+      "width": 1024,
+      "height": 683,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-operaria-valvulas.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operaria-valvulas.jpg",
+      "display_name": "Air Liquide Operaria Valvulas",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-operario-botella.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operario-botella.jpg",
+      "section": "images",
+      "sha1": "4ec4052fcfdeb0d743ced506aab0864dbb8041a6",
+      "bytes": 61340,
+      "format": "jpg",
+      "width": 1024,
+      "height": 683,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-operario-botella.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operario-botella.jpg",
+      "display_name": "Air Liquide Operario Botella",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-operario-botellas.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operario-botellas.jpg",
+      "section": "images",
+      "sha1": "04f44d69ad29c3e822b9edb61ab32a5f48e372da",
+      "bytes": 84014,
+      "format": "jpg",
+      "width": 800,
+      "height": 534,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-operario-botellas.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operario-botellas.jpg",
+      "display_name": "Air Liquide Operario Botellas",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-operario-escalera-169.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operario-escalera-169.jpg",
+      "section": "images",
+      "sha1": "0390afac6aebe6a0c185c11c4d73eb2b7c32847a",
+      "bytes": 321191,
+      "format": "jpg",
+      "width": 1920,
+      "height": 1080,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-operario-escalera-169.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operario-escalera-169.jpg",
+      "display_name": "Air Liquide Operario Escalera 169",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-operario-panel.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operario-panel.jpg",
+      "section": "images",
+      "sha1": "d164d47e52f937e3837202c4b3117e5c82fbf939",
+      "bytes": 897032,
+      "format": "jpg",
+      "width": 3200,
+      "height": 2135,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-operario-panel.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operario-panel.jpg",
+      "display_name": "Air Liquide Operario Panel",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-operarios-camion.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operarios-camion.jpg",
+      "section": "images",
+      "sha1": "0378298c4077db8468b53d9d733e8d44187f173a",
+      "bytes": 701649,
+      "format": "jpg",
+      "width": 3200,
+      "height": 2134,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-operarios-camion.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operarios-camion.jpg",
+      "display_name": "Air Liquide Operarios Camion",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-operarios-planta.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operarios-planta.jpg",
+      "section": "images",
+      "sha1": "ad65535c53c02e58ee07fbb55941fbe4cd8812f3",
+      "bytes": 71932,
+      "format": "jpg",
+      "width": 1024,
+      "height": 768,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-operarios-planta.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-operarios-planta.jpg",
+      "display_name": "Air Liquide Operarios Planta",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-planta-asu.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-planta-asu.jpg",
+      "section": "images",
+      "sha1": "7ac32b42ccdd37766a51e65fa68237a8c9d3e831",
+      "bytes": 340528,
+      "format": "jpg",
+      "width": 1400,
+      "height": 1556,
+      "orientation": "portrait",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-planta-asu.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-planta-asu.jpg",
+      "display_name": "Air Liquide Planta Asu",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-planta-cover.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-planta-cover.jpg",
+      "section": "images",
+      "sha1": "336d4f726406714d342d924654ca6e559e52e5e5",
+      "bytes": 260440,
+      "format": "jpg",
+      "width": 1400,
+      "height": 1555,
+      "orientation": "portrait",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-planta-cover.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-planta-cover.jpg",
+      "display_name": "Air Liquide Planta Cover",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-sala-control.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-sala-control.jpg",
+      "section": "images",
+      "sha1": "3eaaef2be0a7502942cefbe3dcdd8c5cf71fec06",
+      "bytes": 142272,
+      "format": "jpg",
+      "width": 1600,
+      "height": 1066,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-sala-control.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-sala-control.jpg",
+      "display_name": "Air Liquide Sala Control",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-taller-soldadura.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-taller-soldadura.jpg",
+      "section": "images",
+      "sha1": "eaf0dd6281ffbd156f91f3837ebd2a613856000f",
+      "bytes": 145882,
+      "format": "jpg",
+      "width": 1024,
+      "height": 683,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-taller-soldadura.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-taller-soldadura.jpg",
+      "display_name": "Air Liquide Taller Soldadura",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-tanques.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-tanques.jpg",
+      "section": "images",
+      "sha1": "e37f76671b195cc9d881b73e2e3d113e2f796d9d",
+      "bytes": 392770,
+      "format": "jpg",
+      "width": 1400,
+      "height": 1556,
+      "orientation": "portrait",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-tanques.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-tanques.jpg",
+      "display_name": "Air Liquide Tanques",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-tecnica-casco.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-tecnica-casco.jpg",
+      "section": "images",
+      "sha1": "bfb52b5ebcb324ecd2ec31a56d387f27e170492c",
+      "bytes": 80889,
+      "format": "jpg",
+      "width": 1024,
+      "height": 683,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-tecnica-casco.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-tecnica-casco.jpg",
+      "display_name": "Air Liquide Tecnica Casco",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-tecnica-escalera.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-tecnica-escalera.jpg",
+      "section": "images",
+      "sha1": "01eb51a1515f2a286064e16f7b87210659827852",
+      "bytes": 98600,
+      "format": "jpg",
+      "width": 1024,
+      "height": 768,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-tecnica-escalera.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-tecnica-escalera.jpg",
+      "display_name": "Air Liquide Tecnica Escalera",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/air-liquide-tecnico-casco.jpg",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-tecnico-casco.jpg",
+      "section": "images",
+      "sha1": "9fa4d0ae657753f66c40c23370b255de67f693ab",
+      "bytes": 68398,
+      "format": "jpg",
+      "width": 1024,
+      "height": 683,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/air-liquide-tecnico-casco.jpg",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/air-liquide-tecnico-casco.jpg",
+      "display_name": "Air Liquide Tecnico Casco",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
       "path": "imagery/es-cotizaciones-sociales/alstom-almacen-cover.jpg",
       "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/alstom-almacen-cover.jpg",
       "section": "images",
@@ -3517,9 +4098,7 @@
       "width": 1280,
       "height": 853,
       "orientation": "paysage",
-      "used_in": [
-        "es-cotizaciones-sociales"
-      ],
+      "used_in": [],
       "tags": [
         "es-cotizaciones-sociales",
         "masque"
@@ -3541,9 +4120,7 @@
       "width": 1600,
       "height": 1066,
       "orientation": "paysage",
-      "used_in": [
-        "es-cotizaciones-sociales"
-      ],
+      "used_in": [],
       "tags": [
         "es-cotizaciones-sociales",
         "masque"
@@ -3565,9 +4142,7 @@
       "width": 408,
       "height": 134,
       "orientation": "paysage",
-      "used_in": [
-        "es-cotizaciones-sociales"
-      ],
+      "used_in": [],
       "tags": [
         "es-cotizaciones-sociales"
       ],
@@ -3588,9 +4163,7 @@
       "width": 7605,
       "height": 5073,
       "orientation": "paysage",
-      "used_in": [
-        "es-cotizaciones-sociales"
-      ],
+      "used_in": [],
       "tags": [
         "es-cotizaciones-sociales",
         "masque"
@@ -3612,9 +4185,7 @@
       "width": 1600,
       "height": 1066,
       "orientation": "paysage",
-      "used_in": [
-        "es-cotizaciones-sociales"
-      ],
+      "used_in": [],
       "tags": [
         "es-cotizaciones-sociales",
         "masque"
@@ -3636,9 +4207,7 @@
       "width": 1280,
       "height": 853,
       "orientation": "paysage",
-      "used_in": [
-        "es-cotizaciones-sociales"
-      ],
+      "used_in": [],
       "tags": [
         "es-cotizaciones-sociales",
         "masque"
@@ -3661,8 +4230,7 @@
       "height": 787,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -3686,8 +4254,7 @@
       "height": 591,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -3711,8 +4278,7 @@
       "height": 90,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -3736,8 +4302,7 @@
       "height": 134,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -3762,8 +4327,7 @@
       "height": 54,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -3787,8 +4351,7 @@
       "height": 401,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -3812,8 +4375,7 @@
       "height": 285,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -3837,8 +4399,7 @@
       "height": 516,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -3862,8 +4423,7 @@
       "height": 34,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -3887,8 +4447,7 @@
       "height": 485,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -3912,8 +4471,7 @@
       "height": 113,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -3937,8 +4495,7 @@
       "height": 188,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -3962,8 +4519,7 @@
       "height": 461,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -3987,8 +4543,7 @@
       "height": 465,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4012,8 +4567,7 @@
       "height": 157,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4037,8 +4591,7 @@
       "height": 81,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4062,8 +4615,7 @@
       "height": 282,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4087,8 +4639,7 @@
       "height": 78,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4112,8 +4663,7 @@
       "height": 73,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4137,8 +4687,7 @@
       "height": 496,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4162,8 +4711,7 @@
       "height": 51,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4187,8 +4735,7 @@
       "height": 682,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4212,8 +4759,7 @@
       "height": 600,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4237,8 +4783,7 @@
       "height": 450,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4262,8 +4807,7 @@
       "height": 207,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4287,8 +4831,7 @@
       "height": 154,
       "orientation": "portrait",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4312,8 +4855,7 @@
       "height": 286,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4337,8 +4879,7 @@
       "height": 345,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4361,9 +4902,7 @@
       "width": 1122,
       "height": 1402,
       "orientation": "portrait",
-      "used_in": [
-        "es-cotizaciones-sociales"
-      ],
+      "used_in": [],
       "tags": [
         "axel",
         "es-cotizaciones-sociales",
@@ -4386,9 +4925,7 @@
       "width": 1122,
       "height": 1402,
       "orientation": "portrait",
-      "used_in": [
-        "es-cotizaciones-sociales"
-      ],
+      "used_in": [],
       "tags": [
         "es-cotizaciones-sociales",
         "josé",
@@ -4411,9 +4948,7 @@
       "width": 1230,
       "height": 1278,
       "orientation": "portrait",
-      "used_in": [
-        "es-cotizaciones-sociales"
-      ],
+      "used_in": [],
       "tags": [
         "es-cotizaciones-sociales",
         "lola",
@@ -4436,9 +4971,7 @@
       "width": 1122,
       "height": 1402,
       "orientation": "portrait",
-      "used_in": [
-        "es-cotizaciones-sociales"
-      ],
+      "used_in": [],
       "tags": [
         "es-cotizaciones-sociales",
         "maddalena",
@@ -4461,9 +4994,7 @@
       "width": 1136,
       "height": 1384,
       "orientation": "portrait",
-      "used_in": [
-        "es-cotizaciones-sociales"
-      ],
+      "used_in": [],
       "tags": [
         "es-cotizaciones-sociales",
         "olivier",
@@ -4487,8 +5018,7 @@
       "height": 506,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4512,8 +5042,7 @@
       "height": 600,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4537,8 +5066,7 @@
       "height": 1068,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4552,6 +5080,270 @@
       "reutilisable": true
     },
     {
+      "path": "imagery/es-cotizaciones-sociales/tratamiento-datos/logo-academy.png",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/logo-academy.png",
+      "section": "logos",
+      "sha1": "7c7f8548693f70a2882321ef3612e5b72c78c7ed",
+      "bytes": 20254,
+      "format": "png",
+      "width": 178,
+      "height": 178,
+      "orientation": "carre",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales",
+        "masque"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/tratamiento-datos/logo-academy.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/logo-academy.png",
+      "display_name": "Logo Academy",
+      "masque": true,
+      "reutilisable": false
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/tratamiento-datos/logo-express.png",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/logo-express.png",
+      "section": "logos",
+      "sha1": "4c556f65ab463fb2121788875c063659c30614f5",
+      "bytes": 7536,
+      "format": "png",
+      "width": 157,
+      "height": 220,
+      "orientation": "portrait",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales",
+        "masque"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/tratamiento-datos/logo-express.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/logo-express.png",
+      "display_name": "Logo Express",
+      "masque": true,
+      "reutilisable": false
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/tratamiento-datos/logo-proximity.png",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/logo-proximity.png",
+      "section": "logos",
+      "sha1": "a65c301e44d388b351b10193c64371ddb2d4a4b0",
+      "bytes": 20234,
+      "format": "png",
+      "width": 178,
+      "height": 178,
+      "orientation": "carre",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales",
+        "masque"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/tratamiento-datos/logo-proximity.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/logo-proximity.png",
+      "display_name": "Logo Proximity",
+      "masque": true,
+      "reutilisable": false
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/tratamiento-datos/logo-recover.png",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/logo-recover.png",
+      "section": "logos",
+      "sha1": "935e4d801e64c59e833157af53443afd493b3c60",
+      "bytes": 20769,
+      "format": "png",
+      "width": 178,
+      "height": 178,
+      "orientation": "carre",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales",
+        "masque"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/tratamiento-datos/logo-recover.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/logo-recover.png",
+      "display_name": "Logo Recover",
+      "masque": true,
+      "reutilisable": false
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-1.png",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-1.png",
+      "section": "images",
+      "sha1": "1211e8eab2e557dbc89a7fc6372bca588a6b563d",
+      "bytes": 96345,
+      "format": "png",
+      "width": 626,
+      "height": 780,
+      "orientation": "portrait",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales",
+        "masque"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-1.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-1.png",
+      "display_name": "Testimonio 1",
+      "masque": true,
+      "reutilisable": false
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-2.png",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-2.png",
+      "section": "images",
+      "sha1": "c12765e84af47ba865f4bb9037ad7fda20e099d7",
+      "bytes": 186724,
+      "format": "png",
+      "width": 615,
+      "height": 842,
+      "orientation": "portrait",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales",
+        "masque"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-2.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-2.png",
+      "display_name": "Testimonio 2",
+      "masque": true,
+      "reutilisable": false
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-3.png",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-3.png",
+      "section": "images",
+      "sha1": "4bae9149c42bcb15db3ba84cea21af6f967ec045",
+      "bytes": 63272,
+      "format": "png",
+      "width": 588,
+      "height": 662,
+      "orientation": "portrait",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales",
+        "masque"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-3.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-3.png",
+      "display_name": "Testimonio 3",
+      "masque": true,
+      "reutilisable": false
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-4.png",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-4.png",
+      "section": "images",
+      "sha1": "d16289bfe503f7c568801bac5e33a531def80d59",
+      "bytes": 93304,
+      "format": "png",
+      "width": 602,
+      "height": 713,
+      "orientation": "portrait",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales",
+        "masque"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-4.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-4.png",
+      "display_name": "Testimonio 4",
+      "masque": true,
+      "reutilisable": false
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-5.png",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-5.png",
+      "section": "images",
+      "sha1": "0ee70b3059dcce12f51cb88942703fe096b9da67",
+      "bytes": 114589,
+      "format": "png",
+      "width": 609,
+      "height": 741,
+      "orientation": "portrait",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales",
+        "masque"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-5.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-5.png",
+      "display_name": "Testimonio 5",
+      "masque": true,
+      "reutilisable": false
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-6.png",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-6.png",
+      "section": "images",
+      "sha1": "e0b4d3a56cd95810f9b189e0f1cd615bb11640bc",
+      "bytes": 143570,
+      "format": "png",
+      "width": 1004,
+      "height": 824,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales",
+        "masque"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-6.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-6.png",
+      "display_name": "Testimonio 6",
+      "masque": true,
+      "reutilisable": false
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-7.png",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-7.png",
+      "section": "images",
+      "sha1": "708cc0d49983e4ce08808537391bb578184a98c7",
+      "bytes": 76760,
+      "format": "png",
+      "width": 793,
+      "height": 840,
+      "orientation": "portrait",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales",
+        "masque"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-7.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-7.png",
+      "display_name": "Testimonio 7",
+      "masque": true,
+      "reutilisable": false
+    },
+    {
+      "path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-8.png",
+      "url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-8.png",
+      "section": "images",
+      "sha1": "00f3a1200075186e58b0b9cdcc717b97d272b767",
+      "bytes": 60067,
+      "format": "png",
+      "width": 784,
+      "height": 723,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "es-cotizaciones-sociales",
+        "masque"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-8.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/es-cotizaciones-sociales/tratamiento-datos/testimonio-8.png",
+      "display_name": "Testimonio 8",
+      "masque": true,
+      "reutilisable": false
+    },
+    {
       "path": "imagery/es-revision-tipo-cotizacion/alt-asesoria.jpg",
       "url": "https://ayming-france.github.io/assets/imagery/es-revision-tipo-cotizacion/alt-asesoria.jpg",
       "section": "images",
@@ -4562,7 +5354,7 @@
       "height": 900,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4586,7 +5378,7 @@
       "height": 900,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4610,7 +5402,7 @@
       "height": 900,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4634,7 +5426,6 @@
       "height": 1250,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4658,7 +5449,7 @@
       "height": 1595,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion",
         "moteur (tous les decks)"
       ],
@@ -4683,7 +5474,7 @@
       "height": 2400,
       "orientation": "portrait",
       "used_in": [
-        "en-contribution-rate-review",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4707,7 +5498,7 @@
       "height": 1500,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4731,7 +5522,7 @@
       "height": 1665,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4755,7 +5546,7 @@
       "height": 1600,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -4779,7 +5570,7 @@
       "height": 1607,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -6171,6 +6962,7 @@
         "charges-sociales",
         "cotisations-atmp",
         "hub",
+        "ij-activite-non-autorisee",
         "laposte",
         "veille-net-entreprises"
       ],
@@ -6201,6 +6993,7 @@
         "collecte-arrets",
         "cotisations-atmp",
         "hub",
+        "ij-activite-non-autorisee",
         "ijss",
         "laposte",
         "remboursements-ijss",
@@ -6357,6 +7150,7 @@
       "height": 110,
       "orientation": "paysage",
       "used_in": [
+        "ij-activite-non-autorisee",
         "ijss",
         "recuperer-ij"
       ],
@@ -6411,9 +7205,7 @@
       "width": 1920,
       "height": 1080,
       "orientation": "paysage",
-      "used_in": [
-        "es-cotizaciones-sociales"
-      ],
+      "used_in": [],
       "tags": [
         "ijss"
       ],
@@ -6481,6 +7273,7 @@
       "height": 1080,
       "orientation": "paysage",
       "used_in": [
+        "ij-activite-non-autorisee",
         "ijss"
       ],
       "tags": [
@@ -6554,6 +7347,7 @@
       "used_in": [
         "atmp",
         "cotisations-atmp",
+        "ij-activite-non-autorisee",
         "ijss",
         "laposte",
         "veille-net-entreprises"
@@ -7392,6 +8186,7 @@
       "height": 1080,
       "orientation": "paysage",
       "used_in": [
+        "ij-activite-non-autorisee",
         "recuperer-ij",
         "remboursements-ijss"
       ],
@@ -7442,6 +8237,7 @@
       "height": 650,
       "orientation": "paysage",
       "used_in": [
+        "ij-activite-non-autorisee",
         "recuperer-ij"
       ],
       "tags": [
@@ -7465,6 +8261,7 @@
       "height": 470,
       "orientation": "paysage",
       "used_in": [
+        "ij-activite-non-autorisee",
         "recuperer-ij",
         "remboursements-ijss"
       ],
@@ -7539,8 +8336,7 @@
       "orientation": "paysage",
       "used_in": [
         "charges-sociales",
-        "collecte-arrets",
-        "es-cotizaciones-sociales"
+        "collecte-arrets"
       ],
       "tags": [
         "stock"
@@ -7565,7 +8361,6 @@
       "used_in": [
         "aides-apprentissage",
         "dat",
-        "es-cotizaciones-sociales",
         "questionnaires-maladie-professionnelle",
         "rattrapage-visites-medicales",
         "visites-medicales"
@@ -7616,7 +8411,8 @@
       "orientation": "portrait",
       "used_in": [
         "collecte-arrets",
-        "hub"
+        "hub",
+        "ij-activite-non-autorisee"
       ],
       "tags": [
         "stock"
@@ -7640,7 +8436,6 @@
       "orientation": "paysage",
       "used_in": [
         "dat",
-        "es-cotizaciones-sociales",
         "visites-medicales"
       ],
       "tags": [
@@ -7664,8 +8459,7 @@
       "height": 400,
       "orientation": "paysage",
       "used_in": [
-        "controle-urssaf",
-        "es-cotizaciones-sociales"
+        "controle-urssaf"
       ],
       "tags": [
         "stock"
@@ -7690,7 +8484,6 @@
       "used_in": [
         "collecte-arrets",
         "dat",
-        "es-cotizaciones-sociales",
         "recuperer-ij",
         "remboursements-ijss",
         "visites-medicales"
@@ -7740,7 +8533,6 @@
       "height": 1067,
       "orientation": "paysage",
       "used_in": [
-        "es-cotizaciones-sociales",
         "rattrapage-visites-medicales"
       ],
       "tags": [
@@ -7796,7 +8588,6 @@
       "height": 1067,
       "orientation": "paysage",
       "used_in": [
-        "es-cotizaciones-sociales",
         "rattrapage-visites-medicales"
       ],
       "tags": [
@@ -7899,7 +8690,6 @@
         "abo-dat",
         "aides-apprentissage",
         "dat",
-        "es-cotizaciones-sociales",
         "hub"
       ],
       "tags": [
@@ -8274,7 +9064,6 @@
       "height": 1080,
       "orientation": "paysage",
       "used_in": [
-        "es-cotizaciones-sociales",
         "visites-medicales"
       ],
       "tags": [
@@ -8310,11 +9099,11 @@
         "cotisations-atmp",
         "dat",
         "duerp",
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion",
         "essentiel",
         "hub",
+        "ij-activite-non-autorisee",
         "ijss",
         "laposte",
         "methode",
@@ -8475,9 +9264,7 @@
       "width": 2782,
       "height": 2003,
       "orientation": "paysage",
-      "used_in": [
-        "en-contribution-rate-review"
-      ],
+      "used_in": [],
       "tags": [
         "carte",
         "europe"
@@ -8500,7 +9287,7 @@
       "height": 2003,
       "orientation": "paysage",
       "used_in": [
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion"
       ],
       "tags": [
@@ -8536,6 +9323,7 @@
         "cotisations-atmp",
         "dat",
         "duerp",
+        "ij-activite-non-autorisee",
         "ijss",
         "laposte",
         "questionnaires-maladie-professionnelle",
@@ -8577,6 +9365,7 @@
         "cotisations-atmp",
         "dat",
         "duerp",
+        "ij-activite-non-autorisee",
         "ijss",
         "laposte",
         "questionnaires-maladie-professionnelle",
@@ -8618,6 +9407,7 @@
         "cotisations-atmp",
         "dat",
         "duerp",
+        "ij-activite-non-autorisee",
         "ijss",
         "laposte",
         "questionnaires-maladie-professionnelle",
@@ -8649,8 +9439,7 @@
       "height": 1086,
       "orientation": "paysage",
       "used_in": [
-        "en-contribution-rate-review",
-        "es-cotizaciones-sociales",
+        "es-pagos-delegados",
         "es-revision-tipo-cotizacion",
         "moteur (tous les decks)"
       ],

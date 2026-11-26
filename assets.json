@@ -1,7 +1,7 @@
 {
   "generated_by": "build_portal.py",
   "source_repo": "ayming-france-assets",
-  "count": 364,
+  "count": 365,
   "assets": [
     {
       "path": "imagery/aides-apprentissage/Standout-Image-1436-x-808-3.jpg",
@@ -7169,6 +7169,29 @@
       "display_name": "Suivi Pain",
       "masque": false,
       "reutilisable": true
+    },
+    {
+      "path": "imagery/methode/alstom-demo.png",
+      "url": "https://ayming-france.github.io/assets/imagery/methode/alstom-demo.png",
+      "section": "images",
+      "sha1": "d37d51e7e8420cbeaa22363b9266858e94b529e9",
+      "bytes": 879514,
+      "format": "png",
+      "width": 1440,
+      "height": 900,
+      "orientation": "paysage",
+      "used_in": [
+        "methode"
+      ],
+      "tags": [
+        "methode"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/methode/alstom-demo.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/methode/alstom-demo.png",
+      "display_name": "Alstom Demo",
+      "masque": false,
+      "reutilisable": false
     },
     {
       "path": "imagery/methode/hub.png",

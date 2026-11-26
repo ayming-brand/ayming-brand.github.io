@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
   <style>
     :root {
-      --blue: #11a9e6; --blue-accent: #0da4e8; --navy: #00456d;
+      --blue: #11a9e6; --navy: #00456d;
       --text-dark: #0f172a; --text-gray: #6b7280; --text-light: #9ca3af;
       --bg-white: #ffffff; --bg-light: #f8fafc; --bg-subtle: #eef2f6;
       --overlay-blue: rgba(17,169,230,0.10);
@@ -25,6 +25,7 @@
     code { font-family: 'SFMono-Regular', Menlo, monospace; font-size: 12px; color: var(--text-gray); }
     a { color: inherit; }
     .filter-item.hidden { display: none; }
+    [data-filter-container][hidden], .color-family-row[hidden] { display: none !important; }
 
     /* Barre latérale : chrome gris et neutre, la couleur reste dans le contenu. */
     .sidebar {
@@ -498,9 +499,9 @@
     <button class="nav-item" data-panel="rayons">Rayons</button>
     <button class="nav-item" data-panel="motion">Motion</button>
     <div class="nav-group-label">Bibliothèque</div>
-    <button class="nav-item" data-panel="logos">Logos<span class="nav-count">165</span></button>
+    <button class="nav-item" data-panel="logos">Logos<span class="nav-count">145</span></button>
     <div class="nav-sub"><button class="nav-subitem" data-panel="logos" data-anchor="logo-principal">Logo principal</button><button class="nav-subitem" data-panel="logos" data-anchor="solutions">Solutions digitales</button><button class="nav-subitem" data-panel="logos" data-anchor="certifications">Certifications</button><button class="nav-subitem" data-panel="logos" data-anchor="clients">Clients</button><button class="nav-subitem" data-panel="logos" data-anchor="partenaires">Partenaires</button></div>
-    <button class="nav-item" data-panel="images">Images<span class="nav-count">199</span></button>
+    <button class="nav-item" data-panel="images">Images<span class="nav-count">142</span></button>
     <div class="nav-sub"><button class="nav-subitem" data-panel="images" data-anchor="offres">Offres</button><button class="nav-subitem" data-panel="images" data-anchor="stock">Stock</button><button class="nav-subitem" data-panel="images" data-anchor="cartes">Cartes</button><button class="nav-subitem" data-panel="images" data-anchor="equipe">Équipe</button><button class="nav-subitem" data-panel="images" data-anchor="icones">Icônes</button></div>
     <button class="nav-item" data-panel="composants">Composants<span class="nav-count">20</span></button>
     <button class="nav-item" data-panel="slides">Slides<span class="nav-count">16</span></button>
@@ -683,6 +684,7 @@
           <div class="color-codes"><code class="color-stops">Light Blue 75% → Light Blue 100% → Dark Blue 100%</code></div>
         </div>
 </div>
+      <p class="empty-state" hidden>Aucun résultat</p>
     </section>
     <section class="tab-panel" id="panel-typographie" data-panel="typographie">
       <h1>Typographie</h1>
@@ -721,6 +723,7 @@
           <code>micro &middot; 11px &middot; 700</code>
         </div>
 </div>
+      <p class="empty-state" hidden>Aucun résultat</p>
     </section>
     <section class="tab-panel" id="panel-espacements" data-panel="espacements">
       <h1>Espacements</h1>
@@ -728,6 +731,7 @@
       <div class="panel-search"><input class="search-input" type="search" placeholder="Rechercher une valeur..." autocomplete="off"></div>
       <div class="scale-list" data-filter-container><div class="scale-row filter-item" data-search="4px"><code class="scale-label">4px</code><span class="scale-bar" style="width:20px"></span></div><div class="scale-row filter-item" data-search="6px"><code class="scale-label">6px</code><span class="scale-bar" style="width:30px"></span></div><div class="scale-row filter-item" data-search="8px"><code class="scale-label">8px</code><span class="scale-bar" style="width:40px"></span></div><div class="scale-row filter-item" data-search="12px"><code class="scale-label">12px</code><span class="scale-bar" style="width:60px"></span></div><div class="scale-row filter-item" data-search="16px"><code class="scale-label">16px</code><span class="scale-bar" style="width:80px"></span></div><div class="scale-row filter-item" data-search="18px"><code class="scale-label">18px</code><span class="scale-bar" style="width:90px"></span></div><div class="scale-row filter-item" data-search="22px"><code class="scale-label">22px</code><span class="scale-bar" style="width:110px"></span></div><div class="scale-row filter-item" data-search="26px"><code class="scale-label">26px</code><span class="scale-bar" style="width:130px"></span></div><div class="scale-row filter-item" data-search="34px"><code class="scale-label">34px</code><span class="scale-bar" style="width:170px"></span></div><div class="scale-row filter-item" data-search="42px"><code class="scale-label">42px</code><span class="scale-bar" style="width:210px"></span></div><div class="scale-row filter-item" data-search="52px"><code class="scale-label">52px</code><span class="scale-bar" style="width:260px"></span></div></div>
       <h2>Dimensions de mise en page</h2><div class="dim-list" data-filter-container><div class="dim-row filter-item" data-search="--blue-primary-rgb 0, 174, 239"><code>blue-primary-rgb</code><b>0, 174, 239</b></div><div class="dim-row filter-item" data-search="--blue-dark-rgb 0, 74, 118"><code>blue-dark-rgb</code><b>0, 74, 118</b></div><div class="dim-row filter-item" data-search="--gradient-green-end-rgb 0, 176, 139"><code>gradient-green-end-rgb</code><b>0, 176, 139</b></div><div class="dim-row filter-item" data-search="--nav-width 260px"><code>nav-width</code><b>260px</b></div><div class="dim-row filter-item" data-search="--nav-collapsed 20px"><code>nav-collapsed</code><b>20px</b></div><div class="dim-row filter-item" data-search="--banner-h 46px"><code>banner-h</code><b>46px</b></div><div class="dim-row filter-item" data-search="--space-4 4px"><code>space-4</code><b>4px</b></div><div class="dim-row filter-item" data-search="--space-6 6px"><code>space-6</code><b>6px</b></div><div class="dim-row filter-item" data-search="--space-8 8px"><code>space-8</code><b>8px</b></div><div class="dim-row filter-item" data-search="--space-9 9px"><code>space-9</code><b>9px</b></div><div class="dim-row filter-item" data-search="--space-10 10px"><code>space-10</code><b>10px</b></div><div class="dim-row filter-item" data-search="--space-12 12px"><code>space-12</code><b>12px</b></div><div class="dim-row filter-item" data-search="--space-14 14px"><code>space-14</code><b>14px</b></div><div class="dim-row filter-item" data-search="--space-16 16px"><code>space-16</code><b>16px</b></div><div class="dim-row filter-item" data-search="--space-18 18px"><code>space-18</code><b>18px</b></div><div class="dim-row filter-item" data-search="--space-20 20px"><code>space-20</code><b>20px</b></div><div class="dim-row filter-item" data-search="--space-22 22px"><code>space-22</code><b>22px</b></div><div class="dim-row filter-item" data-search="--space-24 24px"><code>space-24</code><b>24px</b></div><div class="dim-row filter-item" data-search="--space-26 26px"><code>space-26</code><b>26px</b></div><div class="dim-row filter-item" data-search="--space-28 28px"><code>space-28</code><b>28px</b></div><div class="dim-row filter-item" data-search="--space-32 32px"><code>space-32</code><b>32px</b></div><div class="dim-row filter-item" data-search="--space-34 34px"><code>space-34</code><b>34px</b></div><div class="dim-row filter-item" data-search="--space-42 42px"><code>space-42</code><b>42px</b></div><div class="dim-row filter-item" data-search="--space-52 52px"><code>space-52</code><b>52px</b></div><div class="dim-row filter-item" data-search="--radius-hairline 1px"><code>radius-hairline</code><b>1px</b></div><div class="dim-row filter-item" data-search="--radius-md 8px"><code>radius-md</code><b>8px</b></div><div class="dim-row filter-item" data-search="--radius-lg 12px"><code>radius-lg</code><b>12px</b></div><div class="dim-row filter-item" data-search="--radius-14 14px"><code>radius-14</code><b>14px</b></div><div class="dim-row filter-item" data-search="--radius-xl 16px"><code>radius-xl</code><b>16px</b></div><div class="dim-row filter-item" data-search="--radius-2xl 20px"><code>radius-2xl</code><b>20px</b></div><div class="dim-row filter-item" data-search="--radius-30 30px"><code>radius-30</code><b>30px</b></div><div class="dim-row filter-item" data-search="--radius-pill 9999px"><code>radius-pill</code><b>9999px</b></div><div class="dim-row filter-item" data-search="--radius-circle 50%"><code>radius-circle</code><b>50%</b></div><div class="dim-row filter-item" data-search="--font-10 10px"><code>font-10</code><b>10px</b></div><div class="dim-row filter-item" data-search="--font-11 11px"><code>font-11</code><b>11px</b></div><div class="dim-row filter-item" data-search="--font-12 12px"><code>font-12</code><b>12px</b></div><div class="dim-row filter-item" data-search="--font-13 13px"><code>font-13</code><b>13px</b></div><div class="dim-row filter-item" data-search="--font-14 14px"><code>font-14</code><b>14px</b></div><div class="dim-row filter-item" data-search="--font-15 15px"><code>font-15</code><b>15px</b></div><div class="dim-row filter-item" data-search="--font-16 16px"><code>font-16</code><b>16px</b></div><div class="dim-row filter-item" data-search="--font-18 18px"><code>font-18</code><b>18px</b></div><div class="dim-row filter-item" data-search="--weight-semibold 600"><code>weight-semibold</code><b>600</b></div><div class="dim-row filter-item" data-search="--weight-bold 700"><code>weight-bold</code><b>700</b></div><div class="dim-row filter-item" data-search="--weight-black 800"><code>weight-black</code><b>800</b></div><div class="dim-row filter-item" data-search="--leading-tight 1"><code>leading-tight</code><b>1</b></div><div class="dim-row filter-item" data-search="--leading-snug 1.3"><code>leading-snug</code><b>1.3</b></div><div class="dim-row filter-item" data-search="--leading-normal 1.5"><code>leading-normal</code><b>1.5</b></div><div class="dim-row filter-item" data-search="--leading-relaxed 1.6"><code>leading-relaxed</code><b>1.6</b></div><div class="dim-row filter-item" data-search="--slide-title-mb 50px"><code>slide-title-mb</code><b>50px</b></div></div>
+      <p class="empty-state" hidden>Aucun résultat</p>
     </section>
     <section class="tab-panel" id="panel-rayons" data-panel="rayons">
       <h1>Rayons</h1>
@@ -771,6 +775,7 @@
           </div>
         </div>
 </div>
+      <p class="empty-state" hidden>Aucun résultat</p>
     </section>
     <section class="tab-panel" id="panel-motion" data-panel="motion">
       <h1>Motion</h1>
@@ -803,6 +808,7 @@
         </div>
 </div>
       
+      <p class="empty-state" hidden>Aucun résultat</p>
     </section>
     <section class="tab-panel" id="panel-logos" data-panel="logos">
       <h1>Logos</h1>
@@ -810,7 +816,7 @@
       <div class="panel-search"><input class="search-input" type="search" placeholder="Rechercher un logo..." autocomplete="off"></div>
       
       <div class="subgroup" data-group="logo-principal" data-nav-visible="true" data-filter-container data-block-title="logo principal">
-        <h2 id="logo-principal">Logo principal <span class="nav-count">3</span></h2>
+        <h2 id="logo-principal">Logo principal <span class="nav-count">2</span></h2>
         <div class="grid">        <article class="card card-logo filter-item" data-search="imagery/essentiel/acciline-logo.png essentiel" data-tags="essentiel" data-format="png">
           <div class="logo-tiles">
             <button type="button" class="variant-chip" data-usage="{&quot;title&quot;: &quot;Acciline Logo&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;moteur (tous les decks)&quot;], &quot;variants&quot;: [{&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png&quot;, &quot;dims&quot;: &quot;1844×499 px&quot;}, {&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/veille-net-entreprises/acciline-logo.png&quot;, &quot;dims&quot;: &quot;227×144 px&quot;}]}">2 tailles</button>
@@ -851,7 +857,7 @@
         
       </div>
       <div class="subgroup" data-group="solutions" data-nav-visible="true" data-filter-container data-block-title="solutions digitales">
-        <h2 id="solutions">Solutions digitales <span class="nav-count">8</span></h2>
+        <h2 id="solutions">Solutions digitales <span class="nav-count">1</span></h2>
         <div class="grid">        <article class="card card-logo card-product filter-item" data-search="logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.png logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.svg logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.png logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png logos/solutions/ayming-checkup/ayming-checkup-white-vertical.svg logo" data-tags="logo" data-format="svg" data-files="{&quot;colour-horizontal-png&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.png&quot;, &quot;name&quot;: &quot;ayming-checkup-colour-horizontal.png&quot;}, &quot;colour-horizontal-svg&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg&quot;, &quot;name&quot;: &quot;ayming-checkup-colour-horizontal.svg&quot;}, &quot;colour-vertical-png&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png&quot;, &quot;name&quot;: &quot;ayming-checkup-colour-vertical.png&quot;}, &quot;colour-vertical-svg&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.svg&quot;, &quot;name&quot;: &quot;ayming-checkup-colour-vertical.svg&quot;}, &quot;white-horizontal-png&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.png&quot;, &quot;name&quot;: &quot;ayming-checkup-white-horizontal.png&quot;}, &quot;white-horizontal-svg&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg&quot;, &quot;name&quot;: &quot;ayming-checkup-white-horizontal.svg&quot;}, &quot;white-vertical-png&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png&quot;, &quot;name&quot;: &quot;ayming-checkup-white-vertical.png&quot;}, &quot;white-vertical-svg&quot;: {&quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.svg&quot;, &quot;name&quot;: &quot;ayming-checkup-white-vertical.svg&quot;}}">
           <div class="logo-tiles">
             <button type="button" class="variant-chip" data-usage="{&quot;title&quot;: &quot;Ayming Checkup Colour Horizontal&quot;, &quot;used_in&quot;: [&quot;alstom-tratamiento-datos&quot;], &quot;variants&quot;: [{&quot;name&quot;: &quot;ayming-checkup-colour-horizontal.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.png&quot;, &quot;dims&quot;: &quot;586×256 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-colour-horizontal.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-horizontal.svg&quot;, &quot;dims&quot;: &quot;614×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-colour-vertical.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.png&quot;, &quot;dims&quot;: &quot;286×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-colour-vertical.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-colour-vertical.svg&quot;, &quot;dims&quot;: &quot;614×460 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-white-horizontal.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.png&quot;, &quot;dims&quot;: &quot;586×256 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-white-horizontal.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-horizontal.svg&quot;, &quot;dims&quot;: &quot;614×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-white-vertical.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.png&quot;, &quot;dims&quot;: &quot;286×421 px&quot;}, {&quot;name&quot;: &quot;ayming-checkup-white-vertical.svg&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/logos/solutions/ayming-checkup/ayming-checkup-white-vertical.svg&quot;, &quot;dims&quot;: &quot;614×460 px&quot;}]}">8 déclinaisons</button>
@@ -3445,6 +3451,7 @@
 </div>
         
       </div>
+      <p class="empty-state" hidden>Aucun résultat</p>
     </section>
     <section class="tab-panel" id="panel-images" data-panel="images">
       <h1>Images</h1>
@@ -5723,7 +5730,7 @@
         
       </div>
       <div class="subgroup" data-group="stock" data-nav-visible="true" data-filter-container data-block-title="stock">
-        <h2 id="stock">Stock <span class="nav-count">15</span></h2>
+        <h2 id="stock">Stock <span class="nav-count">14</span></h2>
         <div class="grid">        <article class="card filter-item" data-section="images" data-search="imagery/stock/unsplash-1450101499163-c8848c66ca85-600x400.jpg stock" data-tags="stock" data-folder="stock" data-format="jpg">
           <div class="thumb">
             <img src="https://ayming-france.github.io/assets/imagery/stock/unsplash-1450101499163-c8848c66ca85-600x400.jpg" alt="unsplash-1450101499163-c8848c66ca85-600x400.jpg" loading="lazy">
@@ -6600,6 +6607,7 @@
 </div>
         
       </div>
+      <p class="empty-state" hidden>Aucun résultat</p>
     </section>
     <section class="tab-panel" id="panel-composants" data-panel="composants">
       <h1>Composants</h1>
@@ -8437,6 +8445,7 @@
 </div>
       </div>
       <details class="ecartes-details"><summary>Ce qui n'a pas été promu</summary><ul class="ecartes-list"><li><b>testimonial-dim</b> Le filtre d&#x27;assombrissement de la photo témoignage est déjà la règle de base de slides.css. Les surcharges locales des 15 decks sont redondantes, à supprimer au prochain passage sur chaque deck, rien à promouvoir.</li><li><b>chain-journey</b> Diagramme de parcours des decks famille (atmp, ijss), 2 decks. Signification distincte de la chaîne de valeur atmp-chain (il cartographie les offres d&#x27;une famille, pas le positionnement d&#x27;une offre dans une chaîne), pas de fusion, sous le seuil.</li><li><b>vm-steps</b> Stepper d&#x27;onboarding de visites-medicales et de sa famille, 2 decks. Quasi-doublon du process-timeline du moteur, converger vers le moteur au prochain edit de ces decks plutôt que promouvoir le doublon.</li><li><b>vm-logos</b> Grille de logos d&#x27;intégrations SIRH, 2 decks, sous le seuil.</li><li><b>pricing</b> 3 decks ont une slide tarification mais trois modèles différents (plan mensuel essentiel, grille de points abo-dat, success-fee es-cotizaciones). Trois significations distinctes, pas de composant générique honnête.</li><li><b>stat-row-standalone</b> 3 decks, et la slide introduction porte déjà les cartes de chiffres. Pas d&#x27;archétype séparé.</li><li><b>variantes-chaine-locales</b> remboursements-ijss (dimensionnement 3 maillons) et arrets-longue-duree (chorégraphie d&#x27;entrée propre) gardent leurs surcharges locales par-dessus la chaîne promue.</li><li><b>collisions-de-noms</b> ptag, ct et ladder existent dans 2 decks chacun avec des significations sans rapport (persona contre pilier, contact contre compteur, échelle de confiance contre escalier de niveaux de service). Collisions de noms pures, aucune fusion.</li><li><b>charges-sociales-responsive</b> Bloc media query de charges-sociales qui resserre 25 classes moteur pour les écrans portables 1366x768. Candidat à entrer dans slides.css lui-même, décision moteur séparée, hors périmètre composants.</li><li><b>layouts-pleine-page</b> cover-layout, layout-split et value-detail-layout sont des squelettes de slide entière, pas des composants. Ils vivent dans l&#x27;onglet Slides à travers les archétypes qui les emploient (Couverture, Valeur en détail). Les slides injectées (clients, partenaires) sont une note de l&#x27;onglet Slides.</li><li><b>css-mort</b> abo-dat (10 composants non référencés) et methode (un tiers du CSS local orphelin d&#x27;une slide en commentaire) portent du CSS mort à nettoyer au prochain edit de chaque deck.</li><li><b>icon-grid-bleed-photo</b> Bloc solution + photo plein cadre d&#x27;es-cotizaciones-sociales (grille qui structure toute la diapositive, pas un élément de niveau unité, avec un hack de hauteur 100% sur le slide-inner parent). C&#x27;est une slide locale, pas un composant. À traiter en archétype si elle se généralise à d&#x27;autres decks.</li></ul></details>
+      <p class="empty-state" hidden>Aucun résultat</p>
     </section>
     <section class="tab-panel" id="panel-slides" data-panel="slides">
       <h1>Slides</h1>
@@ -11260,6 +11269,7 @@
         </article>
 </div>
       </div>
+      <p class="empty-state" hidden>Aucun résultat</p>
     </section></div></main>
   <div class="usage-modal-backdrop" id="usageModalBackdrop" hidden>
     <div class="usage-modal" role="dialog" aria-modal="true">
@@ -11323,6 +11333,7 @@
 
     function wordFuzzyMatch(haystackWord, queryWord) {
       if (haystackWord.indexOf(queryWord) !== -1) return true;
+      if (queryWord.length < 3) return false;
       var maxLen = Math.min(haystackWord.length, queryWord.length + 1);
       for (var len = Math.max(1, queryWord.length - 1); len <= maxLen; len++) {
         if (levenshteinAtMost1(haystackWord.slice(0, len), queryWord)) return true;
@@ -11582,6 +11593,25 @@
         if (countEl) countEl.textContent = visible;
       });
 
+      Array.prototype.slice.call(panel.querySelectorAll('.color-family-row')).forEach(function (row) {
+        row.hidden = !row.querySelector('.filter-item:not(.hidden)');
+      });
+
+      Array.prototype.slice.call(panel.querySelectorAll('h2')).forEach(function (h2) {
+        var any = false, visibleOne = false;
+        for (var el = h2.nextElementSibling; el && !/^H[12]$/.test(el.tagName); el = el.nextElementSibling) {
+          var own = el.hasAttribute('data-filter-container') ? [el] : Array.prototype.slice.call(el.querySelectorAll('[data-filter-container]'));
+          if (own.length) any = true;
+          if (own.some(function (c) { return !c.hidden; })) visibleOne = true;
+        }
+        if (any) h2.hidden = !visibleOne;
+      });
+
+      var emptyEl = panel.querySelector('.empty-state');
+      if (emptyEl) {
+        emptyEl.hidden = !containers.length || containers.some(function (c) { return !c.hidden; });
+      }
+
       Array.prototype.slice.call(panel.querySelectorAll('.subgroup')).forEach(function (sub) {
         var navVisible = sub.getAttribute('data-nav-visible') !== 'false';
         var leaves = sub.hasAttribute('data-filter-container')
@@ -11638,14 +11668,15 @@
       if (!btn) return;
       e.stopPropagation();
       var url = btn.getAttribute('data-url');
-      var original = btn.textContent;
+      btn.dataset.label = btn.dataset.label || btn.textContent;
+      clearTimeout(btn._t);
       copyText(url).then(function () {
         btn.textContent = 'Copié !';
         btn.classList.add('copied');
       }, function () {
         btn.textContent = 'Copie impossible';
       });
-      setTimeout(function () { btn.textContent = original; btn.classList.remove('copied'); }, 1200);
+      btn._t = setTimeout(function () { btn.textContent = btn.dataset.label; btn.classList.remove('copied'); }, 1200);
     });
 
     // Carte produit : les trois selecteurs designent le fichier vise par
@@ -11696,7 +11727,7 @@
       e.stopPropagation();
       var url = btn.getAttribute('data-url');
       var name = btn.getAttribute('data-name');
-      fetch(url).then(function (res) { return res.blob(); }).then(function (blob) {
+      fetch(url).then(function (res) { if (!res.ok) throw new Error(res.status); return res.blob(); }).then(function (blob) {
         var link = document.createElement('a');
         link.href = URL.createObjectURL(blob);
         link.download = name;
@@ -11929,13 +11960,14 @@
     if (curationCopyBtn) {
       curationCopyBtn.addEventListener('click', function () {
         var yaml = curationYaml();
-        var original = curationCopyBtn.textContent;
+        curationCopyBtn.dataset.label = curationCopyBtn.dataset.label || curationCopyBtn.textContent;
+        clearTimeout(curationCopyBtn._t);
         copyText(yaml).then(function () {
           curationCopyBtn.textContent = 'Copié !';
         }, function () {
           curationCopyBtn.textContent = 'Copie impossible';
         });
-        setTimeout(function () { curationCopyBtn.textContent = original; }, 1200);
+        curationCopyBtn._t = setTimeout(function () { curationCopyBtn.textContent = curationCopyBtn.dataset.label; }, 1200);
       });
     }
     var curationClearBtn = document.getElementById('curationClear');

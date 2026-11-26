@@ -1,0 +1,783 @@
+{
+  "generated_by": "build_portal.py",
+  "lire": "Choisir une entrée sur quand et forme, puis lire son markup dans components.json[cle] (extrait_html ou variantes, markup pour un archétype). Placeholders [Rôle · longueur] à remplacer.",
+  "count": 50,
+  "entries": [
+    {
+      "id": "next-step",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Bandeau prochaine étape",
+      "quand": "Pour fermer un deck sur l'étape suivante concrète, en une phrase.",
+      "forme": {
+        "elements": "1 bandeau",
+        "texte": "une phrase",
+        "chiffres": "0",
+        "image": "non"
+      }
+    },
+    {
+      "id": "option-card",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Tuile de vente croisée",
+      "quand": "Pour renvoyer vers une offre liée depuis une slide d'options.",
+      "forme": {
+        "elements": "3 à 4 tuiles",
+        "texte": "titre 4 mots, phrase d'une ligne",
+        "chiffres": "0",
+        "image": "oui, 3:2"
+      },
+      "eviter": [
+        {
+          "cas": "Pour présenter des idées sans lien vers une autre offre",
+          "plutot": "column-card"
+        }
+      ]
+    },
+    {
+      "id": "atmp-chain",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Chaîne de valeur",
+      "quand": "Pour situer l'offre dans une chaîne de valeur de 3 à 5 maillons dont un seul est mis en avant.",
+      "forme": {
+        "elements": "3 à 5 maillons",
+        "texte": "titre 4 mots, 2 points clés par maillon",
+        "chiffres": "0",
+        "image": "non"
+      },
+      "eviter": [
+        {
+          "cas": "Pour décrire chaque maillon avec un verbe d'action et une phrase",
+          "plutot": "chain-journey"
+        }
+      ]
+    },
+    {
+      "id": "intro-stats",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Carte de chiffre clé",
+      "quand": "Pour appuyer le pitch d'une slide d'introduction avec des chiffres clés.",
+      "forme": {
+        "elements": "3 cartes",
+        "texte": "libellé 4 mots",
+        "chiffres": "3",
+        "image": "non"
+      }
+    },
+    {
+      "id": "feature-item",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Carte de caractéristique",
+      "quand": "Pour présenter 3 à 6 piliers de valeur, chacun avec une icône, un titre et une phrase.",
+      "forme": {
+        "elements": "3 à 6 cartes",
+        "texte": "titre 5 mots, une phrase",
+        "chiffres": "0",
+        "image": "non, icône"
+      },
+      "eviter": [
+        {
+          "cas": "Pour illustrer chaque idée par une photo",
+          "plutot": "column-card"
+        }
+      ]
+    },
+    {
+      "id": "column-card",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Carte à image",
+      "quand": "Pour présenter 3 approches ou idées côte à côte, chacune avec une photo.",
+      "forme": {
+        "elements": "3 cartes",
+        "texte": "titre 6 mots, deux phrases",
+        "chiffres": "0",
+        "image": "oui, 3:2"
+      },
+      "eviter": [
+        {
+          "cas": "Pour décrire un état cible avec une icône sur fond dégradé",
+          "plutot": "ideal-card"
+        }
+      ]
+    },
+    {
+      "id": "faq-card",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Carte question-réponse",
+      "quand": "Pour lever une objection du client en question et réponse courtes.",
+      "forme": {
+        "elements": "4 cartes",
+        "texte": "question une ligne, réponse 1 à 2 phrases",
+        "chiffres": "0",
+        "image": "non, icône"
+      }
+    },
+    {
+      "id": "requirements-box",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Encadré prérequis",
+      "quand": "Pour lister ce que le client doit fournir pour démarrer.",
+      "forme": {
+        "elements": "3 à 4 lignes cochées",
+        "texte": "8 mots par ligne",
+        "chiffres": "0",
+        "image": "non"
+      }
+    },
+    {
+      "id": "comparison-table",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Tableau comparatif",
+      "quand": "Pour comparer 2 à 4 options sur les mêmes critères.",
+      "forme": {
+        "elements": "2 à 4 lignes, 3 à 4 colonnes",
+        "texte": "3 mots par cellule",
+        "chiffres": "0",
+        "image": "non"
+      },
+      "eviter": [
+        {
+          "cas": "Pour présenter 3 approches avec photo, sans critères communs",
+          "plutot": "column-card"
+        }
+      ]
+    },
+    {
+      "id": "process-timeline",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Frise de processus",
+      "quand": "Pour dérouler une mission en 3 ou 4 étapes numérotées avec une durée.",
+      "forme": {
+        "elements": "3 à 4 étapes",
+        "texte": "titre 3 mots, durée, une phrase",
+        "chiffres": "0",
+        "image": "non"
+      },
+      "eviter": [
+        {
+          "cas": "Pour des maillons d'une chaîne de valeur sans durée",
+          "plutot": "atmp-chain"
+        }
+      ]
+    },
+    {
+      "id": "testimonial-card",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Carte témoignage à retournement",
+      "quand": "Pour prouver par des clients, avec un résultat au recto et une citation au verso.",
+      "forme": {
+        "elements": "1 à 3 cartes",
+        "texte": "résultat une phrase, citation 2 phrases",
+        "chiffres": "0",
+        "image": "oui, 16:9 et logo client"
+      }
+    },
+    {
+      "id": "value-detail-list",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Liste value-detail",
+      "quand": "Pour approfondir un attribut de valeur en 2 à 4 points, avec ou sans titre par point.",
+      "forme": {
+        "elements": "2 à 4 points",
+        "texte": "une phrase par point",
+        "chiffres": "0",
+        "image": "non"
+      }
+    },
+    {
+      "id": "ideal-card",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Carte monde idéal",
+      "quand": "Pour décrire l'état cible idéal en 3 ou 4 caractéristiques, chacune avec une icône.",
+      "forme": {
+        "elements": "3 à 4 cartes",
+        "texte": "titre 5 mots, une phrase",
+        "chiffres": "0",
+        "image": "non, icône"
+      },
+      "eviter": [
+        {
+          "cas": "Pour présenter des approches existantes avec une photo",
+          "plutot": "column-card"
+        }
+      ]
+    },
+    {
+      "id": "cert-strip",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Badges de certification",
+      "quand": "Pour rappeler les certifications Ayming sur une couverture, sans rien poser dans le HTML.",
+      "forme": {
+        "elements": "injecté par le moteur",
+        "image": "non"
+      }
+    },
+    {
+      "id": "pricing-essentiel",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Élément tarifaire",
+      "quand": "Pour présenter un tarif d'abonnement avec ses modules inclus et ses options payantes.",
+      "forme": {
+        "elements": "1 carte, 2 modules, 2 à 3 options",
+        "texte": "titre 4 mots, 4 fonctionnalités par module",
+        "chiffres": "prix et options",
+        "image": "icônes"
+      }
+    },
+    {
+      "id": "pricing-calculator",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Simulateur tarifaire",
+      "quand": "Pour laisser le client simuler un prix annuel selon un volume, avec un curseur et une courbe.",
+      "forme": {
+        "elements": "1 simulateur",
+        "texte": "libellés courts",
+        "chiffres": "5 à 6",
+        "image": "non"
+      }
+    },
+    {
+      "id": "cost-escalation",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Barres de coût croissant",
+      "quand": "Pour montrer qu'un coût s'aggrave par paliers avec le temps.",
+      "forme": {
+        "elements": "3 barres, 2 variations",
+        "texte": "libellé 2 mots, seuil en jours",
+        "chiffres": "5",
+        "image": "non"
+      },
+      "eviter": [
+        {
+          "cas": "Pour poser des phases sur un calendrier",
+          "plutot": "gantt"
+        }
+      ]
+    },
+    {
+      "id": "case-study-card",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Carte étude de cas",
+      "quand": "Pour détailler un dossier client chiffré, du constat au résultat.",
+      "forme": {
+        "elements": "1 carte, 2 colonnes",
+        "texte": "titre 6 mots, 2 phrases par colonne",
+        "chiffres": "2",
+        "image": "non"
+      }
+    },
+    {
+      "id": "chain-journey",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Chaîne de parcours",
+      "quand": "Pour cartographier les offres d'une famille en 3 maillons, chacun avec un verbe d'action.",
+      "forme": {
+        "elements": "3 maillons",
+        "texte": "verbe, titre 6 mots, une phrase",
+        "chiffres": "0",
+        "image": "non"
+      },
+      "eviter": [
+        {
+          "cas": "Pour situer une seule offre dans une chaîne de valeur",
+          "plutot": "atmp-chain"
+        }
+      ]
+    },
+    {
+      "id": "gantt",
+      "rayon": "composants",
+      "cle": "composants",
+      "nom": "Diagramme de Gantt",
+      "quand": "Pour poser un déroulé en phases sur un calendrier de jours.",
+      "forme": {
+        "elements": "3 phases",
+        "texte": "une ligne par phase",
+        "chiffres": "jours",
+        "image": "non"
+      },
+      "eviter": [
+        {
+          "cas": "Pour montrer un coût qui monte par paliers",
+          "plutot": "cost-escalation"
+        }
+      ]
+    },
+    {
+      "id": "cover",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Couverture",
+      "quand": "Pour ouvrir le deck avec le nom de l'offre et un visuel plein cadre.",
+      "forme": {
+        "elements": "1 slide",
+        "texte": "titre 3 mots, sous-titre une phrase",
+        "chiffres": "0",
+        "image": "oui, portrait 5:6"
+      }
+    },
+    {
+      "id": "insight",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Insight",
+      "quand": "Pour poser le problème de marché avec un texte argumenté et deux chiffres clés en badges.",
+      "forme": {
+        "elements": "3 paragraphes, 2 badges",
+        "texte": "3 paragraphes dont la conviction Ayming",
+        "chiffres": "2",
+        "image": "oui, 4:3"
+      }
+    },
+    {
+      "id": "alternatives-cards",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Alternatives (cartes)",
+      "quand": "Pour montrer les 3 approches que les organisations emploient déjà, une carte chacune.",
+      "forme": {
+        "elements": "3 cartes",
+        "texte": "titre 4 mots, une phrase",
+        "chiffres": "0",
+        "image": "oui, 3:2"
+      },
+      "eviter": [
+        {
+          "cas": "Pour comparer avantages et limites critère par critère",
+          "plutot": "comparison-table"
+        }
+      ]
+    },
+    {
+      "id": "comparison-table",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Alternatives (tableau)",
+      "quand": "Pour comparer les approches existantes par avantages et limites, en 3 lignes au plus.",
+      "forme": {
+        "elements": "3 lignes, 3 colonnes",
+        "texte": "5 mots par puce",
+        "chiffres": "0",
+        "image": "non"
+      },
+      "eviter": [
+        {
+          "cas": "Pour montrer chaque approche avec une photo",
+          "plutot": "alternatives-cards"
+        }
+      ]
+    },
+    {
+      "id": "monde-ideal",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Monde idéal",
+      "quand": "Pour décrire l'état cible avant de nommer l'offre, en 3 ou 4 caractéristiques.",
+      "forme": {
+        "elements": "3 à 4 cartes",
+        "texte": "titre 5 mots, une phrase",
+        "chiffres": "0",
+        "image": "non, icône"
+      }
+    },
+    {
+      "id": "introduction",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Introduction",
+      "quand": "Pour basculer du problème à la solution avec le nom de l'offre, un collage photo et 3 chiffres clés.",
+      "forme": {
+        "elements": "1 slide, 3 cartes de chiffres",
+        "texte": "titre 4 mots, pitch une phrase",
+        "chiffres": "3",
+        "image": "oui, collage de 5 photos"
+      }
+    },
+    {
+      "id": "feature-grid",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Vue d'ensemble valeur",
+      "quand": "Pour donner la vue d'ensemble des 3 à 6 piliers de valeur avant de les détailler un par un.",
+      "forme": {
+        "elements": "3 à 6 cartes",
+        "texte": "titre 5 mots, une phrase",
+        "chiffres": "0",
+        "image": "non, icône"
+      },
+      "eviter": [
+        {
+          "cas": "Pour approfondir un seul pilier",
+          "plutot": "value-detail"
+        }
+      ]
+    },
+    {
+      "id": "value-detail",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Valeur en détail",
+      "quand": "Pour approfondir un pilier de valeur en 2 à 4 points, avec un visuel à droite.",
+      "forme": {
+        "elements": "1 liste de 2 à 4 points, répétée par pilier",
+        "texte": "titre 8 mots, une phrase par point",
+        "chiffres": "0",
+        "image": "oui, 4:3"
+      },
+      "eviter": [
+        {
+          "cas": "Pour survoler tous les piliers sur une seule slide",
+          "plutot": "feature-grid"
+        }
+      ]
+    },
+    {
+      "id": "options",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Options",
+      "quand": "Pour renvoyer vers 3 offres sœurs ou modules complémentaires.",
+      "forme": {
+        "elements": "3 tuiles",
+        "texte": "titre 4 mots, une phrase",
+        "chiffres": "0",
+        "image": "oui, 3:2"
+      }
+    },
+    {
+      "id": "testimonial",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Preuves",
+      "quand": "Pour prouver par 3 clients, avec un résultat au recto et une citation au verso de chaque carte.",
+      "forme": {
+        "elements": "3 cartes",
+        "texte": "résultat une phrase, citation 2 phrases",
+        "chiffres": "0",
+        "image": "oui, 16:9 et logo client"
+      },
+      "eviter": [
+        {
+          "cas": "Pour un seul témoignage fort en grand",
+          "plutot": "testimonial-split"
+        }
+      ]
+    },
+    {
+      "id": "implantation-france",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Implantation France",
+      "quand": "Pour montrer l'ancrage territorial en France, avec la carte partagée du dépôt assets.",
+      "forme": {
+        "elements": "1 texte, 1 carte",
+        "texte": "titre une phrase, 2 paragraphes",
+        "chiffres": "0",
+        "image": "oui, carte SVG fixe"
+      }
+    },
+    {
+      "id": "implantation-international",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Implantation International",
+      "quand": "Pour montrer la présence internationale juste après l'ancrage France.",
+      "forme": {
+        "elements": "2 cartes",
+        "texte": "titre une phrase",
+        "chiffres": "1",
+        "image": "oui, cartes SVG fixes"
+      }
+    },
+    {
+      "id": "faq",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Questions",
+      "quand": "Pour lever les 4 objections les plus fréquentes remontées par la vente.",
+      "forme": {
+        "elements": "4 cartes",
+        "texte": "question une ligne, réponse 1 à 2 phrases",
+        "chiffres": "0",
+        "image": "non, icône"
+      }
+    },
+    {
+      "id": "process-timeline",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Processus",
+      "quand": "Pour dérouler les étapes de la mission avant la clôture, avec une durée par étape.",
+      "forme": {
+        "elements": "3 à 4 étapes",
+        "texte": "titre 3 mots, durée, une phrase",
+        "chiffres": "0",
+        "image": "non"
+      }
+    },
+    {
+      "id": "closing",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Démarrage",
+      "quand": "Pour clore le deck sur ce qu'il faut du client pour démarrer et le prochain pas concret.",
+      "forme": {
+        "elements": "3 lignes cochées, 1 bandeau",
+        "texte": "8 mots par ligne, bandeau une phrase",
+        "chiffres": "0",
+        "image": "non"
+      }
+    },
+    {
+      "id": "testimonial-split",
+      "rayon": "slides",
+      "cle": "archetypes",
+      "nom": "Preuves (variante)",
+      "quand": "Pour mettre en avant un seul témoignage fort, citation en grand à côté d'une photo pleine hauteur.",
+      "forme": {
+        "elements": "1 citation",
+        "texte": "citation 2 phrases",
+        "chiffres": "0",
+        "image": "oui, pleine hauteur, 16:9"
+      },
+      "eviter": [
+        {
+          "cas": "Pour montrer 3 témoignages",
+          "plutot": "testimonial"
+        }
+      ]
+    },
+    {
+      "id": "sommaire-cartes",
+      "rayon": "inspiration",
+      "cle": "inspiration",
+      "nom": "Sommaire en cartes numérotées",
+      "quand": "Pour ouvrir un deck ou un rapport de 4 à 6 parties quand on ne sait pas comment présenter le plan sans une liste de puces.",
+      "type": "slide",
+      "forme": {
+        "elements": "5 cartes numérotées, une icône par carte",
+        "texte": "titre 4 à 7 mots, description 7 à 11 mots",
+        "chiffres": "numéros 01 à 05 seulement",
+        "image": "non"
+      }
+    },
+    {
+      "id": "chapitre-plein-cadre",
+      "rayon": "inspiration",
+      "cle": "inspiration",
+      "nom": "Couverture de chapitre plein cadre",
+      "quand": "Pour marquer le passage d'un chapitre à un autre dans un deck long, quand on veut une respiration plutôt qu'une slide de contenu.",
+      "type": "slide",
+      "forme": {
+        "elements": "un grand numéro, un titre, un sous-titre",
+        "texte": "étiquette 2 mots, titre 7 mots, sous-titre 12 mots",
+        "chiffres": "le numéro du chapitre seulement",
+        "image": "non"
+      }
+    },
+    {
+      "id": "bandeau-chiffres-cles",
+      "rayon": "inspiration",
+      "cle": "inspiration",
+      "nom": "Bandeau de chiffres clés",
+      "quand": "Pour présenter une évolution chiffrée avant et après, avec ses deux ou trois indicateurs clés au-dessus de la courbe qui la montre.",
+      "type": "slide",
+      "forme": {
+        "elements": "2 à 3 indicateurs, une courbe à deux séries, une phrase de lecture",
+        "texte": "titre 8 mots, phrase de lecture 17 mots",
+        "chiffres": "2 à 3 indicateurs et la courbe",
+        "image": "non"
+      },
+      "eviter": [
+        {
+          "cas": "Pour des chiffres sans courbe à montrer",
+          "plutot": "intro-stats"
+        }
+      ]
+    },
+    {
+      "id": "maquette-extension-seo",
+      "rayon": "inspiration",
+      "cle": "inspiration",
+      "nom": "Maquette d'extension SEO WordPress",
+      "quand": "Pour montrer l'effet d'un réglage dans une extension, quand on ne sait pas comment comparer un bon et un mauvais résultat côte à côte.",
+      "type": "slide",
+      "forme": {
+        "elements": "un bandeau d'extension, 2 maquettes de résultat de recherche (bon et mauvais)",
+        "texte": "titre 12 mots, titre de résultat 9 mots, description 13 à 26 mots",
+        "chiffres": "0",
+        "image": "oui, 2 logos d'extension"
+      }
+    },
+    {
+      "id": "entonnoir-reponses-ia",
+      "rayon": "inspiration",
+      "cle": "inspiration",
+      "nom": "Entonnoir des réponses IA",
+      "quand": "Pour expliquer comment une réponse d'assistant IA remplace une partie des clics, quand on doit montrer les étapes du parcours et deux exemples de réponses.",
+      "type": "slide",
+      "forme": {
+        "elements": "un entonnoir à 3 étapes, 2 maquettes de réponse (avec et sans réponse de l'assistant), une note de source",
+        "texte": "titre 9 mots, étape 3 à 4 mots, note 34 mots",
+        "chiffres": "0",
+        "image": "oui, un petit logo"
+      }
+    },
+    {
+      "id": "frise-datee",
+      "rayon": "inspiration",
+      "cle": "inspiration",
+      "nom": "Frise datée à bulles",
+      "quand": "Pour raconter une série d'événements datés sur une période et les relier à une courbe, quand une simple liste de dates ne montre pas le lien avec les résultats.",
+      "type": "slide",
+      "forme": {
+        "elements": "17 bulles datées sur une frise, une courbe de résultats en dessous, un repère de tournant",
+        "texte": "titre 12 mots, date 2 à 3 mots, nom 2 à 4 mots, détail 2 à 5 mots",
+        "chiffres": "axe de la courbe seulement",
+        "image": "non"
+      }
+    },
+    {
+      "id": "google-avant-apres",
+      "rayon": "inspiration",
+      "cle": "inspiration",
+      "nom": "Résultat Google avant et après",
+      "quand": "Pour montrer la réécriture d'un résultat de recherche, quand on ne sait pas comment présenter l'ancien et le nouveau titre et la nouvelle description côte à côte.",
+      "type": "slide",
+      "forme": {
+        "elements": "3 paires avant / après de résultat Google, une ligne de principes",
+        "texte": "titre 11 mots, titre de résultat 1 à 13 mots, description 19 à 24 mots",
+        "chiffres": "0",
+        "image": "oui, un logo de site par résultat"
+      }
+    },
+    {
+      "id": "chiffre-avant-apres",
+      "rayon": "inspiration",
+      "cle": "inspiration",
+      "nom": "Chiffre avant et après",
+      "quand": "Pour mettre en scène un gain chiffré entre deux états, quand un tableau de nombres ne dit pas assez vite l'ampleur du changement.",
+      "type": "slide",
+      "forme": {
+        "elements": "une légende, 2 barres avant et après, un pourcentage de variation, 3 multiplicateurs",
+        "texte": "titre 9 mots, libellé 3 à 6 mots",
+        "chiffres": "5 à 6",
+        "image": "non"
+      },
+      "eviter": [
+        {
+          "cas": "Pour un seul chiffre sans comparaison",
+          "plutot": "intro-stats"
+        }
+      ]
+    },
+    {
+      "id": "maquette-wordpress",
+      "rayon": "inspiration",
+      "cle": "inspiration",
+      "nom": "Maquette d'administration WordPress",
+      "quand": "Pour montrer une modification passée d'un outil d'analyse vers un back-office de publication, quand on doit rendre visible un geste de saisie en quelques étapes.",
+      "type": "slide",
+      "forme": {
+        "elements": "2 fenêtres d'outil reliées par une synchronisation, 4 étapes, une note de bas de slide",
+        "texte": "titre 9 mots, valeur de champ 5 à 12 mots, étape 3 à 8 mots",
+        "chiffres": "0",
+        "image": "non"
+      }
+    },
+    {
+      "id": "maquette-clarity",
+      "rayon": "inspiration",
+      "cle": "inspiration",
+      "nom": "Maquette de replay Clarity",
+      "quand": "Pour présenter les trois fonctions d'un outil d'analyse de parcours, quand on veut les montrer à l'écran plutôt que les décrire.",
+      "type": "slide",
+      "forme": {
+        "elements": "3 cartes avec chacune une mini-maquette (enregistrement, carte de chaleur, signaux de frustration)",
+        "texte": "titre 6 mots, nom de fonction 1 à 3 mots, description 7 à 9 mots",
+        "chiffres": "0",
+        "image": "oui, un logo en en-tête"
+      }
+    },
+    {
+      "id": "maquette-formulaire",
+      "rayon": "inspiration",
+      "cle": "inspiration",
+      "nom": "Enregistrement d'un formulaire",
+      "quand": "Pour rejouer pas à pas ce qui se passe dans un formulaire, quand on veut montrer où le visiteur bloque plutôt que le raconter.",
+      "type": "slide",
+      "forme": {
+        "elements": "une fenêtre de lecture d'enregistrement avec un formulaire, 5 étapes à droite, une capture de preuve, une barre de lecture",
+        "texte": "titre 8 mots, libellé de champ 2 à 3 mots, étape 4 à 7 mots",
+        "chiffres": "0 à 1",
+        "image": "oui, une capture de preuve"
+      }
+    },
+    {
+      "id": "collage-navigateur",
+      "rayon": "inspiration",
+      "cle": "inspiration",
+      "nom": "Collage de fenêtres de navigateur",
+      "quand": "Pour appuyer une liste de réalisations avec deux captures de pages, quand les mots seuls ne prouvent pas le travail fait.",
+      "type": "slide",
+      "forme": {
+        "elements": "2 fenêtres de navigateur superposées, 4 lignes avec icône",
+        "texte": "titre 10 mots, ligne 9 à 11 mots",
+        "chiffres": "0",
+        "image": "oui, 2 captures"
+      }
+    },
+    {
+      "id": "maquette-resultats-google",
+      "rayon": "inspiration",
+      "cle": "inspiration",
+      "nom": "Page de résultats Google",
+      "quand": "Pour montrer comment une page apparaît sur Google, quand on veut joindre une capture de la page et les points qui l'expliquent.",
+      "type": "slide",
+      "forme": {
+        "elements": "une page de résultats Google, une capture du site, 4 points avec icône",
+        "texte": "titre 7 mots, titre de point 3 à 8 mots, explication 14 à 18 mots",
+        "chiffres": "0",
+        "image": "oui, un logo et une capture"
+      }
+    },
+    {
+      "id": "a-retenir",
+      "rayon": "inspiration",
+      "cle": "inspiration",
+      "nom": "Slide « À retenir »",
+      "quand": "Pour clore une partie par les enseignements à retenir, quand on ne sait pas comment résumer 5 à 6 points sans refaire un paragraphe.",
+      "type": "slide",
+      "forme": {
+        "elements": "6 lignes avec icône, un mot-clé et une phrase",
+        "texte": "titre 6 mots, mot-clé 1 à 2 mots, phrase 9 à 15 mots",
+        "chiffres": "0",
+        "image": "non"
+      },
+      "eviter": [
+        {
+          "cas": "Pour des points qui demandent un titre et une description chacun",
+          "plutot": "feature-grid"
+        }
+      ]
+    }
+  ]
+}

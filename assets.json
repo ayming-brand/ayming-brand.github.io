@@ -3574,7 +3574,8 @@
       "height": 808,
       "orientation": "paysage",
       "used_in": [
-        "duerp"
+        "duerp",
+        "offers-family/visites-medicales"
       ],
       "tags": [
         "duerp",
@@ -3600,7 +3601,8 @@
       "used_in": [
         "IPRP",
         "duerp",
-        "hub"
+        "hub",
+        "offers-family/visites-medicales"
       ],
       "tags": [
         "duerp"
@@ -7002,6 +7004,7 @@
       "orientation": "paysage",
       "used_in": [
         "hub",
+        "offers-family/visites-medicales",
         "rattrapage-visites-medicales",
         "visites-medicales"
       ],
@@ -8493,6 +8496,7 @@
         "arrets-longue-duree",
         "controle-urssaf",
         "duerp",
+        "offers-family/visites-medicales",
         "questionnaires-mp"
       ],
       "tags": [
@@ -8601,7 +8605,6 @@
       "height": 100,
       "orientation": "paysage",
       "used_in": [
-        "offers-family/visites-medicales",
         "visites-medicales"
       ],
       "tags": [
@@ -8626,7 +8629,6 @@
       "height": 277,
       "orientation": "paysage",
       "used_in": [
-        "offers-family/visites-medicales",
         "visites-medicales"
       ],
       "tags": [
@@ -8651,7 +8653,6 @@
       "height": 266,
       "orientation": "paysage",
       "used_in": [
-        "offers-family/visites-medicales",
         "visites-medicales"
       ],
       "tags": [
@@ -8676,7 +8677,6 @@
       "height": 26,
       "orientation": "paysage",
       "used_in": [
-        "offers-family/visites-medicales",
         "visites-medicales"
       ],
       "tags": [
@@ -8700,7 +8700,6 @@
       "height": 204,
       "orientation": "paysage",
       "used_in": [
-        "offers-family/visites-medicales",
         "visites-medicales"
       ],
       "tags": [
@@ -8725,7 +8724,6 @@
       "height": 42,
       "orientation": "paysage",
       "used_in": [
-        "offers-family/visites-medicales",
         "visites-medicales"
       ],
       "tags": [
@@ -8749,7 +8747,6 @@
       "height": 28,
       "orientation": "paysage",
       "used_in": [
-        "offers-family/visites-medicales",
         "visites-medicales"
       ],
       "tags": [
@@ -8774,7 +8771,6 @@
       "height": 53,
       "orientation": "paysage",
       "used_in": [
-        "offers-family/visites-medicales",
         "visites-medicales"
       ],
       "tags": [
@@ -8798,7 +8794,6 @@
       "height": 1080,
       "orientation": "paysage",
       "used_in": [
-        "offers-family/visites-medicales",
         "visites-medicales"
       ],
       "tags": [
@@ -8822,7 +8817,6 @@
       "height": 1080,
       "orientation": "paysage",
       "used_in": [
-        "offers-family/visites-medicales",
         "rattrapage-visites-medicales",
         "visites-medicales"
       ],

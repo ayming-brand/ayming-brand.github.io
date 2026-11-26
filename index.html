@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayming Brand : portail de marque</title>
-  <meta name="robots" content="noindex">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -313,6 +313,8 @@
        reste des panneaux de survol). Aucun bouton par défaut cliqué : ce sont
        de simples déclencheurs, l'état queued-* marque la carte concernée. */
     .curation-row { display: flex; gap: 6px; margin-top: 6px; }
+    /* La curation n'a de sens qu'en local : masquée sur le site publié. */
+    html.public-site .curation-row, html.public-site .curation-counter { display: none !important; }
     .curation-row button {
       flex: 1; font-size: 10.5px; font-weight: 700; padding: 6px 0; border-radius: 6px;
       background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.3);
@@ -498,7 +500,7 @@
     <div class="nav-group-label">Bibliothèque</div>
     <button class="nav-item" data-panel="logos">Logos<span class="nav-count">165</span></button>
     <div class="nav-sub"><button class="nav-subitem" data-panel="logos" data-anchor="logo-principal">Logo principal</button><button class="nav-subitem" data-panel="logos" data-anchor="solutions">Solutions digitales</button><button class="nav-subitem" data-panel="logos" data-anchor="certifications">Certifications</button><button class="nav-subitem" data-panel="logos" data-anchor="clients">Clients</button><button class="nav-subitem" data-panel="logos" data-anchor="partenaires">Partenaires</button></div>
-    <button class="nav-item" data-panel="images">Images<span class="nav-count">198</span></button>
+    <button class="nav-item" data-panel="images">Images<span class="nav-count">199</span></button>
     <div class="nav-sub"><button class="nav-subitem" data-panel="images" data-anchor="offres">Offres</button><button class="nav-subitem" data-panel="images" data-anchor="stock">Stock</button><button class="nav-subitem" data-panel="images" data-anchor="cartes">Cartes</button><button class="nav-subitem" data-panel="images" data-anchor="equipe">Équipe</button><button class="nav-subitem" data-panel="images" data-anchor="icones">Icônes</button></div>
     <button class="nav-item" data-panel="composants">Composants<span class="nav-count">20</span></button>
     <button class="nav-item" data-panel="slides">Slides<span class="nav-count">16</span></button>
@@ -811,8 +813,8 @@
         <h2 id="logo-principal">Logo principal <span class="nav-count">3</span></h2>
         <div class="grid">        <article class="card card-logo filter-item" data-search="imagery/essentiel/acciline-logo.png essentiel" data-tags="essentiel" data-format="png">
           <div class="logo-tiles">
-            <button type="button" class="variant-chip" data-usage="{&quot;title&quot;: &quot;Acciline Logo&quot;, &quot;used_in&quot;: [&quot;moteur (tous les decks)&quot;], &quot;variants&quot;: [{&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png&quot;, &quot;dims&quot;: &quot;1844×499 px&quot;}, {&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/veille-net-entreprises/acciline-logo.png&quot;, &quot;dims&quot;: &quot;227×144 px&quot;}]}">2 tailles</button>
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Acciline Logo&quot;, &quot;used_in&quot;: [&quot;moteur (tous les decks)&quot;], &quot;variants&quot;: [{&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png&quot;, &quot;dims&quot;: &quot;1844×499 px&quot;}, {&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/veille-net-entreprises/acciline-logo.png&quot;, &quot;dims&quot;: &quot;227×144 px&quot;}]}">1 utilisation</button>
+            <button type="button" class="variant-chip" data-usage="{&quot;title&quot;: &quot;Acciline Logo&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;moteur (tous les decks)&quot;], &quot;variants&quot;: [{&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png&quot;, &quot;dims&quot;: &quot;1844×499 px&quot;}, {&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/veille-net-entreprises/acciline-logo.png&quot;, &quot;dims&quot;: &quot;227×144 px&quot;}]}">2 tailles</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Acciline Logo&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;moteur (tous les decks)&quot;], &quot;variants&quot;: [{&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png&quot;, &quot;dims&quot;: &quot;1844×499 px&quot;}, {&quot;name&quot;: &quot;acciline-logo.png&quot;, &quot;url&quot;: &quot;https://ayming-france.github.io/assets/imagery/veille-net-entreprises/acciline-logo.png&quot;, &quot;dims&quot;: &quot;227×144 px&quot;}]}">2 utilisations</button>
             <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png" alt="acciline-logo.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/imagery/essentiel/acciline-logo.png" alt="acciline-logo.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               <div class="hover-row">
@@ -830,7 +832,7 @@
         <article class="card card-logo filter-item" data-search="logos/ayming-logo.png en-tete logo logo-principal" data-tags="en-tete,logo,logo-principal" data-format="png">
           <div class="logo-tiles">
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Ayming Logo&quot;, &quot;used_in&quot;: [&quot;IPRP&quot;, &quot;abo-dat&quot;, &quot;accidents-tiers&quot;, &quot;aides-apprentissage&quot;, &quot;air-liquide-cotizaciones&quot;, &quot;air-liquide-cotizaciones (en)&quot;, &quot;air-liquide-cotizaciones (fr)&quot;, &quot;alstom-defensa-propuesta&quot;, &quot;alstom-tratamiento-datos&quot;, &quot;arrets-longue-duree&quot;, &quot;atmp-famille&quot;, &quot;charges-sociales&quot;, &quot;charges-sociales-europe&quot;, &quot;charges-sociales-spain&quot;, &quot;charges-sociales-spain (en)&quot;, &quot;charges-sociales-spain (fr)&quot;, &quot;charges-sociales-zendsn&quot;, &quot;charges-sociales-zendsn-court&quot;, &quot;collecte-arrets&quot;, &quot;controle-urssaf&quot;, &quot;cotisations-atmp&quot;, &quot;cotizacion-at-ep&quot;, &quot;cotizacion-at-ep (en)&quot;, &quot;cotizacion-at-ep (fr)&quot;, &quot;dat&quot;, &quot;duerp&quot;, &quot;ecosystem-digital&quot;, &quot;en-contribution-rate-review&quot;, &quot;es-cotizaciones-sociales&quot;, &quot;es-pagos-delegados&quot;, &quot;es-revision-tipo-cotizacion&quot;, &quot;hub&quot;, &quot;ij-activite-non-autorisee&quot;, &quot;ijss-famille&quot;, &quot;laposte&quot;, &quot;methode&quot;, &quot;moteur (tous les decks)&quot;, &quot;offers-family/visites-medicales&quot;, &quot;offre-essentiel&quot;, &quot;org&quot;, &quot;questionnaires-mp&quot;, &quot;rattrapage-visites-medicales&quot;, &quot;recuperer-ij&quot;, &quot;remboursements-ijss&quot;, &quot;sinistralite&quot;, &quot;veille-net-entreprises&quot;, &quot;visites-medicales&quot;], &quot;variants&quot;: []}">47 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Ayming Logo&quot;, &quot;used_in&quot;: [&quot;IPRP&quot;, &quot;abo-dat&quot;, &quot;accidents-tiers&quot;, &quot;aides-apprentissage&quot;, &quot;air-liquide-cotizaciones&quot;, &quot;air-liquide-cotizaciones (en)&quot;, &quot;air-liquide-cotizaciones (fr)&quot;, &quot;alstom-defensa-propuesta&quot;, &quot;alstom-tratamiento-datos&quot;, &quot;arrets-longue-duree&quot;, &quot;atmp-famille&quot;, &quot;charges-sociales&quot;, &quot;charges-sociales-europe&quot;, &quot;charges-sociales-spain&quot;, &quot;charges-sociales-spain (en)&quot;, &quot;charges-sociales-spain (fr)&quot;, &quot;charges-sociales-zendsn&quot;, &quot;charges-sociales-zendsn-court&quot;, &quot;collecte-arrets&quot;, &quot;controle-urssaf&quot;, &quot;cotisations-atmp&quot;, &quot;cotizacion-at-ep&quot;, &quot;cotizacion-at-ep (en)&quot;, &quot;cotizacion-at-ep (fr)&quot;, &quot;dat&quot;, &quot;duerp&quot;, &quot;ecosystem-digital&quot;, &quot;en-contribution-rate-review&quot;, &quot;es-cotizaciones-sociales&quot;, &quot;es-pagos-delegados&quot;, &quot;es-revision-tipo-cotizacion&quot;, &quot;hub&quot;, &quot;icl-iberia&quot;, &quot;ij-activite-non-autorisee&quot;, &quot;ijss-famille&quot;, &quot;methode&quot;, &quot;moteur (tous les decks)&quot;, &quot;offers-family/visites-medicales&quot;, &quot;offre-essentiel&quot;, &quot;org&quot;, &quot;questionnaires-mp&quot;, &quot;rattrapage-visites-medicales&quot;, &quot;recuperer-ij&quot;, &quot;remboursements-ijss&quot;, &quot;sinistralite&quot;, &quot;veille-net-entreprises&quot;, &quot;visites-medicales&quot;], &quot;variants&quot;: []}">47 utilisations</button>
             <div class="logo-tile logo-tile-light"><img src="https://ayming-france.github.io/assets/logos/ayming-logo.png" alt="ayming-logo.png" loading="lazy"></div><div class="logo-tile logo-tile-dark"><img src="https://ayming-france.github.io/assets/logos/ayming-logo.png" alt="ayming-logo.png, aperçu sur fond sombre" loading="lazy"></div>
             <div class="logo-hover">
               <div class="hover-row">
@@ -1185,7 +1187,7 @@
           </div>
           <div class="card-name" title="imagery/clients/unilever.svg">unilever.svg<span class="meta">1000&times;214 px &middot; 5 Ko &middot; .svg</span></div>
         </article>
-</div></div><div class="sub-block" data-filter-container data-block-title="distribution & commerce"><h3 class="sector-heading">Distribution &amp; Commerce <span class="nav-count">9</span></h3><div class="grid">        <article class="card card-logo filter-item" data-search="imagery/clients/accor.svg client" data-tags="client" data-format="svg">
+</div></div><div class="sub-block" data-filter-container data-block-title="distribution &amp; commerce"><h3 class="sector-heading">Distribution &amp; Commerce <span class="nav-count">9</span></h3><div class="grid">        <article class="card card-logo filter-item" data-search="imagery/clients/accor.svg client" data-tags="client" data-format="svg">
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Accor&quot;, &quot;used_in&quot;: [&quot;moteur (tous les decks)&quot;], &quot;variants&quot;: []}">1 utilisation</button>
@@ -1545,7 +1547,7 @@
           </div>
           <div class="card-name" title="imagery/clients/seb.svg">seb.svg<span class="meta">110&times;246 px &middot; 7 Ko &middot; .svg</span></div>
         </article>
-</div></div><div class="sub-block" data-filter-container data-block-title="btp & construction"><h3 class="sector-heading">BTP &amp; Construction <span class="nav-count">8</span></h3><div class="grid">        <article class="card card-logo filter-item" data-search="imagery/clients/bouygues.svg client" data-tags="client" data-format="svg">
+</div></div><div class="sub-block" data-filter-container data-block-title="btp &amp; construction"><h3 class="sector-heading">BTP &amp; Construction <span class="nav-count">8</span></h3><div class="grid">        <article class="card card-logo filter-item" data-search="imagery/clients/bouygues.svg client" data-tags="client" data-format="svg">
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Bouygues&quot;, &quot;used_in&quot;: [&quot;moteur (tous les decks)&quot;], &quot;variants&quot;: []}">1 utilisation</button>
@@ -1689,7 +1691,7 @@
           </div>
           <div class="card-name" title="imagery/clients/vinci.svg">vinci.svg<span class="meta">151&times;41 px &middot; 3 Ko &middot; .svg</span></div>
         </article>
-</div></div><div class="sub-block" data-filter-container data-block-title="transport & logistique"><h3 class="sector-heading">Transport &amp; Logistique <span class="nav-count">6</span></h3><div class="grid">        <article class="card card-logo filter-item" data-search="imagery/clients/airfrance-klm.svg client" data-tags="client" data-format="svg">
+</div></div><div class="sub-block" data-filter-container data-block-title="transport &amp; logistique"><h3 class="sector-heading">Transport &amp; Logistique <span class="nav-count">6</span></h3><div class="grid">        <article class="card card-logo filter-item" data-search="imagery/clients/airfrance-klm.svg client" data-tags="client" data-format="svg">
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Airfrance Klm&quot;, &quot;used_in&quot;: [&quot;moteur (tous les decks)&quot;], &quot;variants&quot;: []}">1 utilisation</button>
@@ -1797,7 +1799,7 @@
           </div>
           <div class="card-name" title="imagery/clients/transdev.svg">transdev.svg<span class="meta">568&times;152 px &middot; 13 Ko &middot; .svg</span></div>
         </article>
-</div></div><div class="sub-block" data-filter-container data-block-title="sante & pharma"><h3 class="sector-heading">Santé &amp; Pharma <span class="nav-count">7</span></h3><div class="grid">        <article class="card card-logo filter-item" data-search="imagery/clients/baxter.svg client" data-tags="client" data-format="svg">
+</div></div><div class="sub-block" data-filter-container data-block-title="sante &amp; pharma"><h3 class="sector-heading">Santé &amp; Pharma <span class="nav-count">7</span></h3><div class="grid">        <article class="card card-logo filter-item" data-search="imagery/clients/baxter.svg client" data-tags="client" data-format="svg">
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Baxter&quot;, &quot;used_in&quot;: [&quot;moteur (tous les decks)&quot;], &quot;variants&quot;: []}">1 utilisation</button>
@@ -1923,7 +1925,7 @@
           </div>
           <div class="card-name" title="imagery/clients/vivalto.png">vivalto.png<span class="meta">472&times;636 px &middot; 23 Ko &middot; .png</span></div>
         </article>
-</div></div><div class="sub-block" data-filter-container data-block-title="services & finance"><h3 class="sector-heading">Services &amp; Finance <span class="nav-count">7</span></h3><div class="grid">        <article class="card card-logo filter-item" data-search="imagery/clients/cdc.svg client" data-tags="client" data-format="svg">
+</div></div><div class="sub-block" data-filter-container data-block-title="services &amp; finance"><h3 class="sector-heading">Services &amp; Finance <span class="nav-count">7</span></h3><div class="grid">        <article class="card card-logo filter-item" data-search="imagery/clients/cdc.svg client" data-tags="client" data-format="svg">
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Cdc&quot;, &quot;used_in&quot;: [&quot;moteur (tous les decks)&quot;], &quot;variants&quot;: []}">1 utilisation</button>
@@ -2049,7 +2051,7 @@
           </div>
           <div class="card-name" title="imagery/clients/veolia.svg">veolia.svg<span class="meta">100&times;25 px &middot; 8 Ko &middot; .svg</span></div>
         </article>
-</div></div><div class="sub-block" data-filter-container data-block-title="technologies & medias"><h3 class="sector-heading">Technologies &amp; Médias <span class="nav-count">4</span></h3><div class="grid">        <article class="card card-logo filter-item" data-search="imagery/clients/orange.svg client" data-tags="client" data-format="svg">
+</div></div><div class="sub-block" data-filter-container data-block-title="technologies &amp; medias"><h3 class="sector-heading">Technologies &amp; Médias <span class="nav-count">4</span></h3><div class="grid">        <article class="card card-logo filter-item" data-search="imagery/clients/orange.svg client" data-tags="client" data-format="svg">
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Orange&quot;, &quot;used_in&quot;: [&quot;moteur (tous les decks)&quot;], &quot;variants&quot;: []}">1 utilisation</button>
@@ -2121,7 +2123,7 @@
           </div>
           <div class="card-name" title="imagery/clients/thales.svg">thales.svg<span class="meta">484&times;57 px &middot; 1 Ko &middot; .svg</span></div>
         </article>
-</div></div><div class="sub-block" data-filter-container data-block-title="public & ess"><h3 class="sector-heading">Public &amp; ESS <span class="nav-count">5</span></h3><div class="grid">        <article class="card card-logo filter-item" data-search="imagery/clients/aftral.svg client" data-tags="client" data-format="svg">
+</div></div><div class="sub-block" data-filter-container data-block-title="public &amp; ess"><h3 class="sector-heading">Public &amp; ESS <span class="nav-count">5</span></h3><div class="grid">        <article class="card card-logo filter-item" data-search="imagery/clients/aftral.svg client" data-tags="client" data-format="svg">
           <div class="logo-tiles">
             
             <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Aftral&quot;, &quot;used_in&quot;: [&quot;moteur (tous les decks)&quot;], &quot;variants&quot;: []}">1 utilisation</button>
@@ -2250,7 +2252,7 @@
         <article class="card card-logo filter-item" data-search="imagery/clients/gemfos-1-e1759136624846.jpg client" data-tags="client" data-format="jpg">
           <div class="logo-tiles">
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Gemfos 1&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;atmp-famille&quot;, &quot;dat&quot;, &quot;laposte&quot;, &quot;questionnaires-mp&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">6 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Gemfos 1&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;atmp-famille&quot;, &quot;dat&quot;, &quot;questionnaires-mp&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">5 utilisations</button>
             <div class="logo-tile logo-tile-light logo-tile-wide"><img src="https://ayming-france.github.io/assets/imagery/clients/GEMFOS-1-e1759136624846.jpg" alt="GEMFOS-1-e1759136624846.jpg" loading="lazy"></div>
             <div class="logo-hover">
               <div class="hover-row">
@@ -2322,7 +2324,7 @@
         <article class="card card-logo filter-item" data-search="imagery/clients/stef_logo.png client" data-tags="client" data-format="png">
           <div class="logo-tiles">
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Stef Logo&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;arrets-longue-duree&quot;, &quot;atmp-famille&quot;, &quot;collecte-arrets&quot;, &quot;cotisations-atmp&quot;, &quot;dat&quot;, &quot;laposte&quot;, &quot;questionnaires-mp&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">9 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Stef Logo&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;arrets-longue-duree&quot;, &quot;atmp-famille&quot;, &quot;collecte-arrets&quot;, &quot;cotisations-atmp&quot;, &quot;dat&quot;, &quot;questionnaires-mp&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">8 utilisations</button>
             <div class="logo-tile logo-tile-light logo-tile-wide"><img src="https://ayming-france.github.io/assets/imagery/clients/STEF_logo.png" alt="STEF_logo.png" loading="lazy"></div>
             <div class="logo-hover">
               <div class="hover-row">
@@ -2376,7 +2378,7 @@
         <article class="card card-logo filter-item" data-search="imagery/clients/colruyt-logo-png-transparent-e1759137868909.png client" data-tags="client" data-format="png">
           <div class="logo-tiles">
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Colruyt Logo Png Transparent&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;atmp-famille&quot;, &quot;cotisations-atmp&quot;, &quot;dat&quot;, &quot;laposte&quot;, &quot;questionnaires-mp&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">7 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Colruyt Logo Png Transparent&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;atmp-famille&quot;, &quot;cotisations-atmp&quot;, &quot;dat&quot;, &quot;questionnaires-mp&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">6 utilisations</button>
             <div class="logo-tile logo-tile-light logo-tile-wide"><img src="https://ayming-france.github.io/assets/imagery/clients/colruyt-logo-png-transparent-e1759137868909.png" alt="colruyt-logo-png-transparent-e1759137868909.png" loading="lazy"></div>
             <div class="logo-hover">
               <div class="hover-row">
@@ -2970,7 +2972,7 @@
         <article class="card card-logo filter-item" data-search="imagery/essentiel/mouvement-logos-clean.png essentiel" data-tags="essentiel" data-format="png">
           <div class="logo-tiles">
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mouvement Logos Clean&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mouvement Logos Clean&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="logo-tile logo-tile-light logo-tile-wide"><img src="https://ayming-france.github.io/assets/imagery/essentiel/mouvement-logos-clean.png" alt="mouvement-logos-clean.png" loading="lazy"></div>
             <div class="logo-hover">
               <div class="hover-row">
@@ -3450,7 +3452,7 @@
       <div class="panel-search"><input class="search-input" type="search" placeholder="Rechercher une image, un tag..." autocomplete="off"></div>
       
       <div class="subgroup" data-group="offres" data-nav-visible="true">
-        <h2 id="offres">Offres <span class="nav-count">102</span></h2>
+        <h2 id="offres">Offres <span class="nav-count">103</span></h2>
         <div class="sub-block" data-filter-container data-block-title="accompagner un controle urssaf"><h3 class="sector-heading">Accompagner un contrôle URSSAF <span class="nav-count">5</span></h3><div class="grid">        <article class="card filter-item" data-section="images" data-search="imagery/controle-urssaf/ursaff-1.jpg controle-urssaf" data-tags="controle-urssaf" data-folder="controle-urssaf" data-format="jpg">
           <div class="thumb">
             <img src="https://ayming-france.github.io/assets/imagery/controle-urssaf/ursaff-1.jpg" alt="ursaff-1.jpg" loading="lazy">
@@ -3627,7 +3629,7 @@
           </div>
           <div class="card-name" title="imagery/charges-sociales-europe/divider-milano.jpg">divider-milano.jpg</div>
         </article>
-</div></div><div class="sub-block" data-filter-container data-block-title="charges sociales zendsn"><h3 class="sector-heading">Charges Sociales Zendsn <span class="nav-count">2</span></h3><div class="grid">        <article class="card filter-item" data-section="images" data-search="imagery/charges-sociales-zendsn/clavier-paie.jpg charges-sociales-zendsn" data-tags="charges-sociales-zendsn" data-folder="charges-sociales-zendsn" data-format="jpg">
+</div></div><div class="sub-block" data-filter-container data-block-title="charges sociales zendsn"><h3 class="sector-heading">Charges Sociales Zendsn <span class="nav-count">3</span></h3><div class="grid">        <article class="card filter-item" data-section="images" data-search="imagery/charges-sociales-zendsn/clavier-paie.jpg charges-sociales-zendsn" data-tags="charges-sociales-zendsn" data-folder="charges-sociales-zendsn" data-format="jpg">
           <div class="thumb">
             <img src="https://ayming-france.github.io/assets/imagery/charges-sociales-zendsn/clavier-paie.jpg" alt="clavier-paie.jpg" loading="lazy">
             
@@ -3670,6 +3672,28 @@
             </div>
           </div>
           <div class="card-name" title="imagery/charges-sociales-zendsn/cover-duo.jpg">cover-duo.jpg</div>
+        </article>
+        <article class="card filter-item" data-section="images" data-search="imagery/charges-sociales-zendsn/tableau-synthese.png charges-sociales-zendsn" data-tags="charges-sociales-zendsn" data-folder="charges-sociales-zendsn" data-format="png">
+          <div class="thumb">
+            <img src="https://ayming-france.github.io/assets/imagery/charges-sociales-zendsn/tableau-synthese.png" alt="tableau-synthese.png" loading="lazy">
+            
+            
+            <button type="button" class="usage-badge usage-badge-empty" data-usage="{&quot;title&quot;: &quot;Tableau Synthese&quot;, &quot;used_in&quot;: [], &quot;variants&quot;: []}">non utilisé</button>
+            <div class="card-hover">
+              <p class="meta">1690&times;512 px &middot; 123 Ko &middot; .png</p>
+              <div class="tags"><span class="tag-pill">charges-sociales-zendsn</span></div>
+              
+              <div class="actions">
+                <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/charges-sociales-zendsn/tableau-synthese.png">Utiliser</button>
+                <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/charges-sociales-zendsn/tableau-synthese.png" data-name="tableau-synthese.png">Télécharger</button>
+              </div>
+              <div class="curation-row">
+                <button type="button" class="btn-del" data-path="imagery/charges-sociales-zendsn/tableau-synthese.png">Supprimer</button>
+                <button type="button" class="btn-move" data-path="imagery/charges-sociales-zendsn/tableau-synthese.png">Déplacer</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-name" title="imagery/charges-sociales-zendsn/tableau-synthese.png">tableau-synthese.png</div>
         </article>
 </div></div><div class="sub-block" data-filter-container data-block-title="collecter et traiter les arrets de travail"><h3 class="sector-heading">Collecter et traiter les arrêts de travail <span class="nav-count">6</span></h3><div class="grid">        <article class="card filter-item" data-section="images" data-search="imagery/collecte-arrets/ayming-alert.jpg collecte-arrets" data-tags="collecte-arrets" data-folder="collecte-arrets" data-format="jpg">
           <div class="thumb">
@@ -4182,11 +4206,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/cover.jpg" alt="cover.jpg" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Cover&quot;, &quot;used_in&quot;: [&quot;moteur (tous les decks)&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Cover&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;moteur (tous les decks)&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">3 utilisations</button>
             <div class="card-hover">
               <p class="meta">1920&times;1080 px &middot; 448 Ko &middot; .jpg</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : moteur (tous les decks), offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, moteur (tous les decks), offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/cover.jpg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/cover.jpg" data-name="cover.jpg">Télécharger</button>
@@ -4204,11 +4228,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/evaluation-risques.png" alt="evaluation-risques.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Evaluation Risques&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Evaluation Risques&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">935&times;641 px &middot; 343 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/evaluation-risques.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/evaluation-risques.png" data-name="evaluation-risques.png">Télécharger</button>
@@ -4226,11 +4250,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/intro.jpg" alt="intro.jpg" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Intro&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Intro&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">1920&times;1280 px &middot; 388 Ko &middot; .jpg</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/intro.jpg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/intro.jpg" data-name="intro.jpg">Télécharger</button>
@@ -4248,11 +4272,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/limites-fragmentee.png" alt="limites-fragmentee.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Limites Fragmentee&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Limites Fragmentee&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">1200&times;799 px &middot; 859 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/limites-fragmentee.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/limites-fragmentee.png" data-name="limites-fragmentee.png">Télécharger</button>
@@ -4270,11 +4294,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/limites-systemes.png" alt="limites-systemes.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Limites Systemes&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Limites Systemes&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">1200&times;799 px &middot; 806 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/limites-systemes.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/limites-systemes.png" data-name="limites-systemes.png">Télécharger</button>
@@ -4292,11 +4316,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/limites-tableurs.png" alt="limites-tableurs.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Limites Tableurs&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Limites Tableurs&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">1200&times;799 px &middot; 916 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/limites-tableurs.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/limites-tableurs.png" data-name="limites-tableurs.png">Télécharger</button>
@@ -4314,11 +4338,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/mouvement-social-clean.png" alt="mouvement-social-clean.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mouvement Social Clean&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mouvement Social Clean&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">660&times;430 px &middot; 134 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/mouvement-social-clean.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/mouvement-social-clean.png" data-name="mouvement-social-clean.png">Télécharger</button>
@@ -4336,11 +4360,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/plans-actions.png" alt="plans-actions.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Plans Actions&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Plans Actions&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">935&times;641 px &middot; 425 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/plans-actions.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/plans-actions.png" data-name="plans-actions.png">Télécharger</button>
@@ -4424,11 +4448,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/securite-1.jpg" alt="securite-1.jpg" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Securite 1&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Securite 1&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">1204&times;677 px &middot; 222 Ko &middot; .jpg</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/securite-1.jpg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/securite-1.jpg" data-name="securite-1.jpg">Télécharger</button>
@@ -4446,11 +4470,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/securite-2.jpg" alt="securite-2.jpg" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Securite 2&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Securite 2&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">1536&times;864 px &middot; 448 Ko &middot; .jpg</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/securite-2.jpg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/securite-2.jpg" data-name="securite-2.jpg">Télécharger</button>
@@ -4468,11 +4492,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/securite-3.jpg" alt="securite-3.jpg" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Securite 3&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Securite 3&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">1152&times;648 px &middot; 209 Ko &middot; .jpg</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/securite-3.jpg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/securite-3.jpg" data-name="securite-3.jpg">Télécharger</button>
@@ -4490,11 +4514,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/support.png" alt="support.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Support&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Support&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">935&times;641 px &middot; 590 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/support.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/support.png" data-name="support.png">Télécharger</button>
@@ -4512,11 +4536,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/valeur-centraliser.png" alt="valeur-centraliser.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Valeur Centraliser&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Valeur Centraliser&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">1080&times;765 px &middot; 517 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/valeur-centraliser.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/valeur-centraliser.png" data-name="valeur-centraliser.png">Télécharger</button>
@@ -4534,11 +4558,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/valeur-connecter.png" alt="valeur-connecter.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Valeur Connecter&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Valeur Connecter&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">1080&times;765 px &middot; 525 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/valeur-connecter.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/valeur-connecter.png" data-name="valeur-connecter.png">Télécharger</button>
@@ -4556,11 +4580,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/valeur-eclairer.png" alt="valeur-eclairer.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Valeur Eclairer&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Valeur Eclairer&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">1080&times;765 px &middot; 622 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/valeur-eclairer.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/valeur-eclairer.png" data-name="valeur-eclairer.png">Télécharger</button>
@@ -4688,11 +4712,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/hub-cards/At-tiers-5.jpg" alt="At-tiers-5.jpg" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;At Tiers 5&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;arrets-longue-duree&quot;, &quot;atmp-famille&quot;, &quot;cotisations-atmp&quot;, &quot;dat&quot;, &quot;hub&quot;, &quot;laposte&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">8 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;At Tiers 5&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;arrets-longue-duree&quot;, &quot;atmp-famille&quot;, &quot;cotisations-atmp&quot;, &quot;dat&quot;, &quot;hub&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">7 utilisations</button>
             <div class="card-hover">
               <p class="meta">1920&times;1080 px &middot; 135 Ko &middot; .jpg</p>
               <div class="tags"><span class="tag-pill">accident-du-travail</span><span class="tag-pill">hub-cards</span><span class="tag-pill tag-more">+1</span></div>
-              <p class="usage-list">Utilisé dans : accidents-tiers, arrets-longue-duree, atmp-famille, cotisations-atmp, dat, hub, laposte, veille-net-entreprises</p>
+              <p class="usage-list">Utilisé dans : accidents-tiers, arrets-longue-duree, atmp-famille, cotisations-atmp, dat, hub, veille-net-entreprises</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/hub-cards/At-tiers-5.jpg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/hub-cards/At-tiers-5.jpg" data-name="At-tiers-5.jpg">Télécharger</button>
@@ -4798,11 +4822,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/hub-cards/charges-1.jpg" alt="charges-1.jpg" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Charges 1&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;atmp-famille&quot;, &quot;charges-sociales&quot;, &quot;cotisations-atmp&quot;, &quot;hub&quot;, &quot;ij-activite-non-autorisee&quot;, &quot;laposte&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">8 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Charges 1&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;atmp-famille&quot;, &quot;charges-sociales&quot;, &quot;cotisations-atmp&quot;, &quot;hub&quot;, &quot;ij-activite-non-autorisee&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">7 utilisations</button>
             <div class="card-hover">
               <p class="meta">1920&times;1080 px &middot; 160 Ko &middot; .jpg</p>
               <div class="tags"><span class="tag-pill">hub-cards</span></div>
-              <p class="usage-list">Utilisé dans : accidents-tiers, atmp-famille, charges-sociales, cotisations-atmp, hub, ij-activite-non-autorisee, laposte, veille-net-entreprises</p>
+              <p class="usage-list">Utilisé dans : accidents-tiers, atmp-famille, charges-sociales, cotisations-atmp, hub, ij-activite-non-autorisee, veille-net-entreprises</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/hub-cards/charges-1.jpg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/hub-cards/charges-1.jpg" data-name="charges-1.jpg">Télécharger</button>
@@ -4820,11 +4844,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/hub-cards/export-arrets.jpg" alt="export-arrets.jpg" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Export Arrets&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;air-liquide-cotizaciones&quot;, &quot;air-liquide-cotizaciones (en)&quot;, &quot;air-liquide-cotizaciones (fr)&quot;, &quot;arrets-longue-duree&quot;, &quot;atmp-famille&quot;, &quot;charges-sociales-spain&quot;, &quot;charges-sociales-spain (en)&quot;, &quot;charges-sociales-spain (fr)&quot;, &quot;collecte-arrets&quot;, &quot;cotisations-atmp&quot;, &quot;cotizacion-at-ep&quot;, &quot;cotizacion-at-ep (en)&quot;, &quot;cotizacion-at-ep (fr)&quot;, &quot;es-cotizaciones-sociales&quot;, &quot;hub&quot;, &quot;ij-activite-non-autorisee&quot;, &quot;ijss-famille&quot;, &quot;laposte&quot;, &quot;remboursements-ijss&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">21 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Export Arrets&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;air-liquide-cotizaciones&quot;, &quot;air-liquide-cotizaciones (en)&quot;, &quot;air-liquide-cotizaciones (fr)&quot;, &quot;arrets-longue-duree&quot;, &quot;atmp-famille&quot;, &quot;charges-sociales-spain&quot;, &quot;charges-sociales-spain (en)&quot;, &quot;charges-sociales-spain (fr)&quot;, &quot;collecte-arrets&quot;, &quot;cotisations-atmp&quot;, &quot;cotizacion-at-ep&quot;, &quot;cotizacion-at-ep (en)&quot;, &quot;cotizacion-at-ep (fr)&quot;, &quot;es-cotizaciones-sociales&quot;, &quot;hub&quot;, &quot;ij-activite-non-autorisee&quot;, &quot;ijss-famille&quot;, &quot;remboursements-ijss&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">20 utilisations</button>
             <div class="card-hover">
               <p class="meta">1920&times;1080 px &middot; 135 Ko &middot; .jpg</p>
               <div class="tags"><span class="tag-pill">hub-cards</span></div>
-              <p class="usage-list">Utilisé dans : accidents-tiers, air-liquide-cotizaciones, air-liquide-cotizaciones (en), air-liquide-cotizaciones (fr), arrets-longue-duree, atmp-famille, charges-sociales-spain, charges-sociales-spain (en), charges-sociales-spain (fr), collecte-arrets, cotisations-atmp, cotizacion-at-ep, cotizacion-at-ep (en), cotizacion-at-ep (fr), es-cotizaciones-sociales, hub, ij-activite-non-autorisee, ijss-famille, laposte, remboursements-ijss, veille-net-entreprises</p>
+              <p class="usage-list">Utilisé dans : accidents-tiers, air-liquide-cotizaciones, air-liquide-cotizaciones (en), air-liquide-cotizaciones (fr), arrets-longue-duree, atmp-famille, charges-sociales-spain, charges-sociales-spain (en), charges-sociales-spain (fr), collecte-arrets, cotisations-atmp, cotizacion-at-ep, cotizacion-at-ep (en), cotizacion-at-ep (fr), es-cotizaciones-sociales, hub, ij-activite-non-autorisee, ijss-famille, remboursements-ijss, veille-net-entreprises</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/hub-cards/export-arrets.jpg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/hub-cards/export-arrets.jpg" data-name="export-arrets.jpg">Télécharger</button>
@@ -4842,11 +4866,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/hub-cards/exporting-at.jpg" alt="exporting-at.jpg" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Exporting At&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;atmp-famille&quot;, &quot;collecte-arrets&quot;, &quot;cotisations-atmp&quot;, &quot;hub&quot;, &quot;ijss-famille&quot;, &quot;laposte&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">8 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Exporting At&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;atmp-famille&quot;, &quot;collecte-arrets&quot;, &quot;cotisations-atmp&quot;, &quot;hub&quot;, &quot;ijss-famille&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">7 utilisations</button>
             <div class="card-hover">
               <p class="meta">1920&times;1080 px &middot; 155 Ko &middot; .jpg</p>
               <div class="tags"><span class="tag-pill">hub-cards</span></div>
-              <p class="usage-list">Utilisé dans : accidents-tiers, atmp-famille, collecte-arrets, cotisations-atmp, hub, ijss-famille, laposte, veille-net-entreprises</p>
+              <p class="usage-list">Utilisé dans : accidents-tiers, atmp-famille, collecte-arrets, cotisations-atmp, hub, ijss-famille, veille-net-entreprises</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/hub-cards/exporting-at.jpg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/hub-cards/exporting-at.jpg" data-name="exporting-at.jpg">Télécharger</button>
@@ -4952,11 +4976,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/ijss/Gerer-control-URSSAF_0000s_0000_1.jpg" alt="Gerer-control-URSSAF_0000s_0000_1.jpg" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Gerer Control Urssaf 0000s 0000 1&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;atmp-famille&quot;, &quot;cotisations-atmp&quot;, &quot;ijss-famille&quot;, &quot;laposte&quot;, &quot;recuperer-ij&quot;, &quot;remboursements-ijss&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">8 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Gerer Control Urssaf 0000s 0000 1&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;atmp-famille&quot;, &quot;cotisations-atmp&quot;, &quot;ijss-famille&quot;, &quot;recuperer-ij&quot;, &quot;remboursements-ijss&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">7 utilisations</button>
             <div class="card-hover">
               <p class="meta">1920&times;1080 px &middot; 143 Ko &middot; .jpg</p>
               <div class="tags"><span class="tag-pill">ijss</span></div>
-              <p class="usage-list">Utilisé dans : accidents-tiers, atmp-famille, cotisations-atmp, ijss-famille, laposte, recuperer-ij, remboursements-ijss, veille-net-entreprises</p>
+              <p class="usage-list">Utilisé dans : accidents-tiers, atmp-famille, cotisations-atmp, ijss-famille, recuperer-ij, remboursements-ijss, veille-net-entreprises</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/ijss/Gerer-control-URSSAF_0000s_0000_1.jpg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/ijss/Gerer-control-URSSAF_0000s_0000_1.jpg" data-name="Gerer-control-URSSAF_0000s_0000_1.jpg">Télécharger</button>
@@ -5040,11 +5064,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/ijss/suivi-pain.jpg" alt="suivi-pain.jpg" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Suivi Pain&quot;, &quot;used_in&quot;: [&quot;atmp-famille&quot;, &quot;cotisations-atmp&quot;, &quot;ij-activite-non-autorisee&quot;, &quot;ijss-famille&quot;, &quot;laposte&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">6 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Suivi Pain&quot;, &quot;used_in&quot;: [&quot;atmp-famille&quot;, &quot;cotisations-atmp&quot;, &quot;ij-activite-non-autorisee&quot;, &quot;ijss-famille&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">5 utilisations</button>
             <div class="card-hover">
               <p class="meta">1920&times;1080 px &middot; 107 Ko &middot; .jpg</p>
               <div class="tags"><span class="tag-pill">ijss</span></div>
-              <p class="usage-list">Utilisé dans : atmp-famille, cotisations-atmp, ij-activite-non-autorisee, ijss-famille, laposte, veille-net-entreprises</p>
+              <p class="usage-list">Utilisé dans : atmp-famille, cotisations-atmp, ij-activite-non-autorisee, ijss-famille, veille-net-entreprises</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/ijss/suivi-pain.jpg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/ijss/suivi-pain.jpg" data-name="suivi-pain.jpg">Télécharger</button>
@@ -5057,7 +5081,7 @@
           </div>
           <div class="card-name" title="imagery/ijss/suivi-pain.jpg">suivi-pain.jpg</div>
         </article>
-</div></div><div class="sub-block" data-filter-container data-block-title="obtenir les aides a l'apprentissage"><h3 class="sector-heading">Obtenir les aides à l&#x27;apprentissage <span class="nav-count">5</span></h3><div class="grid">        <article class="card filter-item" data-section="images" data-search="imagery/aides-apprentissage/standout-image-1436-x-808-3.jpg aides-apprentissage" data-tags="aides-apprentissage" data-folder="aides-apprentissage" data-format="jpg">
+</div></div><div class="sub-block" data-filter-container data-block-title="obtenir les aides a l&#x27;apprentissage"><h3 class="sector-heading">Obtenir les aides à l&#x27;apprentissage <span class="nav-count">5</span></h3><div class="grid">        <article class="card filter-item" data-section="images" data-search="imagery/aides-apprentissage/standout-image-1436-x-808-3.jpg aides-apprentissage" data-tags="aides-apprentissage" data-folder="aides-apprentissage" data-format="jpg">
           <div class="thumb">
             <img src="https://ayming-france.github.io/assets/imagery/aides-apprentissage/Standout-Image-1436-x-808-3.jpg" alt="Standout-Image-1436-x-808-3.jpg" loading="lazy">
             
@@ -5568,11 +5592,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/questionnaires-mp/questionnaire-mp.jpg" alt="questionnaire-mp.jpg" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Questionnaire Mp&quot;, &quot;used_in&quot;: [&quot;atmp-famille&quot;, &quot;cotisations-atmp&quot;, &quot;hub&quot;, &quot;laposte&quot;, &quot;questionnaires-mp&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">6 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Questionnaire Mp&quot;, &quot;used_in&quot;: [&quot;atmp-famille&quot;, &quot;cotisations-atmp&quot;, &quot;hub&quot;, &quot;questionnaires-mp&quot;, &quot;veille-net-entreprises&quot;], &quot;variants&quot;: []}">5 utilisations</button>
             <div class="card-hover">
               <p class="meta">1920&times;1080 px &middot; 157 Ko &middot; .jpg</p>
               <div class="tags"><span class="tag-pill">questionnaires-mp</span></div>
-              <p class="usage-list">Utilisé dans : atmp-famille, cotisations-atmp, hub, laposte, questionnaires-mp, veille-net-entreprises</p>
+              <p class="usage-list">Utilisé dans : atmp-famille, cotisations-atmp, hub, questionnaires-mp, veille-net-entreprises</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/questionnaires-mp/questionnaire-mp.jpg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/questionnaires-mp/questionnaire-mp.jpg" data-name="questionnaire-mp.jpg">Télécharger</button>
@@ -6062,11 +6086,11 @@
             <img src="https://ayming-france.github.io/assets/maps/eu-map.svg" alt="eu-map.svg" loading="lazy" style="background:#fff;object-fit:contain">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Eu Map&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;aides-apprentissage&quot;, &quot;air-liquide-cotizaciones (fr)&quot;, &quot;arrets-longue-duree&quot;, &quot;atmp-famille&quot;, &quot;charges-sociales&quot;, &quot;charges-sociales-europe&quot;, &quot;charges-sociales-spain (fr)&quot;, &quot;charges-sociales-zendsn&quot;, &quot;collecte-arrets&quot;, &quot;controle-urssaf&quot;, &quot;cotisations-atmp&quot;, &quot;cotizacion-at-ep (fr)&quot;, &quot;dat&quot;, &quot;duerp&quot;, &quot;ij-activite-non-autorisee&quot;, &quot;ijss-famille&quot;, &quot;laposte&quot;, &quot;offers-family/visites-medicales&quot;, &quot;questionnaires-mp&quot;, &quot;rattrapage-visites-medicales&quot;, &quot;recuperer-ij&quot;, &quot;remboursements-ijss&quot;, &quot;veille-net-entreprises&quot;, &quot;visites-medicales&quot;], &quot;variants&quot;: []}">25 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Eu Map&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;aides-apprentissage&quot;, &quot;air-liquide-cotizaciones (fr)&quot;, &quot;arrets-longue-duree&quot;, &quot;atmp-famille&quot;, &quot;charges-sociales&quot;, &quot;charges-sociales-europe&quot;, &quot;charges-sociales-spain (fr)&quot;, &quot;charges-sociales-zendsn&quot;, &quot;collecte-arrets&quot;, &quot;controle-urssaf&quot;, &quot;cotisations-atmp&quot;, &quot;cotizacion-at-ep (fr)&quot;, &quot;dat&quot;, &quot;duerp&quot;, &quot;ij-activite-non-autorisee&quot;, &quot;ijss-famille&quot;, &quot;offers-family/visites-medicales&quot;, &quot;questionnaires-mp&quot;, &quot;rattrapage-visites-medicales&quot;, &quot;recuperer-ij&quot;, &quot;remboursements-ijss&quot;, &quot;veille-net-entreprises&quot;, &quot;visites-medicales&quot;], &quot;variants&quot;: []}">24 utilisations</button>
             <div class="card-hover">
               <p class="meta">2782&times;2003 px &middot; 24 Ko &middot; .svg</p>
               <div class="tags"><span class="tag-pill">carte</span><span class="tag-pill">europe</span></div>
-              <p class="usage-list">Utilisé dans : accidents-tiers, aides-apprentissage, air-liquide-cotizaciones (fr), arrets-longue-duree, atmp-famille, charges-sociales, charges-sociales-europe, charges-sociales-spain (fr), charges-sociales-zendsn, collecte-arrets, controle-urssaf, cotisations-atmp, cotizacion-at-ep (fr), dat, duerp, ij-activite-non-autorisee, ijss-famille, laposte, offers-family/visites-medicales, questionnaires-mp, rattrapage-visites-medicales, recuperer-ij, remboursements-ijss, veille-net-entreprises, visites-medicales</p>
+              <p class="usage-list">Utilisé dans : accidents-tiers, aides-apprentissage, air-liquide-cotizaciones (fr), arrets-longue-duree, atmp-famille, charges-sociales, charges-sociales-europe, charges-sociales-spain (fr), charges-sociales-zendsn, collecte-arrets, controle-urssaf, cotisations-atmp, cotizacion-at-ep (fr), dat, duerp, ij-activite-non-autorisee, ijss-famille, offers-family/visites-medicales, questionnaires-mp, rattrapage-visites-medicales, recuperer-ij, remboursements-ijss, veille-net-entreprises, visites-medicales</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/maps/eu-map.svg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/maps/eu-map.svg" data-name="eu-map.svg">Télécharger</button>
@@ -6084,11 +6108,11 @@
             <img src="https://ayming-france.github.io/assets/maps/france-map.svg" alt="france-map.svg" loading="lazy" style="background:#fff;object-fit:contain">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;France Map&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;aides-apprentissage&quot;, &quot;arrets-longue-duree&quot;, &quot;atmp-famille&quot;, &quot;charges-sociales&quot;, &quot;charges-sociales-zendsn&quot;, &quot;collecte-arrets&quot;, &quot;controle-urssaf&quot;, &quot;cotisations-atmp&quot;, &quot;dat&quot;, &quot;duerp&quot;, &quot;ij-activite-non-autorisee&quot;, &quot;ijss-famille&quot;, &quot;laposte&quot;, &quot;offers-family/visites-medicales&quot;, &quot;questionnaires-mp&quot;, &quot;rattrapage-visites-medicales&quot;, &quot;recuperer-ij&quot;, &quot;remboursements-ijss&quot;, &quot;veille-net-entreprises&quot;, &quot;visites-medicales&quot;], &quot;variants&quot;: []}">21 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;France Map&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;aides-apprentissage&quot;, &quot;arrets-longue-duree&quot;, &quot;atmp-famille&quot;, &quot;charges-sociales&quot;, &quot;charges-sociales-zendsn&quot;, &quot;collecte-arrets&quot;, &quot;controle-urssaf&quot;, &quot;cotisations-atmp&quot;, &quot;dat&quot;, &quot;duerp&quot;, &quot;ij-activite-non-autorisee&quot;, &quot;ijss-famille&quot;, &quot;offers-family/visites-medicales&quot;, &quot;questionnaires-mp&quot;, &quot;rattrapage-visites-medicales&quot;, &quot;recuperer-ij&quot;, &quot;remboursements-ijss&quot;, &quot;veille-net-entreprises&quot;, &quot;visites-medicales&quot;], &quot;variants&quot;: []}">20 utilisations</button>
             <div class="card-hover">
               <p class="meta">1449&times;1591 px &middot; 5 Ko &middot; .svg</p>
               <div class="tags"><span class="tag-pill">carte</span><span class="tag-pill">france</span></div>
-              <p class="usage-list">Utilisé dans : accidents-tiers, aides-apprentissage, arrets-longue-duree, atmp-famille, charges-sociales, charges-sociales-zendsn, collecte-arrets, controle-urssaf, cotisations-atmp, dat, duerp, ij-activite-non-autorisee, ijss-famille, laposte, offers-family/visites-medicales, questionnaires-mp, rattrapage-visites-medicales, recuperer-ij, remboursements-ijss, veille-net-entreprises, visites-medicales</p>
+              <p class="usage-list">Utilisé dans : accidents-tiers, aides-apprentissage, arrets-longue-duree, atmp-famille, charges-sociales, charges-sociales-zendsn, collecte-arrets, controle-urssaf, cotisations-atmp, dat, duerp, ij-activite-non-autorisee, ijss-famille, offers-family/visites-medicales, questionnaires-mp, rattrapage-visites-medicales, recuperer-ij, remboursements-ijss, veille-net-entreprises, visites-medicales</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/maps/france-map.svg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/maps/france-map.svg" data-name="france-map.svg">Télécharger</button>
@@ -6106,11 +6130,11 @@
             <img src="https://ayming-france.github.io/assets/maps/na-map.svg" alt="na-map.svg" loading="lazy" style="background:#fff;object-fit:contain">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Na Map&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;aides-apprentissage&quot;, &quot;arrets-longue-duree&quot;, &quot;atmp-famille&quot;, &quot;charges-sociales&quot;, &quot;charges-sociales-zendsn&quot;, &quot;collecte-arrets&quot;, &quot;controle-urssaf&quot;, &quot;cotisations-atmp&quot;, &quot;dat&quot;, &quot;duerp&quot;, &quot;ij-activite-non-autorisee&quot;, &quot;ijss-famille&quot;, &quot;laposte&quot;, &quot;offers-family/visites-medicales&quot;, &quot;questionnaires-mp&quot;, &quot;rattrapage-visites-medicales&quot;, &quot;recuperer-ij&quot;, &quot;remboursements-ijss&quot;, &quot;veille-net-entreprises&quot;, &quot;visites-medicales&quot;], &quot;variants&quot;: []}">21 utilisations</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Na Map&quot;, &quot;used_in&quot;: [&quot;accidents-tiers&quot;, &quot;aides-apprentissage&quot;, &quot;arrets-longue-duree&quot;, &quot;atmp-famille&quot;, &quot;charges-sociales&quot;, &quot;charges-sociales-zendsn&quot;, &quot;collecte-arrets&quot;, &quot;controle-urssaf&quot;, &quot;cotisations-atmp&quot;, &quot;dat&quot;, &quot;duerp&quot;, &quot;ij-activite-non-autorisee&quot;, &quot;ijss-famille&quot;, &quot;offers-family/visites-medicales&quot;, &quot;questionnaires-mp&quot;, &quot;rattrapage-visites-medicales&quot;, &quot;recuperer-ij&quot;, &quot;remboursements-ijss&quot;, &quot;veille-net-entreprises&quot;, &quot;visites-medicales&quot;], &quot;variants&quot;: []}">20 utilisations</button>
             <div class="card-hover">
               <p class="meta">1568&times;1600 px &middot; 53 Ko &middot; .svg</p>
               <div class="tags"><span class="tag-pill">amerique-du-nord</span><span class="tag-pill">carte</span></div>
-              <p class="usage-list">Utilisé dans : accidents-tiers, aides-apprentissage, arrets-longue-duree, atmp-famille, charges-sociales, charges-sociales-zendsn, collecte-arrets, controle-urssaf, cotisations-atmp, dat, duerp, ij-activite-non-autorisee, ijss-famille, laposte, offers-family/visites-medicales, questionnaires-mp, rattrapage-visites-medicales, recuperer-ij, remboursements-ijss, veille-net-entreprises, visites-medicales</p>
+              <p class="usage-list">Utilisé dans : accidents-tiers, aides-apprentissage, arrets-longue-duree, atmp-famille, charges-sociales, charges-sociales-zendsn, collecte-arrets, controle-urssaf, cotisations-atmp, dat, duerp, ij-activite-non-autorisee, ijss-famille, offers-family/visites-medicales, questionnaires-mp, rattrapage-visites-medicales, recuperer-ij, remboursements-ijss, veille-net-entreprises, visites-medicales</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/maps/na-map.svg">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/maps/na-map.svg" data-name="na-map.svg">Télécharger</button>
@@ -6270,11 +6294,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/apps/acciline-analytics.png" alt="acciline-analytics.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Acciline Analytics&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Acciline Analytics&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">192&times;192 px &middot; 12 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/apps/acciline-analytics.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/apps/acciline-analytics.png" data-name="acciline-analytics.png">Télécharger</button>
@@ -6292,11 +6316,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/apps/acciline-app.png" alt="acciline-app.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Acciline App&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Acciline App&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">314&times;251 px &middot; 8 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/apps/acciline-app.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/apps/acciline-app.png" data-name="acciline-app.png">Télécharger</button>
@@ -6314,11 +6338,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/apps/acciline-share.png" alt="acciline-share.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Acciline Share&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Acciline Share&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">512&times;318 px &middot; 10 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/apps/acciline-share.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/apps/acciline-share.png" data-name="acciline-share.png">Télécharger</button>
@@ -6336,11 +6360,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-audits.png" alt="mod-audits.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Audits&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Audits&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">179&times;179 px &middot; 8 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-audits.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-audits.png" data-name="mod-audits.png">Télécharger</button>
@@ -6358,11 +6382,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-causes.png" alt="mod-causes.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Causes&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Causes&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">178&times;178 px &middot; 5 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-causes.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-causes.png" data-name="mod-causes.png">Télécharger</button>
@@ -6380,11 +6404,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-equipements.png" alt="mod-equipements.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Equipements&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Equipements&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">178&times;178 px &middot; 7 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-equipements.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-equipements.png" data-name="mod-equipements.png">Télécharger</button>
@@ -6402,11 +6426,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-evaluation.png" alt="mod-evaluation.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Evaluation&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Evaluation&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">178&times;178 px &middot; 9 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-evaluation.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-evaluation.png" data-name="mod-evaluation.png">Télécharger</button>
@@ -6424,11 +6448,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-evenements.png" alt="mod-evenements.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Evenements&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Evenements&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">178&times;178 px &middot; 8 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-evenements.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-evenements.png" data-name="mod-evenements.png">Télécharger</button>
@@ -6446,11 +6470,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-formations.png" alt="mod-formations.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Formations&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Formations&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">178&times;178 px &middot; 6 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-formations.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-formations.png" data-name="mod-formations.png">Télécharger</button>
@@ -6468,11 +6492,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-plans.png" alt="mod-plans.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Plans&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Plans&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">178&times;178 px &middot; 7 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-plans.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-plans.png" data-name="mod-plans.png">Télécharger</button>
@@ -6490,11 +6514,11 @@
             <img src="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-veille.png" alt="mod-veille.png" loading="lazy">
             
             
-            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Veille&quot;, &quot;used_in&quot;: [&quot;offre-essentiel&quot;], &quot;variants&quot;: []}">1 utilisation</button>
+            <button type="button" class="usage-badge" data-usage="{&quot;title&quot;: &quot;Mod Veille&quot;, &quot;used_in&quot;: [&quot;icl-iberia&quot;, &quot;offre-essentiel&quot;], &quot;variants&quot;: []}">2 utilisations</button>
             <div class="card-hover">
               <p class="meta">178&times;178 px &middot; 12 Ko &middot; .png</p>
               <div class="tags"><span class="tag-pill">essentiel</span></div>
-              <p class="usage-list">Utilisé dans : offre-essentiel</p>
+              <p class="usage-list">Utilisé dans : icl-iberia, offre-essentiel</p>
               <div class="actions">
                 <button class="btn-use" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-veille.png">Utiliser</button>
                 <button class="btn-dl" data-url="https://ayming-france.github.io/assets/imagery/essentiel/icons/mod-veille.png" data-name="mod-veille.png">Télécharger</button>
@@ -8422,7 +8446,7 @@
       <div class="archetype-group" data-filter-container>
         <h2>Le deck standard, dans l&#x27;ordre</h2>
         <p class="panel-lead">Reprend l'ordre du sales-pitch standard, de la couverture à la clôture.</p>
-        <div class="archetype-grid">        <article class="archetype-card filter-item" data-search="couverture slide d'ouverture, logo, titre de l'offre, visuel plein cadre. cover couverture">
+        <div class="archetype-grid">        <article class="archetype-card filter-item" data-search="couverture slide d&#x27;ouverture, logo, titre de l&#x27;offre, visuel plein cadre. cover couverture">
           <div class="archetype-head">
             <div>
               <h3>Couverture</h3>
@@ -8679,7 +8703,7 @@
             </span>
           </div>
         </article>
-        <article class="archetype-card filter-item" data-search="alternatives en cartes les trois approches que les organisations emploient aujourd'hui, une carte par alternative. alternatives-cards alternatives (cartes)">
+        <article class="archetype-card filter-item" data-search="alternatives en cartes les trois approches que les organisations emploient aujourd&#x27;hui, une carte par alternative. alternatives-cards alternatives (cartes)">
           <div class="archetype-head">
             <div>
               <h3>Alternatives (cartes)</h3>
@@ -9466,7 +9490,7 @@
             </span>
           </div>
         </article>
-        <article class="archetype-card filter-item" data-search="vue d'ensemble valeur ce qu'ayming vous apporte, la grille des piliers de valeur avec icone, titre et description. feature-grid vue d'ensemble valeur">
+        <article class="archetype-card filter-item" data-search="vue d&#x27;ensemble valeur ce qu&#x27;ayming vous apporte, la grille des piliers de valeur avec icone, titre et description. feature-grid vue d&#x27;ensemble valeur">
           <div class="archetype-head">
             <div>
               <h3>Vue d&#x27;ensemble valeur</h3>
@@ -9707,7 +9731,7 @@
             </span>
           </div>
         </article>
-        <article class="archetype-card filter-item" data-search="valeur en detail approfondissement d'un pilier de valeur, texte a gauche, visuel a droite. une slide par pilier. value-detail valeur en detail">
+        <article class="archetype-card filter-item" data-search="valeur en detail approfondissement d&#x27;un pilier de valeur, texte a gauche, visuel a droite. une slide par pilier. value-detail valeur en detail">
           <div class="archetype-head">
             <div>
               <h3>Valeur en détail</h3>
@@ -10361,7 +10385,7 @@
             </span>
           </div>
         </article>
-        <article class="archetype-card filter-item" data-search="implantation france l'ancrage territorial, carte de france en svg statique et texte d'accompagnement. implantation-france implantation france">
+        <article class="archetype-card filter-item" data-search="implantation france l&#x27;ancrage territorial, carte de france en svg statique et texte d&#x27;accompagnement. implantation-france implantation france">
           <div class="archetype-head">
             <div>
               <h3>Implantation France</h3>
@@ -11091,7 +11115,7 @@
       <div class="archetype-group" data-filter-container>
         <h2>Autres archétypes</h2>
         <p class="panel-lead">Archétypes complémentaires, hors trame standard.</p>
-        <div class="archetype-grid">        <article class="archetype-card filter-item" data-search="temoignage pleine hauteur variante de la slide preuves, une seule citation en grand avec etoiles a cote d'une photo pleine hauteur. testimonial-split preuves (variante)">
+        <div class="archetype-grid">        <article class="archetype-card filter-item" data-search="temoignage pleine hauteur variante de la slide preuves, une seule citation en grand avec etoiles a cote d&#x27;une photo pleine hauteur. testimonial-split preuves (variante)">
           <div class="archetype-head">
             <div>
               <h3>Preuves (variante)</h3>
@@ -11261,9 +11285,10 @@
     </div>
     <p class="curation-hint">Colle ce bloc à Claude pour l'exécuter.</p>
   </div>
-  <script>window.USAGE_LABEL_URLS = {"IPRP": null, "abo-dat": "https://ayming-france.github.io/abo-dat/", "accidents-tiers": "https://ayming-france.github.io/accidents-tiers/", "aides-apprentissage": "https://ayming-france.github.io/aides-apprentissage/", "air-liquide-cotizaciones": "https://ayming-france.github.io/air-liquide-cotizaciones/", "air-liquide-cotizaciones (en)": "https://ayming-france.github.io/air-liquide-cotizaciones/en/", "air-liquide-cotizaciones (fr)": "https://ayming-france.github.io/air-liquide-cotizaciones/fr/", "alstom-defensa-propuesta": "https://ayming-france.github.io/alstom-defensa-propuesta/", "alstom-tratamiento-datos": "https://ayming-france.github.io/alstom-tratamiento-datos/", "arrets-longue-duree": "https://ayming-france.github.io/pilotage-arrets-longue-duree/", "atmp-famille": "https://ayming-france.github.io/gestion-des-atmp/", "charges-sociales": "https://ayming-france.github.io/maitrise-des-charges-sociales/", "charges-sociales-europe": "https://ayming-france.github.io/charges-sociales-europe/", "charges-sociales-spain": "https://ayming-france.github.io/charges-sociales-spain/", "charges-sociales-spain (en)": "https://ayming-france.github.io/charges-sociales-spain/en/", "charges-sociales-spain (fr)": "https://ayming-france.github.io/charges-sociales-spain/fr/", "charges-sociales-zendsn": "https://ayming-france.github.io/charges-sociales-zendsn/", "charges-sociales-zendsn-court": "https://ayming-france.github.io/charges-sociales-zendsn-court/", "collecte-arrets": "https://ayming-france.github.io/collecte-et-traitement-des-arrets/", "controle-urssaf": "https://ayming-france.github.io/accompagnement-controle-urssaf/", "cotisations-atmp": "https://ayming-france.github.io/cotisations-atmp/", "cotizacion-at-ep": "https://ayming-france.github.io/cotizacion-at-ep/", "cotizacion-at-ep (en)": "https://ayming-france.github.io/cotizacion-at-ep/en/", "cotizacion-at-ep (fr)": "https://ayming-france.github.io/cotizacion-at-ep/fr/", "dat": "https://ayming-france.github.io/declarer-un-accident-du-travail/", "duerp": "https://ayming-france.github.io/duerp/", "ecosystem-digital": "https://ayming-france.github.io/ecosystem-digital/", "en-contribution-rate-review": "https://ayming-france.github.io/en-contribution-rate-review/", "es-cotizaciones-sociales": "https://ayming-france.github.io/es-cotizaciones-sociales/", "es-pagos-delegados": null, "es-revision-tipo-cotizacion": "https://ayming-france.github.io/es-revision-tipo-cotizacion/", "hub": "https://ayming-france.github.io/", "ij-activite-non-autorisee": "https://ayming-france.github.io/ij-activite-non-autorisee/", "ijss-famille": "https://ayming-france.github.io/maitrise-des-ijss/", "laposte": null, "methode": null, "moteur (tous les decks)": null, "offers-family/visites-medicales": null, "offre-essentiel": "https://ayming-france.github.io/offre-essentiel/", "org": null, "questionnaires-mp": "https://ayming-france.github.io/questionnaires-de-maladie-professionnelle/", "rattrapage-visites-medicales": "https://ayming-france.github.io/rattrapage-visites-medicales/", "recuperer-ij": "https://ayming-france.github.io/recuperer-ij/", "remboursements-ijss": "https://ayming-france.github.io/remboursements-ijss/", "sinistralite": null, "veille-net-entreprises": "https://ayming-france.github.io/veille-net-entreprises/", "visites-medicales": "https://ayming-france.github.io/visites-medicales/"};</script>
+  <script>window.USAGE_LABEL_URLS = {"IPRP": null, "abo-dat": "https://ayming-france.github.io/abo-dat/", "accidents-tiers": "https://ayming-france.github.io/accidents-tiers/", "aides-apprentissage": "https://ayming-france.github.io/aides-apprentissage/", "air-liquide-cotizaciones": "https://ayming-france.github.io/air-liquide-cotizaciones/", "air-liquide-cotizaciones (en)": "https://ayming-france.github.io/air-liquide-cotizaciones/en/", "air-liquide-cotizaciones (fr)": "https://ayming-france.github.io/air-liquide-cotizaciones/fr/", "alstom-defensa-propuesta": "https://ayming-france.github.io/alstom-defensa-propuesta/", "alstom-tratamiento-datos": "https://ayming-france.github.io/alstom-tratamiento-datos/", "arrets-longue-duree": "https://ayming-france.github.io/pilotage-arrets-longue-duree/", "atmp-famille": "https://ayming-france.github.io/gestion-des-atmp/", "charges-sociales": "https://ayming-france.github.io/maitrise-des-charges-sociales/", "charges-sociales-europe": "https://ayming-france.github.io/charges-sociales-europe/", "charges-sociales-spain": "https://ayming-france.github.io/charges-sociales-spain/", "charges-sociales-spain (en)": "https://ayming-france.github.io/charges-sociales-spain/en/", "charges-sociales-spain (fr)": "https://ayming-france.github.io/charges-sociales-spain/fr/", "charges-sociales-zendsn": "https://ayming-france.github.io/charges-sociales-zendsn/", "charges-sociales-zendsn-court": "https://ayming-france.github.io/charges-sociales-zendsn-court/", "collecte-arrets": "https://ayming-france.github.io/collecte-et-traitement-des-arrets/", "controle-urssaf": "https://ayming-france.github.io/accompagnement-controle-urssaf/", "cotisations-atmp": "https://ayming-france.github.io/cotisations-atmp/", "cotizacion-at-ep": "https://ayming-france.github.io/cotizacion-at-ep/", "cotizacion-at-ep (en)": "https://ayming-france.github.io/cotizacion-at-ep/en/", "cotizacion-at-ep (fr)": "https://ayming-france.github.io/cotizacion-at-ep/fr/", "dat": "https://ayming-france.github.io/declarer-un-accident-du-travail/", "duerp": "https://ayming-france.github.io/duerp/", "ecosystem-digital": "https://ayming-france.github.io/ecosystem-digital/", "en-contribution-rate-review": "https://ayming-france.github.io/en-contribution-rate-review/", "es-cotizaciones-sociales": "https://ayming-france.github.io/es-cotizaciones-sociales/", "es-pagos-delegados": null, "es-revision-tipo-cotizacion": "https://ayming-france.github.io/es-revision-tipo-cotizacion/", "hub": "https://ayming-france.github.io/", "icl-iberia": null, "ij-activite-non-autorisee": "https://ayming-france.github.io/ij-activite-non-autorisee/", "ijss-famille": "https://ayming-france.github.io/maitrise-des-ijss/", "methode": null, "moteur (tous les decks)": null, "offers-family/visites-medicales": null, "offre-essentiel": "https://ayming-france.github.io/offre-essentiel/", "org": null, "questionnaires-mp": "https://ayming-france.github.io/questionnaires-de-maladie-professionnelle/", "rattrapage-visites-medicales": "https://ayming-france.github.io/rattrapage-visites-medicales/", "recuperer-ij": "https://ayming-france.github.io/recuperer-ij/", "remboursements-ijss": "https://ayming-france.github.io/remboursements-ijss/", "sinistralite": null, "veille-net-entreprises": "https://ayming-france.github.io/veille-net-entreprises/", "visites-medicales": "https://ayming-france.github.io/visites-medicales/"};</script>
   <script>
   (function () {
+    if (/github[.]io$/.test(location.hostname)) document.documentElement.classList.add('public-site');
     var panels = Array.prototype.slice.call(document.querySelectorAll('.tab-panel'));
     var navItems = Array.prototype.slice.call(document.querySelectorAll('.nav-item'));
     var navSubItems = Array.prototype.slice.call(document.querySelectorAll('.nav-subitem'));
@@ -11584,9 +11609,14 @@
     // --- Copie : cliquer une pastille de couleur (ou une de ses lignes de
     // code) copie sa valeur precise, avec un retour visuel systematique meme
     // si l'ecriture presse-papiers echoue (permissions du navigateur).
-    function flashFeedback(container) {
+    function copyText(text) {
+      return navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject(new Error('no clipboard'));
+    }
+
+    function flashFeedback(container, ok) {
       var fb = container.querySelector('.copy-feedback');
       if (!fb) return;
+      fb.textContent = ok ? 'Copié' : 'Copie impossible';
       fb.hidden = false;
       clearTimeout(fb._t);
       fb._t = setTimeout(function () { fb.hidden = true; }, 1200);
@@ -11597,8 +11627,8 @@
       if (!target) return;
       var value = target.getAttribute('data-copy-value');
       if (!value) return;
-      navigator.clipboard.writeText(value).catch(function () {});
-      flashFeedback(target.closest('.color-item') || target);
+      var box = target.closest('.color-item') || target;
+      copyText(value).then(function () { flashFeedback(box, true); }, function () { flashFeedback(box, false); });
     });
 
     // Delegation (pas un querySelectorAll figé au chargement) : les boutons
@@ -11609,9 +11639,12 @@
       e.stopPropagation();
       var url = btn.getAttribute('data-url');
       var original = btn.textContent;
-      navigator.clipboard.writeText(url).catch(function () {});
-      btn.textContent = 'Copié !';
-      btn.classList.add('copied');
+      copyText(url).then(function () {
+        btn.textContent = 'Copié !';
+        btn.classList.add('copied');
+      }, function () {
+        btn.textContent = 'Copie impossible';
+      });
       setTimeout(function () { btn.textContent = original; btn.classList.remove('copied'); }, 1200);
     });
 
@@ -11896,9 +11929,12 @@
     if (curationCopyBtn) {
       curationCopyBtn.addEventListener('click', function () {
         var yaml = curationYaml();
-        navigator.clipboard.writeText(yaml).catch(function () {});
         var original = curationCopyBtn.textContent;
-        curationCopyBtn.textContent = 'Copié !';
+        copyText(yaml).then(function () {
+          curationCopyBtn.textContent = 'Copié !';
+        }, function () {
+          curationCopyBtn.textContent = 'Copie impossible';
+        });
         setTimeout(function () { curationCopyBtn.textContent = original; }, 1200);
       });
     }

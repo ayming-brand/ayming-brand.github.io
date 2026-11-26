@@ -1,7 +1,7 @@
 {
   "generated_by": "build_portal.py",
-  "source_repo": "/Users/encarv/projects/ayming-france-assets",
-  "count": 363,
+  "source_repo": "ayming-france-assets",
+  "count": 364,
   "assets": [
     {
       "path": "imagery/aides-apprentissage/Standout-Image-1436-x-808-3.jpg",
@@ -831,6 +831,27 @@
       "reutilisable": true
     },
     {
+      "path": "imagery/charges-sociales-zendsn/tableau-synthese.png",
+      "url": "https://ayming-france.github.io/assets/imagery/charges-sociales-zendsn/tableau-synthese.png",
+      "section": "images",
+      "sha1": "8e5d5e513343c7bb63c98b9e7e2bd68a58b48c39",
+      "bytes": 126268,
+      "format": "png",
+      "width": 1690,
+      "height": 512,
+      "orientation": "paysage",
+      "used_in": [],
+      "tags": [
+        "charges-sociales-zendsn"
+      ],
+      "is_canonical": true,
+      "canonical_path": "imagery/charges-sociales-zendsn/tableau-synthese.png",
+      "canonical_url": "https://ayming-france.github.io/assets/imagery/charges-sociales-zendsn/tableau-synthese.png",
+      "display_name": "Tableau Synthese",
+      "masque": false,
+      "reutilisable": true
+    },
+    {
       "path": "imagery/charges-sociales-zendsn/zendsn-logo.png",
       "url": "https://ayming-france.github.io/assets/imagery/charges-sociales-zendsn/zendsn-logo.png",
       "section": "logos",
@@ -917,7 +938,6 @@
         "atmp-famille",
         "cotisations-atmp",
         "dat",
-        "laposte",
         "questionnaires-mp",
         "veille-net-entreprises"
       ],
@@ -1017,7 +1037,6 @@
         "accidents-tiers",
         "atmp-famille",
         "dat",
-        "laposte",
         "questionnaires-mp",
         "veille-net-entreprises"
       ],
@@ -1045,7 +1064,6 @@
         "accidents-tiers",
         "atmp-famille",
         "dat",
-        "laposte",
         "questionnaires-mp",
         "veille-net-entreprises"
       ],
@@ -1195,7 +1213,6 @@
         "collecte-arrets",
         "cotisations-atmp",
         "dat",
-        "laposte",
         "questionnaires-mp",
         "veille-net-entreprises"
       ],
@@ -1226,7 +1243,6 @@
         "collecte-arrets",
         "cotisations-atmp",
         "dat",
-        "laposte",
         "questionnaires-mp",
         "veille-net-entreprises"
       ],
@@ -1690,7 +1706,6 @@
         "atmp-famille",
         "cotisations-atmp",
         "dat",
-        "laposte",
         "questionnaires-mp",
         "veille-net-entreprises"
       ],
@@ -5839,6 +5854,7 @@
       "height": 499,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "moteur (tous les decks)"
       ],
       "tags": [
@@ -5862,6 +5878,7 @@
       "height": 192,
       "orientation": "carre",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -5885,6 +5902,7 @@
       "height": 251,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -5908,6 +5926,7 @@
       "height": 318,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -5931,6 +5950,7 @@
       "height": 1080,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "moteur (tous les decks)",
         "offre-essentiel"
       ],
@@ -5955,6 +5975,7 @@
       "height": 1438,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -5979,6 +6000,7 @@
       "height": 641,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6002,6 +6024,7 @@
       "height": 179,
       "orientation": "carre",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6025,6 +6048,7 @@
       "height": 178,
       "orientation": "carre",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6048,6 +6072,7 @@
       "height": 178,
       "orientation": "carre",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6071,6 +6096,7 @@
       "height": 178,
       "orientation": "carre",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6094,6 +6120,7 @@
       "height": 178,
       "orientation": "carre",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6117,6 +6144,7 @@
       "height": 178,
       "orientation": "carre",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6140,6 +6168,7 @@
       "height": 178,
       "orientation": "carre",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6163,6 +6192,7 @@
       "height": 178,
       "orientation": "carre",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6186,6 +6216,7 @@
       "height": 1280,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6209,6 +6240,7 @@
       "height": 799,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6232,6 +6264,7 @@
       "height": 799,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6255,6 +6288,7 @@
       "height": 799,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6278,6 +6312,7 @@
       "height": 481,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6301,6 +6336,7 @@
       "height": 430,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6324,6 +6360,7 @@
       "height": 641,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6488,6 +6525,7 @@
       "height": 677,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6511,6 +6549,7 @@
       "height": 864,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6534,6 +6573,7 @@
       "height": 648,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6557,6 +6597,7 @@
       "height": 641,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6580,6 +6621,7 @@
       "height": 765,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6603,6 +6645,7 @@
       "height": 765,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6626,6 +6669,7 @@
       "height": 765,
       "orientation": "paysage",
       "used_in": [
+        "icl-iberia",
         "offre-essentiel"
       ],
       "tags": [
@@ -6655,7 +6699,6 @@
         "cotisations-atmp",
         "dat",
         "hub",
-        "laposte",
         "veille-net-entreprises"
       ],
       "tags": [
@@ -6788,7 +6831,6 @@
         "cotisations-atmp",
         "hub",
         "ij-activite-non-autorisee",
-        "laposte",
         "veille-net-entreprises"
       ],
       "tags": [
@@ -6830,7 +6872,6 @@
         "hub",
         "ij-activite-non-autorisee",
         "ijss-famille",
-        "laposte",
         "remboursements-ijss",
         "veille-net-entreprises"
       ],
@@ -6861,7 +6902,6 @@
         "cotisations-atmp",
         "hub",
         "ijss-famille",
-        "laposte",
         "veille-net-entreprises"
       ],
       "tags": [
@@ -7016,7 +7056,6 @@
         "atmp-famille",
         "cotisations-atmp",
         "ijss-famille",
-        "laposte",
         "recuperer-ij",
         "remboursements-ijss",
         "veille-net-entreprises"
@@ -7119,7 +7158,6 @@
         "cotisations-atmp",
         "ij-activite-non-autorisee",
         "ijss-famille",
-        "laposte",
         "veille-net-entreprises"
       ],
       "tags": [
@@ -7861,7 +7899,6 @@
         "atmp-famille",
         "cotisations-atmp",
         "hub",
-        "laposte",
         "questionnaires-mp",
         "veille-net-entreprises"
       ],
@@ -8494,7 +8531,6 @@
       "height": 788,
       "orientation": "paysage",
       "used_in": [
-        "laposte",
         "veille-net-entreprises"
       ],
       "tags": [
@@ -8901,9 +8937,9 @@
         "es-pagos-delegados",
         "es-revision-tipo-cotizacion",
         "hub",
+        "icl-iberia",
         "ij-activite-non-autorisee",
         "ijss-famille",
-        "laposte",
         "methode",
         "moteur (tous les decks)",
         "offers-family/visites-medicales",
@@ -9184,7 +9220,6 @@
         "duerp",
         "ij-activite-non-autorisee",
         "ijss-famille",
-        "laposte",
         "offers-family/visites-medicales",
         "questionnaires-mp",
         "rattrapage-visites-medicales",
@@ -9228,7 +9263,6 @@
         "duerp",
         "ij-activite-non-autorisee",
         "ijss-famille",
-        "laposte",
         "offers-family/visites-medicales",
         "questionnaires-mp",
         "rattrapage-visites-medicales",
@@ -9272,7 +9306,6 @@
         "duerp",
         "ij-activite-non-autorisee",
         "ijss-famille",
-        "laposte",
         "offers-family/visites-medicales",
         "questionnaires-mp",
         "rattrapage-visites-medicales",
